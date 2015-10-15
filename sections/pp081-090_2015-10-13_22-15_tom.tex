@@ -1,0 +1,190 @@
+Performing the angular integration:
+\[\Ha=NS-N\Omega_d\Int dq\,\dfrac{q^{d-1}}{e^{\eta q^2}-1},\]
+where $\Omega_d$ is the solid angle in $d$ dimensions and $\eta=\beta JS$. Changing variables to
+\[x=\eta q^2\qquad\Rightarrow\qquad q=\sqrt{\dfrac{x}{\eta}},\quad dq=\dfrac{1}{2\sqrt{\eta}}\,\dfrac{dx}{\sqrt{x}},\]
+this becomes
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Ha	&= 	& NS-N\Omega_d\,\dfrac{1}{2\sqrt{\eta}}\,\left(\dfrac{1}{\sqrt{\eta}}\right)^{d-1}\,\underbrace{\Int_0^\infty dx\,\dfrac{x^{d/2-1}}{e^x-1}}_{A(d)}\\\\
+		& =	& NS-N\Omega_d\,A(d)\,\left(\dfrac{T}{JS}\right)^{d/2}\\\\
+		& =	& NS\quad\text{for}\quad T=0.
+\end{array}\]
+The corrections to the zero temperature energy go as $T^{d/2}$, or $T^{3/2}$ for $d=3$. The correction is because of the magnons. Note that magnons involve \Underline{many} spins. They are therefore collective spin excitations. Note also that $A(d)$ diverges when $\Underline{d=1}$. What does that mean? And what happens when $d=2$?
+
+
+
+
+\subsection{Antiferromagnets}
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[>=stealth',scale=1.5]
+		\def\max{3}
+		\foreach \a in {0,1,...,\max}{
+			\foreach \b in {0,1,...,\max}{
+				\draw[dashed] (-0.5,\a)--(\max+0.5,\a);
+				\draw[dashed] (\b,-0.5)--(\b,\max+0.5);
+				\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
+				\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
+				\draw[thick,->] (\a+\c,\b+1.5*\c)--(\a+\d,\b+1.5*\d);
+				}
+			}
+	\end{tikzpicture}
+	\caption{\label{fig:neel_state}The Néel state, the classical spin distribution in the ground state of a 2D quadratic lattice.}
+\end{figure}
+
+The contribution to the Hamiltonian from spin interactions is given by
+\[\Ha=-\Sum_{i,j}J_{i,j}\Vec{S}_i\cdot\Vec{S}_j,\qquad J_{i,j}<0.\]
+The classical spin distribution in the ground state (2D quadratic lattice) is drawn in figure~\ref{fig:neel_state}.
+
+Nearest neighbour $J_{i,j}$ \Underline{stabilises} such a spin distribution. Note that next-nearest neighbour spin points in the \Underline{same} direction. That means that a next-nearest neighbour $J_{i,j}$ contributes to \Underline{destabilise} Néel states on a quadratic lattice. The spins become ``frustrated''. In addition, the lattice structure means a little more now than in ferromagnets. Look for example at a \Underline{triangular} lattice:
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[>=stealth',scale=1.5]
+		\draw[dashed] (-0.5,0.866)--(1.5,0.866);
+		\draw[dashed] (-0.25,1.299)--(0.75,-0.433);
+		\draw[dashed] (0.25,-0.433)--(1.25,1.299);
+		\draw[thick,->] (0,0.466)--(0,1.266);
+		\draw[thick,->] (0.5,0.4)--(0.5,-0.4);
+		\draw[red,thick] (1,0.866) ellipse (0.2cm and 0.5cm);
+		\draw (1,0.866) node{\Huge\B{?}};
+	\end{tikzpicture}
+\end{figure}
+The conclusion is that in antiferromagnets the physics on small scales carries meaning for the physics on larger scales.
+
+\begin{Indentskip}
+	\subsubsection*{\underline{Next-nearest neighbour coupling}}
+	Next-nearest neighbour coupling can come from a ``superexchange'' described by
+	\[\left(\begin{tikzpicture}[scale=1,>=stealth',node distance=0.25\textwidth,baseline=(n1.base)]
+		\node[label={[label distance=0pt]180:$1/u$}] (n1) {$\bullet$};
+		\node[label={[label distance=0pt]270:$1/u$}] (n2) [right of=n1] {$\bullet$};
+		\node[label={[label distance=0pt]0:$1/u$}] (n3) [right of=n2] {$\bullet$};
+		\path[->,thick] (n1) edge[bend right=20] node[below=0.3\baselineskip]{$t$} (n2);
+		\path[->,thick] (n2) edge[bend right=20] node[below=0.3\baselineskip]{$t$} (n3);
+		\path[->,thick] (n3) edge[bend right=20] node[above=0.3\baselineskip]{$t$} (n2);
+		\path[->,thick] (n2) edge[bend right=20] node[above=0.3\baselineskip]{$t$} (n1);	
+	\end{tikzpicture}\right)\propto\dfrac{t^4}{u^3}.\]
+	Note that 
+	\[\dfrac{t^4}{u^3}=t\left(\dfrac{t}{u}\right)^3\ll t\left(\dfrac{t}{u}\right)\quad\text{when}\quad t\ll u.\]
+	In the Hubbard model and also in general we therefore neglect the next-nearest neighbour coupling.
+\end{Indentskip}
+
+We will now look at a 2D quadratic lattice, and later generalise it to a $d$-dimensional hypercubic lattice. Note that the Néel state can be drawn as two sublattices with all spins pointing in the same direction, as drawn in figure~\ref{fig:neel_state_sublattice}.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\begin{tikzpicture}[>=stealth',scale=1.5]
+			\def\max{3}
+			\foreach \a in {0,1,...,\max}{
+				\foreach \b in {0,1,...,\max}{
+					\pgfmathparse{int(mod(\a,2))}
+					\let\odd\pgfmathresult
+					\def\mycolour{white}
+					\ifnum \odd = 1
+						\def\mycolour{blue}
+					\fi
+					\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
+					\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
+					\pgfmathsetmacro{\e}{-0.5+\a};
+					\pgfmathsetmacro{\f}{\max+0.5-\a};
+					\draw[\mycolour] (-0.5,-0.5+\a)--(\max+0.5-\a,\max+0.5);
+					\draw[\mycolour] (-0.5+\a,-0.5)--(\max+0.5,\max+0.5-\a);
+					\draw[\mycolour] (0.5+\a,-0.5)--(-0.5,0.5+\a);
+					\draw[\mycolour] (\max+0.5,\max-0.5-\a)--(\max-0.5-\a,\max+0.5);
+					\draw[dashed,thin] (-0.5,\a)--(\max+0.5,\a);
+					\draw[dashed,thin] (\b,-0.5)--(\b,\max+0.5);
+					\draw[thick,->] (\a+\c,\b+1.5*\c)--(\a+\d,\b+1.5*\d);
+					}
+				}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\begin{tikzpicture}[>=stealth',scale=1.5]
+			\def\max{3}
+			\foreach \a in {0,1,...,\max}{
+				\foreach \b in {0,1,...,\max}{
+					\pgfmathparse{int(mod(\a,2))}
+					\let\odd\pgfmathresult
+					\def\mycolour{red}
+					\ifnum \odd = 1
+						\def\mycolour{white}
+					\fi
+					\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
+					\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
+					\pgfmathsetmacro{\e}{-0.5+\a};
+					\pgfmathsetmacro{\f}{\max+0.5-\a};
+					\draw[\mycolour] (-0.5,-0.5+\a)--(\max+0.5-\a,\max+0.5);
+					\draw[\mycolour] (-0.5+\a,-0.5)--(\max+0.5,\max+0.5-\a);
+					\draw[\mycolour] (0.5+\a,-0.5)--(-0.5,0.5+\a);
+					\draw[\mycolour] (\max+0.5,\max-0.5-\a)--(\max-0.5-\a,\max+0.5);
+					\draw[dashed,thin] (-0.5,\a)--(\max+0.5,\a);
+					\draw[dashed,thin] (\b,-0.5)--(\b,\max+0.5);
+					\draw[thick,->] (\a+\c,\b+1.5*\c)--(\a+\d,\b+1.5*\d);
+					}
+				}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{\label{fig:neel_state_sublattice} The Néel state with alternating spin directions can be divided into two sublattices with equal spin.}
+\end{figure}
+
+One of the sublattices has all spins ``up'', the other has all spins ``down''. The quadratic lattice can therefore be divided up into two \Underline{interpenetrating} sublattices, A (spin up) and B (spin down). The unit cells in A and B are \Underline{twice} as big as those of the original lattice (the Brillouin zones in A and B are therefore half as big as those of the original lattice), as is shown in figure~\ref{fig:neel_state_sublattices_brillouin}.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\begin{tikzpicture}[>=stealth',scale=1.5]
+			\filldraw[fill=black!20!white, draw=black] (-1.5,-1.5) rectangle (1.5,1.5);
+			\draw[->] (-2,0)--(2,0)node[label={[label distance=0pt]270:$k_x$}]{};
+			\draw[->] (0,-2)--(0,2)node[label={[label distance=0pt]0:$k_y$}]{};
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\begin{tikzpicture}[>=stealth',scale=1.5]
+			\filldraw[fill=none,draw=black] (-1.5,-1.5) rectangle (1.5,1.5);
+			\filldraw[fill=black!20!white,draw=black,rotate around={45:(0,0)}] (-1.061,-1.061) rectangle (1.061,1.061);
+			\draw[->] (-2,0)--(2,0)node[label={[label distance=0pt]270:$k_x$}]{};
+			\draw[->] (0,-2)--(0,2)node[label={[label distance=0pt]0:$k_y$}]{};
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{\label{fig:neel_state_sublattices_brillouin} The Brillouin zones in the original lattice (left) and the sublattices A and B (right).}
+\end{figure}
+We now introduce the Holstein-Primakoff transformation for both sublattices.
+\begin{equation}\label{eq:sublat_a}A:\left\{\begin{array}{r@{\;}c@{\;}l}
+	S_{i,z}^A	& =	& S-\Creab_i\Annib_i,\\\\
+	S_{i,+}^A	& =	& \sqrt{2S}\left(1-\dfrac{\Creab_i\Annib_i}{2S}\right)^{1/2}\Annib_i,\\\\
+	S_{i,-}^A	& =	& \sqrt{2S}\,\Creab_i\left(1-\dfrac{\Creab_i\Annib_i}{2S}\right)^{1/2}.
+\end{array}\right.\end{equation}
+\begin{equation}\label{eq:sublat_b}B:\left\{\begin{array}{r@{\;}c@{\;}l}
+	S_{i,z}^B	& =	& -S+\Creabb_i\Annibb_i,\\\\\
+	S_{i,+}^B	& =	& \sqrt{2S}\left(1-\dfrac{\Annibb_i\Creabb_i}{2S}\right)^{1/2}\Creabb_i,\\\\
+	S_{i,-}^B	& =	& \sqrt{2S}\,\Annibb_i\left(1-\dfrac{\Annibb_i\Creabb_i}{2S}\right)^{1/2}.
+\end{array}\right.\end{equation}
+In the above the operators $\Annib_i$ and $\Creab_i$ annihilate and create bosons on A, whereas $\Annibb_i$ and $\Creabb_i$ annihilate and create bosons on B. On each lattice the operators have the normal boson commutation relations. Boson operators on different lattices commute. In the following we will limit ourselves to nearest-neighbour interaction, and write the Hamiltonian in terms of the sublattices.
+
+Splitting the sum in the Hamiltonian using
+\[\Sum_{\braket{i,j}}=\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}+\Sum_{\substack{i\in\text{B}\\[1ex]j\in\text{A}\\[1ex]\text{n.n.}}},\]
+where $\braket{i,j}$ is the set of nearest neighbours $i$ and $j$, we can write
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Ha	& =	& -J\Sum_{\braket{i,j}}\left(S_{i,z}S_{j,z}+S_{i,+}S_{j,-}\right)\\\\
+		& =	& -J\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}\left(S_{i,z}^AS_{j,z}^B+S_{i,+}^AS_{j,-}^B\right)-J\Sum_{\substack{i\in\text{B}\\[1ex]j\in\text{A}\\[1ex]\text{n.n.}}}\left(S_{i,z}^BS_{j,z}^A+S_{i,+}^BS_{j,-}^A\right).
+\end{array}\]
+With this splitting we now get a certain representation of the spin operators for \Underline{all} $i$ and $j$ involved in the summation. If we now introduce the Holstein-Primakoff transformation for spin operators, we will again get an equally difficult problem as the antiferromagnetic Heisenberg model presented us with. For that reason we'll have a look at the low-temperature case again, where ``few'' bosons are excited. In that case we can make the approximation that
+\[\left(1-\dfrac{\Creab_i\Annib_i}{2S}\right)^{1/2}\approx1,\qquad\left(1-\dfrac{\Creabb_i\Annibb_i}{2S}\right)^{1/2}\approx1.\]
+With this we approximate equations~\mref{eq:sublat_a,eq:sublat_a} as
+\[A:\left\{\begin{array}{r@{\;}c@{\;}l}
+	S_{i,z}^A	& =	& S-\Creab_i\Annib_i,\\\\
+	S_{i,+}^A	& =	& \sqrt{2S}\Annib_i,\\\\
+	S_{i,-}^A	& =	& \sqrt{2S}\,\Creab_i.
+\end{array}\right.,\qquad B:\left\{\begin{array}{r@{\;}c@{\;}l}
+	S_{i,z}^B	& =	& -S+\Creabb_i\Annibb_i,\\\\\
+	S_{i,+}^B	& =	& \sqrt{2S}\Creabb_i,\\\\
+	S_{i,-}^B	& =	& \sqrt{2S}\,\Annibb_i.
+\end{array}\right.\]
+Substitute back into $\Ha$, and neglect the terms of higher order than quadratic in $\Annib$, $\Creab$, $\Annibb$ and $\Creabb$.
+\[\Ha=\underbrace{2JS^2\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}1}_{E_0}-2JS\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}\left(\;\underbrace{\Creab_i\Annib_i+\Creabb_j\Annibb_j}_{\substack{\text{independent of}\\\text{lattices A and B.}}}+\underbrace{\Creab_i\Creabb_j+\Annib_i\Annibb_j}_{\substack{\text{coupling between}\\\text{lattices A and B.}}}\;\right).\]
+In the $\Creabb_j\Annibb_j$ term we use that
+\[\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}\;=\;\Sum_{\substack{i\in\text{B}\\[1ex]j\in\text{A}\\[1ex]\text{n.n.}}}.\]

@@ -1,0 +1,313 @@
+\section{Introduction}
+The types of systems we will look at are mainly defined by
+\begin{itemize}
+	\item electrons interacting with each other,
+	\item electrons interacting with crystal vibrations and lattice imperfections (but not perfect lattices),
+	\item lattice ions interacting with each other.
+\end{itemize}
+In principle the problem we are facing is therefore defined by the Schrödinger equation:
+\[\Ha\ket{\psi}=i\hbar\dfrac{\partial\ket{\psi}}{\partial t}.\]
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Exercise:} find the eigenstates and the excitation spectrum.}	
+	\noindent Hamilton operators:
+	\[\Ha=\Ha_\text{e-e}+\Ha_\text{e-ion}+\Ha_\text{ion-ion}.\]
+	(Plus possible external perturbations, such as an external electromagnetic field.)
+	\[\Ha_\text{e-e}=\Sum_i\dfrac{p_i^2}{2m}+\Sum_{i,j}V_\text{Coul}^\text{e-e}(\B{r}_i-\B{r}_j),\]
+	\[\Ha_\text{ion-ion}=\Sum_i\dfrac{P_i^2}{2M}+\Sum_{i,j}V_\text{Coul}^\text{ion-ion}(\B{R}_i-\B{R}_j),\]
+	\[\Ha_\text{e-ion}=\Sum_{i,j}V_\text{Coul}^\text{e-ion}(\B{R}_i-\B{r}_j).\]
+	$\ket{\psi}$: many-particle state that ``describes'' the system.
+\end{Indentskip}
+
+
+
+\subsection{Statistical mechanics}
+We need one extra parameter to describe the ``macroscopic'' physics: $T$. This is introduced as follows ($\Ha$ doesn't include $T$):
+
+Suppose we know the excitation spectrum of the system as well as the eigenstate
+\[\Ha\ket{\psi_{N_i}}=E_{N_i}\ket{\psi_{N_i}},\]
+where $i$ is the index for the $i$-th eigenstate $\ket{\psi_{N_i}}$. There may exist many such $\ket{\psi_{N_i}}$ with the same energy $E_{N_i}$ (degeneracy). We can then find the partition function
+\[\Partition=\Tr(e^{-\beta\Ha})=\Sum_n\braket{n|e^{-\beta\Ha}|n},\qquad\beta=\dfrac{1}{k_BT},\]
+where $\{\ket{n}\}$ is a complete basis that satisfies the identity $\sum_n\ket{n}\bra{n}$. Which basis shall we choose? It doesn't matter:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Partition&=&\Tr(e^{-\beta\Ha})=\Tr(SS^{-1}e^{-\beta\Ha})=\Tr(S^{-1}e^{-\beta\Ha}S)\\\\
+	&=&\Sum_n\braket{n|S^{-1}e^{-\beta\Ha}S|n}=\Sum_{n'}\braket{n'|e^{-\beta\Ha}|n'},
+\end{array}\]
+where $\ket{n'}=S\ket{n}$ and $S^{-1}=S^\dagger$ is a unitary ``similarity transformation''. Choose $\{\ket{n}\}=\{\ket{N}\}$ such that
+\[\Ha\ket{N}=E_N\ket{N}\qquad\Rightarrow\qquad\Partition=\Sum_ie^{-\beta E_{N_i}},\]
+where $E_{N_i}$ is the $i$-th excitation energy for an $N$-particle system and $\ket{N_i}$ is the corresponding eigenstate.
+
+All information about interesting many-particle effects are encoded in $\Partition$, but in general it is difficult to get explicit information from it. Suppose we have an operator that is described by an observable $\operator$ with the statistical mean
+\[\boxed{\braket{\operator}=\dfrac{1}{\Partition}\,\Tr\left(\operator e^{-\beta\Ha}\right)}\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\underbrace{\braket{\operator}}_{\substack{\text{statistical mean,}\\\text{usually what's}\\\text{measured in}\\\text{a lab}}}&=&\dfrac{1}{\Partition}\Sum_i\braket{N_i|\operator e^{-\beta\Ha}|N_i}=\dfrac{1}{\Partition}\Sum_{i,j}\braket{N_i|\operator|N_j}e^{-\beta E_{N_i}}\delta_{ij}\\[-1\baselineskip]
+	&=&\dfrac{1}{\Partition}\Sum_i\underbrace{\braket{N_i|\operator|N_i}}_{\substack{\text{mean value in}\\\text{e.g. state} \ket{N_i}}}e^{-\beta E_{N_i}},
+\end{array}\]
+where we used that
+\[\begin{array}{r@{\;}c@{\;}l@{\;}l}
+	\Sum_i\ket{N_i}\bra{N_i}&=& 1,&\qquad\text{(completeness)}\\\\
+	\braket{N_i|N_j}&=&\delta_{ij}.&\qquad\text{(orthonormality)}
+\end{array}\]
+Hence this is a coupling between quantum mechanics and thermodynamics. In the ground state $T\rightarrow0$ and $\beta\rightarrow\infty$. The lowest state has energy $E_{N_1}=E_{N_0}+\Delta E$, if $e^{-\beta\Delta E}\ll1$, then
+\[\Partition\approx e^{-\beta E_{N_0}}=e^{-e\beta\Helmholtz},\]
+where $\Helmholtz=U-TS=E_{N_0}$ (the entropy term disappears as $T\rightarrow0$) is the Helmholtz free energy. We can now write
+\[\braket{\operator}=\dfrac{1}{e^{-\beta E_{N_0}}}\,\braket{N_0|\operator|N_0}e^{-\beta E_{N_0}}=\underbrace{\braket{N_0|\operator|N_0}}_{\mathclap{\substack{\text{expectation value}\\\text{in the ground state}}}}.\]
+
+For systems where the lowest excited state is separated from the ground state with an energy gap, it is often enough to look at the ground state's expectation values.
+
+\begin{Indentskip}
+\Underline{Example:} electronic insulator or semiconductor with a gap between $\sim0.1-1\si{\electronvolt}$.
+\end{Indentskip}
+\vspace*{-\baselineskip}
+\begin{Indentskip}
+\Underline{Counterexample:} in good metals, such as for example Cu, Ag, Au etc, there is no gap in the excitation spectrum.
+\end{Indentskip}
+
+
+\subsection{Many-particle state vector for fermions}
+We build such state vectors from single-particle states: think of a set quantum number $\lambda$ describing a single-particle state. The corresponding single-particle state vector is given by $\ket{n_\lambda}$ (Dirac ket) and the adjoint state by $\bra{n_\lambda}$ (Dirac bra). $\ket{n_\lambda}$ can be created from a vacuum via a creation operator $\Crea_\lambda$:
+\[\ket{\Number_\lambda}=\Crea_\lambda\ket{0},\]
+where $\lambda$ isn't yet specified. The set will be chosen as appropriate, ``good'' quantum numbers, and will depend on the problem we are looking at. $\lambda$ will consist of quantum numbers that describe single-particle states.
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example}: translation-invariant systems of fermions with spin}
+	\[\begin{array}{r@{\;}c@{\;}l}
+		\lambda	&=& (\B{k},\sigma)\\\\
+		\B{k}	&:& \text{wave number, a conserved (``good'') quantum number}\\\\
+		\sigma	&:& \text{spin }\up\text{ or }\down\text{ for spin-1/2 fermions}
+	\end{array}\]
+	$\Crea_{\B{k},\sigma}$ creates a fermion with wave number $\B{k}$ and spin $\sigma$:
+	\[\ket{\Number_{\B{k},\sigma}}=\Crea_{\B{k},\sigma}\ket{0},\qquad\varphi_{\B{k},\sigma}(\B{r})=\dfrac{1}{\sqrt{\nu}}\,e^{i\B{k}\cdot\B{r}},\qquad\ket{0}=\Anni\ket{\B{k},\sigma}.\]
+\end{Indentskip}
+\vspace*{-1\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} semiconductor heterostructure in a strong external magnetic field (homogeneous)}
+	\[\lambda=\B{k},\qquad\varphi_{\B{k},\sigma}=\underbrace{u_{\B{k},\sigma}(\B{r})e^{i\B{k}\cdot\B{r}}}_\text{Bloch function}.\]
+	2D Electron gas completely spin-polarised $\Rightarrow$ spin degrees of freedom ``frozen out'' $\Rightarrow$ ``spinless fermions'' (QHE).
+\end{Indentskip}
+\vspace*{-1\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} Lattice fermion model where the electrons mainly ``live'' at one lattice point, and then tunnel from one lattice point to another}
+	\[\lambda=(i,\sigma),\qquad\ket{\Number_{i,\sigma}}=\Crea_{i,\sigma}\ket{0},\qquad\varphi_{i,\sigma}=\phi_w^i(\B{r}_i),\]
+	where $i$ is a lattice point.
+\end{Indentskip}
+
+
+\subsection{Many-particle states}
+An $N$-particle state is given by
+\[\ket{N}=\ket{n_{\lambda_1},n_{\lambda_2},\cdots,n_{\lambda_N}}=\Crea_{\lambda_1}\cdots\Crea_{\lambda_N}\ket{0},\]
+where
+\[\ket{0}=\ket{0_{\lambda_1},\cdots,0_{\lambda_N}}\qquad\text{and}\qquad\ket{N}=\Prod_{i=1}^N\Crea_{\lambda_i}\ket{0}=\Prod_{i=1}^N\ket{n_{\lambda_i}}.\]
+This is often called a Fock state.
+
+\begin{framed}\noindent In the case of fermions we can have \Underline{maximum one} fermion in each single-particle state.\end{framed}
+
+
+
+\subsection{The formulation of many-particle theory as a quantum field theory}
+
+The fermions are considered as quantized excitations of a matter field in the same way as photons are considered as quantized excitations of an electromagnetic field. The general field operator for a fermion is given by
+\[\crea(\B{r},t)=\Sum_\lambda\Crea_\lambda(t)\varphi_\lambda^*(\B{r}).\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\crea(\B{r},t)					&:& \text{\Underline{Operator} that requires a fermion at the point }(\B{r},t)\text{ with any}\\
+									&& \text{quantum number.}\\\\
+	\Crea_\lambda(t)				&:& \text{\Underline{Operator} that requires a fermion with a certain quantum number}\\
+									&& \lambda\text{ at time }t.\\\\
+	\varphi_\lambda^*(\B{r})	&:& \text{\Underline{Function} that describes the spatial part (and in some cases the}\\
+									&& \text{spin part) of the state that is required.}
+\end{array}\]
+Heisenberg picture:
+\[\operator(t)=e^{i\Ha t/\hbar}\,\operator\,e^{-i\Ha t/\hbar},\]
+where $\operator$ is an operator in the Schrödinger picture.
+
+In the case of fermions the field is quantized with the help of the anticommutator relation
+\[\underbrace{\commup{\crea(\B{r},t),\anni(\B{r}',t)}}_{\text{same } t}=\delta(\B{r}-\B{r}').\]
+We assume that the basis functions $\{\varphi_\lambda\}$ form a complete set that the set is orthonormalized.
+
+\begin{Indentskip}
+	\subsubsection*{\Underline{Orthonormalization}}
+	\begin{equation}\label{eq:ortho_phi}\boxed{\Sum_{\B{r}}\varphi_{\lambda'}^*(\B{r})\varphi_\lambda(\B{r})=\delta_{\lambda,\lambda'}.}\end{equation}
+	Completeness:
+	\[f(\B{r})=\Sum_\lambda b_\lambda\varphi_\lambda(\B{r}),\]
+	where $f$ is an arbitrary function, and $b_\lambda$ is given by
+	\[b_\lambda=\Sum_{\B{r}'}\varphi_\lambda^*(\B{r}')f(\B{r}').\]
+	Therefore:
+	\[f(\B{r})=\Sum_{\B{r}'}\underbrace{\Sum_\lambda\varphi_\lambda^*(\B{r}')\varphi_\lambda(\B{r})}_{\delta(\B{r}-\B{r}')}f(\B{r}').\]
+	Completeness relation:
+	\[\boxed{\Sum_\lambda\varphi_\lambda^\star(\B{r}')\varphi_\lambda(\B{r})=\delta(\B{r}-\B{r}').}\]
+\end{Indentskip}
+
+What commutation relations should be satisfied? In the case of fermions this is the anticommutator relation
+\[\commup{\crea(\B{r},t),\anni(\B{r}',t)}=\delta(\B{r}-\B{r}')=\Sum_{\lambda_1,\lambda_2}\varphi_{\lambda_1}^*(\B{r})\varphi_{\lambda_2}(\B{r}')\commup{\Crea_{\lambda_1},\Crea_{\lambda_2}}.\]
+In case that
+\[\commup{\Crea_{\lambda_1},\Anni_{\lambda_2}}=\delta_{\lambda_1,\lambda_2},\]
+we get, from completeness:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Sum_{\lambda_1}\varphi_{\lambda_1}^*(\B{r})\varphi_{\lambda_2}(\B{r}')	&=& \delta(\B{r}-\B{r}'),\\\\
+	\commup{\Crea_{\lambda'}(t),\Anni_\lambda(t)}							&=& \delta_{\lambda,\lambda'}.
+\end{array}\]
+In addition it is trivially shown that
+\[\begin{array}{r@{\;}c@{\;}c@{\;}l}
+	\commup{\anni(\B{r},t),\anni(\B{r}',t)}		& =0\Rightarrow	& \commup{\Anni_\lambda,\Anni_{\lambda'}}		& =0,\\\\
+	\commup{\crea(\B{r},t),\crea(\B{r}',t)}		& =0\Rightarrow	& \commup{\Crea_\lambda,\Crea_{\lambda'}}		& =0,
+\end{array}\]
+thus fully specifying the characteristics of the field operators $\anni$ and $\Anni$.
+
+\begin{Indentskip}
+	\subsubsection*{\Underline{Interpretation of the anticommutation relations}}
+	The fact that there cannot be two fermions in the same state (the Pauli principle) is expressed as follows:
+	\[\Crea_\lambda\Crea_\lambda\ket{0}=0\qquad\Rightarrow\qquad\commup{\Crea_\lambda,\Crea_\lambda}=0,\]
+	whereas the annihilation of the vacuum leads to
+	\[\Anni_\lambda\Anni_\lambda\ket{0}=0\qquad\Rightarrow\qquad\commup{\Anni_\lambda,\Anni_\lambda}=0.\]
+	For $\lambda_1\neq\lambda_2$ we get
+	\[\commup{\Crea_{\lambda_1},\Anni_{\lambda_2}}=0\qquad\Rightarrow\qquad\ket{n_{\lambda_1},n_{\lambda_2}}=-\ket{n_{\lambda_2},n_{\lambda_1}},\]
+	antisymmetry under exchange of two single-particle states.
+\end{Indentskip}
+
+The next step is to express the \Underline{operators} that represent observables via field operators. This is the appropriate formulation (as we will see). The introduction of creation and annihilation operators (with anticommutation relations for fermions) is called \Underline{second quantization}.
+
+
+
+\subsection{Single-particle operators}
+\[\hat{U}\ket{N}=\Sum_i\hat{U}_i\ket{N},\]
+where $\hat{U}_i$ only works on element number $i$ in $\ket{N}$.
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} Kinetic energy:}
+	\[\hat{T}\ket{N}=\Sum_i\dfrac{p_i^2}{2m}\,\ket{N}.\]
+\end{Indentskip}
+\vspace*{-1\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} Crystal potential that every single electron feels when they move around in a lattice}
+	\[V\ket{N}=\Sum_i\hat{V}\ket{N},\qquad\hat{V}_i=\Sum_{\B{R}_j}V(\B{r}_i-\B{R}_j),\]
+	where:
+	\[\begin{array}{r@{\;}c@{\;}l}
+		\B{r}_i		&:& \text{electron coordinate},\\\\
+		\B{R}_j		&:& \text{ion coordinate}.
+	\end{array}\]
+\end{Indentskip}
+
+Placing the matrix element of a single-particle operator between two many-particle operators $\ket{N}$ and $\ket{N'}$:
+\[\braket{N'|\hat{U}|N}=\Sum_i\braket{N'|\hat{U}_i|N}.\]
+Writing out $\ket{N}$ and $\ket{N'}$ we get
+\[\ket{N}=\ket{n_1}\cdots\ket{n_N},\qquad\ket{N'}=\ket{n_1'}\cdots\ket{n_N'},\]
+\[\bra{n_1'}\cdots\bra{n_N'}\left(\Sum_i\hat{U}_i\right)\ket{n_1}\cdots\ket{n_N}=\Sum_i\Prod_{k\neq i}\braket{n_k'|n_k}\braket{n_i'|\hat{U}_i|n_i}.\]
+Normalization:
+\[\dfrac{\braket{N'|\hat{U}|N}}{\braket{N'|N}}=\Sum_i\dfrac{\Prod_{k\neq i}\braket{n_k'|n_k}\braket{n_i'|\hat{U}_i|n_i}}{\Prod_{k\neq i}\braket{n_k'|n_k}\braket{n_i'|n_i}}=\Sum_i\dfrac{\braket{n_i'|\hat{U}_i|n_i}}{\braket{n_i'|n_i}}.\]
+\begin{framed}\noindent Single-particle operators are defined by matrix elements in single-particle Hilbert space.\end{framed}
+
+
+
+\subsection{Two-particle operators}
+\[\hat{V}\ket{n_1}\cdots\ket{n_N}=\dfrac{1}{2}\Sum_{i,j}\hat{V}_{i,j}\ket{n_1}\cdots\ket{n_N}.\]
+The operator $\hat{V}_{i,j}$ works on the elements $i$ and $j$. The factor $1/2$ is there because the summation is over \Underline{distinct} pairs.
+
+\begin{Indentskip}
+	\Underline{Example:} Coulomb interaction between electrons.
+\end{Indentskip}
+
+The matrix element is given by
+\[\dfrac{\braket{N'|\hat{V}|N}}{\braket{N'|N}}=\dfrac{1}{2}\Sum_{i,j}\dfrac{\braket{n_i',n_j'|\hat{V}_{i,j}|n_j,n_j}}{\braket{n_i',n_j'|n_i,n_j}}.\]
+\begin{framed}\noindent Two-particle operators are defined by their matrix elements in the Hilbert space of two-particle states.\end{framed}
+\[\hat{V}_{i,j}=\hat{V}_{j,i}\quad\text{for}\quad i\neq j,\qquad \hat{V}_{i=j}=0,\]
+the latter because a two-particle operator is working on a single-particle state.
+
+
+\clearpage
+\section{Electrons with interaction}
+The Hamilton operators consist of a sum of single-particle and two-particle operators:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Ha	&=& \underbrace{\Sum_i\left(\dfrac{p_i^2}{2m}+U(\B{r}_i)\right)}_{\text{Single-particle operator.}}+\underbrace{\Sum_{i<j}V_\text{Coul}(\B{r}_i-\B{r}_j)}_{\substack{\text{Two-particle operator.}\\\text{It is this part that}\\\text{makes the problem}\\\text{difficult to solve.}}}.\\\\
+	&=& \Sum_i\Ha_1(i)+\dfrac{1}{2}\Sum_{i,j}\Ha_2(\B{r}_i,\B{r}_j).
+\end{array}\]
+We first find the second-quantized form of the two parts in $\Ha_i$.
+
+
+
+\subsection{Second quantization of single-particle operators}
+If we know $\Ha$ expressed in a classical way, how can we express it using annihilation and creation operator? We will start by finding the second-quantized form of $\Ha_1$. Define $\varphi_\lambda$ and $\vareps_\lambda$ such that
+\[\Ha_1(\B{r})\varphi_\lambda(\B{r})=\vareps_\lambda\varphi_\lambda(\B{r}).\]
+We thus assume that we are able to find the eigenfunctions and eigenvalues of the non-interacting system
+\begin{equation}\label{eq:h1}\Ha_1=-\dfrac{\hbar^2}{2m}\,\nabla^2+U(\B{r}),\qquad\nabla=\dfrac{\partial}{\partial{\B{r}}}.\end{equation}
+\begin{framed}\noindent What we intend to show is that we can find a second-quantized form of $\Ha_1$ that has the \Underline{same} matrix elements as equation~\eqref{eq:h1}.\end{framed}
+We proceed as follows:
+\begin{equation}\label{eq:h1_l1l2}\braket{\lambda_1|\Ha_1|\lambda_2}=\Int d\B{r}d\B{r}'\underbrace{\braket{\lambda_1|\B{r}}}_{\varphi_{\lambda_1}^*(\B{r})}\braket{\B{r}|\Ha_1|\B{r}'}\underbrace{\braket{\B{r}'|\lambda_2}}_{\varphi_{\lambda_2}(\B{r}')}.\end{equation}
+We now need the matrix element
+\[\braket{\B{r}|\Ha_1|\B{r}'}=\braket{\B{r}|\Sum_i\Ha_1(\B{r}_i)|\B{r}'},\]
+where
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Ha_1(\B{r}_i,\B{p}_i)	&=& \dfrac{\B{p}_i^2}{2m}+U(\B{r}_i),\\\\
+	\ket{\B{r}}				&:& \text{Eigenfunction of the position operator}.
+\end{array}\]
+The latter satisfies the following relations:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\hat{\B{r}}\ket{\B{r}}				&=& \B{r}\ket{\B{r}},\\\\
+	\braket{\B{r}|\hat{\B{r}}|\B{r}'}	&=& \B{r}'\,\delta(\B{r}-\B{r}')\\\\
+	\braket{\B{r}|U(\B{r})|\B{r}'}		&=& \Sum_n\Anni_n\braket{\B{r}|\hat{\B{r}}^n|\B{r}'}=\Sum_n\Anni_n{\B{r}'}^n\delta(\B{r}-\B{r}')=U(\B{r}')\delta(\B{r}-\B{r}').
+\end{array}\]
+\Underline{But:} We also need
+\[\braket{\B{r}|\B{p}_i^2|\B{r}'}=\Sum_{\B{r}_i}\braket{\B{r}|\hat{\B{p}}_i|\B{r}_i}\braket{\B{r}_i|\hat{\B{p}}_i|\B{r}'}.\]
+Let's have a look at $\braket{\B{r}|\hat{\B{p}}|\B{r}'}$. For simplicity, we will look at a single spatial dimension, the result will be trivial to generalize. We got $\commum{\hat{x},\hat{p}}=i\hbar$:
+\[\braket{x|\commum{\hat{x},\hat{p}}|x'}=\braket{x|\hat{x}\hat{p}|x'}-\braket{x|\hat{p}\hat{x}|x'}=(x-x')\braket{x|\hat{p}|x'}=i\hbar\delta(x-x').\]
+The $\delta$ distribution is defined as
+\[\Int_{-\infty}^\infty dx\,\delta(x)f(x)=f(0),\]
+now look at the distribution $x\,\delta'(x)$:
+\[\Int_{-\infty}^\infty dx\,x\delta'(x)f(x)=-\Int_{-\infty}^\infty dx\,\delta(x)\left[x\,f(x)\right]'=-f(0).\]
+From this we conclude that
+\[\boxed{x\,\delta'(x)=-\delta(x),}\]
+and thus
+\[(x-x')\braket{x|\hat{p}|x'}=i\hbar\,\delta(x-x')\qquad\Rightarrow\qquad\braket{x|\hat{p}|x'}=-\dfrac{\hbar}{i}\,\dfrac{\delta(x-x')}{x-x'}=\dfrac{\hbar}{i}\,\dfrac{d}{dx}\delta(x-x').\]
+Similarly,
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{x|\hat{p}^2|x'}	&=& \Sum_{x_1}\braket{x|\hat{p}|x_1}\braket{x_1|\hat{p}|x'}=-\hbar^2\Sum_{x_1}\,\underbrace{\dfrac{d}{dx}\delta(x-x_1)}_{g(x-x_1)}\cdot\underbrace{\dfrac{d}{dx_1}\delta(x_1-x')}_{f'(x_1-x')}\\\\
+	&=& -\hbar^2\Int_{-\infty}^\infty dx_1\,g(x-x_1)f'(x_1-x')=+\hbar^2\Int_{-\infty}^\infty dx_1\,f(x_1-x')g'(x-x_1)\\\\
+	&=&\hbar^2\Int_{-\infty}^\infty dx_1\,\delta(x_1-x')\dfrac{d}{dx_1}\dfrac{d}{dx}\delta(x-x_1)=\hbar^2\dfrac{d}{dx'}\dfrac{d}{dx}\delta(x-x')\\\\
+	&=&-\hbar^2\dfrac{d^2}{dx^2}\delta(x-x').
+\end{array}\]
+Generalizing this result gives
+\[\braket{x|F(\hat{p})|x'}=F\left(\dfrac{\hbar}{i}\dfrac{\partial}{\partial x}\right)\delta(x-x').\]
+This is immediately generalized to multiple dimensions:
+\[\braket{\B{r}|\dfrac{\hat{\B{p}}^2}{2m}|\B{r}'}=-\dfrac{\hbar^2}{2m}\nabla^2\delta_{\B{r},\B{r}'},\]
+with which we get
+\[\braket{\B{r}|\Ha_1|\B{r}'}=\left[-\dfrac{\hbar^2}{2m}\nabla^2+U(\B{r})\right]\delta_{\B{r},\B{r}'}.\]
+Substituting this back into equation~\eqref{eq:h1_l1l2} we find
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{\lambda_1|\Ha_1|\lambda_2}	&=& \Int d\B{r}_1\,d\B{r}_2\,\varphi_{\lambda_1}^*\left(-\dfrac{\hbar^2}{2m}\nabla_1^2+U(\B{r}_1)\right)\delta_{\B{r},\B{r}'}\varphi_{\lambda_2}(\B{r}_2)\\\\
+	&=& \Int d\B{r}\,\varphi_{\lambda_1}^*(\B{r})\left(-\dfrac{\hbar^2}{2m}\nabla^2+U(\B{r})\right)\varphi_{\lambda_2}(\B{r})\\\\
+	&=& \vareps_{\lambda_2}\Int d\B{r}\,\varphi_{\lambda_1}^*(\B{r})\varphi_{\lambda_2}(\B{r})\\\\
+	&=& \vareps_{\lambda_2}\delta_{\lambda_1,\lambda_2},
+\end{array}\]
+where we used equation~\eqref{eq:ortho_phi} in the last step. Emphasizing that this is a matrix element, we can write
+\begin{equation}\label{eq:h1_l1l22}\left(\hat{\Ha}_1\right)_{\lambda_1,\lambda_2}=\vareps_{\lambda_2}\delta_{\lambda_1,\lambda_2}.\end{equation}
+Can we find a form of $\Ha_1$ expressed in terms of $\Anni_\lambda$ and $\Crea_\lambda$ that gives the same matrix elements?
+\[\text{\Underline{Ansatz:}}\qquad\Ha_1=\Sum_\lambda\epsilon_\lambda\Crea_\lambda\Anni_\lambda.\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{\lambda_1|\Ha_1|\lambda_2}	&:& \left(\anni(\B{r})=\Sum_\lambda\Anni_\lambda\varphi_\lambda(\B{r})\right)\\\\
+	\ket{\lambda_2}	&=& \Crea_{\lambda_2}\ket{0}\\\\
+	\bra{\lambda_1}	&=& \ket{0}\Anni_{\lambda_1}=\left(\Crea_{\lambda_1}\ket{0}\right)^\dagger\neq0
+\end{array}\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{0|\Anni_{\lambda_1}\left(\Sum_\lambda\vareps_\lambda\Crea_\lambda\Anni_\lambda\right)\Crea_{\lambda_2}|0}	&=& \Sum_\lambda\vareps_\lambda\braket{0|\Anni_{\lambda_1}\Crea_\lambda\underbrace{\Anni_\lambda\Crea_{\lambda_2}}_{\mathclap{\delta_{\lambda_2,\lambda}-\Crea_{\lambda_2}\Anni_\lambda}}|0}=\Sum_\lambda\vareps_\lambda\delta_{\lambda_2\lambda}\braket{0|\underbrace{\Anni_{\lambda_1}\Crea_\lambda}_{\mathclap{\delta_{\lambda_1,\lambda}-\Crea_\lambda\Anni_{\lambda_1}}}|0}\\\\
+	&=& \Sum_\lambda\vareps\delta_{\lambda_2,\lambda}\delta_{\lambda_1,\lambda}=\vareps_{\lambda_1}\delta_{\lambda_2,\lambda_1}.
+\end{array}\]
+This is ok because it is the same matrix element as in equation~\eqref{eq:h1_l1l22}. We conclude that the second-quantized form of $\Ha$ for non-interacting fermion system is given by
+\begin{equation}\label{eq:h_diag}\boxed{\Ha_1=\Sum_\lambda\vareps_\lambda\Crea_\lambda\Anni_\lambda.}\end{equation}
+Since the set of quantum numbers $\lambda$ isn't specified at all, this is a very general form.
+\[\boxed{\Crea_\lambda\Anni_\lambda\;:\;\text{number operator.}}\]
+The number operator measures the number of fermions in a single-particle state specified by $\lambda$, and energy $\vareps_\lambda$. The total energy $\Ha_1$ is therefore the energy of each single-particle state multiplied by the number of fermions i that state, summed over single-particle states. We could have found a corresponding form \Underline{without} assuming that we have found a basis set $\{\varphi_\lambda\}$ of eigenfunctions of $\Ha_1$.
+\[\braket{\lambda_1|\Ha_1|\lambda_2}=\Int d\B{r}_1\,d\B{r}_2\,\varphi_{\lambda_1}^*(\B{r}_1)\left(\Sum_i\Ha_1(\B{r}_i)\right)\varphi_{\lambda_2}(\B{r}_2)=\Int d\B{r}\,\varphi_{\lambda_1}^*\Ha_1(\B{r})\varphi_{\lambda_2}(\B{r}).\]
+\[\text{Ansatz:}\qquad\Ha_1=\Sum_{\lambda_1,\lambda_2}\epsilon_{\lambda_2,\lambda_1}\Crea_{\lambda_1}\Anni_{\lambda_2}.\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{\lambda_1|\Ha_1|\lambda_2}	&=& \Sum_{\lambda,\lambda'}\braket{0|\Anni_{\lambda_1}\vareps_{\lambda,\lambda'}\Crea_{\lambda'}\Anni_\lambda\Crea_{\lambda_2}|0}=\Sum_{\lambda,\lambda'}\vareps_{\lambda',\lambda}\braket{0|\underbrace{\Anni_{\lambda_1}\Crea_{\lambda'}}_{\mathllap{\delta_{\lambda',\lambda_1}-\Crea_{\lambda'}\Anni_{\lambda_1}\!\!\!\!\!\!\!}}\underbrace{\Anni_\lambda\Crea_{\lambda_2}}_{\!\!\!\!\!\!\!\mathrlap{\delta_{\lambda,\lambda_2}-\Crea_{\lambda_2}\Anni_\lambda}}|0}\\\\
+	&=& \Sum_{\lambda,\lambda'}\vareps_{\lambda',\lambda}\delta_{\lambda',\lambda_1}\delta_{\lambda,\lambda_2}=\vareps_{\lambda_1,\lambda_2}
+\end{array}\]
+\begin{equation}\label{eq:h1_l1l2c1c2}\Rightarrow\qquad \boxed{\Ha_1=\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2}.}\phantom{\qquad\Leftarrow}\end{equation}
+
+Here the matrix element $\braket{\lambda_1|\Ha_1|\lambda_2}$ is known when the ``classical'' expression for $\Ha_1$ is known, and the basis $\{\varphi_\lambda\}$ is chosen:
+\[\braket{\lambda_1|\Ha_1|\lambda_2}=\Int d\B{r} \varphi_{\lambda_1}^*(\B{r})\Ha_1\varphi_{\lambda_2}(\B{r}).\]

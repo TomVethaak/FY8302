@@ -1,0 +1,345 @@
+$\Ha_1$ is now written in the so-called second-quantized form. Since we found this result without using that $\{\varphi_\lambda\}$ must be eigenfunctions of
+\[\Ha_1=-\dfrac{\hbar^2}{2m}\nabla^2+U(\B{r}),\]
+we can write down an expression for an arbitrary single-particle operator
+\[T=\Sum_iT(i),\]
+when the ``classical'' expression for (the single-particle operator) $T(i)$ is known:
+\[T(i)=T(\{\B{r}_i,\B{p}_i\})=\Sum_iT_i\left(\B{r}_i,\dfrac{\hbar}{i}\nabla_i\right)=T\left(\B{r}_i,\dfrac{\hbar}{i}\nabla_i\right),\qquad\nabla_i=\dfrac{\partial}{\partial\B{r}_i}.\]
+\[\braket{\lambda_1|T(i)|\lambda_2}=\Int d\B{r}_i\,\varphi_{\lambda_1}^*(\B{r}_i)\;T\!\left(\B{r}_i,\dfrac{\hbar}{i}\nabla_i\right)\varphi_{\lambda_2}(\B{r}_i).\]
+The operator $T$ is then given by
+\[\boxed{T=\Sum_{\lambda_1,\lambda_2}\underbrace{\braket{\lambda_1|T|\lambda_2}}_\text{number}\Crea_{\lambda_1}\Anni_{\lambda_2}.}\]
+Diagrammatically:
+\begin{feynman}{1}
+	\begin{fmfgraph*}(110,65)
+		\fmfleftn{i}{2}
+		\fmfrightn{o}{1}
+		\fmf{fermion}{i1,v1,i2}
+		\fmf{dashes,label=$\braket{\lambda_2|T|\lambda_1}$}{v1,o1}
+		\fmfdotn{v}{1}
+		\fmfv{decoration.shape=cross,decoration.filled=empty,decoration.size=0.1w}{o1}
+		\fmflabel{$\lambda_2$}{i1}
+		\fmflabel{$\lambda_1$}{i2}
+	\end{fmfgraph*}
+\end{feynman}
+
+
+
+\subsection{Second quantization of two-particle operators}
+The Hamilton function for an interacting electron system also has a two-particle contribution
+\[\dfrac{1}{2}\Sum_{i,j}\Ha_2(\B{r}_i,\B{r}_j)=\dfrac{1}{2}\Sum_{i,j}V_\text{Coul}(\B{r}_i-\B{r}_j).\]
+Assume that the classical form of a general two-particle operator is known.
+\[V_2=\dfrac{1}{2}\Sum_{i,j}V_2(\B{r}_i-\B{r}_j).\]
+Ansatz for the second-quantized form:
+\[\begin{array}{r@{\;}c@{\;}l}
+	V_2	&=& \dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_2}\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4}\\\\
+	&=&\Int d\B{r}_1\,d\B{r}_2\,d\B{r}_3\,d\B{r}_4\,\varphi_{\lambda_1}^*(\B{r}_1)\varphi_{\lambda_2}^*(\B{r}_2)V_2(\B{r}_3,\B{r}_4)\varphi_{\lambda_3}(\B{r}_3)\varphi_{\lambda_4}(\B{r}_4)\\\\
+	&&\times\delta_{\B{r}_1,\B{r}_4}\delta_{\B{r}_2,\B{r}_3}\braket{\B{r}_1\B{r}_2|V_2(\B{r}_3,\B{r}_4)|\B{r}_3,\B{r}_4}=V_2(\B{r}_3,\B{r}_4)\delta_{\B{r}_1,\B{r}_4}\delta_{\B{r}_2,\B{r}_3}\\\\
+	&=&\Int d\B{r}_1\,d\B{r}_2\varphi_{\lambda_1}^*\tikzmark{starta}(\B{r}_1)\varphi_{\lambda_2}^*\tikzmark{startb}(\B{r}_2)V(\B{r}_3,\B{r}_1)\varphi_{\lambda_3}\tikzmark{endb}(\B{r}_2)\varphi_{\lambda_4}\tikzmark{enda}(\B{r}_1).
+\end{array}\]
+\JoinDown{0}{-0.5}{0}{-0.5}{a}
+\JoinUp{0}{1}{0}{1}{b}
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{General second-quantized form of $\Ha$ for a fermion system}
+	\begin{equation}\label{eq:sq_h_general}\Ha=\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2}+\Sum_{\lambda_1,\cdots,\lambda_4}\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}.\end{equation}
+\end{Indentskip}
+
+Diagrammatic illustration of the two-particle contribution:
+\begin{feynman}{2}
+	\begin{fmfgraph*}(150,65)
+		\fmfleftn{i}{2}
+		\fmfrightn{o}{2}
+		\fmf{fermion}{i1,v1,i2}
+		\fmf{fermion}{o1,v2,o2}
+		\fmf{photon,label=$V_{\lambda_1\cdots\lambda_4}$}{v1,v2}
+		\fmfdotn{v}{2}
+		\fmflabel{$\lambda_3$}{i1}
+		\fmflabel{$\lambda_1$}{i2}
+		\fmflabel{$\lambda_4$}{o1}
+		\fmflabel{$\lambda_2$}{o2}
+	\end{fmfgraph*}
+\end{feynman}
+\Underline{Please note:} the same number of annihilation and creation operators on each side! ``Spreading process'' between two electrons because of interaction between them. The expression for $\Ha$ is completely independent of the choice of the basis set $\{\varphi_\lambda\}$, which is equivalent with the choice of a quantum number.
+
+A few examples of the choice of basis set and quantum numbers.
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} Basis set and quantum number for nearly free electrons}
+	\[\lambda=(\B{k},\sigma),\qquad\varphi_\lambda(\B{r})=\varphi_{\B{k},\sigma}(\B{r})=\dfrac{1}{\sqrt{V}}\,e^{i\B{k}\cdot\B{r}}\,\chi_\sigma.\]
+	The spatial part is given by the plane waves $e^{i\B{k}\cdot\B{r}}$. The spin part is given by the spin function $\chi_\sigma$.
+\end{Indentskip}
+\vspace*{-\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} Basis set for nearly free electrons in a periodic crystal potential}
+	\[\lambda=(\B{k},\sigma),\qquad\varphi_{\B{k},\sigma}(\B{r})=u_{\B{k}}(\B{r})\,e^{i\B{k}\cdot\B{r}}\,\chi_\sigma.\]
+	The spatial part is given by the Bloch function
+	\[u_{\B{k}}(\B{r}+\B{R})=u_{\B{k}}(\B{r}),\]
+	with the lattice's periodicity.
+\end{Indentskip}
+\vspace*{-\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{\Underline{Example:} Almost localized fermions on a lattice}
+	\[\lambda=(i,\alpha,\sigma),\qquad\varphi_{i,\sigma}(\B{r})=\phi_{\alpha,\sigma}^w(\B{r},\B{R}_i),\]
+	\begin{itemize}
+		\item[$i$:] Lattice point
+		\item[$\alpha$:] Atom orbital
+		\item[$\sigma$:] Spin index
+		\item[$\B{r}$:] Electron coordinate
+		\item[$\B{R}_i$:] Ion coordinate
+		\item[$\phi^w$:] Wannier orbital function that describes the state the electron ``lives'' in at lattice point $i$.
+	\end{itemize}
+\end{Indentskip}
+Such choices represent explicit realizations of the general expression for $\Ha$ in equation~\eqref{eq:sq_h_general}. For example, in good metals such as Al it will be natural to choose a plane wave basis. In a semiconductor where the crystal potential is important for creating a gap in the band structure, a Bloch function will be a natural basis. In strongly interacting electron systems where the kinetic energy is dominated by the potential energy, the Wannier basis will be ``good''.
+
+
+
+\subsection{The interacting electron gas}
+We will now look at a few concrete realizations of $\Ha$ in second quantization. The system we will look at is the interacting electron gas.
+
+The plane wave basis is used to describe nearly free (free $=$ non-interacting) fermions in periodic lattices. Considering the electrons to almost not interact at all means that the kinetic energy of the electrons dominates the interaction energy between them. We will later come back to why the Coulomb energy often can be ignored i \Underline{good metals} (but not in ``bad'' metals, insulators and semiconductors). Metals that are good conductors, and therefore suited for a plane wave basis, are for example Al, Sn, Fe, Cu, Ag etc.
+
+The Hamiltonian for the interacting electron gas is in the classical form given by
+\[\Ha=\underbrace{\Sum_i\dfrac{p_i^2}{2m}+\Sum_iU(\B{r}_i)}_{\Ha_1}+\dfrac{1}{2}\underbrace{\Sum_{i,j}\dfrac{e^2}{|\B{r}_i-\B{r}_j|}}_{\Ha_2}.\]
+In the second-quantized form this becomes
+\[\Ha=\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2}+\dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_4}\braket{\lambda_1,\lambda_2|\Ha_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}.\]
+The basis is given by
+\[\varphi_\lambda(\B{r},s)=\varphi_{\B{k},\sigma}(\B{r},s)=\dfrac{1}{\sqrt{V}}\,e^{i\B{k}\cdot\B{r}}\,\chi_\sigma(s),\qquad\lambda=(\B{k},\sigma)\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\B{r}	&:&	\text{Spatial coordinate}\\\\
+	s		&:& \text{Spin coordinate}
+\end{array}\]
+The spin part of the wave function is represented by a two-component spinor (in the case of $S=1/2$ fermions, for a general spin $s$ the spinor will in the non-relativistic case be a $(2S+1)$-component spinor, but we'll restrict ourselves to $S=1/2$ fermions).
+
+$S=1/2$: quantize the spin along the $z$-axis, and use the $z$-component of the spin as the spin quantum number $\sigma$, $\sigma=\up$ or $\sigma=\down$ ($S_z=+1/2,-1/2$):
+\[\chi_\up=\Pm{1\\0}\begin{matrix}\leftarrow s=1\\\leftarrow s=2\end{matrix}\;,\qquad\chi_\down=\Pm{0\\1}\begin{matrix}\leftarrow s=1\\\leftarrow s=2\end{matrix}\;.\]
+The spin coordinate $s$ indicates the components in the spinors $\chi_\sigma(s)$:
+\[\chi_\up(1)=1,\qquad\chi_\up(2)=0,\qquad\chi_\down(1)=0,\qquad\chi_\down(2)=1.\]
+Orthonormality:
+\[\Sum_x\varphi_\lambda^*(x)\varphi_{\lambda'}(x)=\delta_{\lambda,\lambda'},\]
+where $\sum_x$ is the summation over the coordinates in the basis function:
+\[\Sum_x=\Sum_s\Sum_{\B{r}}\;,\qquad\delta_{\lambda,\lambda'}=\underbrace{\delta_{\B{k},\B{k}'}\delta_{\sigma,\sigma'}}_{\mathclap{\delta\text{ function of \Underline{all} quantum numbers}}}.\]
+Completeness:
+\[\Sum_\lambda\varphi_\lambda^*(x)\varphi_\lambda(x')=\delta(x-x'),\]
+where
+\[\delta(x-x')=\underbrace{\delta_{s,s'}\delta(\B{r}-\B{r}')}_{\mathclap{\delta\text{ function over \Underline{all} coordinates}}}.\]
+The field operators are now given by
+\[\crea(x,t)=\Crea(\B{r},s,t)=\Sum_{\B{k},\sigma}\Crea_{\B{k},\sigma}(t)\left(\dfrac{1}{\sqrt{V}}\,e^{-i\B{k}\cdot\B{r}}\,\chi_\sigma(s)\right).\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\commup{\Anni_{\B{k},\sigma}(t),\Crea_{\B{k}',\sigma'}(t)}	&=& \delta_{\B{k},\B{k}'}\delta_{\sigma,\sigma'},\\\\
+	\commup{\Anni_{\B{k},\sigma}(t),\Anni_{\B{k}',\sigma'}(t)}	&=& \commup{\Crea_{\B{k},\sigma}(t),\Crea_{\B{k}',\sigma'}(t)}=0,\\\\
+\end{array}\]
+where $\Crea_{\B{k},\sigma}(t)$ needs a fermion with quantum number $\B{k}$ and spin $\sigma$ at time $t$.
+
+Orthonormality of the spatial part:
+\[\dfrac{1}{V}\Int d\B{r}\,e^{i(\B{k}-\B{k}')\cdot\B{r}}=\delta_{\B{k},\B{k}'}.\]
+Orthonormality of the spin part:
+\[\Sum_s\chi_{\sigma_1}^*(s)\chi_{\sigma_2}(s)=\delta_{\sigma_1,\sigma_2}.\]
+(This can also be verified directly by using the spinor components we have introduced.)
+
+Completeness of the spatial part:
+\[\dfrac{1}{V}\Sum_{\B{k}}\,e^{-\B{k}\cdot(\B{r}-\B{r}')}=\delta(\B{r}-\B{r}').\]
+Completeness of the spin part:
+\[\Sum_\sigma\chi_\sigma^*(s_1)\chi_\sigma(s_2)=\delta_{s_1,s_2}.\]
+The plane waves are eigenfunctions of
+\[\Sum_i\dfrac{p_i^2}{2m}=\Sum_i\left(-\dfrac{\hbar^2\nabla_i^2}{2m}\right).\]
+By using the result in equation~\eqref{eq:h_diag} we immediately find the second quantized form for this contribution to $\Ha_1$:
+\[\Sum_i\dfrac{p_i^2}{2m}\quad\Rightarrow\quad\Sum_{\B{k},\sigma}\vareps_{\B{k},\sigma}\Crea_{\B{k},\sigma}\Anni_{\B{k},\sigma},\qquad\vareps_{\B{k},\sigma}=\dfrac{\hbar^2\B{k}^2}{2m}.\]
+The next contribution to $\Ha_1$ is the external (crystal) potential
+$\sum_iU(\B{r}_i)$. We will use the general result in equation~\eqref{eq:h1_l1l2c1c2}:
+\[\Sum_iU(\B{r}_i)=\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|U|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2}=\Sum_{\substack{\B{k}_1,\B{k_2}\\\sigma_1,\sigma_2}}\braket{\B{k}_1,\sigma_1|U|\B{k}_2,\sigma_2}\Crea_{\B{k}_1,\sigma_1}\Anni_{\B{k}_2,\sigma_2}.\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{\lambda_1|U|\lambda_2}	&=& \Sum_x\varphi_{\lambda_1}^*(x)\;U(x)\;\varphi_{\lambda_2}(x)\\\\
+	&=& \Sum_s\Int d\B{r}\,\chi_{\sigma_1}^*(s)\,\dfrac{1}{\sqrt{V}}\,e^{-i\B{k}_1\cdot\B{r}}\,\underbrace{U(\B{r})}_{\mathclap{\text{spin-independent potential}}}\,\chi_{\sigma_2}(s)\,\dfrac{1}{\sqrt{V}}\,e^{i\B{k}_2\cdot\B{r}}\\\\
+	&=& \underbrace{\Sum_{s}\chi_{\sigma_1}^*(s)\chi_{\sigma_2}(s)}_{\delta_{\sigma_1,\sigma_2}}\,\underbrace{\dfrac{1}{V}\Int d\B{r}\,U(\B{r})\,e^{i(\B{k}_2-\B{k}_1)\cdot\B{r}}}_{\equiv\tilde{U}(\B{k}_1-\B{k}_2)},
+\end{array}\]
+where $\tilde{U}(\B{q})$ is the Fourier transform of the crystal potential:
+\[\Sum_iU(\B{r}_i)\qquad\Rightarrow\qquad\Sum_{\B{k},\B{q},\sigma}\tilde{U}(\B{q})\,\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma},\]
+\[\boxed{\tilde{U}(\B{q})=\dfrac{1}{V}\Int d\B{r}\,U(\B{r})\,e^{-i\B{q}\cdot\B{r}},}\]
+and $\B{k}_1-\B{k}_2$ is the transferred momentum $\B{q}$:
+\begin{feynman}{3}
+	\begin{fmfgraph*}(110,65)
+		\fmfleftn{i}{2}
+		\fmfrightn{o}{1}
+		\fmf{fermion}{i1,v1,i2}
+		\fmf{dashes,label=$\B{q}$}{v1,o1}
+		\fmfdotn{v}{1}
+		\fmfv{decoration.shape=cross,decoration.filled=empty,decoration.size=0.1w}{o1}
+		\fmflabel{$\B{k}_2$}{i1}
+		\fmflabel{$\B{k}_1$}{i2}
+	\end{fmfgraph*}
+\end{feynman}
+The plane waves are scattered by the crystal potential (plane waves are eigenfunctions in free space):
+\[\Ha_1=\Sum_i\left(\dfrac{p_i^2}{2m}+U(\B{r}_i)\right)\qquad\Rightarrow\qquad\Ha_1=\Sum_{\B{k},\sigma}\vareps_{\B{k}}\Crea_{\B{k},\sigma}\Anni_{\B{k},\sigma}+\Sum_{\B{k},\B{q},\sigma}\tilde{U}(\B{q})\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma},\]
+in plane wave basis, where the second term represents the scattering of the electrons in plane wave states by the crystal potential.
+\begin{feynman}{4}
+	\begin{fmfgraph*}(110,65)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{2}
+		\fmf{fermion}{o1,v1,o2}
+		\fmf{dashes,label=$U(\B{q})$}{i1,v1}
+		\fmfdotn{v}{1}
+		\fmfv{decoration.shape=cross,decoration.filled=empty,decoration.size=0.1w}{i1}
+		\fmflabel{$\B{k},\sigma$}{o1}
+		\fmflabel{$\B{k}+\B{q},\sigma$}{o2}
+	\end{fmfgraph*}
+\end{feynman}
+It remains to second quantize the Coulomb parts in the plane wave basis. (Note that, in second quantized form, the information about what basis is used, is encoded in the interpretation of the creation/annihilation operators.)
+
+
+
+\subsection{Electron-electron interaction}
+\[
+	\dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_4}\braket{\lambda_1,\lambda_2|\Ha_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}\colon
+  \]
+\begin{equation}\label{eq:e-e_int}\begin{array}{r@{}l}
+	
+	\braket{\lambda_1,\lambda_2|\Ha_2|\lambda_3,\lambda_4}
+	&=\Sum_{x_1,x_2}\varphi_{\lambda_1}^*(x_1)\varphi_{\lambda_2}^*(x_2)\underbrace{\Ha_2(x_1,x_2)}_{\mathclap{=\dfrac{e^2}{4\pi\vareps_0}\;\Rightarrow\;\substack{\text{doesn't work on the spin}\\\text{part of the basis function}}}}\varphi_{\lambda_3}(x_2)\varphi_{\lambda_4}(x_1)\\\\
+	&=\Sum_{s_1,s_2}\chi_{\sigma_1}^*(s_1)\chi_{\sigma_2}^*(s_2)\chi_{\sigma_3}(s_2)\chi_{\sigma_4}(s_1)\\\\
+	&\phantom{=}\;\times\dfrac{1}{V^2}\Int d\B{r}_1\,d\B{r}_2\,e^{-i\B{k}_1\cdot\B{r}_1-i\B{k}_2\cdot\B{r}_2}\left(\dfrac{e^2}{|\B{r}_1-\B{r}_2}\right)\dfrac{1}{4\pi\vareps_0}\,e^{i\B{k}_3\cdot\B{r}_2+i\B{k}_4\cdot\B{r}_1}\\\\
+	&=\delta_{\sigma_1,\sigma_4}\delta_{\sigma_2,\sigma_3}\cdot\text{Integral}.
+\end{array}\end{equation}
+The potential only depends on $\B{r}_1-\B{r}_2$. We therefore try to make such a combination in the plane waves as well, to bring up another Fourier transformation.
+\[\begin{array}{r@{\;}c@{\;}l}
+	\text{Integral}	&=& \dfrac{1}{V^2}\Int d\B{r}_1\,d\B{r}_2\,V(\B{r}_1-\B{r}_2)\,\underbrace{e^{-i(\B{k}_1-\B{k}_4)\cdot\B{r}_1}\,e^{-(\B{k}_2-\B{k}_3)\cdot\B{r}_2}}_{\mathclap{e^{-i(\B{k}_1-\B{k}_4)\cdot(\B{r}_1-\B{r}_2)}\,e^{-i\B{r}_2\cdot(\B{k}_1-\B{k}_4+\B{k}_2-\B{k}_3)}}}\\\\
+	\B{r}			&=& \B{r}_1-\B{r}_2\\\\
+	d\B{r}			&=& d\B{r}_1\qquad\text{(Integrate over }\B{r}_1\text{, but treat }\B{r}_2\text{ as constant.)}
+\end{array}\]
+The integral is factorized:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\text{Integral}	&=& \dfrac{1}{V^2}\Int d\B{r}\,V(\B{r})\,e^{-i(\B{k}_1-\B{k}_4)\cdot\B{r}}\times\underbrace{\Int d\B{r}_2\,e^{-i(\B{k}_1-\B{k}_4+\B{k}_2-\B{k}_3)\cdot\B{r}_2}}_{\mathclap{\boxed{\substack{\B{k}_1-\B{k}_4=\B{k}_3-\B{k}_2\\[1.5ex]\B{k}_1+\B{k}_2=\B{k}_3+\B{k}_4}}\quad\substack{V\delta_{\B{k}_1-\B{k}_4,\B{k}_3-\B{k}_2}\\[1.5ex]=V\delta_{\B{k}_1+\B{k}_2,\B{k}_3+\B{k}_4}}}}\\\\
+					&=& \underbrace{\delta_{\B{k}_1+\B{k}_2,\B{k}_3+\B{k}_4}}_{\substack{\text{momentum conservation}\\\text{in scattering caused by}\\\text{Coulomb interaction}\\\text{between electrons}}}\,\tilde{V}(\B{k}_1-\B{k}_4),
+\end{array}\]
+where $\tilde{V}$ is the Fourier transform of the Coulomb potential:
+\[\tilde{V}(\B{q})=\dfrac{1}{V}\Int d\B{r}\,e^{-i\B{q}\cdot\B{r}}\,V(\B{r}).\]
+Simplification:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\B{q}	&=& \B{k}_1-\B{k}_4\quad\text{(Momentum transfer in collision between electrons.)}\\\\
+	\B{k}	&=& \B{k}_1-\B{q}\\\\
+	\multicolumn{3}{l}{\text{Must eliminate }\B{k}_3\text{ as well:}}\\\\
+	\B{k}_1+\B{k}_2	&=& \B{k}_3+\B{k}_4=\B{k}_3+\B{k}_1-\B{q}\\\\
+					&\Rightarrow&\B{k}_2=\B{k}_3-\B{q},\qquad\B{k}_3=\B{k_2}+\B{q}.	
+\end{array}\]
+After the above, equation~\eqref{eq:e-e_int} contains
+\begin{itemize}
+	\item 4 sums over spin and momentum $\B{k}$,
+	\item 2 $\delta$ functions of spin $\quad\Rightarrow\quad$ 2 spin sums remain,
+	\item 1 $\delta$ function of $\B{k}$ $\quad\Rightarrow\quad$ 3 $\B{k}$ sums remain.
+\end{itemize}
+These sums can for example be over $\sigma_1$, $\sigma_2$ and $\B{k}_1$, $\B{k}_2$ and $\B{q}$:
+\[\begin{split}\dfrac{1}{2}\Sum_{\substack{\B{k}_1,\cdots,\B{k}_4\\\sigma_1,\cdots,\sigma_4}}\delta_{\sigma_1,\sigma_4}\delta_{\sigma_2,\sigma_3}\delta_{\B{k}_1+\B{k}_2,\B{k}_3+\B{k}_4}&\tilde{V}(\B{k}_1-\B{k}_4)\Crea_{\B{k}_1,\sigma_1}\Crea_{\B{k}_2,\sigma_2}\Anni_{\B{k}_3,\sigma_3}\Anni_{\B{k}_4,\sigma_4}\\
+	&=\dfrac{1}{2}\Sum_{\substack{\B{k}_1,\B{k}_2,\B{q}\\\sigma_1,\sigma_2}}\tilde{V}(\B{q})\Crea_{\B{k}_1,\sigma_1}\Crea_{\B{k}_2,\sigma_2}\Anni_{\B{k}_2+\B{q},\sigma_2}\Anni_{\B{k}_1-\B{q},\sigma_1}.
+\end{split}\]
+This 2-particle scattering is shown in the following diagram. Here the momentum is conserved, as well as the spin in each fermion line, as the Coulomb interaction is spin independent.
+\begin{feynman}{5}
+	\begin{fmfgraph*}(150,65)
+		\fmfleftn{i}{2}
+		\fmfrightn{o}{2}
+		\fmf{fermion}{i1,v1,i2}
+		\fmf{fermion}{o1,v2,o2}
+		\fmf{photon,label=$\tilde{V}(\B{q})$}{v1,v2}
+		\fmfdotn{v}{2}		
+		\fmflabel{$\B{k}_1-\B{q},\sigma_1$}{i1}
+		\fmflabel{$\B{k}_1,\sigma_1$}{i2}
+		\fmflabel{$\B{k}_2+\B{q},\sigma_2$}{o1}
+		\fmflabel{$\B{k}_2,\sigma_2$}{o2}
+		\marrow{a}{up}{top}{$q$}{v2,v1}
+	\end{fmfgraph*}
+\end{feynman}
+
+\begin{Indentskip}
+	\subsubsection*{The complete Hamiltonian}
+	In total the Hamiltonian looks as follows when using the plane wave basis:
+	\[\boxed{\begin{aligned}\Ha=&\Sum_{\B{k},\sigma}\vareps_{\B{k}}\Crea_{\B{k},\sigma}\Anni_{\B{k},\sigma}+\Sum_{\B{k},\B{q},\sigma}\tilde{U}(\B{q})\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma}\\&+\dfrac{1}{2}\Sum_{\substack{\B{k},\B{k}',\B{q}\\\sigma,\sigma'}}\tilde{V}(\B{q})\Crea_{\B{k},\sigma}\Crea_{\B{k}',\sigma'}\Anni_{\B{k}'+\B{q},\sigma'}\Anni_{\B{k}-\B{q},\sigma}.\end{aligned}}\]
+	\begin{enumerate}[i)]
+		\item For a static, regular crystal lattice, it is the Coulomb term that makes the problem difficult to solve. $\tilde{U}$ then represents a relatively trivial complication. The Coulomb interaction is difficult in a many-particle problem.
+		\item If the crystal lattice itself has dynamics that are coupled to the electron gas (which is realistic), the second term in $\Ha$ will describe, as we will later see, a coupling between the fermion gas and lattice vibrations (which is a phonon gas). They will also give the second term a many-particle effect!
+	\end{enumerate}
+\end{Indentskip}
+
+
+
+\subsection{The atom orbital basis (the lattice fermion model)}
+We think about a system where the fermions are mostly strongly bound to ions. They will sometimes tunnel to and from one lattice point to another. So this is almost the ``opposite'' situation of what we had before.
+\[\begin{array}{r@{\;}c@{\;}l}
+	\varphi_\lambda(x)	&=& \phi_{i,n}(\B{r})\chi_\sigma(s)\\\\
+	n					&:& \text{A quantum number that tells what atom orbital the electron }\\
+						&&	\text{at lattice point i ``lives'' at (e.g. 1s, 2s, 2p, 3d etc).}
+\end{array}\]
+We write the external potential as
+\[\begin{array}{r@{\;}c@{\;}l}
+	U			&=& \Sum_iU(\B{r}_i),\qquad U(\B{r}_i)=\Sum_j U_a(\B{r}_i,\B{R}_j),\\\\
+	\B{r}_i		&:& \text{Electron coordinate},\\\\
+	\B{R}_j		&:& \text{Ion coordinate}.
+\end{array}\]
+The crystal potential that the electron feels, is established by the entire lattice. We write $U$ the following way:
+\[U=\Sum_iU_a(\B{r}_i,\B{R}_i)+\Sum_i\Sum_{j\neq j}U_a(\B{r}_i,\B{R}_j).\]
+The point with splitting the potential like this is that, as the electrons are assumed to spend most of their time at a single ion lattice point, the basis functions are chosen as eigenfunctions of electrons around isolated atoms.
+\[\begin{array}{r@{\;}c@{\;}l}
+	\left[\dfrac{\B{p}_i^2}{2m}+U_a(\B{r}_i,\B{R}_i)\right]\varphi_{n,i,\sigma}(\B{r_i})	&=& \vareps_n\varphi_{n,i,\sigma}(\B{r}_i),\\\\
+	\varphi_\lambda(x)	&=& \phi_{n,i}(\B{r})\chi_\sigma(s),\\\\
+	x					&=& \B{r},s,\qquad\lambda=(n,i,\sigma).
+\end{array}\]
+If we now bring in the rest of the crystal potential, these basis functions will no longer be eigenfunctions; we get ``scattering''. This ``scattering'' term leads to tunneling from one ion to another. \Underline{The tunneling represents the electron's kinetic energy.} The kinetic energy in the lattice fermion model therefore has its origin in electrostatic interactions! The details are as follows.
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{Field operators}
+	\[\begin{array}{r@{\;}c@{\;}l}
+		\crea_j(\B{r},s,t)	&=& \Sum_{n,\sigma}\Crea_{n,\sigma,j}(t)\phi_{n,j}^*(\B{r})\chi_\sigma^*(s),\\\\
+		\commup{\Anni_{n,\sigma,j},\Crea_{n',\sigma',j'}}	&=& \delta_{n,n'}\delta_{\sigma,\sigma'}\delta_{j,j'},\\\\
+		\commup{\Anni_{n,\sigma,j},\Anni_{n',\sigma',j'}}	&=& \commup{\Crea_{n,\sigma,j},\Crea_{n',\sigma',j'}}=0.
+	\end{array}\]
+\end{Indentskip}
+\vspace*{-\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{Orthogonality}
+	\[\Sum_s\Int d\B{r}\,\varphi_{n,\sigma,j}^*(\B{r},s)\varphi_{n',\sigma',j'}(\B{r},s)=\delta_{n,n'}\delta_{\sigma,\sigma'}\delta_{j,j'}.\]
+\end{Indentskip}
+\vspace*{-\baselineskip}
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{Completeness}
+	\[\Sum_{n,\sigma,j}\varphi_{n,\sigma,j}^*(\B{r},s)\varphi_{n,\sigma,j}(\B{r}',s')=\delta_{s,s'}\delta(\B{r}-\B{r}').\]
+\end{Indentskip}
+
+Single-particle part of $\Ha$:
+\[\Ha_1=\Sum_i\left[\dfrac{\B{p}_i^2}{2m}+U_a(\B{r}_i,\B{R}_i)\right]+\Sum_i\Sum_{j\neq i}U_a(\B{r}_i,\B{R}_j).\]
+Our basis functions are assumed to be eigenfunctions of the first contribution in $\Ha_1$. We again use the result in equation~\eqref{eq:h_diag} to write the second quantized form down directly:
+\[\Sum_i\left[\dfrac{\B{p}_i^2}{2m}+U_a(\B{r}_i,\B{R}_i)\right]\quad\Rightarrow\quad\Sum_{n,\sigma,i}\vareps_{n,\sigma,i}\Crea_{n,\sigma,i}\Anni_{n,\sigma,i},\]
+where $\vareps_{n,\sigma,i}$ is the energy of the electron in the \Underline{isolated} atom orbital $n$ at lattice point $i$. If this energy is assumed to be independent of $i$, the system is assumed to be translationally invariant (with discrete translation symmetry). We can easily generalize this, by stating that $\varphi_{n,\sigma,i}(\B{r})$ satisfies the eigenvalue problem
+\[\left[\dfrac{\B{p}^2}{2m}+U_a(\B{r},\B{R}_i)\right]\varphi_{n,\sigma,i}(\B{r})=\vareps_{n,i}\varphi_{n,\sigma,i}(\B{r}).\]
+We then get:
+\[\Sum_i\left[\dfrac{\B{p}_i^2}{2m}+U_a(\B{r}_i,\B{R}_i)\right]\quad\Rightarrow\quad\Sum_{n,\sigma,i}\vareps_{n,i}\Crea_{n,\sigma,i}\Anni_{n,\sigma,i}.\]
+The system is now no longer translation invariant, if we let $\vareps_{n,i}$ vary from one lattice point to another. We can look at such variation as a simple model for \Underline{irregularity} in the system if for example the variation in $\vareps_{n,i}$ is random from lattice point to lattice point. $\vareps_{n,i}$ can also vary in a \Underline{regular} way between lattice points. For example, every other lattice point can have energy $E_0+\Delta$, with the rest having energy $E_0-\Delta$. This is then a fermion system with two types of atom orbitals in the lattice, such that we need two types of creation operators. Thus: a two-component fermion system.
+
+We now look at the term
+\[\Sum_i\Sum_{j\neq i}U_a(\B{r}_i,\B{R}_j)\quad\Rightarrow\quad\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2},\]
+by using the result in equation~\eqref{eq:h1_l1l2c1c2}:
+\[\begin{array}{l}
+	=\Sum_{\substack{n_1,\sigma_1,i_1\\n_2,\sigma_2,i_2}}\braket{\underbrace{n_1,\sigma_1,i_1|\Sum_{j\neq i}U_a|n_2,\sigma_2,i_2}_{\text{No summation over }i\text{ here!}}}\Crea_{n_1,\sigma_1,i_1}\Anni_{n_2,\sigma_2,i_2}\braket{n_1,\sigma_1,i_1|\underbrace{\Sum_{j\neq i}}_{\mathclap{\text{Note: }\sum_i\B{r}_i\;\rightarrow\;\int d\B{r}}}U_a(\B{r}_i,\B{R}_j)|n_2,\sigma_2,i_2}\\\\
+	=\Sum_s\Int d\B{r}\,\varphi_{N_1,\sigma_1,i_1}^*(\B{r},s)\left(\Sum_{j\neq i}U_a(\B{r},\B{R}_j)\right)\varphi_{n_2,\sigma_2,i_2}(\B{r},s)\\\\
+	=\underbrace{\Sum_s\chi_{\sigma_1}^*(s)\chi_{\sigma_2}(s)}_{\delta_{\sigma_1,\sigma_2}}\,\underbrace{\Int d\B{r}_i\phi_{n_1,i_1}(\B{r})\left(\Sum_{j\neq i}U_a(\B{r},\B{R}_j)\right)\phi_{n_2,i_2}(\B{r})}_{\equiv \,t_{i_1,i_2}^{n_1,n_2},\text{ a matrix element}},
+\end{array}\]
+which gives us
+\[\Sum_i\Sum_{j\neq i}U_a(\B{r}_i,\B{R}_j)=\Sum_{\substack{i_1,i_2\\n_1,n_2\\\sigma}}t_{i_1,i_2}^{n_1,n_2}\,\Crea_{n_1,\sigma,i_1}\Anni_{n_2,\sigma,i_2}.\]
+This is a ``hopping'' process \Underline{from} lattice point $i_2$ \Underline{to} lattice point $i_1$.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=5,>=stealth',node distance=0.3\textwidth]
+		\node[thick, cross, label={[label distance=3pt]270:$i_1,n_1$}] (n1) {};
+		\node[thick, cross, label={[label distance=3pt]270:$i_2,n_2$}] (n2) [right of=n1] {};
+		\path[->,thick] (n2) edge[bend right=20] node[above=0.3\baselineskip]{$\sigma$} (n1);
+	\end{tikzpicture}
+	\caption{From orbital $n_2$ at $i_2$ to orbital $n_1$ at $i_1$.}
+\end{figure}
+
+The spin doesn't ``flip'' during the hopping process. This is because the hopping (the tunneling) has its origin in
+\[\Sum_i\Sum_{j\neq i}U(\B{r}_i,\B{R}_j),\]
+which is assumed to be a simple \Underline{electrostatic}, \Underline{spin-independent} single-particle potential.
+\[t_{i_1,i_2}^{n_1,n_2}=\Int d\B{r}_i\phi_{n_1,i_1}^*(\B{r}_i)\left(\Sum_{j\neq i}U_a(\B{r}_i,\B{R}_j)\right)\phi_{n_2,i_2}(\B{r}_i).\]
