@@ -1,5 +1,6 @@
 % ------ Standard packages ------ %
-\RequirePackage{amsmath,amssymb,braket,caption,color,dsfont,enumerate,extarrows,float,graphicx,mathrsfs,mdframed,microtype,multicol,notoccite,pdfpages,placeins,siunitx,slashed,subcaption,tensor}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\RequirePackage{amsmath,amssymb,braket,caption,dsfont,enumerate,extarrows,float,graphicx,mathrsfs,mdframed,microtype,multicol,notoccite,pdfpages,placeins,siunitx,slashed,subcaption,tensor}
 \newcommand\bmmax{2}
 \RequirePackage{bm}
 \RequirePackage[hidelinks]{hyperref}
@@ -30,7 +31,7 @@ cross/.default={5pt}}
 \DeclareMathOperator{\cosech}{cosech}
 \DeclareMathOperator{\Fourier}{\ensuremath{\mathscr{F}}}
 \DeclareMathOperator{\sign}{\ensuremath{\text{sign}}}
-\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Tr}{Tr\!}
 
 % ------ Environments ------ %
 \definecolor{lightgray}{gray}{0.92}
@@ -65,6 +66,7 @@ cross/.default={5pt}}
 \newcommand*{\bulprod}{\ensuremath{\bullet}}
 \newcommand*{\bulcomma}{\ensuremath{\,\overset{\bullet}{,}\,}}
 \newcommand*{\cc}{\ensuremath{c}}
+\newcommand*{\charge}{\ensuremath{q}}
 \newcommand*{\chempot}{\ensuremath{\mu}}
 \newcommand*{\circcomma}{\,\overset{\circ}{,}\,}
 \newcommand*{\circprod}{\circ}
@@ -86,8 +88,11 @@ cross/.default={5pt}}
 \newcommand*{\df}[1]{\hat{\B{#1}}}
 \newcommand*{\dt}[1]{\B{#1}}
 \newcommand*{\de}[1]{\ensuremath{\check{\B{#1}}}}
+\newcommand*{\DiffusionConstant}{\ensuremath{D}}
 \newcommand*{\Dim}[1]{\ensuremath{\left[#1\right]}}
-\newcommand*{\dist}{\ensuremath{\df{\mathpzc{h\,}}\!}}
+\newcommand*{\distf}{\ensuremath{\df{\mathpzc{h\,}}\!}}
+\newcommand*{\disto}{\ensuremath{\mathpzc{h}}}
+\newcommand*{\DistributionEnergy}{\ensuremath{\df{E}_{\smash{\mathpzc{h\,}}}}}
 \newcommand*{\DebyeTemperature}{\ensuremath{\Theta}}
 \newcommand*{\DOS}{D}
 \newcommand*{\down}{\downarrow}
@@ -105,18 +110,16 @@ cross/.default={5pt}}
 \newcommand*{\Fenvf}{\ensuremath{\hat{\B{f}}}}
 \newcommand*{\Fenvt}{\ensuremath{\B{f}}}
 \newcommand*{\Flux}{\ensuremath{\Phi}}
+\newcommand*{\Fe}{\de{F}}
+\newcommand*{\Ff}{\df{F}}
 \newcommand*{\Fo}{\ensuremath{F}}
-\newcommand*{\Ft}{\ensuremath{\B{F}}}
-\newcommand*{\Ff}{\hat{\B{F}}}
-\newcommand*{\Fe}{\check{\B{F}}}
+\newcommand*{\Ft}{\dt{F}}
 \newcommand*{\Genergy}{\ensuremath{\epsilon}}
 \newcommand*{\genmom}{\B{p}}
-\newcommand*{\Genvf}{\ensuremath{\hat{\B{g}}}}
-\newcommand*{\Genvt}{\ensuremath{\B{g}}}
-\newcommand*{\Ge}{\check{\B{G}}}
-\newcommand*{\Gf}{\hat{\B{G}}}
+\newcommand*{\Ge}{\de{G}}
+\newcommand*{\Gf}{\df{G}}
 \newcommand*{\Go}{\ensuremath{G}}
-\newcommand*{\Gt}{\ensuremath{\B{G}}}
+\newcommand*{\Gt}{\dt{G}}
 \newcommand*{\Gibbs}{\ensuremath{G}}
 \newcommand*{\GibbsDensity}{\ensuremath{g}}
 \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath$ #1 $}}} % Nicolai insert 
@@ -140,12 +143,15 @@ cross/.default={5pt}}
 \newcommand*{\kinE}{\ensuremath{T}}
 \newcommand*{\lagrangian}{\mathcal{L}}
 \newcommand*{\LatentHeat}{\ensuremath{L}}
+\newcommand*{\Length}{\ell}
+\newcommand*{\Lifetime}{\ensuremath{\tau}}
 \newcommand*{\LocalFlux}{\ensuremath{h}}
 \newcommand*{\M}{\mathscr{M}}
 \newcommand*{\Magnetisation}{\ensuremath{M}}
 \newcommand*{\MagSus}{\ensuremath{\chi}}
 \newcommand*{\mass}{\ensuremath{m}}
 \newcommand*{\Max}{\displaystyle\max}
+\newcommand*{\MeanFreePath}{\ensuremath{\Length_e}}
 \newcommand*{\nablac}{\tilde{\nabla}}
 \newcommand*{\Number}{n^{\vphantom{\dagger}}}
 \newcommand*{\oInt}{\displaystyle\oint}
@@ -157,18 +163,25 @@ cross/.default={5pt}}
 \newcommand*{\paulit}{\bm{\tau}}
 \newcommand*{\PenDepth}{\ensuremath{\lambda}}
 \newcommand*{\Permeability}{\ensuremath{\mu_0}}
+\newcommand*{\PhaseCoherenceLength}{\ensuremath{\Length_\phi}}
 \newcommand*{\Pm}[1]{\begin{pmatrix}#1\end{pmatrix}}
 \newcommand*{\Pressure}{\ensuremath{P}}
 \newcommand*{\Prod}{\displaystyle\prod}
-\newcommand*{\qGe}{\check{\B{g}}}
-\newcommand*{\qGf}{\hat{\B{g}}}
+\newcommand*{\qFe}{\de{f}}
+\newcommand*{\qFf}{\df{f}}
+\newcommand*{\qFo}{\ensuremath{f}}
+\newcommand*{\qFt}{\dt{f}}
+\newcommand*{\qGe}{\de{g}}
+\newcommand*{\qGf}{\df{g}}
 \newcommand*{\qGo}{\ensuremath{g}}
-\newcommand*{\qGt}{\ensuremath{\B{g}}}
+\newcommand*{\qGt}{\dt{g}}
 \newcommand*{\Radius}{\ensuremath{a}}
 \newcommand*{\RedRad}{\ensuremath{\alpha}}
 \newcommand*{\RedTemp}{\ensuremath{t}}
 \newcommand*{\Resistance}{\ensuremath{R}}
 \newcommand*{\scalarp}{\ensuremath{\varphi}}
+\newcommand*{\SelfEnergy}{\ensuremath{\Sigma}}
+\newcommand*{\qSelfEnergy}{\ensuremath{\sigma}}
 \newcommand*{\Sommerfeld}{\ensuremath{\gamma}}
 \newcommand*{\SpectralI}{\ensuremath{\mathcal{S}}}
 \newcommand*{\spaulif}{\hat{\tau}}
@@ -187,7 +200,7 @@ cross/.default={5pt}}
 \newcommand*{\unitv}{\hat{e}}
 \newcommand*{\up}{\uparrow}
 \let\vaccent=\v % rename builtin command \v{} to \vaccent{} % Nicolai insert
-\renewcommand{\v}[1]{\ensuremath{\mathbf{#1}}} % for vectors & Nicolai insert
+\renewcommand{\v}[1]{\B{#1}} % for vectors & Nicolai insert
 \newcommand*{\vareps}{\varepsilon}
 \newcommand*{\vFermi}{\ensuremath{v_F}}
 \newcommand*{\Vector}[1]{\vec{#1}}
