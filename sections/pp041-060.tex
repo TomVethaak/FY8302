@@ -1,0 +1,302 @@
+So far we therefore have, in the translation-invariant case:
+\[\Ha_1=\Sum_{n,\sigma,i}\vareps_n\Crea_{n,\sigma,i}\Anni_{n,\sigma,i}+\underbrace{\Sum_{\substack{n_1,i_1\\n_2,i_2\\\sigma}}t_{i_1,i_2}^{n_1,n_2}\Crea_{n_1,\sigma_1,i_1}\Anni_{n_2,\sigma_2,i_2}}_{\mathclap{\text{Contains both intra and interatomic ``hopping'' processes.}}}.\]
+Before we second quantize the Coulomb term, we will make the following simplifications:
+\begin{enumerate}[i)]
+	\item Assume that
+	\[t_{i,j}^{n,n'}=t_{i,j}\delta_{n,n'}+\text{``small terms''}.\]
+	This means that the tunnelling between lattice points mainly occurs from an orbital at one lattice point to the \Underline{same} orbital at an other one.
+	\item Consider only a single orbital per lattice point as applicable. For $S=1/2$ fermions it can then at most be suitable to consider two fermions per lattice point (the other orbitals either are so low in energy that they are filled and inactive, or have such a high energy that they are never occupied).
+	\[t_{i_1,i_2}^{n_1,n_2}\rightarrow t_{i_1,i_2}.\]
+	\item For translation-invariant systems we can set $\vareps_n=0$, such that it only defines the baseline for the energy.
+\end{enumerate}
+We end up with the following model:
+\[\Ha_1=\Sum_{i_1,j_1,\sigma}t_{i,j}\Crea_{i,\sigma}\Anni_{j,\sigma}.\]
+Here the atom orbital number $n$ has been dropped because we only consider one kind of orbitals. In general: next and second-next neighbour hopping is enough.
+
+
+
+\subsection{Coulomb interaction}
+\[\begin{array}{r@{\;}c@{\;}l}
+	\dfrac{1}{2}\Sum_{i,j}V(\B{r}_i-\B{r}_j)	&\Rightarrow& \dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_4}\braket{\lambda_1,\lambda_2|V|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}\\\\
+	&=& \dfrac{1}{2}\Sum_{\substack{i_1,\cdots,i_4\\\sigma_1,\cdots,\sigma_4}}\braket{\sigma_1,i_i;\sigma_2,i_2|V|\sigma_3,i_3;\sigma_4,i_4}\Crea_{\sigma_1,i_1}\Crea_{\sigma_2,i_2}\Anni_{\sigma_3,i_3}\Anni_{\sigma_4,i_4}
+\end{array}\]
+\[\begin{array}{r@{\;}c@{\;}l}
+	\braket{\sigma_1,i_i;\sigma_2,i_2|V|\sigma_3,i_3;\sigma_4;i_4}&=&
+	\Sum_{x_1,x_2}\varphi_{\lambda_1}^*(x_1)\varphi_{\lambda_2}^*(x_2)\underbrace{V(x_1,x_2)}_{\mathclap{\text{spin independent}}}\varphi_{\lambda_3}(x_2)\varphi_{\lambda_4}(x_1)\\\\
+	&=& \Sum_{s_1,s_2}\chi_{\sigma_1}^*(s_1)\chi_{\sigma_4}(s_1)\chi_{\sigma_2}^*(s_2)\chi_{\sigma_3}(s_2)\\\\
+	&&\times\Int d\B{r}_1\,d\B{r}_2\,\phi_{i_1}^*(\B{r}_1)\phi_{i_2}(\B{r}_2)V(\B{r}_1-\B{r}_2)\phi_{i_3}(\B{r}_2)\phi_{i_4}(\B{r}_1)\\\\
+	&=& \delta_{\sigma_1,\sigma_4}\,\delta_{\sigma_2,\sigma_3}\,V_{i_1,i_2,i_3,i_4},
+\end{array}\]
+where
+\[V_{i_1,\cdots,i_4}=\Int d\B{r}_1\,d\B{r}_2\,\phi_{i_1}^*(\B{r}_1)\phi_{i_2}^*(\B{r}_2)V(\B{r}_1-\B{r}_2)\phi_{i_3}(\B{r}_2)\phi_{i_4}(\B{r}_1).\]
+The integrations over the two coordinates $\B{r}_1$ and $\B{r}_2$ go over all space. The wave function $\phi_i(\B{r})$ is centred around lattice point $i$. We expect the largest contribution to $V_{i_1,\cdots,i_4}$ when $i_1=i_2=i_3=i_4$:
+\[V_{i_1,i_1,i_1,i_1}=\Int d\B{r}_1\,d\B{r}_2\,|\phi(\B{r}_1)|^2V(\B{r}_1-\B{r}_2)|\phi(\B{r}_2)|^2=U.\]
+If we neglect \Underline{other} contributions to the Coulomb integral, we get
+\[\dfrac{1}{2}\Sum_{i,\sigma_1,\sigma_2}U\,\Crea_{i,\sigma_1}\Crea_{i,\sigma_2}\Anni_{i,\sigma_2}\Anni_{i,\sigma_1}.\]
+\Underline{But:} This means that $\sigma_2=-\sigma_1$ because we can have at most two fermions at each lattice point. Because of the Pauli principle these must have opposite spin.
+
+We therefore get:
+\[\dfrac{1}{2}\Sum_{i,\sigma}U\,\Crea_{i,\sigma}\Crea_{i,-\sigma}\Anni_{i,-\sigma}\Anni_{i,\sigma}=\dfrac{1}{2}\Sum_{i,\sigma}U\,\Crea_{i,\sigma}\Anni_{i,\sigma}\Crea_{i,-\sigma}\Anni_{i,\sigma}=\dfrac{1}{2}\Sum_{i,\sigma}U\,n_{i,\sigma}n_{i,-\sigma},\]
+where $n_{i,\sigma}=\Crea_{i,\sigma}\Anni_{i,\sigma}$ is the number operator. In this approximation we then get, in total:
+\[\Ha=\Sum_{i,j,\sigma}t_{i,j}\,\Crea_{i,\sigma}\Anni_{j,\sigma}+\dfrac{U}{2}\Sum_{i,\sigma}n_{i,\sigma}n_{i,-\sigma}.\]
+
+In this model we have neglected the Coulomb interaction between electrons except for the case where two electrons are located at the same lattice point. It thus is a model where the Coulomb potential is extremely simplified, it seems. A very non-trivial complication with the interaction term in this model, is the interesting ``spin structure''. This suggests an \Underline{antiferromagnetic} correlation between electrons.
+
+The model is rather famous in condensed matter physics, and is of great interest nowadays. It was introduced in the 60's and solved exactly in one dimension in 1968~\cite{lieb1968}.
+%\href{http://journals.aps.org/prl/pdf/10.1103/PhysRevLett.20.1445}{E.H. Lieb and F. Wu, Phys. Rev. Lett. \Underline{21}, 112 (1968)}.
+Originally it was introduced to describe \Underline{metallic} magnetism (magnetism in good conductors, such as ferromagnetism) in two and three dimensions. This is a completely unsolved problem; there doesn't really exist a theory for magnetism in iron! The model is called the \Underline{Hubbard model} and despite its apparent simplicity, its properties are generally \Underline{not} known in \Underline{2D} and \Underline{3D}. One exception is when $U\gg t_{ij}$, and we have only one electron per lattice point. We will look at this system later on. The model will be an antiferromagnetic insulator! But the electron band is half filled, and normal single-electron physics dictates that the model should be a good metal. This is an example of when band theory collapses.
+
+The model is now studied intensively in two dimensions. The reason is that it is thought that the model exhibits interesting and new physics that distinguishes itself qualitatively from the physics in ``normal'' good metals, where the picture with a free electron gas works well. Such single-particle physics has collapsed entirely in the Hubbard model in one dimensions, as is seen with the exact solution~\cite{anderson1987}. Something similar can have happened in 2D.
+
+It is easy to write down the generalisation. Look for example at
+\[V_{i_1,\cdots,i_4},\quad\text{with}\quad\left\{\begin{array}{l}i_1=i_4\\i_2=i_3\end{array}\right.,\quad\text{where }i_1\text{ and }i_2\text{ are \Underline{nearest} neighbours.}\]
+\[V_{i_1,i_2,i_2,i_1}=V,\quad i_1\text{ and }i_2\text{ n.n.}\]
+The potential becomes
+\[\dfrac{V}{2}\Sum_{\braket{i,j}}n_in_j,\qquad n_i=\Sum_\sigma n_{i,\sigma},\]
+where $\braket{i,j}$ is the summation over $i$, where $j$ are the nearest neighbours of $i$. We then get:
+\[\Ha=\Sum_{i,j}t_{i,j}\,\Crea_{i,\sigma}\Anni_{i,\sigma}+\dfrac{U}{2}\Sum_{i,\sigma}n_{i,\sigma}n_{i,-\sigma}+\dfrac{V}{2}\Sum_{\braket{i,j}}n_in_j.\]
+\Underline{Last term:} nearest neighbour electrostatic interaction.
+
+An other type of generalisation: Two different kinds of lattice points, but still only one important orbital and thus a maximum of two fermions at each.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=1,node distance=0.1\textwidth]
+		\node[thick, cross, label={[label distance=3pt]270:{\Large$\substack{E_p\\\Crea_{p,\sigma,i}}$}}] (n1) {};
+		\node[circle, draw] (n2) [right of=n1] {};
+		\node[thick, cross] (n3) [right of=n2] {};
+		\node[circle, draw, label={[label distance=3pt]270:{\Large$\substack{E_d\\\Crea_{d,\sigma,i}}$}}] (n4) [right of=n3] {};
+		\node[thick, cross] (n5) [right of=n4] {};
+		\node[circle, draw] (n6) [right of=n5] {};
+		\node[thick, cross] (n7) [right of=n6] {};
+	\end{tikzpicture}
+	\caption{Lattice with two types of lattice points, where $E_p\neq E_d$ and $p$ and $d$ are the orbital indices~\cite{}.}
+\end{figure}
+\[\begin{split}\Ha=\Sum_{i,\sigma}E_p\Crea_{p,\sigma,i}\Anni_{p,\sigma,i}&+\Sum_{i,\sigma}E_d\Crea_{d,\sigma,i}\Anni_{d,\sigma,i}\\&+\underbrace{U_p\Sum_{i,\sigma}\Number_{p,i,\sigma}\Number_{p,i,-\sigma}}_{\text{Hubbard type}}+\underbrace{U_d\Sum_{i,\sigma}\Number_{d,i,\sigma}\Number_{d,i,-\sigma}}_{\text{Hubbard type}}+\text{hopping terms}.\end{split}\]
+The hopping terms can be written in the form
+\[t\Sum_{i,\sigma}\left(\Crea_{d,i,\sigma}\Anni_{p,i,\sigma}+\Crea_{d,i-1,\sigma}\Anni_{p,i,\sigma}+\text{h.c.}\right),\]
+where $i$ is the unit cell index.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=1,node distance=0.1\textwidth,x=2cm,y=2cm]
+		\node[thick, cross] (n1) {};
+		\node[circle, draw] (n2) [right of=n1] {};
+		\node[thick, cross] (n3) [right of=n2] {};
+		\node[circle, draw] (n4) [right of=n3] {};
+		\node[thick, cross, label={[label distance=3pt]270:{\Large$\substack{\down\\[0.9\baselineskip]E_p}$}}] (n5) [right of=n4] {};
+		\node[circle, draw] (n6) [right of=n5] {};
+		\node[thick, cross] (n7) [right of=n6] {};
+		\node[circle, draw, label={[label distance=3pt]270:{\Large$\substack{\down\\[0.9\baselineskip]E_d}$}}] (n8) [right of=n7] {};
+				
+		\draw [decorate,decoration={brace,mirror,amplitude=0.7\mytextsize,raise=0.7\mytextsize}] (n1.west)--node[below=1.4\mytextsize]{i-1}(n2.east);
+		\draw [decorate,decoration={brace,mirror,amplitude=0.7\mytextsize,raise=0.7\mytextsize}] (n3.west)--node[below=1.4\mytextsize]{i}(n4.east);
+	\end{tikzpicture}
+\end{figure}
+Such models are also studied intensively nowadays, and it is now known that they have new and interesting \Underline{phase transitions}, even in one dimension! They contain much ``more physics'' than the Hubbard model~\cite{sudbo1993,sandvik1996}.
+
+
+
+\clearpage
+\section{Second quantization for bosons}
+We define many-particle states and creation/annihilation operators analogous to what we have done in the fermion case, with corresponding commutation relations. These relations will reflect fundamental \Underline{boson properties}.
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{Fundamental boson properties}
+	\begin{enumerate}[i)]
+		\item Symmetric under exchange of two single-particle states.
+		\item \Underline{No} limit on the occupation number in single-particle states.
+	\end{enumerate}
+\end{Indentskip}
+\[\ket{N}=\Prod_\lambda\ket{\Number_\lambda},\qquad\Creab_\lambda\ket{0}=\ket{\lambda},\qquad\Annib\ket{0}=0.\]
+The operator $\Creab_\lambda$ requires a boson with the set of quantum numbers $\lambda$. Unlike the fermion case, we can now continue to operate with $\Creab_\lambda$ on a single-particle state, without annihilating states, as the Pauli exclusion principle doesn't apply to bosons.
+\[(\Creab_\lambda)^n\ket{0}\propto\ket{n_\lambda}.\]
+Normalizing the above:
+\[c_n\ket{n_2+1}=\Creab_\lambda\ket{n},\]
+introducing $c_n$ as a normalization constant. The number operator is given by
+\[\Creab_\lambda\Annib_\lambda\ket{n_\lambda}=n_\lambda\ket{n_\lambda},\]
+and the following commutation relations apply:
+\[\commum{\Annib_\lambda,\Creab_{\lambda'}}=\delta_{\lambda,\lambda'},\qquad\commum{\Annib_\lambda,\Annib_{\lambda'}}=\commum{\Creab_\lambda,\Creab_{\lambda'}}=0,\qquad\commum{A,B}=AB-BA.\]
+Calculating the normalization constant:
+\[|c_n|^2\underbrace{\braket{n_\lambda+1|n_\lambda+1}}_{=1}=\braket{n_\lambda|\Annib_\lambda\Creab_\lambda|n_\lambda}=\braket{n_\lambda|1+\Creab_\lambda\Annib_\lambda|n_\lambda}=1+n_\lambda,\]
+which means that
+\[c_n=\sqrt{1+n_\lambda}\qquad\Rightarrow\qquad\left\{\begin{array}{r@{\;}l}
+	\ket{n_\lambda+1}	&=\dfrac{\Creab_\lambda}{\sqrt{1+n_\lambda}}\,\ket{n_\lambda},\\\\
+	\ket{n_\lambda}	&=\dfrac{(\Creab_\lambda)^{n_\lambda}}{\sqrt{n_\lambda!}}\,\ket{0}.
+\end{array}\right.,\]
+and
+\[\ket{N}=\Prod_\lambda\dfrac{(\Creab_\lambda)^{n_\lambda}}{\sqrt{n_\lambda!}}\,\ket{0}.\]
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{Field operators}
+	\[\begin{array}{r@{\;}c@{\;}l}
+		\creab(x,t)	&=& \Sum_\lambda\Creab_\lambda(t)\varphi_\lambda^*(x),\\\\
+		\commum{\annib(x,t),\creab(x',t)}	&=& \delta_{x,x'},\\\\
+		\commum{\annib(x,t),\annib(x',t)}	&=& \commum{\creab(x,t),\creab(x',t)}=0.
+	\end{array}\]
+\end{Indentskip}
+We will now second quantize a Hamiltonian for an interacting, \Underline{material}, boson system exactly as we did for fermions.
+\[\Ha=\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Creab_{\lambda_1}\Annib_{\lambda_2}+\dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_4}\braket{\lambda_1,\lambda_2|V|\lambda_3,\lambda_4}\Creab_{\lambda_1}\Creab_{\lambda_2}\Annib_{\lambda_3}\Annib_{\lambda_4}.\]
+
+\begin{Indentskip}
+	\vspace*{-0.5\baselineskip}
+	\subsubsection*{Free phonon gas:}
+	\[\Ha=\Sum_\lambda\omega_\lambda\Creab_\lambda\Annib_\lambda.\]
+	\Underline{Note:} For \Underline{phonons} that interact this will be a little bit different, because phonons aren't material particles. We will look at this later.
+\end{Indentskip}
+
+
+\clearpage
+\section{Lattice fermions and spin models}
+We return to the fermion system and look at special cases where the physics is simpler. Under such simplifying circumstances we will be able to calculate low-temperature properties of the system explicitly. In general:
+\[\Ha=\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2}+\dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_4}\braket{\lambda_1,\lambda_2|\Ha_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}.\]
+
+\begin{Indentskip}
+	\subsubsection*{Lattice fermions}
+	\begin{enumerate}[i)]
+		\item One type of fermions.
+		\item Translation invariance.
+		\item One orbital and at most two fermions per lattice point.
+	\end{enumerate}
+	\[\Ha=\Sum_{i,j,\sigma}t_{i,j}\Crea_{i,\sigma}\Anni_{j,\sigma}+\Sum_{\substack{i_1,\cdots,i_4\\\sigma_1,\sigma_2}}\braket{i_1,i_2|V|i_3,i_4}\Crea_{i_1,\sigma_1}\Crea_{i_2,\sigma_2}\Anni_{i_3,\sigma_3}\Anni_{i_4,\sigma_4}.\]
+\end{Indentskip}
+First look at the Hubbard model, with $i_1=i_2=i_3=i_4$.
+\[\Ha=\Sum_{i,j,\sigma}t_{i,j}\Crea_{i,\sigma}\Anni_{j,\sigma}+\dfrac{U}{2}\Sum_{i,\sigma}\Number_{i,\sigma}\Number_{i,-\sigma}.\]
+We will study this model now for a special, but important case:
+\begin{enumerate}[i)]
+	\item $U\gg t_{i,j}$.
+	\item One fermion per lattice point. Since each lattice point has a maximum of two fermions, the system is half-filled.
+	\item Equally many ``spin up'' as ``spin down''.
+	\item $t_{i,j}=\left\{\begin{array}{l@{\quad}l}
+		t	& i,j=\text{nearest neighbours}\\
+		0	& \text{otherwise}
+	\end{array}\right.$
+\end{enumerate}
+Since $U/t\gg1$ we will look at the hopping term as a perturbation. What is the unperturbed ground state? The answer is obvious: one spin (electron) per lattice point. It doesn't matter how ``up'' and ``down'' are distributed, since different lattice points don't communicate \underline{at all} when $t=0$.
+\[\ket{\psi_0}=\underbrace{\up\;\down\;\up\;\up\;\down\;\down\;\down\;\down\;\up\;\cdots}_{\mathclap{\text{random distribution of spins}}}.\]
+$\ket{\psi_0}$ is massively $2^N$-fold spin degenerate, where $N$ is the number of lattice points.
+\[\dfrac{U}{2}\Sum_{i,\sigma}\Number_{i,\sigma}\Number_{i,-\sigma}\ket{\psi_0}=E_0\ket{\psi_0},\]
+where $E_0=0$ as no lattice point is doubly occupied in $\ket{\psi_0}$. The unperturbed Hamiltonian is given by
+\[\Ha_0=\dfrac{U}{2}\Sum_{i,\sigma}\Number_{i,\sigma}\Number_{i,-\sigma}.\]
+We will now introduce the hopping term as perturbation. \underline{Note!} $\ket{\psi_0}$ is degenerate, such that any combination of the $2^N$ degenerate eigenstates of $\Ha_0$ are eigenstates. \underline{But:} From degenerate perturbation theory we know that not \underline{all} linear combinations evolve similarly (see for example P.C. Hemmer's ``Kvantemekanikk''~\cite{hemmer2000}).
+
+Assume that we have found such linear combinations, that we from now on will call $\ket{\psi_0}$. The perturbation is given by
+\[\Ha_{\text{hop}}=\Sum_{\braket{i,j}}t\Crea_{i,\sigma}\Anni_{j,\sigma}.\]
+
+\begin{Indentskip}
+	\subsubsection*{First order correction to $E_0$}
+	\[\begin{array}{r@{\;}c@{\;}l@{\;}}
+		\Delta E^{(1)}									&=	& \braket{\psi_0|\Ha_\text{hop}|\psi_0}=\Sum_{\braket{i,j},\sigma}t\braket{\psi_0|\Crea_{i,\sigma}\Anni_{j,\sigma}|\psi_0},\\\\
+		\Crea_{i,\sigma}\Anni_{j,\sigma}\ket{\psi_0}	&:	& \ket{\up\;\up\;\underbrace{\down}_{i}\;\cdots\;\underbrace{\up}_{j}\;\cdots\;\down}\quad\Rightarrow\quad\ket{\up\;\up\;\underbrace{\down\up}_{i}\;\cdots\;\underbrace{ }_{j}\;\cdots\;\down}.
+	\end{array}\]
+	The final state is orthogonal to $\ket{\psi_0}$:
+	\[\braket{\psi_0|\Crea_{i,\sigma}\Anni_{j,\sigma}|\psi_0}=0.\]
+\end{Indentskip}
+
+\begin{Indentskip}
+	\subsubsection*{Second order correction to $E_0$}
+	\[\Delta E^{(2)}=\Sum_n\dfrac{\braket{\psi_0|\Ha_\text{hop}|n}\braket{n|\Ha_\text{hop}|\psi_0}}{E_0-E_n},\]
+	where
+	\[\begin{array}{r@{\;}c@{\;}l}
+		\ket{n}	&:	& \text{unperturbed excited states,}\\\\
+		E_n		&:	& \text{excited energies of }\Ha_0.
+	\end{array}\]
+	Those $\ket{n}$ that contribute to the sum, must then of course be chosen such that
+	\[\Sum_{i,j,\sigma}t\braket{\psi_0|\Crea_{i,\sigma}\Anni_{j,\sigma}|n}\neq0,\]
+	where $\ket{n}$ is a linear combination of states where the lattice point $j$ is doubly occupied, and $i$ is unoccupied. In that case we have $E_n=E_0+U$:
+	\[\begin{array}{r@{\;}c@{\;}l}
+		\Delta E^{(2)}	& =	& -\dfrac{1}{U}\Sum_n\braket{\psi_0|\Ha_\text{hop}|n}\braket{n|\Ha_\text{hop}|\psi_0}=-\dfrac{1}{U}\braket{\psi_0|\Ha_\text{hop}^2|\psi_0}\\\\
+						& =	& \braket{\psi_0|\Ha_\text{eff}|\psi_0},
+	\end{array}\]
+	which can be written as a first-order contribution from an effective Hamiltonian $\Ha_\text{eff}=-\Ha_\text{hop}^2/U$, which unlike $\Ha_\text{hop}$ (which is a single-particle operator) is a two-particle operator. The effective Hamiltonian is given by
+	\[\begin{split}\Ha_\text{eff}&=-\dfrac{1}{U}\Sum_{i,j,\sigma}t_{i,j}\Crea_{i,\sigma}\Anni_{j,\sigma}\Sum_{k,l,\sigma}t_{k,l}\Crea_{k,\sigma'}\Anni_{l,\sigma'}\\
+	&=-\dfrac{1}{U}\Sum_{\substack{i,j,k,l\\\sigma,\sigma'}}t_{i,j}t_{k,l}\Crea_{i,\sigma}\Anni_{j,\sigma}\Crea_{k,\sigma'}\Anni_{l,\sigma'}.\end{split}\]
+\end{Indentskip}
+If $\Ha_\text{eff}$ is to give a correction to the ground state energy, we must have
+\[\braket{\psi_0|\underbrace{\Crea_{i,\sigma}\Anni_{j,\sigma}\Crea_{k,\sigma'}\Anni_{l,\sigma'}}_{\operator}|\psi_0}\neq0.\]
+\vspace*{-\baselineskip}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=5,>=stealth',node distance=0.15\textwidth]
+		\node[label={[label distance=3pt]90:$j$}] (n1) {};
+		\node[label={[label distance=3pt]90:$i$}] (n2) [right of=n1] {};
+		\node[label={[label distance=3pt]90:$k$}] (n3) [right of=n2] {};
+		\node[label={[label distance=3pt]90:$l$}] (n4) [right of=n3] {};
+		\draw (n1.west)--(n4.east);
+		\path[->,thick] (n1.south) edge[bend right=20] node[below=0.3\baselineskip]{$\sigma$} (n2.south);
+		\path[->,thick] (n4.north) edge[bend right=20] node[above=0.3\baselineskip]{$\sigma'$} (n3.north);
+	\end{tikzpicture}
+\end{figure}
+
+If we start with $\ket{\psi_0}$, the general result of $\operator$ will be that we end up with \underline{two} doubly occupied, and two unoccupied states. This is orthogonal to $\ket{\psi_0}$, such that
+\[\braket{\psi_0|\operator|\psi_0}=0,\]
+with the exception of
+\[\boxed{i=l;\;j=k.}\]
+This is an exchange process, without any real charge transport. In that case we will avoid any doubly-occupied final states, such that
+\[\braket{\psi_0|\operator|\psi_0}\neq0.\]
+In that case we get:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Ha_\text{eff}	& =	& -\dfrac{1}{U}\Sum_{i,j,\sigma,\sigma'}t^2\Crea_{i,\sigma}\tikzmark{endc}\Anni_{j,\sigma}\tikzmark{startc}\tikzmark{endd}\Crea_{j,\sigma'}\tikzmark{startd}\Anni_{i,\sigma'}=-\dfrac{t^2}{U}\Sum_{i,j,\sigma,\sigma'}\Crea_{i,\sigma}\Anni_{i,\sigma'}\underbrace{\Anni_{j,\sigma}\Crea_{j,\sigma'}}_{\mathclap{=-\Crea_{j,\sigma'}\Anni_{j,\sigma}+\delta_{\sigma,\sigma'}}}\\\\
+	& =	& \dfrac{t^2}{U}\Sum_{i,j,\sigma,\sigma'}\Crea_{i,\sigma}\Anni_{i,\sigma'}\Crea_{j,\sigma'}\Anni_{j,\sigma}-\dfrac{t^2}{U}\Sum_{i,j,\sigma}\underbrace{\Crea_{i,\sigma}\Anni_{i,\sigma}}_{\mathclap{\substack{\text{Number operator. Not}\\\text{kinetic energy because}\\\text{\underline{same} lattice index}\\\text{in }\Crea\text{ and }\Anni\text{!}}}}.
+\end{array}\]
+%\ArrowLeft{0}{-0.7}{0}{-0.5}{c}
+%\ArrowLeft{0.5}{-0.7}{0.1}{-0.5}{d}
+This term has the same form as
+\[\Sum_{i,\sigma}\vareps\Crea_{i,\sigma}\Anni_{i,\sigma},\]
+which we have already disregarded, as $\vareps\;\rightarrow\;\vareps'=\vareps-t^2/U$, this term can be set to zero.
+%
+% Edit start 21.09.15
+%
+Thus the most important term is
+\[\Ha_\text{eff} = \frac{t^2}{u}\sum_{\langle i,j\rangle\,\sigma\sigma'}\Crea_{i,\sigma}\Anni_{i,\sigma'}\Crea_{j,\sigma'}\Anni_{j,\sigma}.\]
+\underline{Note!} This term is of the same form as a two particle operator as advertised, but is not of the form
+$\Number_i\Number_j$. This follows from the expression $\Crea_{i,\sigma}\Anni_{i,\sigma'}$ where $\sigma$ is not necessarily equal to $\sigma'$ and thus leads to a peculiar spin
+flipping process. What is the physical interpretation of this two-particle operator? To explore this question we consider the effect of the operators in $\Ha_\text{eff}$ on spin states.
+\\First try:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\multicolumn{3}{r}{\Sum_{\sigma\sigma'}\Crea_{i,\sigma}\Anni_{i,\sigma'}\Crea_{j,\sigma'}\Anni_{j,\sigma}} \\
+= & & \up\quad\up\quad\up\quad\up\\
+& +\quad & \down\quad\up\quad\up\quad\down\\
+& +\quad & \up\quad\down\quad\down\quad\up\\
+& +\quad & \down\quad\down\quad\down\quad\down
+\end{array}\]
+Then we choose a basis and representation
+\[\ket{\up} = \Pm{1\\0}\qquad\ket{\down} = \Pm{0\\1},\]
+which is an \emph{irreducible basis}, and thus the representations for $\Crea_\up\Anni_\up$ etc. becomes irreducible.
+\[\begin{array}{lcl}
+	\Crea_\up\Anni_\up\Pm{0\\1} = 0 &;& \Crea_\down\Anni_\down\Pm{0\\1} = \Pm{0\\1}\\
+	\Crea_\up\Anni_\up\Pm{1\\0} = \Pm{1\\0} &;& \Crea_{\down\down}\Anni_\down\Pm{1\\0} = 0
+ \end{array}\]
+ \[\left.
+   \begin{aligned}
+	\Pm{1 & 0\\0 & 0}\Pm{1\\0} &= \Pm{1\\0}\\
+	\Pm{1 & 0\\ 0 & 0}\Pm{0\\1} &= \bm{0}
+  \end{aligned}
+\right\} \quad\Rightarrow\quad \Crea_\up\Anni_\up = \Pm{1 & 0\\ 0 & 0}
+\]
+\[\left.
+  \begin{aligned}
+	\Pm{0 & 0\\ 0 & 1}\Pm{1\\0} &= \bm{0}\\
+	\Pm{0 & 0\\ 0 & 1}\Pm{0\\1} &= \Pm{0\\1}
+  \end{aligned}
+\right\} \quad\Rightarrow\quad \Crea_\down\Anni_\down = \Pm{0 & 0\\ 0 & 1}
+\]
+\[\left.
+  \begin{aligned}
+	\Crea_\up\Anni_\down\Pm{1\\0} &= \B{0}\\
+	\Crea_\up\Anni_\down\Pm{0\\1} &= \Pm{1\\0}
+  \end{aligned}
+\right\} \quad\Rightarrow\quad \Crea_\up\Anni_\down = \Pm{0 & 1\\ 0 & 0}
+\]
+\[
+  \left.
+  \begin{aligned}
+	\Crea_\down\Anni_\up\Pm{1\\0} &= \Pm{0\\1}\\
+	\Crea_\down\Anni_\up\Pm{0\\1} &= \bm{0}
+  \end{aligned}
+\right\}\quad\Rightarrow\quad \Crea_\down\Anni_\up = \Pm{0 & 0\\1 & 0}.
+\]
+This yields a $2\times2$-matrix representation for all the factors in $\Ha_\text{eff}$. \underline{Note!}: Since $|\v{S}| = 1/2$ can be represented by the Pauli-matrices, this
+indicates that we might try to express $\Ha_\text{eff}$ with $|\v{S}|=1/2$ spin-operators.
