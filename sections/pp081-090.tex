@@ -188,3 +188,69 @@ Substitute back into $\Ha$, and neglect the terms of higher order than quadratic
 \[\Ha=\underbrace{2JS^2\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}1}_{E_0}-2JS\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}\left(\;\underbrace{\Creab_i\Annib_i+\Creabb_j\Annibb_j}_{\substack{\text{independent of}\\\text{lattices A and B.}}}+\underbrace{\Creab_i\Creabb_j+\Annib_i\Annibb_j}_{\substack{\text{coupling between}\\\text{lattices A and B.}}}\;\right).\]
 In the $\Creabb_j\Annibb_j$ term we use that
 \[\Sum_{\substack{i\in\text{A}\\[1ex]j\in\text{B}\\[1ex]\text{n.n.}}}\;=\;\Sum_{\substack{i\in\text{B}\\[1ex]j\in\text{A}\\[1ex]\text{n.n.}}}.\]
+We call the numbers of lattice points in A and B $N_\text{A}$ and $N_\text{B}$, with $N_\text{tot}=N_\text{A}+N_\text{B}$. As we did for ferromagnets, we introduce
+\[\Annib_q=\dfrac{1}{\sqrt{N_\text{A}}}\Sum_{i\in\text{A}}\Annib_i\,e^{i\v{q}\cdot\v{r}_i},\qquad\Annibb_q=\dfrac{1}{\sqrt{N_\text{B}}}\Sum_{j\in\text{B}}\Annibb_j\,e^{-i\v{q}\cdot\v{r}_j}\]
+and
+\[\Annib_i=\dfrac{1}{\sqrt{N_\text{A}}}\Sum_{\v{q}}\Annib_{\v{q}}\,e^{-i\v{q}\cdot\v{r}_i},\qquad\Annibb_j=\dfrac{1}{\sqrt{N_\text{B}}}\Sum_{\v{q}}\Annibb_{\v{q}}\,e^{-i\v{q}\cdot\v{r}_j}.\]
+\Underline{Note!} $\v{q}$ now iterates over the Brillouin zones of A and B (see page~\pageref{fig:neel_state_sublattices_brillouin}). As before, we now get
+\[\Sum_i\Creab_i\Annib_i=\Sum_{\v{q}}\Creab_{\v{q}}\Annib_{\v{q}},\qquad\Sum_j\Creabb_j\Annibb_j=\Sum_{\v{q}}\Creabb_{\v{q}}\Annibb_{\v{q}},\]
+as well as
+\[\left.\begin{array}{r@{\;}c@{\;}l}
+	\Sum_{\substack{i\in\text{A}\\j\in\text{B}\\\text{n.n. to }i}}\Creab_i\Creabb_j	& =	& \Sum_{\v{q}}\gamma_{\v{q}}\Creab_{\v{q}}\Creabb_{\v{q}}\\\\
+	\Sum_{\substack{i\in\text{A}\\j\in\text{B}\\\text{n.n. to }i}}\Annib_i\Annibb_j	& =	& \Sum_{\v{q}}\gamma_{\v{q}}\Annib_{\v{q}}\Annibb_{\v{q}}
+\end{array}\right\}\quad\gamma_{\v{q}}=\Sum_{\v{\delta}}e^{+i\v{q}\cdot\v{\delta}}.\]
+Introducing $z$ as the number of nearest neighbours each lattice point has,
+\begin{equation}\label{eq:sublattice_nearest_neighbour}\Ha=E_0-2JSz\Sum_{\v{q}}\left(\Creab_{\v{q}}\Annib_{\v{q}}+\Creab_{\v{q}}\Annib_{\v{q}}\right)-2JS\Sum_{\v{q}}\gamma_{\v{q}}\left(\Creab_{\v{q}}\Creabb_{\v{q}}+\Annib_{\v{q}}\Annibb_{\v{q}}\right).\end{equation}
+The two first terms have the form of a free boson gas, while the last two have a new type of form. As in assignment 2, exercise 1, we will solve this problem by introducing new boson operators:
+\begin{equation}\label{eq:sublattice_operators}\begin{array}{r@{\;}c@{\;}l@{,\qquad}r@{\;}c@{\;}l}
+	\Aanni_{\v{q}}	& =	& u_{\v{q}}\Annib_{\v{q}}+v_{\v{q}}\Creabb_{\v{q}}	& \Annib_{\v{q}}	& =	& u_{\v{q}}\Aanni_{\v{q}}-v_{\v{q}}\Bcrea_{\v{q}},\\\\
+	\Banni_{\v{q}}	& =	& v_{\v{q}}\Annib_{\v{q}}+u_{\v{q}}\Creabb_{\v{q}}	& \Annibb_{\v{q}}	& =	& u_{\v{q}}\Banni_{\v{q}}-v_{\v{q}}\Acrea_{\v{q}}.
+\end{array}\end{equation}
+We demand the $\Aanni_{\v{q}}$ and $\Banni_{\v{q}}$ operators to satisfy the boson commutation rules:
+\[\commum{\Aanni_{\v{q}},\Acrea_{\v{q}'}}=\delta_{\v{q},\v{q}'}\qquad\text{etc.,}\]
+where we take as reference point that
+\[\commum{\Annib_{\v{q}},\Creab_{\v{q}'}}=\delta_{\v{q},\v{q}'}\qquad\text{etc.}\]
+We then get
+\[\commum{\Aanni_{\v{q}},\Acrea_{\v{q}'}}=\left(u_{\v{q}}u_{\v{q}'}-v_{\v{q}}v_{\v{q}'}\right)\delta_{\v{q},\v{q}'}=\left(u_{\v{q}}^2-v_{\v{q}}^2\right)\delta_{\v{q},\v{q}'}=\delta_{\v{q},\v{q}'}.\]
+This means that
+\[\boxed{u_{\v{q}}^2-v_{\v{q}}^2=1}\,,\qquad\text{compare:}\qquad\cosh^2\theta-\sinh^2\theta=1.\]
+We now write
+\[u_{\v{q}}=\cosh\theta,\qquad v_{\v{q}}=\sinh\theta.\]
+Substituting this back into equation~\eqref{eq:sublattice_nearest_neighbour} and choosing $\theta$ such that
+\[\tanh(2\theta)=\dfrac{\gamma_{\v{q}}}{z},\]
+the Hamiltonian becomes
+\[\Ha=\text{ constant }+\Sum_{\v{q}}\omega_{\v{q}}\left(\Acrea_{\v{q}}\Aanni_{\v{q}}+\Bcrea_{\v{q}}\Banni_{\v{q}}\right).\]
+(See assignment 3, exercise 2.)
+\[\omega_{\v{q}}=4|J|S\left(d^2-\left(\dfrac{\gamma_{\v{q}}}{2}\right)^2\right)^{1/2}=4|J|Sd\left(1-\tilde{\gamma}_{\v{q}}^2\right)^{1/2}.\]
+Here $d$ is the number of dimensions of the system. This now has the form of two free boson gases (A and B-type magnons). On a 2D quadratic lattice we have
+\[\begin{array}{r@{\;}c@{\;}l}
+	\dfrac{\gamma_{\v{q}}}{2}	& =	& \cos(q_{x})+\cos(q_y),\qquad\tilde{\gamma}_{\v{q}}=\dfrac{1}{2}\Sum_{\alpha}\cos(q_\alpha),\\\\
+	\omega_{\v{q}}=4|J|S\left(4-\left(\cos(q_x)+\cos(q_y)\right)^2\right)^{1/2},
+\end{array}\]
+which in the case of $q\ll1$ means that
+\[\begin{array}{r@{\;}c@{\;}l}
+	\omega_{\v{q}}	& =	& 4|J|S\left(4-\left(2-\dfrac{\v{q}^2}{2}\right)^2+\cdots\right)^{1/2}=4|J|S\left(4-4\left(1-\dfrac{\v{q}^2}{2}\right)+\cdots\right)^{1/2}\\\\
+					& =	& 4\sqrt{2}|J|S|\v{q}|,
+\end{array}\]
+which is linear in $\v{q}$! \textcolor{red!80!black}{\emph{``Feso''/``Fero''/``Fiso''/``Firo''}} goes as $\v{q}^2$.
+
+
+
+\subsection{Magnetization on the sublattice A}
+The total magnetization is given by
+\[\Ma=\Sum_{i\in\text{A}}\Braket{S_i^{z,\text{A}}}=N_\text{A}S-\Sum_{i\in\text{A}}\Braket{\Creab_i\Annib_i}=N_\text{A}S-\Sum_{\v{q}}\Braket{\Creab_{\v{q}}\Annib_{\v{q}}}.\]
+Here the expectation value of $\Creab_{\v{q}}\Annib_{\v{q}}$ can be calculated using equation~\eqref{eq:sublattice_operators}:
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Braket{\Creab_{\v{q}}\Annib_{\v{q}}}	& =	& \Braket{\left(u_{\v{q}}\Acrea_{\v{q}}-v_{\v{q}}\Bcrea_{\v{q}}\right)\left(u_{\v{q}}\Aanni_{\v{q}}-v_{\v{q}}\Bcrea_{\v{q}}\right)}\\\\
+	& =	& u_{\v{q}}^2\Braket{\Acrea_{\v{q}}\Aanni_{\v{q}}}-u_{\v{q}}v_{\v{q}}\Braket{\Acrea_{\v{q}}\Bcrea_{\v{q}}}-u_{\v{q}}v_{\v{q}}\Braket{\Banni_{\v{q}}\Aanni_{\v{q}}}+v_{\v{q}}^2\Braket{\Banni_{\v{q}}\Bcrea_{\v{q}}}\\\\
+	& =	& u_{\v{q}}^2n_\text{B}(\omega_{\v{q}})+v_{\v{q}}^2\left[1+n_{\text{B}}(\omega_{\v{q}})\right].
+\end{array}\]
+Here we used that
+\[\Braket{\Acrea_{\v{q}}\Bcrea_{\v{q}}}=\Braket{\Aanni_{\v{q}}\Banni_{\v{q}}}=0,\]
+as well as $u_{\v{q}}^2-v_{\v{q}}^2=1$ and
+\[\Ha=\Sum_{\v{q}}\omega_{\v{q}}\left(\Acrea_{\v{q}}\Aanni_{\v{q}}+\Bcrea_{\v{q}}\Banni_{\v{q}}\right).\]
+We thus conclude:
+\[\Ma=N_\text{A}S-\underbrace{\Sum_{\v{q}}v_{\v{q}}^2}_{\mathclap{\substack{\text{\Underline{Note!} There is a}\\\text{temperature-dependent}\\\text{correction to }\Ma}}}-\Sum_{\v{q}}\left(u_{\v{q}}^2+v_{\v{q}}^2\right)n_{\text{B}}(\omega_{\v{q}}),\]
+where
+\[\boxed{n_{\text{B}}(\omega_{\v{q}})=\dfrac{1}{e^{\beta\omega_{\v{q}}}-1}.}\]
+What will be the low-temperature form of the $T$-dependent correction to the magnetization?
