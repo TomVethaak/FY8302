@@ -80,20 +80,23 @@ We will now look at a 2D quadratic lattice, and later generalise it to a $d$-dim
 				\foreach \b in {0,1,...,\max}{
 					\pgfmathparse{int(mod(\a,2))}
 					\let\odd\pgfmathresult
-					\def\mycolour{white}
-					\ifnum \odd = 1
-						\def\mycolour{blue}
-					\fi
-					\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
-					\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
 					\pgfmathsetmacro{\e}{-0.5+\a};
 					\pgfmathsetmacro{\f}{\max+0.5-\a};
-					\draw[\mycolour] (-0.5,-0.5+\a)--(\max+0.5-\a,\max+0.5);
-					\draw[\mycolour] (-0.5+\a,-0.5)--(\max+0.5,\max+0.5-\a);
-					\draw[\mycolour] (0.5+\a,-0.5)--(-0.5,0.5+\a);
-					\draw[\mycolour] (\max+0.5,\max-0.5-\a)--(\max-0.5-\a,\max+0.5);
+					\ifnum \odd = 1
+						\def\mycolour{blue}
+						\draw[\mycolour] (-0.5,-0.5+\a)--(\max+0.5-\a,\max+0.5);
+						\draw[\mycolour] (-0.5+\a,-0.5)--(\max+0.5,\max+0.5-\a);
+						\draw[\mycolour] (0.5+\a,-0.5)--(-0.5,0.5+\a);
+						\draw[\mycolour] (\max+0.5,\max-0.5-\a)--(\max-0.5-\a,\max+0.5);
+					\fi
 					\draw[dashed,thin] (-0.5,\a)--(\max+0.5,\a);
 					\draw[dashed,thin] (\b,-0.5)--(\b,\max+0.5);
+					}
+				}
+			\foreach \a in {0,1,...,\max}{
+				\foreach \b in {0,1,...,\max}{
+					\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
+					\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
 					\draw[thick,->] (\a+\c,\b+1.5*\c)--(\a+\d,\b+1.5*\d);
 					}
 				}
@@ -107,20 +110,23 @@ We will now look at a 2D quadratic lattice, and later generalise it to a $d$-dim
 				\foreach \b in {0,1,...,\max}{
 					\pgfmathparse{int(mod(\a,2))}
 					\let\odd\pgfmathresult
-					\def\mycolour{red}
-					\ifnum \odd = 1
-						\def\mycolour{white}
-					\fi
-					\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
-					\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
 					\pgfmathsetmacro{\e}{-0.5+\a};
 					\pgfmathsetmacro{\f}{\max+0.5-\a};
-					\draw[\mycolour] (-0.5,-0.5+\a)--(\max+0.5-\a,\max+0.5);
-					\draw[\mycolour] (-0.5+\a,-0.5)--(\max+0.5,\max+0.5-\a);
-					\draw[\mycolour] (0.5+\a,-0.5)--(-0.5,0.5+\a);
-					\draw[\mycolour] (\max+0.5,\max-0.5-\a)--(\max-0.5-\a,\max+0.5);
+					\ifnum \odd = 0
+						\def\mycolour{red}
+						\draw[\mycolour] (-0.5,-0.5+\a)--(\max+0.5-\a,\max+0.5);
+						\draw[\mycolour] (-0.5+\a,-0.5)--(\max+0.5,\max+0.5-\a);
+						\draw[\mycolour] (0.5+\a,-0.5)--(-0.5,0.5+\a);
+						\draw[\mycolour] (\max+0.5,\max-0.5-\a)--(\max-0.5-\a,\max+0.5);
+					\fi
 					\draw[dashed,thin] (-0.5,\a)--(\max+0.5,\a);
 					\draw[dashed,thin] (\b,-0.5)--(\b,\max+0.5);
+					}
+				}
+			\foreach \a in {0,1,...,\max}{
+				\foreach \b in {0,1,...,\max}{
+					\pgfmathsetmacro{\c}{(-1)^(\a+\b)*0.25};
+					\pgfmathsetmacro{\d}{(-1)^(\a+\b+1)*0.25};
 					\draw[thick,->] (\a+\c,\b+1.5*\c)--(\a+\d,\b+1.5*\d);
 					}
 				}
@@ -223,34 +229,34 @@ the Hamiltonian becomes
 (See assignment 3, exercise 2.)
 \[\omega_{\v{q}}=4|J|S\left(d^2-\left(\dfrac{\gamma_{\v{q}}}{2}\right)^2\right)^{1/2}=4|J|Sd\left(1-\tilde{\gamma}_{\v{q}}^2\right)^{1/2}.\]
 Here $d$ is the number of dimensions of the system. This now has the form of two free boson gases (A and B-type magnons). On a 2D quadratic lattice we have
-\[\begin{array}{r@{\;}c@{\;}l}
+\begin{equation}\label{eq:omega_linear}\begin{array}{r@{\;}c@{\;}l}
 	\dfrac{\gamma_{\v{q}}}{2}	& =	& \cos(q_{x})+\cos(q_y),\qquad\tilde{\gamma}_{\v{q}}=\dfrac{1}{2}\Sum_{\alpha}\cos(q_\alpha),\\\\
-	\omega_{\v{q}}=4|J|S\left(4-\left(\cos(q_x)+\cos(q_y)\right)^2\right)^{1/2},
-\end{array}\]
+	\omega_{\v{q}}				& =	& 4|J|S\left(4-\left(\cos(q_x)+\cos(q_y)\right)^2\right)^{1/2},
+\end{array}\end{equation}
 which in the case of $q\ll1$ means that
-\[\begin{array}{r@{\;}c@{\;}l}
+\begin{equation}\label{eq:omega_antiferromagnetic}\begin{array}{r@{\;}c@{\;}l}
 	\omega_{\v{q}}	& =	& 4|J|S\left(4-\left(2-\dfrac{\v{q}^2}{2}\right)^2+\cdots\right)^{1/2}=4|J|S\left(4-4\left(1-\dfrac{\v{q}^2}{2}\right)+\cdots\right)^{1/2}\\\\
 					& =	& 4\sqrt{2}|J|S|\v{q}|,
-\end{array}\]
+\end{array}\end{equation}
 which is linear in $\v{q}$! \textcolor{red!80!black}{\emph{``Feso''/``Fero''/``Fiso''/``Firo''}} goes as $\v{q}^2$.
 
 
 
 \subsection{Magnetization on the sublattice A}
 The total magnetization is given by
-\[\Ma=\Sum_{i\in\text{A}}\Braket{S_i^{z,\text{A}}}=N_\text{A}S-\Sum_{i\in\text{A}}\Braket{\Creab_i\Annib_i}=N_\text{A}S-\Sum_{\v{q}}\Braket{\Creab_{\v{q}}\Annib_{\v{q}}}.\]
+\[\Ma_\text{A}=\Sum_{i\in\text{A}}\Braket{S_i^{z,\text{A}}}=N_\text{A}S-\Sum_{i\in\text{A}}\Braket{\Creab_i\Annib_i}=N_\text{A}S-\Sum_{\v{q}}\Braket{\Creab_{\v{q}}\Annib_{\v{q}}}.\]
 Here the expectation value of $\Creab_{\v{q}}\Annib_{\v{q}}$ can be calculated using equation~\eqref{eq:sublattice_operators}:
-\[\begin{array}{r@{\;}c@{\;}l}
+\begin{equation}\label{eq:n_a}\begin{array}{r@{\;}c@{\;}l}
 	\Braket{\Creab_{\v{q}}\Annib_{\v{q}}}	& =	& \Braket{\left(u_{\v{q}}\Acrea_{\v{q}}-v_{\v{q}}\Bcrea_{\v{q}}\right)\left(u_{\v{q}}\Aanni_{\v{q}}-v_{\v{q}}\Bcrea_{\v{q}}\right)}\\\\
 	& =	& u_{\v{q}}^2\Braket{\Acrea_{\v{q}}\Aanni_{\v{q}}}-u_{\v{q}}v_{\v{q}}\Braket{\Acrea_{\v{q}}\Bcrea_{\v{q}}}-u_{\v{q}}v_{\v{q}}\Braket{\Banni_{\v{q}}\Aanni_{\v{q}}}+v_{\v{q}}^2\Braket{\Banni_{\v{q}}\Bcrea_{\v{q}}}\\\\
 	& =	& u_{\v{q}}^2n_\text{B}(\omega_{\v{q}})+v_{\v{q}}^2\left[1+n_{\text{B}}(\omega_{\v{q}})\right].
-\end{array}\]
+\end{array}\end{equation}
 Here we used that
 \[\Braket{\Acrea_{\v{q}}\Bcrea_{\v{q}}}=\Braket{\Aanni_{\v{q}}\Banni_{\v{q}}}=0,\]
-as well as $u_{\v{q}}^2-v_{\v{q}}^2=1$ and
+because $\Ha$ is diagonalized, as well as $u_{\v{q}}^2-v_{\v{q}}^2=1$ and
 \[\Ha=\Sum_{\v{q}}\omega_{\v{q}}\left(\Acrea_{\v{q}}\Aanni_{\v{q}}+\Bcrea_{\v{q}}\Banni_{\v{q}}\right).\]
 We thus conclude:
-\[\Ma=N_\text{A}S-\underbrace{\Sum_{\v{q}}v_{\v{q}}^2}_{\mathclap{\substack{\text{\Underline{Note!} There is a}\\\text{temperature-dependent}\\\text{correction to }\Ma}}}-\Sum_{\v{q}}\left(u_{\v{q}}^2+v_{\v{q}}^2\right)n_{\text{B}}(\omega_{\v{q}}),\]
+\[\Ma_\text{A}=N_\text{A}S-\underbrace{\Sum_{\v{q}}v_{\v{q}}^2}_{\mathclap{\substack{\text{\Underline{Note!} There is a}\\\text{temperature-dependent}\\\text{correction to }\Ma}}}-\Sum_{\v{q}}\left(u_{\v{q}}^2+v_{\v{q}}^2\right)n_{\text{B}}(\omega_{\v{q}}),\]
 where
-\[\boxed{n_{\text{B}}(\omega_{\v{q}})=\dfrac{1}{e^{\beta\omega_{\v{q}}}-1}.}\]
+\[\boxed{n_{\text{B}}(\omega_{\v{q}})=\Braket{\Bcrea_{\v{q}}\Banni_{\v{q}}}=\Braket{\Acrea_{\v{q}}\Aanni_{\v{q}}}=\dfrac{1}{e^{\beta\omega_{\v{q}}}-1}.}\]
 What will be the low-temperature form of the $T$-dependent correction to the magnetization?
