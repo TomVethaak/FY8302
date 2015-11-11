@@ -31,11 +31,11 @@ For a $d$-dimensional ``cubic'' lattice we can write
 Substituting this back, we get
 \[\omega_{\v{q}}=4|J|S\sqrt{d}|\v{q}|\]
 when $|\v{q}|\ll1$, which in the case of $d=2$ is in agreement with equation~\eqref{eq:omega_ferromagnetic}. The temperature-dependent correction to the magnetization can now be calculated:
-\[\begin{array}{r@{\;}c@{\;}l}
+\begin{equation}\label{eq:delta_ma_integral}\begin{array}{r@{\;}c@{\;}l}
 	\Delta\Ma(T)	& =			& -\Sum_{\v{q}}\left(u_{\v{q}}^2+v_{\v{q}}^2\right)\dfrac{1}{e^{\beta\omega_{\v{q}}}-1}\\\\
 					& \approx	& -\Sum_{\v{q}}\dfrac{\sqrt{d}}{|\v{q}|}\dfrac{1}{e^{\beta|J|\eta|\v{q}|}-1}\qquad\text{(Low T.)}\\\\
 					& =			& -\beta\Omega_d\Int_0^\infty d|\v{q}|\,\dfrac{|\v{q}|^{d-2}}{e^{\beta|J|\eta|\v{q}|}-1}.
-\end{array}\]
+\end{array}\end{equation}
 Making a change of variables by introducing
 \[x=\beta|J|\eta|\v{q}|,\]
 the integral is evaluated as
@@ -54,3 +54,28 @@ Comparing the two, we can say that
 The corrections to $\Ma$ due to \Underline{temperature effects} are weaker in antiferromagnets than in ferromagnets. This can be seen from the magnon spectrum (compare figures~\ref{fig:omega_ferromagnetic_compress} and~\ref{fig:omega_antiferromagnetic_compress}). It is \Underline{easier} to thermically excite ferromagnetic magnons than antiferromagnetic ones. We thus find a bigger temperature correction for the magnetization in a ferromagnet than in an antiferromagnet.
 
 \Underline{But!} Note that ferromagnets don't have quantum fluctuations, while antiferromagnets do.
+
+There are fluctuations even at zero temperature:
+\[\Sum_{\v{q}}v_{\v{q}}^2=\dfrac{1}{2}\Sum_{\v{q}}\left(\dfrac{1}{\sqrt{1-\tilde{\gamma}_{\v{q}}^2}}-1\right)=\dfrac{\sqrt{d}}{2}\Sum_{\v{q}}\dfrac{1}{|\v{q}|}-\left(\dfrac{N_{\text{A}}}{2}\right),\]
+which for $T=0$ gives
+\[\Ma_{\text{A}}=N_{\text{A}}\left(S+\dfrac{1}{2}\right)-\Sum_{\v{q}}\dfrac{\sqrt{d}}{2}\dfrac{1}{|\v{q}|}.\]
+For large $|\v{q}|$ \textcolor{red!80!black}{(Brillouin zone)} no problem with \textcolor{red!80!black}{integers}. For small $|\v{q}|$ the integral in equation~\eqref{eq:delta_ma_integral} becomes
+\[\Omega_d\Int dq\,q^{d-2},\]
+which for $d=2$ is ok for small $|\v{q}|$, but for $d=1$ we get
+\[\Int_{1/L}^1dq\,\dfrac{1}{q}\propto\ln L,\]
+a divergent function with weak divergence when $L\rightarrow\infty$. For $T=0$ the quantum fluctuations are large when $d=1$.
+
+As can be seen from figure~\ref{fig:neel_state_sublattice} the corners of the Brillouin zone are not involved. \textcolor{red!80!black}{This is why} only small $|\v{q}|$ contribute.
+
+
+
+
+\subsection{Quantization of lattice vibrations: phonons}
+First look at a 1D lattice model (only look at the ion vibrations). The Hamiltonian for such a lattice system has the classical form
+\[\Ha=\Sum_{i}\Sum{\v{P}_i^2}{2M}+\Sum_{n=1}^N\Sum_{m=1}^{\#\text{ neighbours}}V(R_n-R_{n+m}).\]
+Here $V(x)$ is a microscopic pair potential that works between the ions. This is not limited to nearest-neighbour interaction. We can write
+\[R_n=R_n^0+x_n,\]
+with $R_n$ for the equilibrium position of lattice point $n$ and $x_n$ for the small deviation from it. For small fluctuations around the equilibrium position, the lattice will exhibit \Underline{harmonic} oscillations.
+
+Taylor expanding $V(R_n-R_{n+m})$ to second order, we find
+\[\begin{split}\Sum_{n,m}V(R_n-R_{n+m})=&\underbrace{\Sum_{n,m}V(R_n^0-R_{n+m}^0)}_{\text{constant}}+\underbrace{\left.\Sum_{n,m}\dfrac{\partial V}{\partial x}\right|_{x=R_n^0-R_{n+m}^0}(x_n-x_{n+m})}_{=0\text{ since we expand around a minimum}}\\[0.5\baselineskip]&+\dfrac{1}{2}\left.\Sum_{n,m}\dfrac{\partial^2V}{\partial x^2}\right|_{x=R_n^0-R_{n+m}^0}(x_n-x_{n+m})^2+\cdots\end{split}\]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  25 OCT 2015 02:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  3 NOV 2015 23:44
 entering extended mode
 **lecturenotes.tex
 (C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.tex
@@ -2282,12 +2282,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 275.
-[41]
-
-LaTeX Warning: Reference `fig:omega_quadratic_compress' on page 42 undefined on
- input line 288.
-
-<img/omega_ferromagnetic_compress.pdf, id=392, 289.08pt x 216.13647pt>
+[41] <img/omega_ferromagnetic_compress.pdf, id=398, 289.08pt x 216.13647pt>
 File: img/omega_ferromagnetic_compress.pdf Graphic file (type pdf)
 
 <use img/omega_ferromagnetic_compress.pdf>
@@ -2460,37 +2455,23 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
  [46]
 [47] [48] [49] [50])
-(C:\Users\Tom\Documents\GitHub\FY8302\sections/pp091-100.tex [51]
-
-LaTeX Warning: Reference `eq:omega_q_quadratic' on page 52 undefined on input l
-ine 33.
-
-[52]
-<img/omega_antiferromagnetic_compress.pdf, id=484, 289.08pt x 178.43362pt>
+(C:\Users\Tom\Documents\GitHub\FY8302\sections/pp091-100.tex [51] [52]
+<img/omega_antiferromagnetic_compress.pdf, id=491, 289.08pt x 178.43362pt>
 File: img/omega_antiferromagnetic_compress.pdf Graphic file (type pdf)
 
 <use img/omega_antiferromagnetic_compress.pdf>
 Package pdftex.def Info: img/omega_antiferromagnetic_compress.pdf used on input
  line 50.
 (pdftex.def)             Requested size: 289.07928pt x 178.43317pt.
-
-
-LaTeX Warning: Reference `fig:omega_quadratic_compress' on page 53 undefined on
- input line 54.
-
-
-LaTeX Warning: Reference `fig:omega_linear_compress' on page 53 undefined on in
-put line 54.
-
-) [53] [54 <C:/Users/Tom/Documents/GitHub/FY8302/img/omega_antiferromagnetic_co
-mpress.pdf>]
+ [53] [54 <C:/Users/Tom/Documents/GitHub/FY8302/img/omega_antiferromagnetic_com
+press.pdf>]) [55]
 Overfull \hbox (21.89784pt too wide) in paragraph at lines 34--34
 []\OT1/cmr/m/n/10.95 (-20) Andrey V. Chubukov and Subir Sach-dev. ``Uni-ver-sal
  mag-netic prop-er-ties of $[][]$$[][]$$[][]$
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-[55
+[56
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
@@ -2498,19 +2479,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `lecturenotes.out' has not changed.
-(rerunfilecheck)             Checksum: 98D9896EA5722AF8866DF4A660B4E560;1653.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: FDD53C7106CDE88BCC208817BFB9260E;1747.
 Package logreq Info: Writing requests to 'lecturenotes.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 37326 strings out of 493921
- 728795 string characters out of 3144881
- 1191501 words of memory out of 3000000
- 39585 multiletter control sequences out of 15000+200000
- 27457 words of font info for 153 fonts, out of 3000000 for 9000
+ 37330 strings out of 493921
+ 728804 string characters out of 3144881
+ 1191564 words of memory out of 3000000
+ 39584 multiletter control sequences out of 15000+200000
+ 27508 words of font info for 154 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  63i,26n,66p,836b,1463s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -2542,9 +2519,9 @@ ype1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 ublic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on lecturenotes.pdf (56 pages, 1258995 bytes).
+Output written on lecturenotes.pdf (57 pages, 1267422 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 28351 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 28359 words of extra memory for PDF output out of 29859 (max. 10000000)
 

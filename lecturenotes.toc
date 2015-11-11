@@ -25,3 +25,4 @@
 \contentsline {subsection}{\numberline {4.3}2D quadratic lattice}{42}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Antiferromagnets}{44}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Magnetization on the sublattice A}{50}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Quantization of lattice vibrations: phonons}{54}{subsection.4.6}

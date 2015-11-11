@@ -1,0 +1,140 @@
+We have the freedom to choose whether to close the contour in the lower or upper complex plane. Let's first look at terms in (EQ p. 170) on the form
+\begin{equation}
+\int_{-\infty}^{\infty}dx\frac{1}{x-A+i\delta}\frac{1}{x-B+i\delta}.
+\end{equation}
+We chose to close the contour in the upper complex half-plane, and we get
+\begin{equation}
+\int_{upper}dz\frac{1}{z-A+i\delta}\frac{1}{z-B+i\delta}=\frac{1}{A-B}\int_{upper}dz\{\frac{1}{z-A+i\delta}-\frac{1}{z-B+i\delta}\}.
+\end{equation}
+Both $z-A+i\delta$ and $z-B+i\delta$ have their pole in the lower complex half-plane, and the integral is accordingly zero.
+We next look at terms on the form
+\begin{equation}
+\int_{-\infty}^{\infty}\frac{1}{x-A-i\delta}\frac{1}{x-B-i\delta}.
+\end{equation}
+We choose to close the contour in the upper complex half-plane, and we get
+\begin{align}
+\int_{upper}dz\frac{1}{z-A-i\delta}\frac{1}{z-B-i\delta}&=\frac{1}{A-B}\int_{upper}dz\{\frac{1}{z-A-i\delta}-\frac{1}{z-B-i\delta}\}\\
+&=\frac{1}{A-B}(2\pi i-2\pi i)\\
+&=0.
+\end{align}
+Both $z-A-i\delta$ and $z-B-i\delta$ have their pole in the upper complex half-plane, but the negative sign between the two terms in the integral cancel the residues. Finally we look at the cross-terms
+\begin{equation}
+\int_{-\infty}^{\infty}\frac{1}{x-A+i\delta}\frac{1}{x-B-i\delta}.
+\end{equation}
+We choose to close the contour in the upper complex half-plane, and we get
+\begin{align}
+\int_{upper}dz\frac{1}{z-A+i\delta}\frac{1}{z-B-i\delta}&=\frac{1}{A-B-2i\delta}\int_{upper}dz\{\frac{1}{z-A+i\delta}-\frac{1}{z-B-i\delta}\}\\
+&=\frac{1}{A-B-2i\delta}(0-2\pi i)\\
+&=\frac{-2\pi i}{A-B-2i\delta}.
+\end{align}
+The only contribution here comes from the pole of $z=B+i\delta$. Similarly
+\begin{equation}
+\int_{upper}dz\frac{1}{z-A-i\delta}\frac{1}{z-B+i\delta}=\frac{2\pi i}{A-B-2i\delta}.
+\end{equation}
+Since the particle-propagator and the hole-propagator have poles in opposite half-planes, only the cross-terms between particle- and hole-propagators contribute to the diagram. We then have
+\begin{align*}
+\int_{-\infty}^{\infty}\frac{d\omega^{\prime}}{2\pi}G_0(k+q,\omega+\omega^{\prime})G_0(k,\omega^{\prime})&=\theta(\epsilon_k-\epsilon_F)\theta(\epsilon_F-\epsilon_{k+q})\\
+&\times\int_{-\infty}^{\infty}\frac{d\omega^{\prime}}{2\pi}\frac{1}{\omega^{\prime}-\epsilon_k+i\delta}\frac{1}{\omega+\omega^{\prime}-\epsilon_{k+q}-i\delta}\\
+&+\theta(\epsilon_F-\epsilon_k)\theta(\epsilon_{k+q}-\epsilon_F)\\
+&\times\int_{-\infty}^{\infty}\frac{d\omega^{\prime}}{2\pi}\frac{1}{\omega+\omega^{\prime}-\epsilon_{k+q}+i\delta}\frac{1}{\omega^{\prime}-\epsilon_k-i\delta}\\
+&=-2\pi i\frac{\theta(\epsilon_k-\epsilon_F)\theta(\epsilon_F-\epsilon_{k+q})}{\epsilon_k-\epsilon_{k+q}+\omega+2i\delta}+2\pi i\frac{\theta(\epsilon_F-\epsilon_k)\theta(\epsilon_{k+q}-\epsilon_F)}{\omega+\epsilon_k-\epsilon_{k+q}-2i\delta}.
+\end{align*}
+We have here used in the first term $A=\epsilon_k$, $B=\epsilon_{k+q}-\omega$, and in the second term $A=\epsilon_{k+q}-\omega$, $B=\epsilon_k$. In total we get
+\begin{equation}
+\Pi^{(2)}(q,\omega)=-2i\frac{2\pi i}{2\pi}(-1)\sum_{k}\{\frac{\theta(\epsilon_F-\epsilon_k)\theta(\epsilon_{k+q}-\epsilon_F)}{\omega+\epsilon_k-\epsilon_{k+q}-2i\delta}-\frac{\theta(\epsilon_k-\epsilon_F)\theta(\epsilon_F-\epsilon_{k+q})}{\epsilon_k-\epsilon_{k+q}+\omega+2i\delta}\}.
+\end{equation}
+This expression is in general difficult to calculate. To illustrate how one carries out such a calculation we will take as an example a static screened Coulomb potential. We then have $\omega=0$ and start out with $q>0$, which we will take to zero later. We introduce $n(\epsilon_k)=\theta(\epsilon_k-\epsilon_F)$, i.e. the Fermi distribution at $T=0$. We get
+\begin{equation}
+\Pi^{(2)}(q,0)=2\sum_k\{\frac{n(\epsilon_k)\big[1-n(\epsilon_{k+q})\big]}{\epsilon_k-\epsilon_{k+q}-2i\delta}-\frac{n(\epsilon_{k+q})\big[1-n(\epsilon_k)\big]}{\epsilon_k-\epsilon_{k+q}+2i\delta}\}.
+\end{equation}
+One can easily check that $Im(\Pi^{(2)}(q,0))=0$, and the real part is
+\begin{equation}
+Re(\Pi^{(2)}(q,0))=2\sum_k\frac{n(\epsilon_k)-n(\epsilon_{k+q})}{\epsilon_k-\epsilon_{k+q}}\stackrel{q\rightarrow 0}{\rightarrow}2\sum_k\frac{\partial n(\epsilon_k)}{\partial \epsilon_k}.
+\end{equation}
+Furthermore $\frac{\partial n(\epsilon_k)}{\partial \epsilon_k}=-\delta(\epsilon_k-\epsilon_F)$, and letting
+\begin{equation}
+\sum_k \rightarrow\int N(\epsilon)d\epsilon\approx N(\epsilon_F)\int d\epsilon
+\end{equation}
+yields
+\begin{equation}
+\Pi^{(2)}(q,0)\stackrel{q\rightarrow 0}{\rightarrow}-2N(\epsilon_F),
+\end{equation}
+where $N(\epsilon_F)$ is the density of states (DOS) at the Fermi level. With a Coulomb potential, $V_0=\frac{4\pi e^2}{q^2}$, we now have
+\begin{align*}
+V&=\frac{V_0}{1-V_0\Pi^{(2)}}\\
+&=\frac{4\pi e^2}{q^2(1-\frac{4\pi e^2}{q^2}(-2N(\epsilon_F)))}\\
+&=\frac{4\pi e^2}{q^2+\widetilde{q}^2},
+\end{align*}
+where we have defined $\widetilde{q}^2=8\pi e^2N(\epsilon_F)$. $\widetilde{q}$ here represents the inverse screening length. The $V(q)$ we have found represents a static, screened Coulomb potential. In real-space we now have
+\begin{align*}
+V(r)\approx \frac{e^2}{r}e^{-r\widetilde{q}}=\frac{e^2}{r}e^{-r/\lambda}.
+\end{align*}
+If the screening length $\lambda=\widetilde{q}^{-1}$ is small, the screening of the Coulomb potential is strong. Increasing $\lambda$, reduces the Coulomb potential in strength. To illustrate this a little more, lets look at good metals and semiconductors. A good metal has a large density of states at the Fermi level, and since $\lambda \sim (N(\epsilon_F))^{-1/2}$ then is small the Coulomb potential is screened. For a semiconductor on the other hand the Fermi level lies above the topmost filled states, such that $N(\epsilon_F)=0$, and the Coulomb potential is not screened.
+
+\subsection{Quasi Particles in Interacting Electron Systems}
+In a free electron system we have seen that the propagator has the form
+\begin{equation}
+G_0(k,\omega)=\frac{1}{\omega-\epsilon_k+i\delta_k},
+\end{equation}
+where we have defined $\delta_k=\delta \text{sgn}(\epsilon_k-\epsilon_F)$. The simple poles means that the system has well defined single particle excitations, $\omega=\epsilon_k$, with an infinite lifetime. This is because $\delta$ is infinitesimal. In an interacting system, Dysons equation yields
+\begin{equation}
+G=\frac{1}{\omega-\epsilon_k-\Sigma(k,\omega)}.
+\end{equation}
+We wish to investigate if we can write this on the form
+\begin{equation}
+G \sim \frac{1}{\omega-\widetilde{\epsilon}_k-\frac{1}{\tau_k}}.
+\end{equation}
+$\widetilde{\epsilon}_k$ is here the renormalized dispersion realation, and $\tau_k$ is the lifetime of a single particle excitation. If this is possible, the interacting system is said to have quasi particles, which we consider as renormalized electrons (with for instance an effective mass $m^*>m$. Generally we can write
+\begin{equation}
+\Sigma=\Sigma_R+i\Sigma_I.
+\end{equation}
+We assume that the imaginary part is small, i.e. that damping effects in our system are negligible
+\begin{equation}
+\frac{\mid \Sigma_I \mid}{\mid \Sigma_R \mid}\ll 1.
+\end{equation}
+The quasi particle poles are found from
+\begin{equation}
+\omega-\epsilon_k-\Sigma_R(k,\omega)-i\Sigma_I(k,\omega)=0.
+\end{equation}
+The solution, $\omega$, to this equation will give the quasi particle excitation energies. To 0th order we ignore $\Sigma_I$ and get
+\begin{equation}
+\omega=\widetilde{\epsilon_k}=\epsilon_k+\Sigma_R(k,\omega),
+\end{equation}
+where
+\begin{equation}
+\Sigma_R=\Sigma_R(k,\widetilde{\epsilon_k})+(\omega-\widetilde{\epsilon_k})\frac{\partial \Sigma_R}{\partial \omega}.
+\end{equation}
+We can set $\omega=\widetilde{\epsilon_k}+\omega_1$, where $\omega_1$ is a correction to $\widetilde{\epsilon_k}$ caused by $\Sigma_I\neq 0$. Inserting this yields
+\begin{equation}
+\omega_1-\omega_1\Sigma_R^{\prime}-i\Sigma_I(k,\widetilde{\epsilon_k})=0,
+\end{equation}
+with
+\begin{equation}
+\Sigma_R^{\prime}=\frac{\partial \Sigma_R(k,\omega)}{\partial \omega}\mid_{\omega=\widetilde{\epsilon_k}}.
+\end{equation}
+We finally get
+\begin{equation}
+\omega_1=\frac{i\Sigma_I(k,\widetilde{\epsilon_k})}{1-\Sigma_R^{\prime}}.
+\end{equation}
+With $\omega=\widetilde{\epsilon_k}-\frac{i}{\tau_k}=\widetilde{\epsilon_k}+\omega_1$ we find the quasi particle lifetime
+\begin{equation}
+\frac{1}{\tau_k}=-\frac{\Sigma_I(k,\widetilde{\epsilon_k})}{1-\Sigma_R^{\prime}},
+\end{equation}
+and the quasi particle excitation energy
+\begin{equation}
+\widetilde{\epsilon_k}=\epsilon_k+\Sigma_R(k,\widetilde{\epsilon_k}).
+\end{equation}
+Inserting all this into the expression for $G$ of the interacting system yields
+\begin{align}
+G(k,\omega)&=\frac{1}{\omega-\epsilon_k-\Sigma_R(k,\omega)-i\Sigma_I(k,\omega)}\\
+&\approx\frac{1}{\omega-\widetilde{\epsilon_k}-(\omega-\widetilde{\epsilon_k})\Sigma_R^{\prime}+\frac{i}{\tau_k}(1-\Sigma_R^{\prime})}\\
+&=\frac{1/(1-\Sigma_R^{\prime})}{\omega-\widetilde{\epsilon_k}+\frac{1}{\tau_k}}.
+\end{align}
+We now define 
+\begin{equation}
+Z_k=1-\Sigma_R^{\prime}
+\end{equation},
+which is the weight to our quasi particle pole, or the quasi particle residue. We then get the wanted quasi particle form for $G$
+\begin{equation}
+G(k,\omega)=\frac{Z_k}{\omega-\widetilde{\epsilon_k}+\frac{1}{\tau_k}}.
+\end{equation}
