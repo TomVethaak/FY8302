@@ -25,3 +25,8 @@
 \contentsline {subsection}{\numberline {4.3}2D quadratic lattice}{42}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Antiferromagnets}{44}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Magnetization on the sublattice A}{50}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Anharmonicity}{51}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Electron-phonon coupling}{53}{subsection.4.7}
+\contentsline {section}{\numberline {5}Many-particle perturbation theory}{55}{section.5}
+\contentsline {subsection}{\numberline {5.1}Zero temperature}{55}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Time-evolution of states}{56}{subsection.5.2}
