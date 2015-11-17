@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  17 NOV 2015 18:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  17 NOV 2015 18:27
 entering extended mode
 **lecturenotes.tex
 (C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.tex
@@ -2091,20 +2091,13 @@ Package biblatex Warning: File 'lecturenotes.bbl' is wrong format version - exp
 ected 2.4.
 
 Package biblatex Info: ... file 'lecturenotes.bbl' found.
-(C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                charkravarty1989
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.bbl)
 Package biblatex Info: Reference section=0 on input line 19.
 Package biblatex Info: Reference segment=0 on input line 19.
 \c__siunitx_mathsf_int=\count416
 LaTeX Font Info:    Try loading font information for U+msa on input line 19.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
@@ -2292,7 +2285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 275.
-[41] <img/omega_ferromagnetic_compress.pdf, id=443, 289.08pt x 216.13647pt>
+[41] <img/omega_ferromagnetic_compress.pdf, id=445, 289.08pt x 216.13647pt>
 File: img/omega_ferromagnetic_compress.pdf Graphic file (type pdf)
 
 <use img/omega_ferromagnetic_compress.pdf>
@@ -2466,7 +2459,7 @@ Missing character: There is no ; in font nullfont!
  [46]
 [47] [48] [49] [50])
 (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp091-100.tex [51] [52]
-<img/omega_antiferromagnetic_compress.pdf, id=536, 289.08pt x 178.43362pt>
+<img/omega_antiferromagnetic_compress.pdf, id=538, 289.08pt x 178.43362pt>
 File: img/omega_antiferromagnetic_compress.pdf Graphic file (type pdf)
 
 <use img/omega_antiferromagnetic_compress.pdf>
@@ -2957,10 +2950,10 @@ Package rerunfilecheck Info: File `lecturenotes.out' has not changed.
 Package logreq Info: Writing requests to 'lecturenotes.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 37580 strings out of 493921
- 731985 string characters out of 3144881
- 1192586 words of memory out of 3000000
- 39663 multiletter control sequences out of 15000+200000
+ 37582 strings out of 493921
+ 732050 string characters out of 3144881
+ 1192597 words of memory out of 3000000
+ 39664 multiletter control sequences out of 15000+200000
  28624 words of font info for 163 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  63i,26n,66p,836b,1463s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2994,9 +2987,9 @@ blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on lecturenotes.pdf (91 pages, 1403631 bytes).
+Output written on lecturenotes.pdf (91 pages, 1405041 bytes).
 PDF statistics:
- 944 PDF objects out of 1000 (max. 8388607)
- 262 named destinations out of 1000 (max. 500000)
+ 949 PDF objects out of 1000 (max. 8388607)
+ 263 named destinations out of 1000 (max. 500000)
  32527 words of extra memory for PDF output out of 35830 (max. 10000000)
 

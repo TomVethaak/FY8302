@@ -191,6 +191,38 @@
       \verb http://link.aps.org/doi/10.1103/PhysRev.65.117
       \endverb
     \endentry
+    \entry{chakravarty1989}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c7625779be53ae97ac10599002babcfd}
+      \strng{fullhash}{c7625779be53ae97ac10599002babcfd}
+      \field{sortinit}{0}
+      \field{labeltitle}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{02}
+      \field{title}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
+      \field{volume}{39}
+      \field{year}{1989}
+      \field{pages}{2344\bibrangedash 2371}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.39.2344
+      \endverb
+      \verb{url}
+      \verb http://link.aps.org/doi/10.1103/PhysRevB.39.2344
+      \endverb
+    \endentry
     \entry{chubukov1993}{article}{}
       \name{labelname}{2}{}{%
         {{hash=84013c721f5f8207a839776c1314560c}{Chubukov}{C\bibinitperiod}{Andrey\bibnamedelima V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
@@ -395,6 +427,38 @@
       \verb http://link.aps.org/doi/10.1103/PhysRev.65.117
       \endverb
     \endentry
+    \entry{chakravarty1989}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c7625779be53ae97ac10599002babcfd}
+      \strng{fullhash}{c7625779be53ae97ac10599002babcfd}
+      \field{sortinit}{0}
+      \field{labeltitle}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{02}
+      \field{title}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
+      \field{volume}{39}
+      \field{year}{1989}
+      \field{pages}{2344\bibrangedash 2371}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.39.2344
+      \endverb
+      \verb{url}
+      \verb http://link.aps.org/doi/10.1103/PhysRevB.39.2344
+      \endverb
+    \endentry
     \entry{chubukov1993}{article}{}
       \name{labelname}{2}{}{%
         {{hash=84013c721f5f8207a839776c1314560c}{Chubukov}{C\bibinitperiod}{Andrey\bibnamedelima V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
@@ -426,7 +490,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{charkravarty1989}
 \endrefsection
 \endinput
 
