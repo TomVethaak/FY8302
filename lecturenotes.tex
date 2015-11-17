@@ -3,7 +3,7 @@
 \usepackage[british]{babel}
 \usepackage{geometry}
 \usepackage{vethaak_sty}
-\usepackage{csquotes,simplewick}
+\usepackage{csquotes,simplewick,soul}
 
 \usepackage[backend=biber,style=numeric-comp,sorting=none,defernumbers=true]{biblatex}
 \addbibresource{bib2015.bib}
@@ -20,8 +20,7 @@
 
 \thispagestyle{empty}
 \tableofcontents
-\clearpage
-\setcounter{page}{1}
+\setcounter{page}{0}\clearpage
 
 \input{sections/pp001-020}
 \input{sections/pp021-040}
@@ -29,9 +28,14 @@
 \input{sections/pp061-080}
 \input{sections/pp081-090}
 \input{sections/pp091-100}
-\input{sections/pp101-120}
+\input{sections/pp101-120_sverre}
+\clearpage\vspace*{\fill}\begin{center}pp.121-140 (Dag-Vidar)\end{center}\vspace*{\fill}\clearpage
+\input{sections/pp121-140_dag}
 \input{sections/pp141-160_henning}
+\input{sections/pp161-170_oyvind}
 \input{sections/pp171-180_severin}
+\input{sections/pp181-200_ali}
+\input{sections/pp201-216_therese}
 
 \clearpage
 \printbibliography

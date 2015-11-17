@@ -3,18 +3,12 @@ Pauli matrices:
 
 This choice is of course not unique but determined by the choice of representation for $\ket{\up}$ and $\ket{\down}$. The basis is irreducible. The set of Pauli matrices is an
 irreducible representation for $SU(2)$.
-\[
-  \begin{array}{ll}
-  \left.
-  \begin{aligned}
+\[\left.\begin{aligned}
 	\Crea_\up\Anni_\up &= \frac{1}{2}\left( 1+\sigma_z \right)\\
 	\Crea_\down\Anni_\down &= \frac{1}{2}\left( 1-\sigma_z \right)\\
 	\Crea_\up\Anni_\down &= \frac{1}{2}\left( \sigma_x + i\sigma_y \right) = \frac{1}{2}\sigma^+\\
 	\Crea_\down\Anni_\up &= \frac{1}{2}\left( \sigma_x - i\sigma_y \right) = \frac{1}{2}\sigma^-
-  \end{aligned}
-\right\}&\text{\parbox{6cm}{\underline{Note!} This connection is independent of the representation of the Pauli spin operators (Pauli matrices).}}
-\end{array}
-\]
+  \end{aligned}\right\}\qquad\text{\parbox{7cm}{\underline{Note!} This connection is independent of the representation of the Pauli spin operators (Pauli matrices).}}\]
 Inserting this we get
 \[\boxed{\Sum_{\sigma\sigma'}\Crea_{i,\sigma}\Anni_{i,\sigma'}\Crea_{j,\sigma'}\Anni_{j,\sigma} = \frac{1}{2}\left( 1+\gv{\sigma}_i\cdot\gv{\sigma}_j \right).}\]
 This can now be regarded as an operator, independent of what representation  is used.
@@ -68,62 +62,50 @@ $\bra{i_1\;i_2}V\ket{i_3 i_4}$, but now with the $i$s \underline{pairwise} equal
 \right\}\;\text{\parbox{6cm}{Two-center integral with pairwise equal lattice indexes.}}
 \]
 Remember: Hubbard $\;\Rightarrow\;$ antiferromagnetic model. Can we get a ferromagnetic model with pairwise equal indexes?
-\begin{description}
-  \item[$i)\phantom{ii}\quad\quad i_1=i_2\;;\quad i_3=i_4\;\quad i_1\neq i_3$]\hfill \\
-\[\Sum_{\substack{i_1i_3\\\sigma_1\sigma_2}}\bra{i_1\;i_1}V\ket{i_3\;i_3}\underbrace{\Crea_{i_1\sigma_1}\Crea_{i_1\sigma_2}}_{\sigma_2 = -\sigma_1}
-\Anni_{i_3\sigma_2}\Anni_{i_3\sigma_1}
-=\Sum_{ij\sigma}\bra{i\;i}V\ket{j\;j}\Crea_{i\sigma}\Crea_{i-\sigma}\Anni_{j-\sigma}\Anni_{j\sigma}\]
-This describes hopping of pairs as spin-singlet pairs from $j$ to $i$.
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}[scale=5,>=stealth',node distance=0.15\textwidth]
-	  \node[label={[label distance=4pt]90:$\up\times\down$}] (n1) {};
-	  \node[label={[label distance=4pt]90:$\up\times\down$}] (n2) [right of=n1] {};
-		\path[->,thick] (n2.north) edge[bend right=20] node[above=0.3\baselineskip]{} (n1.north);
-	\end{tikzpicture}
-\end{figure}
-This does not lead to $\v{S}_i\cdot\v{S}_j$ since the objects that hop are spinless (total $S_z=0$).
+\begin{enumerate}[i)]
+	\item $i_1=i_2\;;\quad i_3=i_4\;\quad i_1\neq i_3$
+	\[\Sum_{\substack{i_1i_3\\\sigma_1\sigma_2}}\bra{i_1\;i_1}V\ket{i_3\;i_3}\underbrace{\Crea_{i_1\sigma_1}\Crea_{i_1\sigma_2}}_{\sigma_2 = -\sigma_1}
+	\Anni_{i_3\sigma_2}\Anni_{i_3\sigma_1}
+	=\Sum_{ij\sigma}\bra{i\;i}V\ket{j\;j}\Crea_{i\sigma}\Crea_{i-\sigma}\Anni_{j-\sigma}\Anni_{j\sigma}\]
+	This describes hopping of pairs as spin-singlet pairs from $j$ to $i$.
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=5,>=stealth',node distance=0.15\textwidth]
+		  \node[label={[label distance=4pt]90:$\up\times\down$}] (n1) {};
+		  \node[label={[label distance=4pt]90:$\up\times\down$}] (n2) [right of=n1] {};
+			\path[->,thick] (n2.north) edge[bend right=20] node[above=0.3\baselineskip]{} (n1.north);
+		\end{tikzpicture}
+	\end{figure}
+	This does not lead to $\v{S}_i\cdot\v{S}_j$ since the objects that hop are spinless (total $S_z=0$).
+	
+	\underline{Note}!: The tunnelling of pairs on the lattices is a result of the electrostatic pair-potential in the same way that one-electron tunnelling was a result of a electrostatic
+	one-particle potential.
 
-\underline{Note}!: The tunnelling of pairs on the lattices is a result of the electrostatic pair-potential in the same way that one-electron tunnelling was a result of a electrostatic
-one-particle potential.
-
-\item[$ii)\phantom{i}\quad\quad i_1=i_4\;;\quad i_2=i_3\;;\quad i_1\neq i_2$]\hfill \\
-  \[
-	\begin{aligned}
+	\item
+	$i_1=i_4\;;\quad i_2=i_3\;;\quad i_1\neq i_2$
+	\[\begin{aligned}
 	\Sum_{\substack{i_1i_2\\\sigma_1\sigma_2}}\bra{i_1i_2}V\ket{i_2i_1}\Crea_{i_1\sigma_1}\Crea_{i_2\sigma_2}\Anni_{i_2\sigma_2}\Anni_{i_1\sigma_1}
-  &= \Sum_{\substack{ij\\\sigma\sigma'}} \bra{ij}V\ket{ji}\Crea_{i\sigma}\Anni_{i\sigma}\Crea_{j\sigma'}\Anni_{j\sigma'}\\
-  &= \Sum_{ij}\bra{ij}V\ket{ji}n_in_j.
+	&= \Sum_{\substack{ij\\\sigma\sigma'}} \bra{ij}V\ket{ji}\Crea_{i\sigma}\Anni_{i\sigma}\Crea_{j\sigma'}\Anni_{j\sigma'}\\
+	&= \Sum_{ij}\bra{ij}V\ket{ji}n_in_j.
 	\end{aligned}
-  \]
-  A purely electrostatic interaction between charges. No spin structure. Does \underline{not} result in $\v{S}_i\cdot\v{S}_j$.
-\item[$iii)\quad\quad i_1=i_3\;;\quad i_2=i_4\;;\quad i_1\neq i_2$]\hfill \\
-  \[
-	\begin{aligned}
-	  \Sum_{\substack{i_1i_2\\\sigma_1\sigma_2}}\bra{i_1i_2}V\ket{i_1i_2}\Crea_{i_1\sigma_1}\Crea_{i_2\sigma_2}\Anni_{i_1\sigma_2}\Anni_{i_2\sigma_1}
-	  &= -\Sum_{\substack{ij\\\sigma\sigma'}}\bra{ij}V\ket{ij}\underbrace{\Crea_{i\sigma}\Anni_{i\sigma'}\Crea_{j\sigma'}\Anni_{j\sigma}}_\text{\parbox{4cm}
-	  {This we have encountered before
-	  and the result is:}}\\
-	  &= -\Sum_{ij}2\bra{ij}V\ket{ij}\v{S}_i\v{S}_j.
-	\end{aligned}
-  \]
-\end{description}
+	\]
+	A purely electrostatic interaction between charges. No spin structure. Does \underline{not} result in $\v{S}_i\cdot\v{S}_j$.
+	\item
+	$i_1=i_3\;;\quad i_2=i_4\;;\quad i_1\neq i_2$
+	\[\begin{aligned}
+	\Sum_{\substack{i_1i_2\\\sigma_1\sigma_2}}\bra{i_1i_2}V\ket{i_1i_2}\Crea_{i_1\sigma_1}\Crea_{i_2\sigma_2}\Anni_{i_1\sigma_2}\Anni_{i_2\sigma_1}
+	&= -\Sum_{\substack{ij\\\sigma\sigma'}}\bra{ij}V\ket{ij}\underbrace{\Crea_{i\sigma}\Anni_{i\sigma'}\Crea_{j\sigma'}\Anni_{j\sigma}}_{\mathclap{\substack{\text{This we have encountered before}\\\text{and the result is:}}}}\\
+	&= -\Sum_{ij}2\bra{ij}V\ket{ij}\v{S}_i\v{S}_j.
+	\end{aligned}	\]
+\end{enumerate}
 
 \underline{Note}!: So far we have not used anything about half-filling of the band. By using $i=\cdots i_4$, and $i_1,\cdots,i_4$ pairwise equal we can thus write down a general
 model for metals that can be magnetic:
-
-\[
-  \begin{aligned}
-	&\Ha = \Sum_{ij}t_{ij}\Crea_{i\sigma}\Anni_{j\sigma} + \frac{u}{2}\Sum_{i\sigma}n_{i\sigma}n_{i-\sigma}\\
-	\text{\parbox{6cm}{Two-center integrals with pairwise equal lattice indices}} &\left\{
-	  \begin{aligned}
-		+ & \Sum_{ij}V_{ij}n_in_j + \Sum_{ij\sigma}t_{ij}^P\Crea_{i\sigma}\Crea_{i-\sigma}\Anni_{j-\sigma}\Anni_{j\sigma}\\
-		- & \Sum_{ij}\tilde{J}_{ij}\v{S}_i\cdot\v{S}_j\quad\text{\parbox{4cm}{$i,j$: Not necessarily nearest neighbours!}}
-	  \end{aligned}
-	  \right.
-  \end{aligned}
-\]
-
-A completely general model would have included correlated hopping which also is a two-particle process. In the above equation we have defined
+\[\begin{array}{r@{\;}c@{\;}l}
+	\Ha & =	& \Sum_{ij}t_{ij}\Crea_{i\sigma}\Anni_{j\sigma} + \frac{u}{2}\Sum_{i\sigma}n_{i\sigma}n_{i-\sigma}+\Sum_{ij}V_{ij}n_in_j +\\\\
+	&&\underbrace{\Sum_{ij\sigma}t_{ij}^P\Crea_{i\sigma}\Crea_{i-\sigma}\Anni_{j-\sigma}\Anni_{j\sigma}-\Sum_{ij}\tilde{J}_{ij}\v{S}_i\cdot\v{S}_j}_{\mathclap{\text{Two-center integrals with pairwise equal lattice indices.}}}.
+\end{array}\]
+Here $i,j$ are not necessarily nearest neighbours! A completely general model would have included correlated hopping which also is a two-particle process. In the above equation we have defined
 \[
   \begin{aligned}
 	u = \bra{ii}V\ket{ii},\quad&\\
@@ -246,14 +228,13 @@ Now we insert the approximations for the $S$ operators and neglect all terms of 
   \Ha &= -J\Sum_{\avg{i,j}}\left( S^2 - S\Creab_i\Annib_i - S\Creab_j\Annib_j + 2S\Annib_i\Creab_j \right)\\
   &= E_0 + JS\Sum_{\avg{i,j}}\left( \Creab_i\Annib_i + \Creab_j\Annib_j - 2\Annib_i\Creab_j \right)
 \end{align*}
-where we have defined $E_0 = -J\Sum_{\avg{i,j}}S^2 = -JS^2Nz$ for $N = $ \emph{number of lattice sites} and $z = $ \emph{number of nearest neighbours}.
-
-Since we have $i\neq j$ in the sum we know $\Annib_i\Creab_j = \Creab_j\Annib_i$, thus we can write
+where we have defined
+\[E_0 = -J\Sum_{\avg{i,j}}S^2 = -JS^2Nz\]
+with $N$ as the number of lattice sites and $z$ as the number of nearest neighbours. Since we have $i\neq j$ in the sum we know $\Annib_i\Creab_j = \Creab_j\Annib_i$, thus we can write
 \[\Ha = E_0 + 2JS\Sum_{\avg{i,j}}\left( \Creab_i\Annib_i - \Creab_i\Annib_j \right)\]
-We wish to write the boson term of the form
-\[\Sum_\lambda\omega_\lambda\underbrace{\Creab_\lambda\Annib_\lambda}_\text{\parbox{2cm}{Same quantum number}}\;: \quad\quad\text{Free boson gas}\]
-
-$\omega_\lambda$: Excitation energy of the bosons (spin fluctuations) in the problem. We achieve such a ``diagonalization'' by introducing the Fourier transformed operators
+We wish to write the boson term in the form of a free boson gas:
+\[\Sum_\lambda\omega_\lambda\underbrace{\Creab_\lambda\Annib_\lambda}_{\text{Same quantum number}}\]
+Here $\omega_\lambda$ is the excitation energy of the bosons (spin fluctuations) in the problem. We achieve such a ``diagonalization'' by introducing the Fourier transformed operators
 \[\Annib_{\v{q}}=\dfrac{1}{\sqrt{N}}\Sum_j \Annib_je^{i\v{q}\cdot\v{r}_j},\qquad\Creab_{\v{q}}= \dfrac{1}{\sqrt{N}} \Sum_j \Creab_je^{-i\v{q}\cdot\v{r}_j}.\]
 where $\v{q}$ runs over the first Brillouin zone of the reciprocal lattice. Then
 \[\Sum_i\Creab_i\Annib_i=\Sum_q\Creab_q\Annib_q\qquad\Rightarrow\qquad\Sum_{\avg{i,j}}\Creab_i\Annib_i=z\Sum_{\v{q}}\Creab_q\Annib_q.\]

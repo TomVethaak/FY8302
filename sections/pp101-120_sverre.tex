@@ -1,0 +1,282 @@
+%\subsection{Non-harmonicity}
+%A series expansion of $\Sum_{n,m}V(R_{n}-R_{m+n})$ to higher orders than the quadratic term gives non-harmonic contributions. We look at the third-order term, which gives the first correction to the ideal boson gas picture.
+%\[\dfrac{1}{3!}\Sum_{n,m}\underbrace{\dfrac{\partial^{3}V}{\partial x^{3}}\Bigg|_{x=R_{n}^{0}-R_{n+m}^{0}}}_{\Gamma(R_{n}^{0}-R_{n+m}^{0})=\Gamma(-R_{m}^{0})}\left(x_{n}-x_{n+m}\right)^{3}=\dfrac{1}{6}\Sum_{ %m}\Gamma(-R_{m}^{0})\Sum_{n}\left(x_{n}-x_{n+m}\right)^{3},\]
+%where we used that $\Sum_{m}\Gamma(-R^{0}_{m})=\Sum_{m}\Gamma(R^{0}_{m})$.
+%Again we introduce the Fourier transforms of $x_{n}$, such that
+%\begin{align}
+%	\Sum_{n}x_{n}^{3}=&\Sum_{n}\left(\dfrac{1}{\sqrt{N}}\Sum_{k_{1}}\tilde{x}_{k_{1}}e^{ik_{1}n}\right)\left(\dfrac{1}{\sqrt{N}}\Sum_{k_{2}}\tilde{x}_{k_{2}}e^{ik_{2}n}\right)\left(\dfrac{1}{\sqrt{N}}\Sum_{k_{3}}\tilde{x}_{k_{3}}e^{ik_{3}n}\right)\nonumber\\
+%	=&\dfrac{1}{\sqrt{N}}\Sum_{k_{1},k_{2},k_{3}}\tilde{x}_{k_{1}}\tilde{x}_{k_{2}}\tilde{x}_{k_{3}}\underbrace{\dfrac{1}{N}\Sum_{n}e^{i(k_{1}+k_{2}+k_{3})n}}_{\delta_{k_{1},-k_{2}-k_{3}}}\nonumber \\
+%	=&\dfrac{1}{\sqrt{N}}\Sum_{k_{1},k_{2}}\tilde{x}_{k_{1}}\tilde{x}_{k_{2}}\tilde{x}_{-k_{1}-k_{2}}\nonumber,
+%\end{align}
+while
+\begin{align}
+\Sum_{n}x_{n}^{2}x_{n+m}=&\dfrac{1}{\sqrt{N}}\Sum_{k_{1},k_{2}}\tilde{x}_{k_{1}}\tilde{x}_{k_{2}}\tilde{x}_{-k_{1}-k_{2}}e^{ik_{1}m},\nonumber
+\end{align}
+and by introducing $n'=n+m$ then
+\begin{align}
+	\Sum_{n}x_{n}x_{n+m}^{2}=&\Sum_{n'}x_{n'}^{2}x_{n'-m} \nonumber \\
+	=&\dfrac{1}{\sqrt{N}}\Sum_{k_{1},k_{2}}\tilde{x}_{k_{1}}\tilde{x}_{k_{2}}\tilde{x}_{-k_{1}-k_{2}}e^{-ik_{1}m}.\nonumber
+\end{align}
+Now the non-harmonic third order term is
+\[\begin{array}{r@{\;}l}
+	\dfrac{1}{6}\Sum_{m}\Gamma(-R_{m}^{0})&\Sum_{n}(x_{n}-x_{n+m})^{3}\\\\
+	& = \dfrac{1}{6}\Sum_{m}\Gamma(-R_{m}^{0})\Sum_{n}(x_{n}^{3}-x_{n+m}^{3}-3x_{n}^{2}x_{n+m}+3x_{n}x_{n+m}^{2})\\\\ 
+	&=\dfrac{1}{6}\Sum_{m}\left(-\Gamma(-R_{m}^{0})\right)\Sum_{k_{1},k_{2}}\dfrac{1}{\sqrt{N}}\tilde{x}_{k_{1}}\tilde{x}_{k_{2}}\tilde{x}_{-k_{1}-k_{2}}\left(e^{ik_{1}m}-e^{-ik_{1}m}\right)\\\\
+	&=\Sum_{k_{1},k_{2}}M(k_{1})\tilde{x}_{k_{1}}\tilde{x}_{k_{2}}\tilde{x}_{-k_{1}-k_{2}},
+\end{array}\]
+where
+\begin{equation}
+	M(k_{1})=\dfrac{-i}{3}\dfrac{1}{\sqrt{N}}\Sum_{m}\Gamma(-R_{m}^{0})\sin(k_{1}m).\nonumber
+\end{equation}
+The non-harmonic third order term can further be written
+\[\begin{array}{r@{\;}l}
+	\Sum_{k_{1},k_{2}} & M(k_{1})\left(\dfrac{\hbar}{2M}\right)^{\tfrac{3}{2}}\dfrac{1}{\sqrt{\omega_{k_{1}}\omega_{k_{2}}\omega_{k_{1}+k_{2}}}}\left(a^{\dagger}_{-k_{1}}+a_{k_{1}}\right)\left(a^{\dagger}_{-k_{2}}+a_{k_{2}}\right)\left(a^{\dagger}_{-k_{3}}+a_{k_{3}}\right)\\\\
+	& = \Sum_{k_{1},k_{2}}G(k_{1},k_{2})\Big(a^{\dagger}_{-k_{1}}a^{\dagger}_{-k_{2}}a^{\dagger}_{-q}+a^{\dagger}_{-k_{1}}a^{\dagger}_{-k_{2}}a^{\dagger}_{q}+a^{\dagger}_{-k_{1}}a_{k_{2}}a^{\dagger}_{-q}+a^{\dagger}_{-k_{1}}a^{\dagger}_{k_{2}}a_{q}\\\\
+	&\quad +a_{k_{1}}a^{\dagger}_{-k_{2}}a^{\dagger}_{-q}+a_{k_{1}}a^{\dagger}_{-k_{2}}a_{q}+a_{k_{1}}a_{k_{2}}a^{\dagger}_{-q}+a_{k_{1}}a_{k_{2}}a_{q}\Big)
+\end{array}\]
+It is possible to do similar calculations for even higher order non-harmonic terms. We notice that the number of phonons are not conserved in the scattering process resulting from the non-harmonic term. However; \ul{momentum is always conserved in all scattering processes!} Non-harmonic effects are most important in crystals with small atom masses, $M$, and large lattice constants.
+
+We can generalize our method by looking at two- or three-dimensional lattices and introduce more than one mode, labelled by an index $\lambda$. For the \textit{harmonic} case we get
+\[\Ha=\Sum_{\B{q},\lambda}\hbar\omega_{\B{q},\lambda}\Creab_{\B{q},\lambda}\Annib_{\B{q},\lambda}.\]
+Now the oscillations are described by vectors:
+\[\B{x}_{\B{q},\lambda} =\sqrt{\dfrac{\hbar}{2M\omega_{\B{q},\lambda}}}\B{\xi}_{\B{q},\lambda}\left(\Creab_{-\B{q},\lambda}+\Annib_{\B{q},\lambda}\right), \]
+\[\B{p}_{\B{q},\lambda}=i\sqrt{\dfrac{\hbar M\omega_{\B{q},\lambda}}{2}}\B{\xi}_{\B{q},\lambda}\left(\Creab_{\B{q},\lambda}-\Annib_{-\B{q},\lambda}\right),   \]
+where $\B{\xi}_{\B{q},\lambda}$ is the excitation direction for mode $\lambda$ with wave vector $\B{q}$.
+
+\subsection{Electron-phonon coupling}
+Up to now we have looked at the second quantized form of the electron gas and lattice vibrations. We now want to couple these degrees of freedom. 
+\[\Ha_{\mathrm{phonon}}=\Sum_{\B{q},\lambda}\omega_{\B{q},\lambda}\Creab_{\B{q},\lambda}\Annib_{\B{q},\lambda},  \]
+\[\Ha_{\mathrm{electron}}=\Sum_{\B{k},\sigma}\vareps_{\B{k}}\Crea_{\B{k},\sigma}\Anni_{\B{k},\sigma}+\dfrac{1}{2}\Sum_{\B{k},\B{k}',\B{q},\sigma,\sigma'}V(\B{q})\Crea_{\B{k},\sigma}\Crea_{\B{k}',\sigma'}\Anni_{\B{k}'+\B{q},\sigma'}\Anni_{\B{k}-\B{q},\sigma}  \]
+Here we have used the plane wave representation for electrons, which is suitable for good metals. Earlier we looked at the second-quantized form of the one-particle operator 
+\[H_{\mathrm{el-ion}} = \Sum_{i}U(\B{r}_{i})=\Sum_{i,j}V_{\mathrm{el-ion}}\left(\B{r}_{i};\B{R}_{j}\right)  \]
+Previously we ignored the dynamics of the ion lattice when we second-quantized this term. When lattice excitations are included in $H_{\mathrm{el-ion}}$, this results in electron-phonon coupling.
+\[V_{\mathrm{el-ion}}\left(\B{r}_{i};\B{R}_{j}\right)=V_{\mathrm{el-ion}}\left(\B{r}_{i}-\B{R}_{j}\right) \]
+The equilibrium postion for lattice points are given by $\B{R}_{j}^{0}$, such that 
+\[\B{R}_{j}=\B{R}_{j}^{0}-\Sum_{\lambda}\B{x}_{j,\lambda}.  \]
+The minus sign is just a convention which gives less minus signs in the calculations. We now write $V_{\mathrm{el-ion}}$ in a Taylor series in terms of small lattice excitations.We only use the lowest order term which has a non-zero contribution, and this is expected to be a good approximation for \textit{weak electron-phonon coupling}. The series is
+\[V_{\mathrm{el-ion}}(\B{r}_{i}-\B{R}_{j})=V_{\mathrm{el-ion}}(\B{r}_{i}-\B{R}_{j}^{0})+\Sum_{\lambda}\B{x}_{j,\lambda}\cdot\nabla V_{\mathrm{el-ion}}\Big|_{\B{r}_{i}-\B{R}_{j}^{0}}+... \] 
+We have already looked at the first term, which results in
+\[\Ha_{\mathrm{el-ion}}^{(1)}=\Sum_{\B{k},\B{q},\sigma}\tilde{U}(\B{q})\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma} \]
+where $\tilde{U}(\B{q})$ is the Fourier transform of $U(\B{r})=\Sum_{j}V_{\mathrm{el-ion}}\left(\B{r}-\B{R}_{j}^{0}\right)$. This is the contribution from the \textit{static} ion lattice. We now look at
+\[\Sum_{i,j,\lambda}\B{x}_{j,\lambda}\cdot\nabla V_{\mathrm{el-ion}}(\B{r}_{i}-\B{R}_{j}^{0}),\]
+and by introducing
+\[V_{\mathrm{el-ion}}(\B{r})=\dfrac{1}{\sqrt{N}}\Sum_{\B{q}}\tilde{V}_{\mathrm{e-i}}(\B{q})e^{i\B{q}\cdot\B{r}},\]
+then
+\[\nabla V_{\mathrm{el-ion}}=\dfrac{1}{\sqrt{N}}\Sum_{\B{q}}i\B{q} \tilde{V}_{\mathrm{e-i}}(\B{q})e^{i\B{q}\cdot\B{r}}.
+\]
+We want to find the second-quantized form of the second term
+\begin{align}
+H_{\mathrm{el-ion}}^{(2)}=&\dfrac{1}{\sqrt{N}} \Sum_{i,j,\lambda}\B{x}_{j,\lambda}\cdot\Sum_{\B{q}}i\B{q}\tilde{V}_{\mathrm{e-i}}(\B{q})e^{i\B{q}\cdot(\B{r}_{i}-\B{R}_{j}^{0})}  \nonumber \\
+=& \Sum_{i}\Sum_{\B{q},\lambda}\left(\dfrac{1}{\sqrt{N}}\Sum_{j}\B{x}_{j,\lambda}e^{-i\B{q}\cdot\B{R}_{j}^{0}}\right)i\B{q}\tilde{V}_{\mathrm{e-i}}(\B{q})e^{i\B{q}\cdot\B{r}_{i}}\nonumber \\
+=&\Sum_{i}\Sum_{\B{q},\lambda}\tilde{\B{x}}_{\B{q},\lambda}\cdot i\B{q}\tilde{V}_{\mathrm{e-i}}(\B{q})e^{i\B{q}\cdot\B{r}_{i}} \nonumber \\
+\equiv&\Sum_{i}F(\B{r}_{i})\nonumber ,
+\end{align}
+where
+\[F(\B{r}_{i})=\Sum_{q}\tilde{F}(\B{q})e^{i\B{q}\cdot\B{r}_{i}} \]
+and 
+\[\tilde{F}(\B{q})=\Sum_{\lambda}\B{x}_{\B{q},\lambda}\cdot i\B{q}\tilde{V}_{\mathrm{e-i}}(\B{q}).     \]
+When $H_{\mathrm{el-ion}}^{(2)}=\Sum_{i}F(\B{r}_{i})$, we know that the second-quantized form in the plane wave basis is
+\[\Ha_{\mathrm{el-ion}}^{(2)}=\Sum_{\B{k},\B{q},\sigma}\tilde{F}(\B{q})\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma},   \]
+since $F(\B{r})$ is independent of spin. We now introduce the quantized phonon-gas:
+\[\B{x}_{\B{q},\lambda}=\sqrt{\dfrac{\hbar}{2M\omega_{\B{q},\lambda}}}\B{\xi}_{\B{q},\lambda}\left(\Creab_{-\B{q},\lambda}+\Annib_{\B{q},\lambda}\right) ,   \]
+such that 
+\[\tilde{F}(\B{q})=\Sum_{\lambda}M_{\B{q},\lambda}\left(\Creab_{-\B{q},\lambda}+\Annib_{\B{q},\lambda}\right), \]
+where
+\begin{center}
+\boxed{M_{\B{q},\lambda}=i\left(\B{q}\cdot\B{\xi}_{\B{q},\lambda}\right)\sqrt{\dfrac{\hbar}{2M\omega_{\B{q},\lambda}}}\tilde{V}_{\mathrm{e-i}}(\B{q})   }
+\end{center}
+Finally,
+\begin{align}
+	\Ha_{\mathrm{el-ion}}=&\Ha_{\mathrm{el-phonon}} \nonumber \\
+	=&\Sum_{\B{k},\B{q},\sigma,\lambda}M_{\B{q},\lambda}\left(\Creab_{-\B{q},\lambda}+\Annib_{\B{q},\lambda}\right)\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma}.\nonumber
+\end{align}
+The quantity $M_{\B{q},\lambda}$ is the coupling constant between electrons and phonons. One important feature is that $M_{\B{q},\lambda}\propto\B{q}$, which means that
+\begin{center}
+	\boxed{\B{q}\rightarrow 0, \Rightarrow M_{\B{q},\lambda}\rightarrow 0.}
+\end{center}
+The case of $\B{q}=0$ is equivalent with that the whole lattice is translated uniformly, which does not affect the electrons due to Galilean invariance. Another important fact is that the coupling $M_{\B{q},\lambda}$ is independent of both $\B{k}$ and $\sigma$. The $\sigma$-independence comes naturally since the lattice potential is spin independent.  The coupling is independent of $k$ \Underline{only because we use the plane wave basis}. Also, $M_{\B{q},\lambda}\propto1/\sqrt{M}$, such that the coupling is weaker for heavy ions.
+\section{Many-particle perturbation theory}
+\subsection{Zero temperature}
+Let us assume we can describe a system with a known Hamilton operator, for example
+\[\begin{array}{r@{\;}c@{\;}l@{\qquad}l}
+	\Ha_{0}^{\mathrm{F}}	& =	& \Sum_{\B{k},\sigma}\vareps_{\B{k}}\Crea_{\B{k},\sigma}\Anni_{\B{k},\sigma},				& \mathrm{(fermions)}\\\\
+	\Ha_{0}^{\mathrm{B}}	& =	& \Sum_{\B{q},\lambda}\omega_{\B{q},\lambda}\Creab_{\B{q},\lambda}\Annib_{\B{q},\lambda},	& \mathrm{(bosons)}
+\end{array}\]
+and we want a description of the \textit{quantized} changes which happen as a result of perturbations of $\Ha_{0}$, i.e. $\Ha_{0}\rightarrow\Ha_{0}+V$. Usually, the perturbated Hamiltonian can not be diagonalized exactly. Examples of perturbations are:
+\begin{enumerate}[i)]
+	\item Electron-phonon coupling: \[V=\Sum_{\B{k},\B{q},\sigma,\lambda}M_{\B{q},\lambda}(\Creab_{-\B{q},\lambda}+\Annib_{\B{q},\lambda})\Crea_{\B{k}+\B{q},\sigma}\Anni_{\B{k},\sigma}\]
+	\item Electron-electron interaction: \[V=\Sum_{\B{k},\B{k}',\B{q},\sigma,\sigma'}\tilde{V}(\B{q})\Crea_{\B{k},\sigma}\Crea_{\B{k}',\sigma'}\Anni_{\B{k}'+\B{q},\sigma'}\Anni_{\B{k}-\B{q},\sigma} \]
+	\item The $U$-term in the Hubbard model.
+\end{enumerate}
+\subsection{Time-evolution of states}
+Hamilton-operator \[\Ha=\Ha_{0}+V.\]
+$\Ha_{0}$: One-particle operator. 
+$V$: Perturbation, such that we can not solve the problem exact.
+\begin{Indentskip}
+	\subsubsection*{Schr\"odinger picture}
+	\Underline{Operators} are independent of time: $\hat{\mathcal{O}}(t)=\hat{\mathcal{O}}(0)$.\\
+	\Underline{States} are time-dependent: \[i\dfrac{\partial }{\partial t}|\psi\rangle =\Ha|\psi\rangle \]
+	Formally: \[|\psi(t)\rangle=e^{-i\Ha t}|\psi(0)\rangle  \] 
+	$e^{-i\Ha t}$: Evolution operator which takes the system from the state $|\psi(0)\rangle$ at time $t=0$ to the state $|\psi(t)\rangle$ at time $t$.
+\end{Indentskip}
+\begin{Indentskip}
+	\subsubsection*{Heisenberg picture}
+	\Underline{States} are time-independent: $|\psi(t)\rangle=|\psi(0)\rangle$.\\
+	\Underline{Operators} are time-dependent: \[\dfrac{d\hat{\mathcal{O}}}{dt} =-i\left[\hat{\mathcal{O}},\Ha\right]  \] 
+	Formally:
+	\[\hat{\mathcal{O}}(t)=e^{i\Ha t}\hat{\mathcal{O}}(0)e^{-i\Ha t}\] 
+	Schrödinger: \[\Braket{\psi(t)|\hat{\mathcal{O}}(0)|\psi(t)}=\Braket{\psi(0)|e^{i\Ha t}\hat{\mathcal{O}}(0)e^{-i\Ha t}|\psi(0)}.\]
+	Heisenberg: \[\Braket{psi(0)|\hat{\mathcal{O}}(t)|\psi(0)}=\Braket{\psi(0)|e^{i\Ha t}\hat{\mathcal{O}}(0)e^{-i\Ha t}|\psi(0)}\]	
+	We get the same matrix elements in both pictures! 
+\end{Indentskip}
+There is a third picture, which is used in perturbation theory:
+\subsubsection*{Interaction picture}
+\begin{Indentskip}
+	
+	Some time dependence in \textit{both} the states and the operators.
+	\[|\psi(t)\rangle=e^{i\Ha_{0}t}e^{-i\Ha t}|\psi(0)\rangle,\]
+	\[\hat{\mathcal{O}}(t)=e^{i\Ha_{0}t}\hat{\mathcal{O}}(0)e^{-i\Ha_{0}t}.\]
+	
+\end{Indentskip}
+\Underline{NB:} In general, $\left[\Ha_{0},V\right]\neq0$, such that $e^{i\Ha_{0}t}e^{-i\Ha t}$ is much more complicated than $e^{-iVt}$!
+
+For $V=0$ the interaction picture coincides with the Heisenberg picture. Since we assume that the components of $V$ is much smaller than the components of $\Ha_{0}$ for the perturbation theory to work, it follows that most of the time development lies in the operators, while the states has a slow time-variation. 
+
+\textbf{\Underline{Evolution operator for a state $|\psi(t)\rangle$ in the interaction picture:}}
+\begin{align}
+	|\psi(t)\rangle &= U(t)|\psi(0)\rangle,\nonumber \\
+U(t)&=e^{i\Ha_{0}t}e^{-i\Ha t}\neq e^{i(\Ha_{0}-\Ha_{0}-V)t} ~~(!!)\nonumber
+\end{align}
+
+\boxed{V=0 : \\
+U(t)=. \left[\Ha_{0},\Ha_{0}\right]=.  e^{i\Ha_{0}t}e^{-i\Ha_{0}t}=1. } 
+
+$U(t)$ have a non-trivial time-dependence only when $V\neq0$, and we want to find $U$ as a functional of $V$. (A functional is a number which depends on a function, i.e. a mapping from a space of functions onto the complex numbers.) We find $U(t)$ from $V(t)$ like this: 
+\begin{align}
+	\dfrac{\partial U}{\partial t} =&~~ \dfrac{\partial}{\partial t}\left(e^{i\Ha_{0}t}e^{-i\Ha t}\right)\nonumber \\
+	=&~~ i\Ha_{0}e^{i\Ha_{0}t}e^{-i\Ha t}-e^{i\Ha_{0}t}i\Ha e^{-i\Ha t} \nonumber \\
+	=&~~ ie^{i\Ha_{0}t}\left(\Ha_{0}-\Ha \right)e^{-i\Ha t} \nonumber \\
+	=&~~ ie^{i\Ha_{0}t}Ve^{-i\Ha t}\nonumber \\ 
+	=& -i\underbrace{e^{i\Ha_{0}t}Ve^{-i\Ha_{0}t}}_{\hat{V}(t)}\underbrace{e^{i\Ha_{0}t}e^{-i\Ha t}}_{U(t)}\nonumber \\
+	=&-i\hat{V}(t)U(t).\nonumber 
+\end{align}
+$\hat{V}(t)$ explisitly time-dependent, such that $U(t)\neq e^{-i\hat{V}t}U(0)$. When $V=0$ then $\partial U/\partial t=0$, such that $U(t)=U(0)=1$. We integrate over $t$:
+\begin{align}
+	\int_{0}^{t}dt'\dfrac{\partial U(t')}{\partial t'}&=U(t)-U(0)\nonumber \\ 
+	&= -i\int_{0}^{t}dt'\hat{V}(t')U(t'),
+\end{align}
+such that 
+\begin{center}
+		\boxed{U(t)=1-i\int_{0}^{t}dt'\hat{V}(t')U(t')}
+			\end{center}
+\vspace{5pt}
+This is a (linear) integral equation for $U(t)$. We want to solve this by iteration, but first we introduce a more general evolution operator.
+\subsubsection*{The $S$-matrix}
+The scattering matrix, $S$, is the central quantity in many-particle perturbation theory. With a perturbation theory for $S$ then we will almost automatically have a method to write a perturbation series for \textbf{\Underline{any physical quantity}}. The $S$-matrix is defined as:
+\[|\psi(t)\rangle=S(t,t')|\psi(t')\rangle,\] such that
+$S(t,0)=U(t),$ by recalling that $|\psi(t)\rangle = U(t)|\psi(0)\rangle$. The state can be written as
+\begin{align}
+	|\psi(t)\rangle&=S(t,t')|\psi(t')\rangle\nonumber \\
+	&=S(t,t')U(t')|\psi(0)\rangle, \nonumber
+\end{align}
+such that 
+\[U(t)=S(t,t')U(t'),\]
+or in other words
+\[S(t,t')=U(t)U^{-1}(t').\]
+We utilize the unitarity of $U$, which we find from
+\[U^{-1}(t)=e^{i\Ha t}e^{-i\Ha_{0}t}=U^{\dagger}(t),\] 
+such that the scattering matrix is written as
+\begin{center}
+	\boxed{S(t,t')=U(t)U^{\dagger}(t').}
+\end{center}
+We want to find an integral equation for $S$:
+\begin{align}
+	\dfrac{\partial S(t,t')}{\partial t} &= \dfrac{\partial U(t)}{\partial t}U^{\dagger}(t')\nonumber \\
+	&= -i\hat{V}(t)U(t)U^{\dagger}(t')\nonumber \\
+	&= -i\hat{V}(t)S(t,t'). \nonumber
+\end{align}
+We integrate over time: 
+\begin{align}
+	\int_{\tilde{t}}^{t}\dfrac{\partial S(t'',t')}{\partial t''} =& S(t,t')-S(\tilde{t},t') \nonumber \\
+	=&-i\int_{\tilde{t}}^{t}dt''\hat{V}(t'')S(t'',t').
+\end{align}
+In the special case of $\tilde{t}=t'$, then $S(t',t')=1=U(t')U^{\dagger}(t')$. The integral equation for the scattering matrix then follows:
+\begin{center}
+	\boxed{S(t,t')=1-i\int_{t'}^{t}dt''\hat{V}(t'')S(t'',t')}
+\end{center}
+The time evolution of $S$ is given by $\hat{V}(t)=e^{i\Ha_{0}t}Ve^{-i\Ha_{0}t}$, and in a similar way as for $U(t)$ we can construct a perturbation theory for $S(t,t')$ by solving the integral equation by iteration.
+
+\Underline{0'th approx.:} 
+\[S_{0}(t,t')=1.\]
+\Underline{1st approx.:}
+\[S_{1}(t,t')=1-i\int_{t'}^{t}dt''\hat{V}(t'').\]
+Now we can see what it means that $V$ should be small, i.e. \[\left|\int_{t'}^{t}dt''\hat{V}(t'')\right|\ll1.\]
+\begin{Indentskip}
+	\subsubsection*{Properties of the $S$-matrix:}
+	\[S(t,t)=1,\]
+	\begin{align}
+		\left(S(t,t')\right)^{\dagger}&=\left(U(t)U^{\dagger}(t')\right)^{\dagger} = U(t')U^{\dagger}(t)\nonumber \\
+	&=S(t't),\nonumber
+	\end{align}
+	\[S(t,t'')=S(t,t')S(t',t''),\] since
+	\begin{align}
+		|\psi(t)\rangle&=    \nonumber
+	\end{align}
+\end{Indentskip}
+To find an exact expression for $S$ we introduce the \Underline{time ordering operator}: $\tilde{T}$.
+\subsection*{Time ordering of operators}
+\Underline{Bosons:}
+Two boson operators have time-ordered product 
+\[\tilde{T}[A(t_{1})B(t_{2})]= \begin{cases}A(t_{1})B(t_{t}); & t_{1}>t_{2}.\\
+B(t_{2})A(t_{1}); & t_{2}>t_{1}.
+\end{cases} \]
+
+\Underline{Fermions:}
+Two fermion operators have time-ordered product
+\[\tilde{T}[A(t_{1})B(t_{2})]= \begin{cases}A(t_{1})B(t_{t}); & t_{1}>t_{2}.\\
+-B(t_{2})A(t_{1}); & t_{2}>t_{1}.
+\end{cases} \] 
+The operator $\tilde{T}$ orders the operator with the earliest time to the right, such that it operates first on a ket, $|\psi\rangle$.
+
+We look further at the equation for $S$:
+\[S(t,t')=1-i\int_{t'}^{t}dt''\hat{V}(t'')S(t'',t'),\]
+\Underline{0.:}
+\[S_{0}(t,t')=1,\]
+\Underline{1.:}
+\[S_{1}(t,t')=1-i\int_{t'}^{t}dt''\hat{V}(t''),\]
+\Underline{2.:}
+\begin{align}
+	S_{2}(t,t')&=1-i\int_{t'}^{t}dt''\hat{V}(t'')S_{1}(t'',t')\nonumber \\
+	&=1-i\int_{t'}^{t}dt''\hat{V}(t'')\left(1-i\int_{t'}^{t''}dt'''\hat{V}(t''')\right) \nonumber \\ 
+	&=1+(-i)\int_{t'}^{t}dt''\hat{V}(t'')+(-i)^{2}\int_{t'}^{t}dt''\int_{t'}^{t''}dt'''\hat{V}(t'')\hat{V}(t'''),\nonumber
+\end{align}
+This can be done infinitly, such that
+\[S(t,t')=1+\Sum_{n=1}^{\infty}(-i)^{n}\int_{t'}^{t}dt_{1}\int_{t'}^{t_{1}}dt_{2}...\int_{t'}^{t_{n-1}}dt_{n}\left(\hat{V}(t_{1})\hat{V}(t_{2})...\hat{V}(t_{n})\right).\]
+This expression is such that all the integrations have the same lower bound, $t'$, while the upper bounds are different. We use time ordering of the operators to get all the upper integration bounds the same. Let us consider a $\hat{V}$ consisting of a combination of fermion and/or boson operators in a way such that 
+\[\tilde{T}\left[V(t_{1})V(t_{2})\right]=\begin{cases}
+V(t_{1})V(t_{2}); & t_{1}>t_{2} \\
+V(t_{2})V(t_{1}); & t_{2}>t_{1}. \end{cases}\]
+We then look at the expression
+\begin{align}
+	\dfrac{1}{2!}\int_{t'}^{t}dt_{1}\int_{t'}^{t}dt_{2}\tilde{T}\left[\hat{V}(t_{1})\hat{V}(t_{2})\right] =&~~~ \dfrac{1}{2}\int_{t'}^{t}dt_{1}\int_{t'}^{t_{1}}dt_{2}\hat{V}(t_{1})\hat{V}(t_{2}) \nonumber \\
+	&+\dfrac{1}{2}\int_{t'}^{t}dt_{2}\int_{t'}^{t_{2}}dt_{1}\hat{V}(t_{2})\hat{V}(t_{1}) \nonumber \\
+	=& \int_{t'}^{t}dt_{1}\int_{t'}^{t_{1}}dt_{2}\hat{V}(t_{1})\hat{V}(t_{2}),
+\end{align}
+by interchanging the labels $t_{1}\leftrightarrow t_{2}$ in the second term. In the same way:
+\[\dfrac{1}{n!}\int_{t'}^{t}dt_{1}\int_{t'}^{t}dt_{2}...\int_{t'}^{t}dt_{n}\tilde{T}\left[\hat{V}(t_{1})...\hat{V}(t_{n})\right]=\int_{t'}^{t}dt_{1}\int_{t'}^{t_{1}}dt_{2}...\int_{t'}^{t_{n-1}}dt_{n}\hat{V}(t_{1})...\hat{V}(t_{n}).\]
+We then get an expression for $S$:
+\begin{align}
+	S(t,t')&=1+\Sum_{n=1}^{\infty}\dfrac{(-i)^{n}}{n!}\int_{t'}^{t}dt_{1}...\int_{t'}^{t}dt_{n}\tilde{T}\left[\hat{V}(t_{1})...\hat{V}(t_{n})\right]\nonumber \\
+	&=1+\tilde{T}\Sum_{n=1}^{\infty}\dfrac{(-1)^{n}}{n!}\left[\int_{t'}^{t}dt''\hat{V}(t'')\right]^{n},
+\end{align}
+which can be written formally as 
+\begin{center}
+	\boxed{S(t,t')=\tilde{T}\left[\exp\left(-i\int_{t'}^{t}dt''\hat{V}(t'')\right)\right]}
+\end{center}
+	Typically, we want to calculate expectation values on the form
+	\[\langle\psi(0)|\hat{O}(t)|\psi(0)\rangle.\]
+	Here, the state $|\psi(0)\rangle$ is the exact ground state for the interacting system. The problem is that $|\psi(0)\rangle$ is unknown, since $\Ha=\Ha_{0}+V$ is such that we cannot solve the problem exact. Can we relate $|\psi(0)\rangle$ formally to the groundstate $|\phi\rangle_{0}$ of $\Ha_{0}$? 
+	
+	The Gell-Mann-Low relations solves this. The trick is to introduce the perturbation $V$ adiabatically, i.e. the potential is turned on really slowly. We can use 
+	\[\Ha = \Ha_{0}+Ve^{-|t|\epsilon},\]
+	where $\epsilon$ is very small, and we assume that we study the system for times $|t|\ll\epsilon$.

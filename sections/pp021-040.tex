@@ -320,10 +320,11 @@ The system is now no longer translation invariant, if we let $\vareps_{n,i}$ var
 We now look at the term
 \[\Sum_i\Sum_{j\neq i}U_a(\B{r}_i,\B{R}_j)\quad\Rightarrow\quad\Sum_{\lambda_1,\lambda_2}\braket{\lambda_1|\Ha_1|\lambda_2}\Crea_{\lambda_1}\Anni_{\lambda_2},\]
 by using the result in equation~\eqref{eq:h1_l1l2c1c2}:
-\[\begin{array}{l}
-	=\Sum_{\substack{n_1,\sigma_1,i_1\\n_2,\sigma_2,i_2}}\braket{\underbrace{n_1,\sigma_1,i_1|\Sum_{j\neq i}U_a|n_2,\sigma_2,i_2}_{\text{No summation over }i\text{ here!}}}\Crea_{n_1,\sigma_1,i_1}\Anni_{n_2,\sigma_2,i_2}\braket{n_1,\sigma_1,i_1|\underbrace{\Sum_{j\neq i}}_{\mathclap{\text{Note: }\sum_i\B{r}_i\;\rightarrow\;\int d\B{r}}}U_a(\B{r}_i,\B{R}_j)|n_2,\sigma_2,i_2}\\\\
-	=\Sum_s\Int d\B{r}\,\varphi_{N_1,\sigma_1,i_1}^*(\B{r},s)\left(\Sum_{j\neq i}U_a(\B{r},\B{R}_j)\right)\varphi_{n_2,\sigma_2,i_2}(\B{r},s)\\\\
-	=\underbrace{\Sum_s\chi_{\sigma_1}^*(s)\chi_{\sigma_2}(s)}_{\delta_{\sigma_1,\sigma_2}}\,\underbrace{\Int d\B{r}_i\phi_{n_1,i_1}(\B{r})\left(\Sum_{j\neq i}U_a(\B{r},\B{R}_j)\right)\phi_{n_2,i_2}(\B{r})}_{\equiv \,t_{i_1,i_2}^{n_1,n_2},\text{ a matrix element}},
+\[\begin{array}{r@{\;}c@{\;}l}
+	& =	& \Sum_{\substack{n_1,\sigma_1,i_1\\n_2,\sigma_2,i_2}}\braket{\underbrace{n_1,\sigma_1,i_1|\Sum_{j\neq i}U_a|n_2,\sigma_2,i_2}_{\text{No summation over }i\text{ here!}}}\Crea_{n_1,\sigma_1,i_1}\Anni_{n_2,\sigma_2,i_2}\\\\
+	&&\times\;\braket{n_1,\sigma_1,i_1|\underbrace{\Sum_{j\neq i}}_{\mathclap{\text{Note: }\sum_i\B{r}_i\;\rightarrow\;\int d\B{r}}}U_a(\B{r}_i,\B{R}_j)|n_2,\sigma_2,i_2}\\\\
+	& =	& \Sum_s\Int d\B{r}\,\varphi_{N_1,\sigma_1,i_1}^*(\B{r},s)\left(\Sum_{j\neq i}U_a(\B{r},\B{R}_j)\right)\varphi_{n_2,\sigma_2,i_2}(\B{r},s)\\\\
+	& =	& \underbrace{\Sum_s\chi_{\sigma_1}^*(s)\chi_{\sigma_2}(s)}_{\delta_{\sigma_1,\sigma_2}}\,\underbrace{\Int d\B{r}_i\phi_{n_1,i_1}(\B{r})\left(\Sum_{j\neq i}U_a(\B{r},\B{R}_j)\right)\phi_{n_2,i_2}(\B{r})}_{\equiv \,t_{i_1,i_2}^{n_1,n_2},\text{ a matrix element}},
 \end{array}\]
 which gives us
 \[\Sum_i\Sum_{j\neq i}U_a(\B{r}_i,\B{R}_j)=\Sum_{\substack{i_1,i_2\\n_1,n_2\\\sigma}}t_{i_1,i_2}^{n_1,n_2}\,\Crea_{n_1,\sigma,i_1}\Anni_{n_2,\sigma,i_2}.\]
