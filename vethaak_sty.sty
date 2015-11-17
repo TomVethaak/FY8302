@@ -48,19 +48,71 @@ cross/.default={5pt}}
 	}}
 \newcommand*{\CenterFig}[1]{\begin{center}\makebox[\textwidth]{\includegraphics{#1}}\end{center}}
 
+% ------ Field operators ------ %
+\newcommand*{\anni}{\ensuremath{\psi^{\vphantom{\dagger}}}}		% Annihilation operator (fermion, position)
+\newcommand*{\annib}{\ensuremath{A^{\vphantom{\dagger}}}}		% Annihilation operator (boson, position)
+\newcommand*{\Anni}{\ensuremath{c^{\vphantom{\dagger}}}}		% Annihilation operator (fermion, momentum)
+\newcommand*{\Annib}{\ensuremath{a^{\vphantom{\dagger}}}}		% Annihilation operator (boson, momentum)
+\newcommand*{\Annibb}{\ensuremath{b^{\vphantom{\dagger}}}}		% Annihilation operator (boson, momentum, sublattice B)
+\newcommand*{\crea}{\ensuremath{\psi^\dagger}}					% Creation operator (fermion, position)
+\newcommand*{\creab}{\ensuremath{A^\dagger}}					% Creation operator (boson, position)
+\newcommand*{\Crea}{\ensuremath{c^\dagger}}						% Creation operator (fermion, momentum)
+\newcommand*{\Creab}{\ensuremath{a^\dagger}}					% Creation operator (boson, momentum)
+\newcommand*{\Creabb}{\ensuremath{b^\dagger}}					% Creation operator (boson, momentum, sublattice B)
+
+% ------ Green's functions ------ %
+\newcommand*{\aGr}{F}											% Anomalous Green function
+\newcommand*{\aqGr}{f}											% Anomalous quasiclassical Green function
+\newcommand*{\Gr}{G}											% Green function
+\newcommand*{\qGr}{g}											% Quasiclassical Green function
+
+\newcommand*{\Fe}{\Nf{\St{\aGr}}}								% 8*8 anomalous Green function
+\newcommand*{\Ff}{\Nt{\St{\aGr}}}								% 4*4 anomalous Green function
+\newcommand*{\Fo}{\aGr}											% 1*1 anomalous Green function
+\newcommand*{\Ft}{\St{\aGr}}									% 2*2 anomalous Green function
+\newcommand*{\Ge}{\Nf{\St{\Gr}}}								% 8*8 Green function
+\newcommand*{\Gf}{\Nt{\St{\Gr}}}								% 4*4 Green function
+\newcommand*{\Go}{\Gr}											% 1*1 Green function
+\newcommand*{\Gt}{\St{\Gr}}										% 2*2 Green function
+
+\newcommand*{\qFe}{\Nf{\St{\aqGr}}}								% 8*8 anomalous quasiclassical Green function
+\newcommand*{\qFf}{\Nt{\St{\aqGr}}}								% 4*4 anomalous quasiclassical Green function
+\newcommand*{\qFo}{\aqGr}										% 1*1 anomalous quasiclassical Green function
+\newcommand*{\qFt}{\St{\aqGr}}									% 2*2 anomalous quasiclassical Green function
+\newcommand*{\qGe}{\Nf{\St{\qGr}}}								% 8*8 Green quasiclassical function
+\newcommand*{\qGf}{\Nt{\St{\qGr}}}								% 4*4 Green quasiclassical function
+\newcommand*{\qGo}{\qGr}										% 1*1 Green quasiclassical function
+\newcommand*{\qGt}{\St{\qGr}}									% 2*2 Green quasiclassical function
+
+% ------ Nambu space ------ %
+\newcommand*{\Nt}[1]{\hat{#1}}									% 2*2 structure in Nambu space
+\newcommand*{\Nf}[1]{\check{#1}}								% 4*4 structure in Nambu space
+\newcommand*{\PauliN}{\tau}										% Pauli matrix in Nambu space
+
+% ------ Spin space ------ %
+\newcommand*{\St}[1]{\underline{#1}}							% 2*2 structure in spin space
+\newcommand*{\PauliS}{\sigma}									% Pauli matrix in spin space
+
+% ------ Pauli matrices ------ %
+\newcommand*{\paulie}{\Nf{\St{\rho}}}							% Eight-dimensional Pauli matrix
+\newcommand*{\paulif}{\Nt{\St{\rho}}}							% Four-dimensional Pauli matrix
+\newcommand*{\paulit}{\St{\sigma}}								% Two-dimensional Pauli matrix
+
+% ------ Combined dimensions Nambu+spin ------ %
+\newcommand*{\df}[1]{\St{\Nt{#1}}}								% 4*4 matrix dimension
+\newcommand*{\dt}[1]{\St{#1}}									% 2*2 matrix dimension
+\newcommand*{\de}[1]{\St{\Nf{#1}}}								% 8*8 matrix dimension
+
+
 % ------ Math commands and symbols ------ %
-\newcommand*{\anni}{\ensuremath{\psi^{\vphantom{\dagger}}}}
-\newcommand*{\annib}{\ensuremath{A^{\vphantom{\dagger}}}}
-\newcommand*{\Anni}{\ensuremath{c^{\vphantom{\dagger}}}}
-\newcommand*{\Annib}{\ensuremath{a^{\vphantom{\dagger}}}}
-\newcommand*{\Annibb}{\ensuremath{b^{\vphantom{\dagger}}}}
 \newcommand*{\Area}{\ensuremath{\mathscr{A}}}
-\newcommand*{\avg}[1]{\ensuremath{\langle\;#1\;\rangle}} % Nicolai insert
+\newcommand*{\avg}[1]{\ensuremath{\langle\;#1\;\rangle}} 		% Nicolai insert, average
 \newcommand*{\B}[1]{\relax\ifmmode\bm{#1}\else\textbf{#1}\fi}
 \newcommand*{\bandgap}{\ensuremath{\Delta}}
 \newcommand*{\Bandgap}{\ensuremath{\hat{\Delta}}}
 \newcommand*{\Bath}{\ensuremath{\mathcal{B}}}
 \newcommand*{\Bfield}{\ensuremath{B}}
+\newcommand*{\BigO}{\mathcal{O}}
 \newcommand*{\Bm}[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand*{\Boltzmann}{\ensuremath{k}}
 \newcommand*{\bulprod}{\ensuremath{\bullet}}
@@ -69,7 +121,6 @@ cross/.default={5pt}}
 \newcommand*{\charge}{\ensuremath{q}}
 \newcommand*{\chempot}{\ensuremath{\mu}}
 \newcommand*{\circcomma}{\,\overset{\circ}{,}\,}
-\newcommand*{\circprod}{\circ}
 \newcommand*{\CoherenceLength}{\ensuremath{\xi}}
 \newcommand*{\commu}[1]{\ensuremath{\left[#1\right]}}
 \newcommand*{\commum}[1]{\ensuremath{\left[#1\right]_-}}
@@ -78,23 +129,17 @@ cross/.default={5pt}}
 \newcommand*{\commupm}[1]{\ensuremath{\left[#1\right]_\pm}}
 \newcommand*{\con}[1]{{\!\!#1}}
 \newcommand*{\convol}{\ensuremath{\ast}}
-\newcommand*{\crea}{\ensuremath{\psi^\dagger}}
-\newcommand*{\creab}{\ensuremath{A^\dagger}}
-\newcommand*{\Crea}{\ensuremath{c^\dagger}}
-\newcommand*{\Creab}{\ensuremath{a^\dagger}}
-\newcommand*{\Creabb}{\ensuremath{b^\dagger}}
 \newcommand*{\Current}{\ensuremath{I}}
 \newcommand*{\dd}{d}
-\newcommand*{\df}[1]{\hat{\B{#1}}}
-\newcommand*{\dt}[1]{\B{#1}}
-\newcommand*{\de}[1]{\ensuremath{\check{\B{#1}}}}
 \newcommand*{\DiffusionConstant}{\ensuremath{D}}
 \newcommand*{\Dim}[1]{\ensuremath{\left[#1\right]}}
 \newcommand*{\distf}{\ensuremath{\df{\mathpzc{h\,}}\!}}
 \newcommand*{\disto}{\ensuremath{\mathpzc{h}}}
+\newcommand*{\distt}{\ensuremath{\dt{\mathpzc{h\,}}\!}}
 \newcommand*{\DistributionEnergy}{\ensuremath{\df{E}_{\smash{\mathpzc{h\,}}}}}
 \newcommand*{\DebyeTemperature}{\ensuremath{\Theta}}
 \newcommand*{\DOS}{D}
+\newcommand*{\dotcomma}{\ensuremath{\,\overset{\cdot}{,}\,}}
 \newcommand*{\down}{\downarrow}
 \newcommand*{\ee}{\ensuremath{e}}
 \newcommand*{\EFermi}{\ensuremath{\varepsilon_F}}
@@ -110,16 +155,8 @@ cross/.default={5pt}}
 \newcommand*{\Fenvf}{\ensuremath{\hat{\B{f}}}}
 \newcommand*{\Fenvt}{\ensuremath{\B{f}}}
 \newcommand*{\Flux}{\ensuremath{\Phi}}
-\newcommand*{\Fe}{\de{F}}
-\newcommand*{\Ff}{\df{F}}
-\newcommand*{\Fo}{\ensuremath{F}}
-\newcommand*{\Ft}{\dt{F}}
 \newcommand*{\Genergy}{\ensuremath{\epsilon}}
 \newcommand*{\genmom}{\B{p}}
-\newcommand*{\Ge}{\de{G}}
-\newcommand*{\Gf}{\df{G}}
-\newcommand*{\Go}{\ensuremath{G}}
-\newcommand*{\Gt}{\dt{G}}
 \newcommand*{\Gibbs}{\ensuremath{G}}
 \newcommand*{\GibbsDensity}{\ensuremath{g}}
 \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath$ #1 $}}} % Nicolai insert 
@@ -158,27 +195,18 @@ cross/.default={5pt}}
 \newcommand*{\operator}{\ensuremath{\hat{\mathcal{O}}}}
 \newcommand*{\OrderParameter}{\ensuremath{\omega}}
 \newcommand*{\Partition}{\ensuremath{\mathcal{Z}}}
-\newcommand*{\paulie}{\check{\rho}}
-\newcommand*{\paulif}{\hat{\rho}}
-\newcommand*{\paulit}{\bm{\tau}}
 \newcommand*{\PenDepth}{\ensuremath{\lambda}}
 \newcommand*{\Permeability}{\ensuremath{\mu_0}}
 \newcommand*{\PhaseCoherenceLength}{\ensuremath{\Length_\phi}}
 \newcommand*{\Pm}[1]{\begin{pmatrix}#1\end{pmatrix}}
 \newcommand*{\Pressure}{\ensuremath{P}}
 \newcommand*{\Prod}{\displaystyle\prod}
-\newcommand*{\qFe}{\de{f}}
-\newcommand*{\qFf}{\df{f}}
-\newcommand*{\qFo}{\ensuremath{f}}
-\newcommand*{\qFt}{\dt{f}}
-\newcommand*{\qGe}{\de{g}}
-\newcommand*{\qGf}{\df{g}}
-\newcommand*{\qGo}{\ensuremath{g}}
-\newcommand*{\qGt}{\dt{g}}
 \newcommand*{\Radius}{\ensuremath{a}}
 \newcommand*{\RedRad}{\ensuremath{\alpha}}
 \newcommand*{\RedTemp}{\ensuremath{t}}
 \newcommand*{\Resistance}{\ensuremath{R}}
+\newcommand*{\ringcomma}{\,\overset{\circ}{,}\,}
+\newcommand*{\ringprod}{\circ}
 \newcommand*{\scalarp}{\ensuremath{\varphi}}
 \newcommand*{\SelfEnergy}{\ensuremath{\Sigma}}
 \newcommand*{\qSelfEnergy}{\ensuremath{\sigma}}
@@ -209,6 +237,12 @@ cross/.default={5pt}}
 \newcommand{\Vm}[1]{\begin{Vmatrix}#1\end{Vmatrix}}
 \newcommand*{\Volume}{\ensuremath{V}}
 \newcommand*{\Work}{\ensuremath{W}}
+
+% ------ Coloured box ------ %
+\makeatletter
+\renewcommand{\boxed}[2][black]{\textcolor{#1}{%
+  \fbox{\normalcolor\m@th$\displaystyle#2$}}}
+\makeatother
 
 % ------ Feynman diagrams ------ %
 \RequirePackage{feynmp-auto}

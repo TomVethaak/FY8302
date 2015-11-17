@@ -25,3 +25,10 @@
 \contentsline {subsection}{\numberline {4.3}2D quadratic lattice}{42}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Antiferromagnets}{44}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Magnetization on the sublattice A}{50}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Quantization of lattice vibrations: phonons}{54}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Non-harmonics}{57}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}The Dyson Equation}{67}{subsection.4.8}
+\contentsline {paragraph}{$\Sigma $ to Second order in $M_q$}{71}{section*.42}
+\contentsline {paragraph}{$\Pi $ to Second order in $M_q$}{72}{section*.43}
+\contentsline {subsection}{\numberline {4.9}Effective Interaction Between Electrons due to Phonons}{74}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}Quasi Particles in Interacting Electron Systems}{77}{subsection.4.10}
