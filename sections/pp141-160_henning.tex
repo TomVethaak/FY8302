@@ -156,7 +156,7 @@ In the third  term there is one spin summation left, while in the fourth and six
 \begin{itemize}
     \item Free electron propagator: 
     \[G_0(k,t-t') = \qquad
-\parbox{20mm}{\begin{feynman}{G0}
+\parbox{20mm}{\begin{feynman}{01G0}
     \begin{fmfgraph*}(110,5)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -166,7 +166,7 @@ In the third  term there is one spin summation left, while in the fourth and six
     \end{fmfgraph*}
 \end{feynman}}\]
     \item Free phonon propagator: \[D_0(q,t_1-t_2)=\qquad
-\parbox{20mm}{\begin{feynman}{D0}
+\parbox{20mm}{\begin{feynman}{02D0}
     \begin{fmfgraph*}(110,5)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -176,7 +176,7 @@ In the third  term there is one spin summation left, while in the fourth and six
     \end{fmfgraph*}
 \end{feynman}}\]
     \item Exact electron propagator: \[G(k,t-t') = \qquad
-\parbox{20mm}{\begin{feynman}{G}
+\parbox{20mm}{\begin{feynman}{03G}
     \begin{fmfgraph*}(110,5)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -188,7 +188,7 @@ In the third  term there is one spin summation left, while in the fourth and six
 \end{itemize}
 Using this we get the diagrammatic representation of $G(k,t-t')$:
 \[\begin{aligned}
-&\parbox{40mm}{\begin{feynman}{Gexpr}
+&\parbox{40mm}{\begin{feynman}{04Gexpr}
     \begin{fmfgraph*}(110,20)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -197,7 +197,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmflabel{$t$}{o1}
     \end{fmfgraph*}
 \end{feynman}} \qquad = \qquad
-\parbox{40mm}{\begin{feynman}{G0}
+\parbox{40mm}{\begin{feynman}{05G0}
     \begin{fmfgraph*}(110,20)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -206,7 +206,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmflabel{$t$}{o1}
     \end{fmfgraph*}
 \end{feynman}} \\
-&+ \qquad \parbox{40mm}{\begin{feynman}{G0}
+&+ \qquad \parbox{40mm}{\begin{feynman}{06G0}
     \begin{fmfgraph*}(110,20)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -215,7 +215,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmflabel{$t$}{o1}
     \end{fmfgraph*}
 \end{feynman}}\quad\times \sum\limits_{k_1,q,\sigma_1}\qquad\quad
-\parbox{40mm}{\begin{feynman}{3rd}
+\parbox{40mm}{\begin{feynman}{073rd}
 \begin{fmfgraph*}(110,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -228,7 +228,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmflabel{$t_1, M_{-q}$}{o1}
     \end{fmfgraph*}
 \end{feynman}}\qquad\qquad (-i)^3\\
-&+ \qquad \parbox{120mm}{\begin{feynman}{4th}
+&+ \qquad \parbox{120mm}{\begin{feynman}{084th}
 \begin{fmfgraph*}(300,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -244,7 +244,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmfv{label=$t_1,, M_{-q}$, l.a=-90}{v2}
     \end{fmfgraph*}
 \end{feynman}}\quad (i)^3\\
-&+ \qquad \parbox{120mm}{\begin{feynman}{6th}
+&+ \qquad \parbox{120mm}{\begin{feynman}{096th}
 \begin{fmfgraph*}(300,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -260,14 +260,14 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmfv{label=$t_2,, M_{-q}$, l.a=-90}{v2}
     \end{fmfgraph*}
 \end{feynman}}\quad (i)^3\\
-& = \parbox{40mm}{\begin{feynman}{g1}
+& = \parbox{40mm}{\begin{feynman}{10g1}
 \begin{fmfgraph*}(60,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{fermion}{i1,o1}
     \end{fmfgraph*}
 \end{feynman}} +
-\underbrace{\parbox{30mm}{\begin{feynman}{g2}
+\underbrace{\parbox{30mm}{\begin{feynman}{11g2}
 \begin{fmfgraph*}(60,30)
     \fmfleftn{i}{2}
     \fmfrightn{o}{2}
@@ -277,7 +277,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
     \fmf{fermion,left=0.5}{o2,i2}
     \end{fmfgraph*}
 \end{feynman}}}_{\text{Disconnected graph}} + ~~2 \times
-\underbrace{\parbox{40mm}{\begin{feynman}{g3}
+\underbrace{\parbox{40mm}{\begin{feynman}{12g3}
 \begin{fmfgraph*}(100,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
@@ -291,7 +291,7 @@ Using this we get the diagrammatic representation of $G(k,t-t')$:
 \]
 In general the correction to at each order consists of connected and disconnected graphs. The fourth and sixth terms give the same contribution, as seen by renaming the integration variables, $t_1 \leftrightarrow t_2$, $q\rightarrow -q$. This gives the connected graph to second order:
 \[\begin{aligned}
-    &\parbox{40mm}{\begin{feynman}{g3}\begin{fmfgraph*}(100,30)
+    &\parbox{40mm}{\begin{feynman}{13g3}\begin{fmfgraph*}(100,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{fermion}{i1,v1}
@@ -303,7 +303,7 @@ In general the correction to at each order consists of connected and disconnecte
 \end{aligned}\]
 We see that the factor $1/2!$ is cancelled! For the unconnected graphs to second order we get:
 \[\begin{aligned}
-    &\parbox{30mm}{\begin{feynman}{g2}\begin{fmfgraph*}(60,30)
+    &\parbox{30mm}{\begin{feynman}{14g2}\begin{fmfgraph*}(60,30)
     \fmfleftn{i}{2}
     \fmfrightn{o}{2}
     \fmf{fermion}{i1,o1}
@@ -317,7 +317,7 @@ We see that the factor $1/2!$ is cancelled! For the unconnected graphs to second
 Hence to second order we have:
 \[G = \frac{1}{\bra{\Phi_0}S(\infty,-\infty)\ket{\Phi_0}}\left\{G_0(1+F_1) + F_2\right\}\]
 But what about $\bra{\Phi_0}S(\infty,-\infty)\ket{\Phi_0}$? To second order (see exercise 5)
-\[\bra{\Phi_0}S(\infty,-\infty)\ket{\Phi_0} = 1+F_1 = 1+ \parbox{25mm}{{\begin{feynman}{F_1}\begin{fmfgraph*}(60,30)
+\[\bra{\Phi_0}S(\infty,-\infty)\ket{\Phi_0} = 1+F_1 = 1+ \parbox{25mm}{{\begin{feynman}{15F_1}\begin{fmfgraph*}(60,30)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{dashes}{i1,o1}
@@ -387,7 +387,7 @@ We are then left with one $\omega_1$-integration,
 where
 \[\begin{aligned}
     \Sigma^{(2)}(k,\omega) &= i\sum_q\left|M_q\right|^2\int\limits_{-\infty}^{\infty} \frac{d\omega_1}{2\pi} iD_0(q,\omega_1)G_0(k-q, \omega-\omega_1)\\
-    &=\parbox{45mm}{\begin{feynman}{Sigma(2)}\begin{fmfgraph*}(80,50)
+    &=\parbox{45mm}{\begin{feynman}{16Sigma(2)}\begin{fmfgraph*}(80,50)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{dashes, left=0.8, tension=0, label=$q,,\omega_1$}{i1,o1}
@@ -434,7 +434,7 @@ A one-particle irreducible diagram is a diagram which does not split into two pi
 We look at the fourth order terms:\\
 One-particle reducible diagram:
 \[
-\left(\Sigma^{(2)}\right)^2G_0 = \parbox{50mm}{\begin{feynman}{Sigma(2)2G0}\begin{fmfgraph*}(100,40)
+\left(\Sigma^{(2)}\right)^2G_0 = \parbox{50mm}{\begin{feynman}{17Sigma(2)2G0}\begin{fmfgraph*}(100,40)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{dashes, left=1, tension=0}{i1,v1}
@@ -450,7 +450,7 @@ One-particle reducible diagram:
 \]
 One-particle irreducible fourth order graphs:
 \[
-    \Sigma_a^{(4)} = \parbox{40mm}{\begin{feynman}{Sigma(4)a}\begin{fmfgraph*}(80,40)
+    \Sigma_a^{(4)} = \parbox{40mm}{\begin{feynman}{18Sigma(4)a}\begin{fmfgraph*}(80,40)
     \fmfleftn{i}{2}
     \fmfrightn{o}{2}
     \fmf{dashes}{i1,i2}
@@ -463,7 +463,7 @@ One-particle irreducible fourth order graphs:
     \fmfdotn{i}{2}
     \fmfdotn{o}{2}
     \end{fmfgraph*}\end{feynman}}\]
-\[\Sigma_b^{(4)} = \parbox{45mm}{\begin{feynman}{Sigma(4)b}\begin{fmfgraph*}(90,40)
+\[\Sigma_b^{(4)} = \parbox{45mm}{\begin{feynman}{19Sigma(4)b}\begin{fmfgraph*}(90,40)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{dashes, left=0.8, tension=0}{i1,v2}
@@ -476,7 +476,7 @@ One-particle irreducible fourth order graphs:
     \fmfdotn{v}{1}
     \fmfdotn{v}{2}
     \end{fmfgraph*}\end{feynman}}\]
-\[\Sigma_c^{(4)} = \parbox{45mm}{\begin{feynman}{Sigma(4)c}\begin{fmfgraph*}(90,40)
+\[\Sigma_c^{(4)} = \parbox{45mm}{\begin{feynman}{20Sigma(4)c}\begin{fmfgraph*}(90,40)
     \fmfleftn{i}{1}
     \fmfrightn{o}{1}
     \fmf{dashes, left=0.8, tension=0}{i1,o1}
@@ -491,7 +491,7 @@ One-particle irreducible fourth order graphs:
     \end{fmfgraph*}\end{feynman}}
 \]
 We now use
-\[\Sigma^{(4)} = \parbox{40mm}{\begin{feynman}{Sigma(4)a}\begin{fmfgraph*}(80,40)
+\[\Sigma^{(4)} = \parbox{40mm}{\begin{feynman}{21Sigma(4)a}\begin{fmfgraph*}(80,40)
     \fmfleftn{i}{2}
     \fmfrightn{o}{2}
     \fmf{dashes}{i1,i2}
@@ -504,7 +504,7 @@ We now use
     \fmfdotn{i}{2}
     \fmfdotn{o}{2}
     \end{fmfgraph*}\end{feynman}}+
-    \parbox{45mm}{\begin{feynman}{Sigma(4)b}\begin{fmfgraph*}(90,40)
+    \parbox{45mm}{\begin{feynman}{22Sigma(4)b}\begin{fmfgraph*}(90,40)
         \fmfleftn{i}{1}
         \fmfrightn{o}{1}
         \fmf{dashes, left=0.8, tension=0}{i1,v2}
@@ -517,7 +517,7 @@ We now use
         \fmfdotn{v}{1}
         \fmfdotn{v}{2}
         \end{fmfgraph*}\end{feynman}}+
-        \parbox{45mm}{\begin{feynman}{Sigma(4)c}\begin{fmfgraph*}(90,40)
+        \parbox{45mm}{\begin{feynman}{23Sigma(4)c}\begin{fmfgraph*}(90,40)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dashes, left=0.8, tension=0}{i1,o1}
@@ -538,12 +538,12 @@ in the Dyson equation to fourth order in $M_q$.
 
 We could have done the same thing for the phonon-propagator.
 \[\begin{aligned}
-    D(q,\omega) &= \parbox{45mm}{\begin{feynman}{D}\begin{fmfgraph*}(90,10)
+    D(q,\omega) &= \parbox{45mm}{\begin{feynman}{24D}\begin{fmfgraph*}(90,10)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dbl_dashes_arrow, label=$q,,\omega$}{i1,o1}
             \end{fmfgraph*}\end{feynman}}\\
-    D_0(q,\omega) &=\parbox{45mm}{\begin{feynman}{D_0}\begin{fmfgraph*}(90,10)
+    D_0(q,\omega) &=\parbox{45mm}{\begin{feynman}{25D_0}\begin{fmfgraph*}(90,10)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dashes_arrow, label=$q,,\omega$}{i1,o1}
@@ -555,16 +555,16 @@ The Dyson equation for the phonon-propagator reads
 \end{Indentskip}
 $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
 \[\begin{aligned}
-    \parbox{40mm}{\begin{feynman}{D}\begin{fmfgraph*}(90,10)
+    \parbox{40mm}{\begin{feynman}{26D}\begin{fmfgraph*}(90,10)
                 \fmfleftn{i}{1}
                 \fmfrightn{o}{1}
                 \fmf{dbl_dashes_arrow, label=$q,,\omega$}{i1,o1}
                 \end{fmfgraph*}\end{feynman}}
-    &= \parbox{40mm}{\begin{feynman}{D_0}\begin{fmfgraph*}(90,10)
+    &= \parbox{40mm}{\begin{feynman}{27D_0}\begin{fmfgraph*}(90,10)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dashes_arrow, label=$q,,\omega$}{i1,o1}
-            \end{fmfgraph*}\end{feynman}} + \parbox{50mm}{\begin{feynman}{D_term2}\begin{fmfgraph*}(120,30)
+            \end{fmfgraph*}\end{feynman}} + \parbox{50mm}{\begin{feynman}{28D_term2}\begin{fmfgraph*}(120,30)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dashes_arrow}{i1,v1}
@@ -576,7 +576,7 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
             \fmfv{label=$M_q$, l.a=120}{v1}
             \fmfv{label=$M_{-q}$, l.a=30}{v2}
             \end{fmfgraph*}\end{feynman}}\\
-&+ \parbox{80mm}{\begin{feynman}{D_term3}\begin{fmfgraph*}(160,30)
+&+ \parbox{80mm}{\begin{feynman}{29D_term3}\begin{fmfgraph*}(160,30)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dashes}{i1,v1}
@@ -587,7 +587,7 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
             \fmf{plain, left=0.8}{v4,v3}
             \fmf{dashes}{v4,o1}
             \end{fmfgraph*}\end{feynman}} \\
-&+ \parbox{45mm}{\begin{feynman}{D_term4}\begin{fmfgraph*}(100,30)
+&+ \parbox{45mm}{\begin{feynman}{30D_term4}\begin{fmfgraph*}(100,30)
             \fmfleftn{i}{1}
             \fmfrightn{o}{1}
             \fmf{dashes}{i1,v4}
@@ -597,7 +597,7 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
             \fmf{plain, tension=1}{v3,v4}
             \fmf{dashes, left=1, tension=0.1}{v3,v2}
             \fmf{plain,right=1, tension=0.4}{v4,v1}
-            \end{fmfgraph*}\end{feynman}} + \parbox{45mm}{\begin{feynman}{D_term5}\begin{fmfgraph*}(100,30)
+            \end{fmfgraph*}\end{feynman}} + \parbox{45mm}{\begin{feynman}{31D_term5}\begin{fmfgraph*}(100,30)
             \fmfleft{i}
             \fmfright{o}
             \fmftop{v2}
@@ -609,13 +609,13 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
             \fmf{dashes}{v2,v4}
             \end{fmfgraph*}\end{feynman}}
 \end{aligned}\]
-\[\Pi^{(2)} = \parbox{30mm}{\begin{feynman}{Pi(2)}\begin{fmfgraph*}(60,30)
+\[\Pi^{(2)} = \parbox{30mm}{\begin{feynman}{32Pi(2)}\begin{fmfgraph*}(60,30)
             \fmfleft{i}
             \fmfright{o}
             \fmf{fermion, left=0.5}{i,o}
             \fmf{fermion, left=0.5}{o,i}
             \end{fmfgraph*}\end{feynman}}\qquad\quad \text{Irreducible}\]
-\[\Pi^{(4)}_a = \parbox{30mm}{\begin{feynman}{Pi(4)_a}\begin{fmfgraph*}(60,30)
+\[\Pi^{(4)}_a = \parbox{30mm}{\begin{feynman}{33Pi(4)_a}\begin{fmfgraph*}(60,30)
             \fmfleft{i}
             \fmfright{o}
             \fmf{plain, left=0.8, tension=0.0}{i,v1}
@@ -624,7 +624,7 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
             \fmf{plain, left=0.8, tension=0.0}{v2,o}
             \fmf{plain, left=0.8}{o,v2}
             \end{fmfgraph*}\end{feynman}}\qquad\quad \text{Reducible}\]
-\[\Pi^{(4)}_b = \parbox{30mm}{\begin{feynman}{Pi(4)_b}\begin{fmfgraph*}(60,30)
+\[\Pi^{(4)}_b = \parbox{30mm}{\begin{feynman}{34Pi(4)_b}\begin{fmfgraph*}(60,30)
                         \fmfleft{i}
                         \fmfright{o}
                         \fmf{plain, tension=1}{i,v1}
@@ -633,7 +633,7 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
                         \fmf{dashes, right=1, tension=0.1}{v2,v1}
                         \fmf{plain,left=1, tension=0.4}{o,i}
                         \end{fmfgraph*}\end{feynman}}\qquad\quad \text{Irreducible}\]
-\[\Pi^{(4)}_c = \parbox{30mm}{\begin{feynman}{Pi(4)_c}\begin{fmfgraph*}(60,30)
+\[\Pi^{(4)}_c = \parbox{30mm}{\begin{feynman}{35Pi(4)_c}\begin{fmfgraph*}(60,30)
                         \fmfleft{i}
                         \fmfright{o}
                         \fmftop{v1}
@@ -645,7 +645,7 @@ $\Pi(q,\omega)$ contains only irreducible one-phonon diagrams:
 How did we get the diagrams for $\Pi$? We used the \underline{Feynman rules}: For diagrams of order $2m$
 \begin{enumerate}
     \item Draw all topologically distinct diagrams with $2m$ vertices
-    \begin{feynman}{Vertex}\begin{fmfgraph*}(60,60)
+    \begin{feynman}{36Vertex}\begin{fmfgraph*}(60,60)
                             \fmfleftn{i}{2}
                             \fmfright{o}
                             \fmf{fermion}{i1,v1,i2}
@@ -655,7 +655,7 @@ How did we get the diagrams for $\Pi$? We used the \underline{Feynman rules}: Fo
     \end{fmfgraph*}\end{feynman}
     To every vertex, we associate a factor $M_q$.
     \item With every free electron line, we associate a factor
-    \[G_0(k,\omega) = \parbox{30mm}{\begin{feynman}{G0Feynman}\begin{fmfgraph*}(40,10)
+    \[G_0(k,\omega) = \parbox{30mm}{\begin{feynman}{37G0Feynman}\begin{fmfgraph*}(40,10)
                             \fmfleft{i}
                             \fmfright{o}
                             \fmf{fermion,label=$k,,\omega$}{i,o}
@@ -664,7 +664,7 @@ How did we get the diagrams for $\Pi$? We used the \underline{Feynman rules}: Fo
     \end{fmfgraph*}\end{feynman}} = \frac{\delta_{\alpha\beta}}{\omega-\epsilon_k + i \delta_k}\]
     where $\delta_k = \delta \mathrm{sign}(\epsilon_k-\mu)$. This is a combined particle and hole propagator.
     \item With each phonon line we associate a factor
-    \[D_0(q,\omega) = \parbox{30mm}{\begin{feynman}{D0Feynman}\begin{fmfgraph*}(60,10)
+    \[D_0(q,\omega) = \parbox{30mm}{\begin{feynman}{38D0Feynman}\begin{fmfgraph*}(60,10)
                             \fmfleft{i}
                             \fmfright{o}
                             \fmf{scalar,label=$q,,\omega$}{i,o}
@@ -674,13 +674,13 @@ How did we get the diagrams for $\Pi$? We used the \underline{Feynman rules}: Fo
     \[\begin{aligned}
         &i^m(-1)^F(2s+1)^F\\
         &\text{$s:$ spinn ($= 1/2$ for electrons)}\\
-        &\text{$F:$ the number of closed fermion loops in the diagram:} \parbox{30mm}{\begin{feynman}{closed_loop}\begin{fmfgraph*}(60,20)
+        &\text{$F:$ the number of closed fermion loops in the diagram:} \parbox{30mm}{\begin{feynman}{39closed_loop}\begin{fmfgraph*}(60,20)
             \fmfleft{i}
             \fmfright{o}
             \fmf{fermion, left=0.5}{i,o}
             \fmf{fermion, left=0.5}{o,i}
             \end{fmfgraph*}\end{feynman}}\\
-        & \text{\underline{NB}: this is not a closed loop:} \parbox{30mm}{\begin{feynman}{not_closed_loop}\begin{fmfgraph*}(60,20)
+        & \text{\underline{NB}: this is not a closed loop:} \parbox{30mm}{\begin{feynman}{40not_closed_loop}\begin{fmfgraph*}(60,20)
             \fmfleft{i}
             \fmfright{o}
             \fmf{fermion, left=0.5}{i,o}
@@ -693,7 +693,7 @@ How did we get the diagrams for $\Pi$? We used the \underline{Feynman rules}: Fo
 \subsection*{Examples}
 \paragraph{$\Sigma$ to Second order in $M_q$}
 The diagram is
-\begin{feynman}{example1}\begin{fmfgraph*}(160,40)
+\begin{feynman}{41example1}\begin{fmfgraph*}(160,40)
             \fmfleft{i}
             \fmfright{o}
             \fmf{fermion,label=$k,,\omega$}{i,v1}
@@ -707,7 +707,7 @@ which yields
 
 \paragraph{$\Pi$ to Second order in $M_q$}
 The diagram is
-\begin{feynman}{example2}\begin{fmfgraph*}(160,40)
+\begin{feynman}{42example2}\begin{fmfgraph*}(160,40)
             \fmfleft{i}
             \fmfright{o}
             \fmf{scalar,label=$q,,\omega$}{i,v1}
@@ -721,7 +721,7 @@ which yields
 where $\left|M_q\right|^2$ can be moved outside the sum and integration. The advantage here is that the diagrams can be given a physical interpretation, in contrast to the associated mathematical expressions. Let's look at a more complicated example.
 
 \[\parbox{60mm}{
-\begin{feynman}{example3}\begin{fmfgraph*}(160,40)
+\begin{feynman}{43example3}\begin{fmfgraph*}(160,40)
     \fmftop{v0,v2,v3,v5}
     \fmfbottom{i,v1,v4,o}
     \fmf{fermion}{i,v1,v4,o}
@@ -730,14 +730,14 @@ where $\left|M_q\right|^2$ can be moved outside the sum and integration. The adv
     \fmf{fermion, left=0.6, tension=0.2}{v2,v3,v2}
 \end{fmfgraph*}\end{feynman}} \sim |M|^4 \qquad \text{Fourth order}\]
 The diagram describes an electron which comes in, excites a phonon and continues to propagate as a free electron. However, the phonon does \underline{not} propagate freely, it excites a particle-hole excitation along its way. Finally, the phonon and electron collide. Therefore, the process is a version of
-\[\parbox{50mm}{\begin{feynman}{example4}\begin{fmfgraph*}(140,40)
+\[\parbox{50mm}{\begin{feynman}{44example4}\begin{fmfgraph*}(140,40)
     \fmftop{v0,v2,v5}
     \fmfbottom{i,v1,v4,o}
     \fmf{fermion}{i,v1,v4,o}
     \fmf{scalar,left=0.3}{v1,v2}
     \fmf{scalar,left=0.3}{v2,v4}
     \fmfblob{20}{v2}
-\end{fmfgraph*}\end{feynman}} = \parbox{50mm}{\begin{feynman}{example5}\begin{fmfgraph*}(140,40)
+\end{fmfgraph*}\end{feynman}} = \parbox{50mm}{\begin{feynman}{45example5}\begin{fmfgraph*}(140,40)
     \fmfleft{i}
     \fmfright{o}
     \fmf{double_arrow}{i,v1,v2,o}
@@ -745,7 +745,7 @@ The diagram describes an electron which comes in, excites a phonon and continues
 \end{fmfgraph*}\end{feynman}}\]
 where the blob indicates that something happens with the phonon. We here see the traces of complicated effects. Let's look at the above diagram in more detail, where $m=2$, $F=1$:
 \[\parbox{100mm}{
-\begin{feynman}{example6}\begin{fmfgraph*}(200,60)
+\begin{feynman}{46example6}\begin{fmfgraph*}(200,60)
     \fmftop{v0,v2,v3,v5}
     \fmfbottom{i,v1,v4,o}
     \fmf{fermion,label=$k,,\omega$}{i,v1}
@@ -768,17 +768,17 @@ We here see that the expressions quickly become complicated.
 \end{enumerate}
 Example:
     \[\begin{aligned}
-        G &\approx \parbox{25mm}{\begin{feynman}{Gapprox1}\begin{fmfgraph*}(50,20)
+        G &\approx \parbox{25mm}{\begin{feynman}{47Gapprox1}\begin{fmfgraph*}(50,20)
         \fmfleft{i}
         \fmfright{o}
         \fmf{fermion}{i,o}
     \end{fmfgraph*}\end{feynman}} + 
-\parbox{35mm}{\begin{feynman}{Gapprox2}\begin{fmfgraph*}(80,20)
+\parbox{35mm}{\begin{feynman}{48Gapprox2}\begin{fmfgraph*}(80,20)
         \fmfleft{i}
         \fmfright{o}
         \fmf{fermion}{i,v1,v2,o}
         \fmf{dashes,left=1,tension=0.1}{v1,v2}
-    \end{fmfgraph*}\end{feynman}} +  \parbox{45mm}{\begin{feynman}{Gapprox3}\begin{fmfgraph*}(120,20)
+    \end{fmfgraph*}\end{feynman}} +  \parbox{45mm}{\begin{feynman}{49Gapprox3}\begin{fmfgraph*}(120,20)
         \fmfleft{i}
         \fmfright{o}
         \fmf{fermion}{i,v1,v2,v3,v4,o}
@@ -809,7 +809,7 @@ From this we see that $G_0 \sim \exp(-i\epsilon_k t - \delta t)$, while $G_0 \si
 \subsection{Effective Interaction Between Electrons due to Phonons}
 \[V = \sum_{kq\sigma} M_q \left(a_{-q}^\dagger + a_q\right)c_{k+q,\sigma}^\dagger c_{k,\sigma}\]
 This is a scattering process which gives rise to
-\[\parbox{60mm}{\begin{feynman}{Vertex}\begin{fmfgraph*}(60,40)
+\[\parbox{60mm}{\begin{feynman}{50Vertex}\begin{fmfgraph*}(60,40)
     \fmfleftn{i}{2}
     \fmfright{o}
     \fmf{fermion}{i1,v1,i2}

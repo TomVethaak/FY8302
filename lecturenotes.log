@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  17 NOV 2015 18:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  17 NOV 2015 18:38
 entering extended mode
 **lecturenotes.tex
 (C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.tex
@@ -96,17 +96,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\simplewick\simplewick.sty"
-Package: simplewick 2007/11/23 v1.2a
-
-Package: simplewick v1.2a (2007/11/23)
-\swb@xone=\box26
-\swb@xtwo=\box27
-\swb@xthree=\box28
-\swb@xfour=\box29
-\swdimen@ne=\dimen116
-\swdimentw@=\dimen117
-) (C:\Users\Tom\Documents\GitHub\FY8302\vethaak_sty.sty
+(C:\Users\Tom\Documents\GitHub\FY8302\vethaak_sty.sty
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
@@ -154,11 +144,11 @@ Package: amstext 2000/06/29 v2.01
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
-\ex@=\dimen118
+\ex@=\dimen116
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen119
+\pmbraise@=\dimen117
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -173,9 +163,9 @@ LaTeX Info: Redefining \overline on input line 306.
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
-\big@size=\dimen120
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen118
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count99
@@ -188,12 +178,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count104
 \maxfields@=\count105
 \andhelp@=\toks18
-\eqnshift@=\dimen121
-\alignsep@=\dimen122
-\tagshift@=\dimen123
-\tagwidth@=\dimen124
-\totwidth@=\dimen125
-\lineht@=\dimen126
+\eqnshift@=\dimen119
+\alignsep@=\dimen120
+\tagshift@=\dimen121
+\tagwidth@=\dimen122
+\totwidth@=\dimen123
+\lineht@=\dimen124
 \@envbody=\toks19
 \multlinegap=\skip45
 \multlinetaggap=\skip46
@@ -218,13 +208,13 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen127
-\captionmargin@=\dimen128
-\captionwidth=\dimen129
-\caption@tempdima=\dimen130
-\caption@indent=\dimen131
-\caption@parindent=\dimen132
-\caption@hangindent=\dimen133
+\captionmargin=\dimen125
+\captionmargin@=\dimen126
+\captionwidth=\dimen127
+\caption@tempdima=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
 )
 \c@ContinuedFloat=\count106
 )
@@ -242,9 +232,9 @@ Package: extarrows 2008/05/15 v1.0b Some extensible arrows
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
 \float@exts=\toks22
-\float@box=\box32
+\float@box=\box28
 \@float@everytoks=\toks23
-\@floatcapt=\box33
+\@floatcapt=\box29
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -260,8 +250,8 @@ File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen134
-\Gin@req@width=\dimen135
+\Gin@req@height=\dimen132
+\Gin@req@width=\dimen133
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
@@ -351,12 +341,12 @@ Package: l3file 2013/10/13 v4596 L3 File and I/O operations
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3skip.sty"
 Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
-\c_zero_dim=\dimen136
-\c_max_dim=\dimen137
-\l_tmpa_dim=\dimen138
-\l_tmpb_dim=\dimen139
-\g_tmpa_dim=\dimen140
-\g_tmpb_dim=\dimen141
+\c_zero_dim=\dimen134
+\c_max_dim=\dimen135
+\l_tmpa_dim=\dimen136
+\l_tmpb_dim=\dimen137
+\g_tmpa_dim=\dimen138
+\g_tmpb_dim=\dimen139
 \c_zero_skip=\skip47
 \c_max_skip=\skip48
 \l_tmpa_skip=\skip49
@@ -389,33 +379,33 @@ Package: l3fp 2013/07/09 v4521 L3 Floating points
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3box.sty"
 Package: l3box 2013/07/28 v4581 L3 Experimental boxes
-\c_empty_box=\box34
-\l_tmpa_box=\box35
-\l_tmpb_box=\box36
-\g_tmpa_box=\box37
-\g_tmpb_box=\box38
+\c_empty_box=\box30
+\l_tmpa_box=\box31
+\l_tmpb_box=\box32
+\g_tmpa_box=\box33
+\g_tmpb_box=\box34
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3coffins.sty"
 Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
-\l__coffin_internal_box=\box39
-\l__coffin_internal_dim=\dimen142
-\l__coffin_offset_x_dim=\dimen143
-\l__coffin_offset_y_dim=\dimen144
-\l__coffin_x_dim=\dimen145
-\l__coffin_y_dim=\dimen146
-\l__coffin_x_prime_dim=\dimen147
-\l__coffin_y_prime_dim=\dimen148
-\c_empty_coffin=\box40
-\l__coffin_aligned_coffin=\box41
-\l__coffin_aligned_internal_coffin=\box42
-\l_tmpa_coffin=\box43
-\l_tmpb_coffin=\box44
-\l__coffin_display_coffin=\box45
-\l__coffin_display_coord_coffin=\box46
-\l__coffin_display_pole_coffin=\box47
-\l__coffin_display_offset_dim=\dimen149
-\l__coffin_display_x_dim=\dimen150
-\l__coffin_display_y_dim=\dimen151
+\l__coffin_internal_box=\box35
+\l__coffin_internal_dim=\dimen140
+\l__coffin_offset_x_dim=\dimen141
+\l__coffin_offset_y_dim=\dimen142
+\l__coffin_x_dim=\dimen143
+\l__coffin_y_dim=\dimen144
+\l__coffin_x_prime_dim=\dimen145
+\l__coffin_y_prime_dim=\dimen146
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\l__coffin_display_coffin=\box41
+\l__coffin_display_coord_coffin=\box42
+\l__coffin_display_pole_coffin=\box43
+\l__coffin_display_offset_dim=\dimen147
+\l__coffin_display_x_dim=\dimen148
+\l__coffin_display_y_dim=\dimen149
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3color.sty"
 Package: l3color 2012/08/29 v4156 L3 Experimental color support
@@ -427,22 +417,22 @@ Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3candidates.sty"
 Package: l3candidates 2013/07/24 v4576 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen152
-\l__box_bottom_dim=\dimen153
-\l__box_left_dim=\dimen154
-\l__box_right_dim=\dimen155
-\l__box_top_new_dim=\dimen156
-\l__box_bottom_new_dim=\dimen157
-\l__box_left_new_dim=\dimen158
-\l__box_right_new_dim=\dimen159
-\l__box_internal_box=\box48
-\l__coffin_bounding_shift_dim=\dimen160
-\l__coffin_left_corner_dim=\dimen161
-\l__coffin_right_corner_dim=\dimen162
-\l__coffin_bottom_corner_dim=\dimen163
-\l__coffin_top_corner_dim=\dimen164
-\l__coffin_scaled_total_height_dim=\dimen165
-\l__coffin_scaled_width_dim=\dimen166
+\l__box_top_dim=\dimen150
+\l__box_bottom_dim=\dimen151
+\l__box_left_dim=\dimen152
+\l__box_right_dim=\dimen153
+\l__box_top_new_dim=\dimen154
+\l__box_bottom_new_dim=\dimen155
+\l__box_left_new_dim=\dimen156
+\l__box_right_new_dim=\dimen157
+\l__box_internal_box=\box44
+\l__coffin_bounding_shift_dim=\dimen158
+\l__coffin_left_corner_dim=\dimen159
+\l__coffin_right_corner_dim=\dimen160
+\l__coffin_bottom_corner_dim=\dimen161
+\l__coffin_top_corner_dim=\dimen162
+\l__coffin_scaled_total_height_dim=\dimen163
+\l__coffin_scaled_width_dim=\dimen164
 ))
 Package: xparse 2013/10/13 v4597 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count133
@@ -533,11 +523,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mdframed\md-frame-0.mdf"
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box49
-\mdf@footnotebox=\box50
-\mdf@splitbox@one=\box51
-\mdf@splitbox@two=\box52
-\mdf@splitbox@save=\box53
+\mdf@frametitlebox=\box45
+\mdf@footnotebox=\box46
+\mdf@splitbox@one=\box47
+\mdf@splitbox@two=\box48
+\mdf@splitbox@save=\box49
 \mdfsplitboxwidth=\skip93
 \mdfsplitboxtotalwidth=\skip94
 \mdfsplitboxheight=\skip95
@@ -594,7 +584,7 @@ Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks24
 \MT@count=\count146
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen167
+\MT@outer@kern=\dimen165
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count147
 
@@ -613,25 +603,29 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count148
-\mult@box=\box54
-\multicol@leftmargin=\dimen168
+\mult@box=\box50
+\multicol@leftmargin=\dimen166
 \c@unbalance=\count149
 \c@collectmore=\count150
 \doublecol@number=\count151
 \multicoltolerance=\count152
 \multicolpretolerance=\count153
-\full@width=\dimen169
-\page@free=\dimen170
-\premulticols=\dimen171
-\postmulticols=\dimen172
+\full@width=\dimen167
+\page@free=\dimen168
+\premulticols=\dimen169
+\postmulticols=\dimen170
 \multicolsep=\skip121
 \multicolbaselineskip=\skip122
-\partial@page=\box55
-\last@line=\box56
-\mult@rightbox=\box57
-\mult@grightbox=\box58
-\mult@gfirstbox=\box59
-\mult@firstbox=\box60
+\partial@page=\box51
+\last@line=\box52
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@gfirstbox=\box55
+\mult@firstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
 \@tempa=\box61
 \@tempa=\box62
 \@tempa=\box63
@@ -645,17 +639,13 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box71
 \@tempa=\box72
 \@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
 \c@columnbadness=\count154
 \c@finalcolumnbadness=\count155
-\last@try=\dimen173
-\multicolovershoot=\dimen174
-\multicolundershoot=\dimen175
-\mult@nat@firstbox=\box78
-\colbreak@box=\box79
+\last@try=\dimen171
+\multicolovershoot=\dimen172
+\multicolundershoot=\dimen173
+\mult@nat@firstbox=\box74
+\colbreak@box=\box75
 \multicol@sort@counter=\count156
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\notoccite\notoccite.sty"
@@ -671,8 +661,8 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count157
 \calc@Bcount=\count158
-\calc@Adimen=\dimen176
-\calc@Bdimen=\dimen177
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
 \calc@Askip=\skip123
 \calc@Bskip=\skip124
 LaTeX Info: Redefining \setlength on input line 76.
@@ -686,10 +676,10 @@ Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2015/04/15 v0.4w Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box80
+\AM@pagebox=\box76
 \AM@toc@title=\toks25
 \c@AM@survey=\count160
-\AM@templatesizebox=\box81
+\AM@templatesizebox=\box77
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
@@ -699,8 +689,8 @@ Package: siunitx 2013/07/31 v2.5s A comprehensive (SI) units package
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen178
-\extrarowheight=\dimen179
+\col@sep=\dimen176
+\extrarowheight=\dimen177
 \NC@list=\toks26
 \extratabsurround=\skip126
 \backup@length=\skip127
@@ -709,8 +699,8 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 Package: l3keys2e 2013/10/13 v4597 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
-\l__siunitx_tmp_box=\box82
-\l__siunitx_tmp_dim=\dimen180
+\l__siunitx_tmp_box=\box78
+\l__siunitx_tmp_dim=\dimen178
 \l__siunitx_tmp_int=\count161
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
@@ -724,10 +714,10 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 \l__siunitx_process_integer_min_int=\count168
 \l__siunitx_process_precision_int=\count169
 \l__siunitx_group_min_int=\count170
-\l__siunitx_angle_marker_box=\box83
-\l__siunitx_angle_unit_box=\box84
-\l__siunitx_angle_marker_dim=\dimen181
-\l__siunitx_angle_unit_dim=\dimen182
+\l__siunitx_angle_marker_box=\box79
+\l__siunitx_angle_unit_box=\box80
+\l__siunitx_angle_marker_dim=\dimen179
+\l__siunitx_angle_unit_dim=\dimen180
 \l__siunitx_unit_int=\count171
 \l__siunitx_unit_denominator_int=\count172
 \l__siunitx_unit_numerator_int=\count173
@@ -737,19 +727,19 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 \l__siunitx_number_product_int=\count177
 \c__siunitx_one_fill_skip=\skip128
 \l__siunitx_table_unit_align_skip=\skip129
-\l__siunitx_table_exponent_dim=\dimen183
-\l__siunitx_table_integer_dim=\dimen184
-\l__siunitx_table_mantissa_dim=\dimen185
-\l__siunitx_table_marker_dim=\dimen186
-\l__siunitx_table_result_dim=\dimen187
-\l__siunitx_table_uncert_dim=\dimen188
-\l__siunitx_table_fill_pre_dim=\dimen189
-\l__siunitx_table_fill_post_dim=\dimen190
-\l__siunitx_table_fill_mid_dim=\dimen191
-\l__siunitx_table_pre_box=\box85
-\l__siunitx_table_post_box=\box86
-\l__siunitx_table_mantissa_box=\box87
-\l__siunitx_table_result_box=\box88
+\l__siunitx_table_exponent_dim=\dimen181
+\l__siunitx_table_integer_dim=\dimen182
+\l__siunitx_table_mantissa_dim=\dimen183
+\l__siunitx_table_marker_dim=\dimen184
+\l__siunitx_table_result_dim=\dimen185
+\l__siunitx_table_uncert_dim=\dimen186
+\l__siunitx_table_fill_pre_dim=\dimen187
+\l__siunitx_table_fill_post_dim=\dimen188
+\l__siunitx_table_fill_mid_dim=\dimen189
+\l__siunitx_table_pre_box=\box81
+\l__siunitx_table_post_box=\box82
+\l__siunitx_table_mantissa_box=\box83
+\l__siunitx_table_result_box=\box84
 \l__siunitx_table_number_align_skip=\skip130
 \l__siunitx_table_text_align_skip=\skip131
 .................................................
@@ -947,7 +937,7 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-\@linkdim=\dimen192
+\@linkdim=\dimen190
 \Hy@linkcounter=\count180
 \Hy@pagecounter=\count181
 
@@ -973,10 +963,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen193
+\XeTeXLinkMargin=\dimen191
 \Fld@menulength=\count184
-\Field@Width=\dimen194
-\Fld@charsize=\dimen195
+\Field@Width=\dimen192
+\Fld@charsize=\dimen193
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1234,15 +1224,14 @@ Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count191
-\l_MT_multwidth_dim=\dimen196
+\l_MT_multwidth_dim=\dimen194
 \origjot=\skip133
-\l_MT_shortvdotswithinadjustabove_dim=\dimen197
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen198
-\l_MT_above_intertext_sep=\dimen199
-\l_MT_below_intertext_sep=\dimen200
-\l_MT_above_shortintertext_sep=\dimen201
-Normal \dimen register pool exhausted, switching to extended pool.
-\l_MT_below_shortintertext_sep=\dimen256
+\l_MT_shortvdotswithinadjustabove_dim=\dimen195
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen196
+\l_MT_above_intertext_sep=\dimen197
+\l_MT_below_intertext_sep=\dimen198
+\l_MT_above_shortintertext_sep=\dimen199
+\l_MT_below_shortintertext_sep=\dimen200
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mhchem\mhchem.sty"
 Package: mhchem 2013/06/17 v3.12 for typesetting chemical formulae
@@ -1285,7 +1274,7 @@ x"
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
 "
-\pgfutil@abb=\box89
+\pgfutil@abb=\box85
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -1307,14 +1296,15 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 ode.tex"
 \pgfkeys@tmptoks=\toks49
 ))
-\pgf@x=\dimen257
-\pgf@y=\dimen258
-\pgf@xa=\dimen259
-\pgf@ya=\dimen260
-\pgf@xb=\dimen261
-\pgf@yb=\dimen262
-\pgf@xc=\dimen263
-\pgf@yc=\dimen264
+\pgf@x=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgf@y=\dimen256
+\pgf@xa=\dimen257
+\pgf@ya=\dimen258
+\pgf@xb=\dimen259
+\pgf@yb=\dimen260
+\pgf@xc=\dimen261
+\pgf@yc=\dimen262
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count192
@@ -1353,9 +1343,9 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
 "
-\pgfmath@dimen=\dimen265
+\pgfmath@dimen=\dimen263
 \pgfmath@count=\count198
-\pgfmath@box=\box90
+\pgfmath@box=\box86
 \pgfmath@toks=\toks50
 \pgfmath@stack@operand=\toks51
 \pgfmath@stack@operation=\toks52
@@ -1382,52 +1372,52 @@ code.tex")))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
 de.tex"
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen266
-\pgf@picmaxx=\dimen267
-\pgf@picminy=\dimen268
-\pgf@picmaxy=\dimen269
-\pgf@pathminx=\dimen270
-\pgf@pathmaxx=\dimen271
-\pgf@pathminy=\dimen272
-\pgf@pathmaxy=\dimen273
-\pgf@xx=\dimen274
-\pgf@xy=\dimen275
-\pgf@yx=\dimen276
-\pgf@yy=\dimen277
-\pgf@zx=\dimen278
-\pgf@zy=\dimen279
+\pgf@picminx=\dimen264
+\pgf@picmaxx=\dimen265
+\pgf@picminy=\dimen266
+\pgf@picmaxy=\dimen267
+\pgf@pathminx=\dimen268
+\pgf@pathmaxx=\dimen269
+\pgf@pathminy=\dimen270
+\pgf@pathmaxy=\dimen271
+\pgf@xx=\dimen272
+\pgf@xy=\dimen273
+\pgf@yx=\dimen274
+\pgf@yy=\dimen275
+\pgf@zx=\dimen276
+\pgf@zy=\dimen277
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
 ruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen280
-\pgf@path@lasty=\dimen281
+\pgf@path@lastx=\dimen278
+\pgf@path@lasty=\dimen279
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
 .code.tex"
 File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen282
-\pgf@shorten@start@additional=\dimen283
+\pgf@shorten@end@additional=\dimen280
+\pgf@shorten@start@additional=\dimen281
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
 de.tex"
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box91
-\pgf@hbox=\box92
-\pgf@layerbox@main=\box93
+\pgfpic=\box87
+\pgf@hbox=\box88
+\pgf@layerbox@main=\box89
 \pgf@picture@serial@count=\count200
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
 ate.code.tex"
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen284
+\pgflinewidth=\dimen282
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
 ations.code.tex"
 File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen285
-\pgf@pt@y=\dimen286
-\pgf@pt@temp=\dimen287
+\pgf@pt@x=\dimen283
+\pgf@pt@y=\dimen284
+\pgf@pt@temp=\dimen285
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
 e.tex"
@@ -1448,7 +1438,7 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
 e.tex"
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen288
+\pgf@max=\dimen286
 \pgf@sys@shading@range@num=\count201
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
@@ -1458,7 +1448,7 @@ File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
 code.tex"
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box94
+\pgfexternal@startupbox=\box90
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
 de.tex"
@@ -1475,7 +1465,7 @@ File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
 e.tex"
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box95
+\pgfnodeparttextbox=\box91
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
 tex"
@@ -1484,8 +1474,8 @@ File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
 -0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen289
-\pgf@nodesepend=\dimen290
+\pgf@nodesepstart=\dimen287
+\pgf@nodesepend=\dimen288
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
 -1-18.sty"
@@ -1497,8 +1487,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 )) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.te
 x"
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen291
-\pgffor@skip=\dimen292
+\pgffor@iter=\dimen289
+\pgffor@skip=\dimen290
 \pgffor@stack=\toks53
 \pgffor@toks=\toks54
 ))
@@ -1511,16 +1501,16 @@ dlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 Normal \count register pool exhausted, switching to extended pool.
 \pgf@plot@mark@count=\count277
-\pgfplotmarksize=\dimen293
+\pgfplotmarksize=\dimen291
 )
-\tikz@lastx=\dimen294
-\tikz@lasty=\dimen295
-\tikz@lastxsaved=\dimen296
-\tikz@lastysaved=\dimen297
-\tikzleveldistance=\dimen298
-\tikzsiblingdistance=\dimen299
-\tikz@figbox=\box96
-\tikz@tempbox=\box97
+\tikz@lastx=\dimen292
+\tikz@lasty=\dimen293
+\tikz@lastxsaved=\dimen294
+\tikz@lastysaved=\dimen295
+\tikzleveldistance=\dimen296
+\tikzsiblingdistance=\dimen297
+\tikz@figbox=\box92
+\tikz@tempbox=\box93
 \tikztreelevel=\count278
 \tikznumberofchildren=\count279
 \tikznumberofcurrentchild=\count280
@@ -1546,7 +1536,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
 code.tex"
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
-\arrowsize=\dimen300
+\arrowsize=\dimen298
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarydecorations.markings.code.tex"
@@ -1554,16 +1544,16 @@ s\tikzlibrarydecorations.markings.code.tex"
 s\tikzlibrarydecorations.code.tex"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecoration
 s.code.tex"
-\pgfdecoratedcompleteddistance=\dimen301
-\pgfdecoratedremainingdistance=\dimen302
-\pgfdecoratedinputsegmentcompleteddistance=\dimen303
-\pgfdecoratedinputsegmentremainingdistance=\dimen304
-\pgf@decorate@distancetomove=\dimen305
+\pgfdecoratedcompleteddistance=\dimen299
+\pgfdecoratedremainingdistance=\dimen300
+\pgfdecoratedinputsegmentcompleteddistance=\dimen301
+\pgfdecoratedinputsegmentremainingdistance=\dimen302
+\pgf@decorate@distancetomove=\dimen303
 \pgf@decorate@repeatstate=\count286
-\pgfdecorationsegmentamplitude=\dimen306
-\pgfdecorationsegmentlength=\dimen307
+\pgfdecorationsegmentamplitude=\dimen304
+\pgfdecorationsegmentlength=\dimen305
 )
-\tikz@lib@dec@box=\box98
+\tikz@lib@dec@box=\box94
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgfli
 brarydecorations.markings.code.tex"))
@@ -1614,26 +1604,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
 shapes.multipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box99
-\pgfnodeparttwobox=\box100
-\pgfnodepartthreebox=\box101
-\pgfnodepartfourbox=\box102
-\pgfnodeparttwentybox=\box103
-\pgfnodepartnineteenbox=\box104
-\pgfnodeparteighteenbox=\box105
-\pgfnodepartseventeenbox=\box106
-\pgfnodepartsixteenbox=\box107
-\pgfnodepartfifteenbox=\box108
-\pgfnodepartfourteenbox=\box109
-\pgfnodepartthirteenbox=\box110
-\pgfnodeparttwelvebox=\box111
-\pgfnodepartelevenbox=\box112
-\pgfnodeparttenbox=\box113
-\pgfnodepartninebox=\box114
-\pgfnodeparteightbox=\box115
-\pgfnodepartsevenbox=\box116
-\pgfnodepartsixbox=\box117
-\pgfnodepartfivebox=\box118
+\pgfnodepartlowerbox=\box95
+\pgfnodeparttwobox=\box96
+\pgfnodepartthreebox=\box97
+\pgfnodepartfourbox=\box98
+\pgfnodeparttwentybox=\box99
+\pgfnodepartnineteenbox=\box100
+\pgfnodeparteighteenbox=\box101
+\pgfnodepartseventeenbox=\box102
+\pgfnodepartsixteenbox=\box103
+\pgfnodepartfifteenbox=\box104
+\pgfnodepartfourteenbox=\box105
+\pgfnodepartthirteenbox=\box106
+\pgfnodeparttwelvebox=\box107
+\pgfnodepartelevenbox=\box108
+\pgfnodeparttenbox=\box109
+\pgfnodepartninebox=\box110
+\pgfnodeparteightbox=\box111
+\pgfnodepartsevenbox=\box112
+\pgfnodepartsixbox=\box113
+\pgfnodepartfivebox=\box114
 )))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarysnakes.code.tex"
@@ -1673,7 +1663,36 @@ Package: feynmp 1996/12/02 v1.08 LaTeX/MetaPost Feynman Diagram Package (ohl)
 . Defining document command \mref with arg. spec. 'm' on line 266.
 .................................................
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
+Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
+\csq@reset=\count288
+\csq@gtype=\count289
+\csq@glevel=\count290
+\csq@qlevel=\count291
+\csq@maxlvl=\count292
+\csq@tshold=\count293
+\csq@ltx@everypar=\toks56
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.def"
+File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.cfg"
+File: csquotes.cfg 
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\simplewick\simplewick.sty"
+Package: simplewick 2007/11/23 v1.2a
+
+Package: simplewick v1.2a (2007/11/23)
+\swb@xone=\box115
+\swb@xtwo=\box116
+\swb@xthree=\box117
+\swb@xfour=\box118
+\swdimen@ne=\dimen306
+\swdimentw@=\dimen307
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
 Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex2.sty"
@@ -1682,49 +1701,49 @@ AB)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count288
+\lrq@indent=\count294
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count289
-\c@listtotal=\count290
-\c@listcount=\count291
-\c@liststart=\count292
-\c@liststop=\count293
-\c@citecount=\count294
-\c@citetotal=\count295
-\c@multicitecount=\count296
-\c@multicitetotal=\count297
-\c@instcount=\count298
-\c@maxnames=\count299
-\c@minnames=\count300
-\c@maxitems=\count301
-\c@minitems=\count302
-\c@citecounter=\count303
-\c@savedcitecounter=\count304
-\c@uniquelist=\count305
-\c@uniquename=\count306
-\c@refsection=\count307
-\c@refsegment=\count308
-\c@maxextratitle=\count309
-\c@maxextratitleyear=\count310
-\c@maxextrayear=\count311
-\c@maxextraalpha=\count312
-\c@abbrvpenalty=\count313
-\c@highnamepenalty=\count314
-\c@lownamepenalty=\count315
-\c@maxparens=\count316
-\c@parenlevel=\count317
-\blx@tempcnta=\count318
-\blx@tempcntb=\count319
-\blx@tempcntc=\count320
-\blx@maxsection=\count321
-\blx@maxsegment@0=\count322
-\blx@notetype=\count323
-\blx@parenlevel@text=\count324
-\blx@parenlevel@foot=\count325
-\blx@sectionciteorder@0=\count326
+\c@tabx@nest=\count295
+\c@listtotal=\count296
+\c@listcount=\count297
+\c@liststart=\count298
+\c@liststop=\count299
+\c@citecount=\count300
+\c@citetotal=\count301
+\c@multicitecount=\count302
+\c@multicitetotal=\count303
+\c@instcount=\count304
+\c@maxnames=\count305
+\c@minnames=\count306
+\c@maxitems=\count307
+\c@minitems=\count308
+\c@citecounter=\count309
+\c@savedcitecounter=\count310
+\c@uniquelist=\count311
+\c@uniquename=\count312
+\c@refsection=\count313
+\c@refsegment=\count314
+\c@maxextratitle=\count315
+\c@maxextratitleyear=\count316
+\c@maxextrayear=\count317
+\c@maxextraalpha=\count318
+\c@abbrvpenalty=\count319
+\c@highnamepenalty=\count320
+\c@lownamepenalty=\count321
+\c@maxparens=\count322
+\c@parenlevel=\count323
+\blx@tempcnta=\count324
+\blx@tempcntb=\count325
+\blx@tempcntc=\count326
+\blx@maxsection=\count327
+\blx@maxsegment@0=\count328
+\blx@notetype=\count329
+\blx@parenlevel@text=\count330
+\blx@parenlevel@foot=\count331
+\blx@sectionciteorder@0=\count332
 \labelnumberwidth=\skip148
 \labelalphawidth=\skip149
 \biblabelsep=\skip150
@@ -1735,9 +1754,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip155
 \blx@bcfin=\read3
 \blx@bcfout=\write5
-\c@mincomprange=\count327
-\c@maxcomprange=\count328
-\c@mincompwidth=\count329
+\c@mincomprange=\count333
+\c@maxcomprange=\count334
+\c@mincompwidth=\count335
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1746,72 +1765,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count330
-\c@savedafterword=\count331
-\c@annotator=\count332
-\c@savedannotator=\count333
-\c@author=\count334
-\c@savedauthor=\count335
-\c@bookauthor=\count336
-\c@savedbookauthor=\count337
-\c@commentator=\count338
-\c@savedcommentator=\count339
-\c@editor=\count340
-\c@savededitor=\count341
-\c@editora=\count342
-\c@savededitora=\count343
-\c@editorb=\count344
-\c@savededitorb=\count345
-\c@editorc=\count346
-\c@savededitorc=\count347
-\c@foreword=\count348
-\c@savedforeword=\count349
-\c@holder=\count350
-\c@savedholder=\count351
-\c@introduction=\count352
-\c@savedintroduction=\count353
-\c@namea=\count354
-\c@savednamea=\count355
-\c@nameb=\count356
-\c@savednameb=\count357
-\c@namec=\count358
-\c@savednamec=\count359
-\c@translator=\count360
-\c@savedtranslator=\count361
-\c@shortauthor=\count362
-\c@savedshortauthor=\count363
-\c@shorteditor=\count364
-\c@savedshorteditor=\count365
-\c@labelname=\count366
-\c@savedlabelname=\count367
-\c@institution=\count368
-\c@savedinstitution=\count369
-\c@lista=\count370
-\c@savedlista=\count371
-\c@listb=\count372
-\c@savedlistb=\count373
-\c@listc=\count374
-\c@savedlistc=\count375
-\c@listd=\count376
-\c@savedlistd=\count377
-\c@liste=\count378
-\c@savedliste=\count379
-\c@listf=\count380
-\c@savedlistf=\count381
-\c@location=\count382
-\c@savedlocation=\count383
-\c@organization=\count384
-\c@savedorganization=\count385
-\c@origlocation=\count386
-\c@savedoriglocation=\count387
-\c@origpublisher=\count388
-\c@savedorigpublisher=\count389
-\c@publisher=\count390
-\c@savedpublisher=\count391
-\c@language=\count392
-\c@savedlanguage=\count393
-\c@pageref=\count394
-\c@savedpageref=\count395
+\c@afterword=\count336
+\c@savedafterword=\count337
+\c@annotator=\count338
+\c@savedannotator=\count339
+\c@author=\count340
+\c@savedauthor=\count341
+\c@bookauthor=\count342
+\c@savedbookauthor=\count343
+\c@commentator=\count344
+\c@savedcommentator=\count345
+\c@editor=\count346
+\c@savededitor=\count347
+\c@editora=\count348
+\c@savededitora=\count349
+\c@editorb=\count350
+\c@savededitorb=\count351
+\c@editorc=\count352
+\c@savededitorc=\count353
+\c@foreword=\count354
+\c@savedforeword=\count355
+\c@holder=\count356
+\c@savedholder=\count357
+\c@introduction=\count358
+\c@savedintroduction=\count359
+\c@namea=\count360
+\c@savednamea=\count361
+\c@nameb=\count362
+\c@savednameb=\count363
+\c@namec=\count364
+\c@savednamec=\count365
+\c@translator=\count366
+\c@savedtranslator=\count367
+\c@shortauthor=\count368
+\c@savedshortauthor=\count369
+\c@shorteditor=\count370
+\c@savedshorteditor=\count371
+\c@labelname=\count372
+\c@savedlabelname=\count373
+\c@institution=\count374
+\c@savedinstitution=\count375
+\c@lista=\count376
+\c@savedlista=\count377
+\c@listb=\count378
+\c@savedlistb=\count379
+\c@listc=\count380
+\c@savedlistc=\count381
+\c@listd=\count382
+\c@savedlistd=\count383
+\c@liste=\count384
+\c@savedliste=\count385
+\c@listf=\count386
+\c@savedlistf=\count387
+\c@location=\count388
+\c@savedlocation=\count389
+\c@organization=\count390
+\c@savedorganization=\count391
+\c@origlocation=\count392
+\c@savedoriglocation=\count393
+\c@origpublisher=\count394
+\c@savedorigpublisher=\count395
+\c@publisher=\count396
+\c@savedpublisher=\count397
+\c@language=\count398
+\c@savedlanguage=\count399
+\c@pageref=\count400
+\c@savedpageref=\count401
 \shorthandwidth=\skip156
 \shortjournalwidth=\skip157
 \shortserieswidth=\skip158
@@ -1829,13 +1848,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
 File: biblatex.def 
-\c@textcitecount=\count396
-\c@textcitetotal=\count397
-\c@textcitemaxnames=\count398
-\c@biburlnumpenalty=\count399
-\c@biburlucpenalty=\count400
-\c@biburllcpenalty=\count401
-\c@smartand=\count402
+\c@textcitecount=\count402
+\c@textcitetotal=\count403
+\c@textcitemaxnames=\count404
+\c@biburlnumpenalty=\count405
+\c@biburlucpenalty=\count406
+\c@biburllcpenalty=\count407
+\c@smartand=\count408
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
@@ -1852,16 +1871,16 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
 File: standard.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count403
-\c@bbx:relatedtotal=\count404
+\c@bbx:relatedcount=\count409
+\c@bbx:relatedtotal=\count410
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx"
 File: numeric-comp.cbx 2014/06/25 v2.9a biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count405
-\c@cbx@tempcntb=\count406
+\c@cbx@tempcnta=\count411
+\c@cbx@tempcntb=\count412
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1880,6 +1899,10 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
 File: biblatex.cfg 
 )))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'british'.
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
 
@@ -1891,12 +1914,6 @@ Package biblatex Info: ... file 'english.lbx' found.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
 File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ))
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count407
-\@quotereset=\count408
 (C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -1949,17 +1966,17 @@ LaTeX Font Info:    ... okay on input line 19.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count409
+\scratchcounter=\count413
 \scratchdimen=\dimen308
 \scratchbox=\box119
-\nofMPsegments=\count410
-\nofMParguments=\count411
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count412
+\nofMPsegments=\count414
+\nofMParguments=\count415
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count416
 \MPscratchDim=\dimen309
-\MPnumerator=\count413
-\makeMPintoPDFobject=\count414
-\everyMPtoPDFconversion=\toks57
+\MPnumerator=\count417
+\makeMPintoPDFobject=\count418
+\everyMPtoPDFconversion=\toks58
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -2070,7 +2087,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count415
+\c@section@level=\count419
 )
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
@@ -2094,7 +2111,7 @@ Package biblatex Info: ... file 'lecturenotes.bbl' found.
 (C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.bbl)
 Package biblatex Info: Reference section=0 on input line 19.
 Package biblatex Info: Reference segment=0 on input line 19.
-\c__siunitx_mathsf_int=\count416
+\c__siunitx_mathsf_int=\count420
 LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -2120,7 +2137,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count417
+\c__siunitx_mathtt_int=\count421
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2671,257 +2688,237 @@ Overfull \hbox (66.84837pt too wide) detected at line 100
  []
 
 [71] [72]
-feynmp: File G0.1 not found:
-feynmp: Process G0.mp with MetaPost and then reprocess this file.
-feynmf: Label file G0.t1 not found:
-feynmf: Process G0.mp with MetaPost and then reprocess this file.
-runsystem(mpost G0)...disabled (restricted).
-
-
+File: 01G0.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\01G0.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\01G0.t1)
 Overfull \hbox (53.0945pt too wide) in paragraph at lines 167--167
  [] 
  []
 
-feynmp: File D0.1 not found:
-feynmp: Process D0.mp with MetaPost and then reprocess this file.
-feynmf: Label file D0.t1 not found:
-feynmf: Process D0.mp with MetaPost and then reprocess this file.
-
+File: 02D0.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\02D0.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\02D0.t1)
 Overfull \hbox (53.0945pt too wide) in paragraph at lines 177--177
  [] 
  []
 
-feynmp: File G.1 not found:
-feynmp: Process G.mp with MetaPost and then reprocess this file.
-feynmf: Label file G.t1 not found:
-feynmf: Process G.mp with MetaPost and then reprocess this file.
-
+File: 03G.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\03G.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\03G.t1)
 Overfull \hbox (53.0945pt too wide) in paragraph at lines 187--187
  [] 
  []
 
-feynmp: File Gexpr.1 not found:
-feynmp: Process Gexpr.mp with MetaPost and then reprocess this file.
-feynmf: Label file Gexpr.t1 not found:
-feynmf: Process Gexpr.mp with MetaPost and then reprocess this file.
-feynmp: File G0.1 not found:
-feynmp: Process G0.mp with MetaPost and then reprocess this file.
-feynmf: Label file G0.t1 not found:
-feynmf: Process G0.mp with MetaPost and then reprocess this file.
-runsystem(mpost G0)...disabled (restricted).
-
-feynmp: File G0.1 not found:
-feynmp: Process G0.mp with MetaPost and then reprocess this file.
-feynmf: Label file G0.t1 not found:
-feynmf: Process G0.mp with MetaPost and then reprocess this file.
-feynmp: File 3rd.1 not found:
-feynmp: Process 3rd.mp with MetaPost and then reprocess this file.
-feynmf: Label file 3rd.t1 not found:
-feynmf: Process 3rd.mp with MetaPost and then reprocess this file.
-feynmp: File 4th.1 not found:
-feynmp: Process 4th.mp with MetaPost and then reprocess this file.
-feynmf: Label file 4th.t1 not found:
-feynmf: Process 4th.mp with MetaPost and then reprocess this file.
-feynmp: File 6th.1 not found:
-feynmp: Process 6th.mp with MetaPost and then reprocess this file.
-feynmf: Label file 6th.t1 not found:
-feynmf: Process 6th.mp with MetaPost and then reprocess this file.
-feynmp: File g1.1 not found:
-feynmp: Process g1.mp with MetaPost and then reprocess this file.
-feynmf: Label file g1.t1 not found:
-feynmf: Process g1.mp with MetaPost and then reprocess this file.
-feynmp: File g2.1 not found:
-feynmp: Process g2.mp with MetaPost and then reprocess this file.
-feynmf: Label file g2.t1 not found:
-feynmf: Process g2.mp with MetaPost and then reprocess this file.
-feynmp: File g3.1 not found:
-feynmp: Process g3.mp with MetaPost and then reprocess this file.
-feynmf: Label file g3.t1 not found:
-feynmf: Process g3.mp with MetaPost and then reprocess this file.
+File: 04Gexpr.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\04Gexpr.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\04Gexpr.t1)
+File: 05G0.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\05G0.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\05G0.t1)
+File: 06G0.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\06G0.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\06G0.t1)
+File: 073rd.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\073rd.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\073rd.t1)
+File: 084th.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\084th.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\084th.t1)
+File: 096th.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\096th.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\096th.t1)
+File: 10g1.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\10g1.1)
+feynmf: Label file 10g1.t1 not found:
+feynmf: Process 10g1.mp with MetaPost and then reprocess this file.
+File: 11g2.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\11g2.1)
+feynmf: Label file 11g2.t1 not found:
+feynmf: Process 11g2.mp with MetaPost and then reprocess this file.
+File: 12g3.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\12g3.1)
+feynmf: Label file 12g3.t1 not found:
+feynmf: Process 12g3.mp with MetaPost and then reprocess this file.
 
 Overfull \hbox (1.26195pt too wide) detected at line 291
 [] []
  []
 
 [73]
-feynmp: File g3.1 not found:
-feynmp: Process g3.mp with MetaPost and then reprocess this file.
-feynmf: Label file g3.t1 not found:
-feynmf: Process g3.mp with MetaPost and then reprocess this file.
+File: 13g3.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\13g3.1)
+feynmf: Label file 13g3.t1 not found:
+feynmf: Process 13g3.mp with MetaPost and then reprocess this file.
 [74]
-feynmp: File g2.1 not found:
-feynmp: Process g2.mp with MetaPost and then reprocess this file.
-feynmf: Label file g2.t1 not found:
-feynmf: Process g2.mp with MetaPost and then reprocess this file.
-feynmp: File F_1.1 not found:
-feynmp: Process F_1.mp with MetaPost and then reprocess this file.
-feynmf: Label file F_1.t1 not found:
-feynmf: Process F_1.mp with MetaPost and then reprocess this file.
+File: 14g2.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\14g2.1)
+feynmf: Label file 14g2.t1 not found:
+feynmf: Process 14g2.mp with MetaPost and then reprocess this file.
+File: 15F_1.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\15F_1.1)
+feynmf: Label file 15F_1.t1 not found:
+feynmf: Process 15F_1.mp with MetaPost and then reprocess this file.
 [75]
 Overfull \hbox (0.29059pt too wide) detected at line 346
 [] []
  []
 
 [76]
-feynmp: File Sigma(2).1 not found:
-feynmp: Process Sigma(2).mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(2).t1 not found:
-feynmf: Process Sigma(2).mp with MetaPost and then reprocess this file.
-[77] [78]
-feynmp: File Sigma(2)2G0.1 not found:
-feynmp: Process Sigma(2)2G0.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(2)2G0.t1 not found:
-feynmf: Process Sigma(2)2G0.mp with MetaPost and then reprocess this file.
-feynmp: File Sigma(4)a.1 not found:
-feynmp: Process Sigma(4)a.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(4)a.t1 not found:
-feynmf: Process Sigma(4)a.mp with MetaPost and then reprocess this file.
-feynmp: File Sigma(4)b.1 not found:
-feynmp: Process Sigma(4)b.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(4)b.t1 not found:
-feynmf: Process Sigma(4)b.mp with MetaPost and then reprocess this file.
-feynmp: File Sigma(4)c.1 not found:
-feynmp: Process Sigma(4)c.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(4)c.t1 not found:
-feynmf: Process Sigma(4)c.mp with MetaPost and then reprocess this file.
-feynmp: File Sigma(4)a.1 not found:
-feynmp: Process Sigma(4)a.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(4)a.t1 not found:
-feynmf: Process Sigma(4)a.mp with MetaPost and then reprocess this file.
-feynmp: File Sigma(4)b.1 not found:
-feynmp: Process Sigma(4)b.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(4)b.t1 not found:
-feynmf: Process Sigma(4)b.mp with MetaPost and then reprocess this file.
-feynmp: File Sigma(4)c.1 not found:
-feynmp: Process Sigma(4)c.mp with MetaPost and then reprocess this file.
-feynmf: Label file Sigma(4)c.t1 not found:
-feynmf: Process Sigma(4)c.mp with MetaPost and then reprocess this file.
+File: 16Sigma(2).1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\16Sigma(2).1)
+(C:\Users\Tom\Documents\GitHub\FY8302\16Sigma(2).t1) [77] [78]
+File: 17Sigma(2)2G0.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\17Sigma(2)2G0.1)
+feynmf: Label file 17Sigma(2)2G0.t1 not found:
+feynmf: Process 17Sigma(2)2G0.mp with MetaPost and then reprocess this file.
+File: 18Sigma(4)a.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\18Sigma(4)a.1)
+feynmf: Label file 18Sigma(4)a.t1 not found:
+feynmf: Process 18Sigma(4)a.mp with MetaPost and then reprocess this file.
+File: 19Sigma(4)b.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\19Sigma(4)b.1)
+feynmf: Label file 19Sigma(4)b.t1 not found:
+feynmf: Process 19Sigma(4)b.mp with MetaPost and then reprocess this file.
+File: 20Sigma(4)c.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\20Sigma(4)c.1)
+feynmf: Label file 20Sigma(4)c.t1 not found:
+feynmf: Process 20Sigma(4)c.mp with MetaPost and then reprocess this file.
+File: 21Sigma(4)a.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\21Sigma(4)a.1)
+feynmf: Label file 21Sigma(4)a.t1 not found:
+feynmf: Process 21Sigma(4)a.mp with MetaPost and then reprocess this file.
+File: 22Sigma(4)b.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\22Sigma(4)b.1)
+feynmf: Label file 22Sigma(4)b.t1 not found:
+feynmf: Process 22Sigma(4)b.mp with MetaPost and then reprocess this file.
+File: 23Sigma(4)c.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\23Sigma(4)c.1)
+feynmf: Label file 23Sigma(4)c.t1 not found:
+feynmf: Process 23Sigma(4)c.mp with MetaPost and then reprocess this file.
 
 Overfull \hbox (2.53505pt too wide) detected at line 533
 \OT1/cmr/m/n/10.95 [] = [] + [] + []
  []
 
 [79]
-feynmp: File D.1 not found:
-feynmp: Process D.mp with MetaPost and then reprocess this file.
-feynmf: Label file D.t1 not found:
-feynmf: Process D.mp with MetaPost and then reprocess this file.
-feynmp: File D_0.1 not found:
-feynmp: Process D_0.mp with MetaPost and then reprocess this file.
-feynmf: Label file D_0.t1 not found:
-feynmf: Process D_0.mp with MetaPost and then reprocess this file.
-feynmp: File D.1 not found:
-feynmp: Process D.mp with MetaPost and then reprocess this file.
-feynmf: Label file D.t1 not found:
-feynmf: Process D.mp with MetaPost and then reprocess this file.
-feynmp: File D_0.1 not found:
-feynmp: Process D_0.mp with MetaPost and then reprocess this file.
-feynmf: Label file D_0.t1 not found:
-feynmf: Process D_0.mp with MetaPost and then reprocess this file.
-feynmp: File D_term2.1 not found:
-feynmp: Process D_term2.mp with MetaPost and then reprocess this file.
-feynmf: Label file D_term2.t1 not found:
-feynmf: Process D_term2.mp with MetaPost and then reprocess this file.
-feynmp: File D_term3.1 not found:
-feynmp: Process D_term3.mp with MetaPost and then reprocess this file.
-feynmf: Label file D_term3.t1 not found:
-feynmf: Process D_term3.mp with MetaPost and then reprocess this file.
-feynmp: File D_term4.1 not found:
-feynmp: Process D_term4.mp with MetaPost and then reprocess this file.
-feynmf: Label file D_term4.t1 not found:
-feynmf: Process D_term4.mp with MetaPost and then reprocess this file.
-feynmp: File D_term5.1 not found:
-feynmp: Process D_term5.mp with MetaPost and then reprocess this file.
-feynmf: Label file D_term5.t1 not found:
-feynmf: Process D_term5.mp with MetaPost and then reprocess this file.
-feynmp: File Pi(2).1 not found:
-feynmp: Process Pi(2).mp with MetaPost and then reprocess this file.
-feynmf: Label file Pi(2).t1 not found:
-feynmf: Process Pi(2).mp with MetaPost and then reprocess this file.
+File: 24D.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\24D.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\24D.t1)
+File: 25D_0.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\25D_0.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\25D_0.t1)
+File: 26D.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\26D.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\26D.t1)
+File: 27D_0.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\27D_0.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\27D_0.t1)
+File: 28D_term2.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\28D_term2.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\28D_term2.t1)
+File: 29D_term3.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\29D_term3.1)
+feynmf: Label file 29D_term3.t1 not found:
+feynmf: Process 29D_term3.mp with MetaPost and then reprocess this file.
+File: 30D_term4.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\30D_term4.1)
+feynmf: Label file 30D_term4.t1 not found:
+feynmf: Process 30D_term4.mp with MetaPost and then reprocess this file.
+File: 31D_term5.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\31D_term5.1)
+feynmf: Label file 31D_term5.t1 not found:
+feynmf: Process 31D_term5.mp with MetaPost and then reprocess this file.
+File: 32Pi(2).1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\32Pi(2).1)
+feynmf: Label file 32Pi(2).t1 not found:
+feynmf: Process 32Pi(2).mp with MetaPost and then reprocess this file.
 [80]
-feynmp: File Pi(4)_a.1 not found:
-feynmp: Process Pi(4)_a.mp with MetaPost and then reprocess this file.
-feynmf: Label file Pi(4)_a.t1 not found:
-feynmf: Process Pi(4)_a.mp with MetaPost and then reprocess this file.
-feynmp: File Pi(4)_b.1 not found:
-feynmp: Process Pi(4)_b.mp with MetaPost and then reprocess this file.
-feynmf: Label file Pi(4)_b.t1 not found:
-feynmf: Process Pi(4)_b.mp with MetaPost and then reprocess this file.
-feynmp: File Pi(4)_c.1 not found:
-feynmp: Process Pi(4)_c.mp with MetaPost and then reprocess this file.
-feynmf: Label file Pi(4)_c.t1 not found:
-feynmf: Process Pi(4)_c.mp with MetaPost and then reprocess this file.
-feynmp: File Vertex.1 not found:
-feynmp: Process Vertex.mp with MetaPost and then reprocess this file.
-feynmf: Label file Vertex.t1 not found:
-feynmf: Process Vertex.mp with MetaPost and then reprocess this file.
-runsystem(mpost Vertex)...disabled (restricted).
-
-feynmp: File G0Feynman.1 not found:
-feynmp: Process G0Feynman.mp with MetaPost and then reprocess this file.
-feynmf: Label file G0Feynman.t1 not found:
-feynmf: Process G0Feynman.mp with MetaPost and then reprocess this file.
-[81]
-feynmp: File D0Feynman.1 not found:
-feynmp: Process D0Feynman.mp with MetaPost and then reprocess this file.
-feynmf: Label file D0Feynman.t1 not found:
-feynmf: Process D0Feynman.mp with MetaPost and then reprocess this file.
-feynmp: File closed_loop.1 not found:
-feynmp: Process closed_loop.mp with MetaPost and then reprocess this file.
-feynmf: Label file closed_loop.t1 not found:
-feynmf: Process closed_loop.mp with MetaPost and then reprocess this file.
-feynmp: File not_closed_loop.1 not found:
-feynmp: Process not_closed_loop.mp with MetaPost and then reprocess this file.
-feynmf: Label file not_closed_loop.t1 not found:
-feynmf: Process not_closed_loop.mp with MetaPost and then reprocess this file.
-feynmp: File example1.1 not found:
-feynmp: Process example1.mp with MetaPost and then reprocess this file.
-feynmf: Label file example1.t1 not found:
-feynmf: Process example1.mp with MetaPost and then reprocess this file.
-feynmp: File example2.1 not found:
-feynmp: Process example2.mp with MetaPost and then reprocess this file.
-feynmf: Label file example2.t1 not found:
-feynmf: Process example2.mp with MetaPost and then reprocess this file.
-[82]
-feynmp: File example3.1 not found:
-feynmp: Process example3.mp with MetaPost and then reprocess this file.
-feynmf: Label file example3.t1 not found:
-feynmf: Process example3.mp with MetaPost and then reprocess this file.
-feynmp: File example4.1 not found:
-feynmp: Process example4.mp with MetaPost and then reprocess this file.
-feynmf: Label file example4.t1 not found:
-feynmf: Process example4.mp with MetaPost and then reprocess this file.
-feynmp: File example5.1 not found:
-feynmp: Process example5.mp with MetaPost and then reprocess this file.
-feynmf: Label file example5.t1 not found:
-feynmf: Process example5.mp with MetaPost and then reprocess this file.
-feynmp: File example6.1 not found:
-feynmp: Process example6.mp with MetaPost and then reprocess this file.
-feynmf: Label file example6.t1 not found:
-feynmf: Process example6.mp with MetaPost and then reprocess this file.
-[83]
-feynmp: File Gapprox1.1 not found:
-feynmp: Process Gapprox1.mp with MetaPost and then reprocess this file.
-feynmf: Label file Gapprox1.t1 not found:
-feynmf: Process Gapprox1.mp with MetaPost and then reprocess this file.
-feynmp: File Gapprox2.1 not found:
-feynmp: Process Gapprox2.mp with MetaPost and then reprocess this file.
-feynmf: Label file Gapprox2.t1 not found:
-feynmf: Process Gapprox2.mp with MetaPost and then reprocess this file.
-feynmp: File Gapprox3.1 not found:
-feynmp: Process Gapprox3.mp with MetaPost and then reprocess this file.
-feynmf: Label file Gapprox3.t1 not found:
-feynmf: Process Gapprox3.mp with MetaPost and then reprocess this file.
+File: 33Pi(4)_a.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\33Pi(4)_a.1)
+feynmf: Label file 33Pi(4)_a.t1 not found:
+feynmf: Process 33Pi(4)_a.mp with MetaPost and then reprocess this file.
+File: 34Pi(4)_b.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\34Pi(4)_b.1)
+feynmf: Label file 34Pi(4)_b.t1 not found:
+feynmf: Process 34Pi(4)_b.mp with MetaPost and then reprocess this file.
+File: 35Pi(4)_c.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\35Pi(4)_c.1)
+feynmf: Label file 35Pi(4)_c.t1 not found:
+feynmf: Process 35Pi(4)_c.mp with MetaPost and then reprocess this file.
+File: 36Vertex.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\36Vertex.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\36Vertex.t1)
+File: 37G0Feynman.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\37G0Feynman.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\37G0Feynman.t1) [81]
+File: 38D0Feynman.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\38D0Feynman.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\38D0Feynman.t1)
+File: 39closed_loop.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\39closed_loop.1)
+feynmf: Label file 39closed_loop.t1 not found:
+feynmf: Process 39closed_loop.mp with MetaPost and then reprocess this file.
+File: 40not_closed_loop.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\40not_closed_loop.1)
+feynmf: Label file 40not_closed_loop.t1 not found:
+feynmf: Process 40not_closed_loop.mp with MetaPost and then reprocess this file
+.
+File: 41example1.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\41example1.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\41example1.t1)
+File: 42example2.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\42example2.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\42example2.t1) [82]
+File: 43example3.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\43example3.1)
+feynmf: Label file 43example3.t1 not found:
+feynmf: Process 43example3.mp with MetaPost and then reprocess this file.
+File: 44example4.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\44example4.1)
+feynmf: Label file 44example4.t1 not found:
+feynmf: Process 44example4.mp with MetaPost and then reprocess this file.
+File: 45example5.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\45example5.1)
+feynmf: Label file 45example5.t1 not found:
+feynmf: Process 45example5.mp with MetaPost and then reprocess this file.
+File: 46example6.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\46example6.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\46example6.t1) [83]
+File: 47Gapprox1.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\47Gapprox1.1)
+feynmf: Label file 47Gapprox1.t1 not found:
+feynmf: Process 47Gapprox1.mp with MetaPost and then reprocess this file.
+File: 48Gapprox2.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\48Gapprox2.1)
+feynmf: Label file 48Gapprox2.t1 not found:
+feynmf: Process 48Gapprox2.mp with MetaPost and then reprocess this file.
+File: 49Gapprox3.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\49Gapprox3.1)
+feynmf: Label file 49Gapprox3.t1 not found:
+feynmf: Process 49Gapprox3.mp with MetaPost and then reprocess this file.
 [84]
 Package mdframed Info: Not enough space on this page on input line 806.
-
-feynmp: File Vertex.1 not found:
-feynmp: Process Vertex.mp with MetaPost and then reprocess this file.
-feynmf: Label file Vertex.t1 not found:
-feynmf: Process Vertex.mp with MetaPost and then reprocess this file.
-runsystem(mpost Vertex)...disabled (restricted).
-
-
+File: 50Vertex.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\50Vertex.1)
+(C:\Users\Tom\Documents\GitHub\FY8302\50Vertex.t1)
 Overfull \hbox (35.75197pt too wide) in paragraph at lines 831--831
 [][] 
  []
@@ -2932,9 +2929,9 @@ Overfull \hbox (39.46321pt too wide) in paragraph at lines 41--41
  []
 
 [86] [87] [88]) [89]
-Overfull \hbox (21.89784pt too wide) in paragraph at lines 38--38
-[]\OT1/cmr/m/n/10.95 (-20) Andrey V. Chubukov and Subir Sach-dev. ``Uni-ver-sal
- mag-netic prop-er-ties of $[][]$$[][]$$[][]$
+Overfull \hbox (19.51317pt too wide) in paragraph at lines 38--38
+[]\OT1/cmr/m/n/10.95 (-20) Andrey V. Chubukov and Subir Sach-dev. `  Uni-ver-sa
+l mag-netic prop-er-ties of $[][]$$[][]$$[][]$
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
@@ -2950,13 +2947,13 @@ Package rerunfilecheck Info: File `lecturenotes.out' has not changed.
 Package logreq Info: Writing requests to 'lecturenotes.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 37582 strings out of 493921
- 732050 string characters out of 3144881
- 1192597 words of memory out of 3000000
- 39664 multiletter control sequences out of 15000+200000
- 28624 words of font info for 163 fonts, out of 3000000 for 9000
+ 38379 strings out of 493921
+ 748395 string characters out of 3144881
+ 1209628 words of memory out of 3000000
+ 40295 multiletter control sequences out of 15000+200000
+ 28798 words of font info for 165 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 63i,26n,66p,836b,1463s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,26n,66p,868b,1469s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/P
@@ -2987,7 +2984,7 @@ blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on lecturenotes.pdf (91 pages, 1405041 bytes).
+Output written on lecturenotes.pdf (91 pages, 1425439 bytes).
 PDF statistics:
  949 PDF objects out of 1000 (max. 8388607)
  263 named destinations out of 1000 (max. 500000)

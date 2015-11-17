@@ -1,0 +1,5 @@
+% 16Sigma(2).t1 -- generated from 16Sigma(2).mp
+\fmfL(40.0007,63.0005,b){$q,\omega _1$}%
+\fmfL(40.00002,19,t){$k-q,\omega -\omega _1$}%
+\fmfL(-6,25,r){$M_q$}%
+\fmfL(86,25,l){$M_{-q}$}%

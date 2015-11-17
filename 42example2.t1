@@ -1,0 +1,5 @@
+% 42example2.t1 -- generated from 42example2.mp
+\fmfL(31.00002,14,t){$q,\omega $}%
+\fmfL(80.00159,38.80035,b){$k_1+q,\omega +\omega _1$}%
+\fmfL(129,14,t){$q,\omega $}%
+\fmfL(80.00159,1.20026,t){$k_1,\omega _1$}%
