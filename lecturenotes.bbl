@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.3 $
+% $ biblatex bbl format version 2.5 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,12 +18,8 @@
 
 
 \refsection{0}
-  \sortlist{entry}{}
+  \sortlist{none}{none}
     \entry{lieb1968}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=5b3fcbaeb73bd6610c5079e6b31dd2dc}{Lieb}{L\bibinitperiod}{Elliott\bibnamedelima H}{E\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
-        {{hash=23b4602cdbebb31c1f67b85413f4f215}{Wu}{W\bibinitperiod}{FY}{F\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{2}{}{%
         {{hash=5b3fcbaeb73bd6610c5079e6b31dd2dc}{Lieb}{L\bibinitperiod}{Elliott\bibnamedelima H}{E\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
         {{hash=23b4602cdbebb31c1f67b85413f4f215}{Wu}{W\bibinitperiod}{FY}{F\bibinitperiod}{}{}{}{}}%
@@ -34,18 +30,18 @@
       \strng{namehash}{c0c9224b4ac3047f76511fd571f63fb6}
       \strng{fullhash}{c0c9224b4ac3047f76511fd571f63fb6}
       \field{sortinit}{0}
-      \field{labeltitle}{Absence of Mott transition in an exact solution of the short-range, one-band model in one dimension}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
       \field{number}{25}
       \field{title}{Absence of Mott transition in an exact solution of the short-range, one-band model in one dimension}
       \field{volume}{20}
       \field{year}{1968}
       \field{pages}{1445}
+      \range{pages}{1}
     \endentry
     \entry{anderson1987}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=4ad934ca0c20d87c625e968f4a4f04f2}{Anderson}{A\bibinitperiod}{Philip\bibnamedelima W}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
         {{hash=4ad934ca0c20d87c625e968f4a4f04f2}{Anderson}{A\bibinitperiod}{Philip\bibnamedelima W}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
       }
@@ -55,24 +51,20 @@
       \strng{namehash}{4ad934ca0c20d87c625e968f4a4f04f2}
       \strng{fullhash}{4ad934ca0c20d87c625e968f4a4f04f2}
       \field{sortinit}{0}
-      \field{labeltitle}{The resonating valence bond state in La2CuO4 and superconductivity}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{science}
       \field{number}{4793}
       \field{title}{The resonating valence bond state in La2CuO4 and superconductivity}
       \field{volume}{235}
       \field{year}{1987}
       \field{pages}{1196\bibrangedash 1198}
+      \range{pages}{3}
     \endentry
     \entry{sudbo1993}{article}{}
-      \name{labelname}{5}{}{%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=5bb1e58cf2bb20cbb5f201a53634e3e7}{Varma}{V\bibinitperiod}{Chandra\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=6edd5e872532b531d7d476dd86a65e6e}{Giamarchi}{G\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=db929dbc9228de41dc30f5a70a64b514}{Stechel}{S\bibinitperiod}{EB}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=85ca4ea7e92abcd2b750f5c2623e7744}{Scalettar}{S\bibinitperiod}{RT}{R\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{5}{}{%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=611b624ba14201af9ab0c9b7a008e3e1}{Sudb{ø}}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
         {{hash=5bb1e58cf2bb20cbb5f201a53634e3e7}{Varma}{V\bibinitperiod}{Chandra\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
         {{hash=6edd5e872532b531d7d476dd86a65e6e}{Giamarchi}{G\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
         {{hash=db929dbc9228de41dc30f5a70a64b514}{Stechel}{S\bibinitperiod}{EB}{E\bibinitperiod}{}{}{}{}}%
@@ -81,44 +73,43 @@
       \list{publisher}{1}{%
         {APS}%
       }
-      \strng{namehash}{20bd5ce1e7fb28a69f516ad77b1d62cd}
-      \strng{fullhash}{0fd6760a845ee9f978dce2f15ba8eb28}
+      \strng{namehash}{c95f3bb5619f65e219119ce9186fea4d}
+      \strng{fullhash}{29e55f4b85b9adce6a80572186b3bdcb}
       \field{sortinit}{0}
-      \field{labeltitle}{Flux quantization and pairing in one-dimensional copper-oxide models}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
       \field{number}{7}
       \field{title}{Flux quantization and pairing in one-dimensional copper-oxide models}
       \field{volume}{70}
       \field{year}{1993}
       \field{pages}{978}
+      \range{pages}{1}
     \endentry
     \entry{sandvik1996}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=8f25d57712c3069f8a5104c8f8089090}{Sandvik}{S\bibinitperiod}{AW}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{2}{}{%
         {{hash=8f25d57712c3069f8a5104c8f8089090}{Sandvik}{S\bibinitperiod}{AW}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=611b624ba14201af9ab0c9b7a008e3e1}{Sudb{ø}}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {APS}%
       }
-      \strng{namehash}{02471a347fcfa1920f4c18eb00635443}
-      \strng{fullhash}{02471a347fcfa1920f4c18eb00635443}
+      \strng{namehash}{750fe161bc6b776612b1b60cc322f6ad}
+      \strng{fullhash}{750fe161bc6b776612b1b60cc322f6ad}
       \field{sortinit}{0}
-      \field{labeltitle}{Phase separation and the existence of superconductivity in a one-dimensional copper-oxygen model}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
       \field{number}{6}
       \field{title}{Phase separation and the existence of superconductivity in a one-dimensional copper-oxygen model}
       \field{volume}{54}
       \field{year}{1996}
       \field{pages}{R3746}
+      \range{pages}{-1}
     \endentry
     \entry{hemmer2000}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=e4c7f169550de262af08f76051bce09b}{Hemmer}{H\bibinitperiod}{PC}{P\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
         {{hash=e4c7f169550de262af08f76051bce09b}{Hemmer}{H\bibinitperiod}{PC}{P\bibinitperiod}{}{}{}{}}%
       }
@@ -128,14 +119,13 @@
       \strng{namehash}{e4c7f169550de262af08f76051bce09b}
       \strng{fullhash}{e4c7f169550de262af08f76051bce09b}
       \field{sortinit}{0}
-      \field{labeltitle}{Kvantemekanikk Tapir}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{title}{Kvantemekanikk Tapir}
       \field{year}{2000}
     \endentry
     \entry{bethe1931}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=6e3a3e45efd053d794195d3225745e0a}{Bethe}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
         {{hash=6e3a3e45efd053d794195d3225745e0a}{Bethe}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
       }
@@ -148,7 +138,9 @@
       \strng{namehash}{6e3a3e45efd053d794195d3225745e0a}
       \strng{fullhash}{6e3a3e45efd053d794195d3225745e0a}
       \field{sortinit}{0}
-      \field{labeltitle}{Zur Theorie der Metalle}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{issn}{0044-3328}
       \field{journaltitle}{Zeitschrift für Physik}
       \field{number}{3-4}
@@ -156,6 +148,7 @@
       \field{volume}{71}
       \field{year}{1931}
       \field{pages}{205\bibrangedash 226}
+      \range{pages}{22}
       \verb{doi}
       \verb 10.1007/BF01341708
       \endverb
@@ -164,9 +157,6 @@
       \endverb
     \endentry
     \entry{onsager1943}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=005d4b021327efca5bb6a9ffe312f7a9}{Onsager}{O\bibinitperiod}{Lars}{L\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
         {{hash=005d4b021327efca5bb6a9ffe312f7a9}{Onsager}{O\bibinitperiod}{Lars}{L\bibinitperiod}{}{}{}{}}%
       }
@@ -176,7 +166,9 @@
       \strng{namehash}{005d4b021327efca5bb6a9ffe312f7a9}
       \strng{fullhash}{005d4b021327efca5bb6a9ffe312f7a9}
       \field{sortinit}{0}
-      \field{labeltitle}{Crystal Statistics. I. A Two-Dimensional Model with an Order-Disorder Transition}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{issue}{3-4}
       \field{journaltitle}{Phys. Rev.}
       \field{month}{02}
@@ -184,6 +176,7 @@
       \field{volume}{65}
       \field{year}{1944}
       \field{pages}{117\bibrangedash 149}
+      \range{pages}{33}
       \verb{doi}
       \verb 10.1103/PhysRev.65.117
       \endverb
@@ -192,11 +185,6 @@
       \endverb
     \endentry
     \entry{chakravarty1989}{article}{}
-      \name{labelname}{3}{}{%
-        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
-        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{3}{}{%
         {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
         {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
@@ -208,7 +196,9 @@
       \strng{namehash}{c7625779be53ae97ac10599002babcfd}
       \strng{fullhash}{c7625779be53ae97ac10599002babcfd}
       \field{sortinit}{0}
-      \field{labeltitle}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{issue}{4}
       \field{journaltitle}{Phys. Rev. B}
       \field{month}{02}
@@ -216,6 +206,7 @@
       \field{volume}{39}
       \field{year}{1989}
       \field{pages}{2344\bibrangedash 2371}
+      \range{pages}{28}
       \verb{doi}
       \verb 10.1103/PhysRevB.39.2344
       \endverb
@@ -224,10 +215,6 @@
       \endverb
     \endentry
     \entry{chubukov1993}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=84013c721f5f8207a839776c1314560c}{Chubukov}{C\bibinitperiod}{Andrey\bibnamedelima V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
-        {{hash=89be46409a28a725823c559e29e29f07}{Sachdev}{S\bibinitperiod}{Subir}{S\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{2}{}{%
         {{hash=84013c721f5f8207a839776c1314560c}{Chubukov}{C\bibinitperiod}{Andrey\bibnamedelima V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
         {{hash=89be46409a28a725823c559e29e29f07}{Sachdev}{S\bibinitperiod}{Subir}{S\bibinitperiod}{}{}{}{}}%
@@ -238,7 +225,9 @@
       \strng{namehash}{8244cb52dd2d381e8684f7733aa04057}
       \strng{fullhash}{8244cb52dd2d381e8684f7733aa04057}
       \field{sortinit}{0}
-      \field{labeltitle}{Universal magnetic properties of ${\mathrm{La}}_{2\mathrm{-}\mathrm{\ensuremath{\delta}}}$${\mathrm{Sr}}_{\mathrm{\ensuremath{\delta}}}$${\mathrm{CuO}}_{4}$ at intermediate temperatures}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{issue}{1}
       \field{journaltitle}{Phys. Rev. Lett.}
       \field{month}{07}
@@ -246,242 +235,7 @@
       \field{volume}{71}
       \field{year}{1993}
       \field{pages}{169\bibrangedash 172}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.71.169
-      \endverb
-      \verb{url}
-      \verb http://link.aps.org/doi/10.1103/PhysRevLett.71.169
-      \endverb
-    \endentry
-  \endsortlist
-  \sortlist{entry}{none}
-    \entry{lieb1968}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=5b3fcbaeb73bd6610c5079e6b31dd2dc}{Lieb}{L\bibinitperiod}{Elliott\bibnamedelima H}{E\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
-        {{hash=23b4602cdbebb31c1f67b85413f4f215}{Wu}{W\bibinitperiod}{FY}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{hash=5b3fcbaeb73bd6610c5079e6b31dd2dc}{Lieb}{L\bibinitperiod}{Elliott\bibnamedelima H}{E\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
-        {{hash=23b4602cdbebb31c1f67b85413f4f215}{Wu}{W\bibinitperiod}{FY}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{c0c9224b4ac3047f76511fd571f63fb6}
-      \strng{fullhash}{c0c9224b4ac3047f76511fd571f63fb6}
-      \field{sortinit}{0}
-      \field{labeltitle}{Absence of Mott transition in an exact solution of the short-range, one-band model in one dimension}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{25}
-      \field{title}{Absence of Mott transition in an exact solution of the short-range, one-band model in one dimension}
-      \field{volume}{20}
-      \field{year}{1968}
-      \field{pages}{1445}
-    \endentry
-    \entry{anderson1987}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=4ad934ca0c20d87c625e968f4a4f04f2}{Anderson}{A\bibinitperiod}{Philip\bibnamedelima W}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=4ad934ca0c20d87c625e968f4a4f04f2}{Anderson}{A\bibinitperiod}{Philip\bibnamedelima W}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science}%
-      }
-      \strng{namehash}{4ad934ca0c20d87c625e968f4a4f04f2}
-      \strng{fullhash}{4ad934ca0c20d87c625e968f4a4f04f2}
-      \field{sortinit}{0}
-      \field{labeltitle}{The resonating valence bond state in La2CuO4 and superconductivity}
-      \field{journaltitle}{science}
-      \field{number}{4793}
-      \field{title}{The resonating valence bond state in La2CuO4 and superconductivity}
-      \field{volume}{235}
-      \field{year}{1987}
-      \field{pages}{1196\bibrangedash 1198}
-    \endentry
-    \entry{sudbo1993}{article}{}
-      \name{labelname}{5}{}{%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=5bb1e58cf2bb20cbb5f201a53634e3e7}{Varma}{V\bibinitperiod}{Chandra\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=6edd5e872532b531d7d476dd86a65e6e}{Giamarchi}{G\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=db929dbc9228de41dc30f5a70a64b514}{Stechel}{S\bibinitperiod}{EB}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=85ca4ea7e92abcd2b750f5c2623e7744}{Scalettar}{S\bibinitperiod}{RT}{R\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{5}{}{%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=5bb1e58cf2bb20cbb5f201a53634e3e7}{Varma}{V\bibinitperiod}{Chandra\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=6edd5e872532b531d7d476dd86a65e6e}{Giamarchi}{G\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=db929dbc9228de41dc30f5a70a64b514}{Stechel}{S\bibinitperiod}{EB}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=85ca4ea7e92abcd2b750f5c2623e7744}{Scalettar}{S\bibinitperiod}{RT}{R\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{20bd5ce1e7fb28a69f516ad77b1d62cd}
-      \strng{fullhash}{0fd6760a845ee9f978dce2f15ba8eb28}
-      \field{sortinit}{0}
-      \field{labeltitle}{Flux quantization and pairing in one-dimensional copper-oxide models}
-      \field{journaltitle}{Physical review letters}
-      \field{number}{7}
-      \field{title}{Flux quantization and pairing in one-dimensional copper-oxide models}
-      \field{volume}{70}
-      \field{year}{1993}
-      \field{pages}{978}
-    \endentry
-    \entry{sandvik1996}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=8f25d57712c3069f8a5104c8f8089090}{Sandvik}{S\bibinitperiod}{AW}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{hash=8f25d57712c3069f8a5104c8f8089090}{Sandvik}{S\bibinitperiod}{AW}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=7802e009da054d24262fd67ce996350a}{Sudbø}{S\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{02471a347fcfa1920f4c18eb00635443}
-      \strng{fullhash}{02471a347fcfa1920f4c18eb00635443}
-      \field{sortinit}{0}
-      \field{labeltitle}{Phase separation and the existence of superconductivity in a one-dimensional copper-oxygen model}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{6}
-      \field{title}{Phase separation and the existence of superconductivity in a one-dimensional copper-oxygen model}
-      \field{volume}{54}
-      \field{year}{1996}
-      \field{pages}{R3746}
-    \endentry
-    \entry{hemmer2000}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=e4c7f169550de262af08f76051bce09b}{Hemmer}{H\bibinitperiod}{PC}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=e4c7f169550de262af08f76051bce09b}{Hemmer}{H\bibinitperiod}{PC}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Trondheim}%
-      }
-      \strng{namehash}{e4c7f169550de262af08f76051bce09b}
-      \strng{fullhash}{e4c7f169550de262af08f76051bce09b}
-      \field{sortinit}{0}
-      \field{labeltitle}{Kvantemekanikk Tapir}
-      \field{title}{Kvantemekanikk Tapir}
-      \field{year}{2000}
-    \endentry
-    \entry{bethe1931}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=6e3a3e45efd053d794195d3225745e0a}{Bethe}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=6e3a3e45efd053d794195d3225745e0a}{Bethe}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {German}%
-      }
-      \list{publisher}{1}{%
-        {Springer-Verlag}%
-      }
-      \strng{namehash}{6e3a3e45efd053d794195d3225745e0a}
-      \strng{fullhash}{6e3a3e45efd053d794195d3225745e0a}
-      \field{sortinit}{0}
-      \field{labeltitle}{Zur Theorie der Metalle}
-      \field{issn}{0044-3328}
-      \field{journaltitle}{Zeitschrift für Physik}
-      \field{number}{3-4}
-      \field{title}{Zur Theorie der Metalle}
-      \field{volume}{71}
-      \field{year}{1931}
-      \field{pages}{205\bibrangedash 226}
-      \verb{doi}
-      \verb 10.1007/BF01341708
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1007/BF01341708
-      \endverb
-    \endentry
-    \entry{onsager1943}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=005d4b021327efca5bb6a9ffe312f7a9}{Onsager}{O\bibinitperiod}{Lars}{L\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=005d4b021327efca5bb6a9ffe312f7a9}{Onsager}{O\bibinitperiod}{Lars}{L\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{005d4b021327efca5bb6a9ffe312f7a9}
-      \strng{fullhash}{005d4b021327efca5bb6a9ffe312f7a9}
-      \field{sortinit}{0}
-      \field{labeltitle}{Crystal Statistics. I. A Two-Dimensional Model with an Order-Disorder Transition}
-      \field{issue}{3-4}
-      \field{journaltitle}{Phys. Rev.}
-      \field{month}{02}
-      \field{title}{Crystal Statistics. I. A Two-Dimensional Model with an Order-Disorder Transition}
-      \field{volume}{65}
-      \field{year}{1944}
-      \field{pages}{117\bibrangedash 149}
-      \verb{doi}
-      \verb 10.1103/PhysRev.65.117
-      \endverb
-      \verb{url}
-      \verb http://link.aps.org/doi/10.1103/PhysRev.65.117
-      \endverb
-    \endentry
-    \entry{chakravarty1989}{article}{}
-      \name{labelname}{3}{}{%
-        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
-        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{hash=349c67cb5b601beb852aa5e031cf72c1}{Chakravarty}{C\bibinitperiod}{Sudip}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=6313f7c1e8d6dd82f8f997d12dc8cf77}{Halperin}{H\bibinitperiod}{Bertrand\bibnamedelima I.}{B\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
-        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{Nelson}{N\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{c7625779be53ae97ac10599002babcfd}
-      \strng{fullhash}{c7625779be53ae97ac10599002babcfd}
-      \field{sortinit}{0}
-      \field{labeltitle}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
-      \field{issue}{4}
-      \field{journaltitle}{Phys. Rev. B}
-      \field{month}{02}
-      \field{title}{Two-dimensional quantum Heisenberg antiferromagnet at low temperatures}
-      \field{volume}{39}
-      \field{year}{1989}
-      \field{pages}{2344\bibrangedash 2371}
-      \verb{doi}
-      \verb 10.1103/PhysRevB.39.2344
-      \endverb
-      \verb{url}
-      \verb http://link.aps.org/doi/10.1103/PhysRevB.39.2344
-      \endverb
-    \endentry
-    \entry{chubukov1993}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=84013c721f5f8207a839776c1314560c}{Chubukov}{C\bibinitperiod}{Andrey\bibnamedelima V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
-        {{hash=89be46409a28a725823c559e29e29f07}{Sachdev}{S\bibinitperiod}{Subir}{S\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{hash=84013c721f5f8207a839776c1314560c}{Chubukov}{C\bibinitperiod}{Andrey\bibnamedelima V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
-        {{hash=89be46409a28a725823c559e29e29f07}{Sachdev}{S\bibinitperiod}{Subir}{S\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{8244cb52dd2d381e8684f7733aa04057}
-      \strng{fullhash}{8244cb52dd2d381e8684f7733aa04057}
-      \field{sortinit}{0}
-      \field{labeltitle}{Universal magnetic properties of ${\mathrm{La}}_{2\mathrm{-}\mathrm{\ensuremath{\delta}}}$${\mathrm{Sr}}_{\mathrm{\ensuremath{\delta}}}$${\mathrm{CuO}}_{4}$ at intermediate temperatures}
-      \field{issue}{1}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{07}
-      \field{title}{Universal magnetic properties of ${\mathrm{La}}_{2\mathrm{-}\mathrm{\ensuremath{\delta}}}$${\mathrm{Sr}}_{\mathrm{\ensuremath{\delta}}}$${\mathrm{CuO}}_{4}$ at intermediate temperatures}
-      \field{volume}{71}
-      \field{year}{1993}
-      \field{pages}{169\bibrangedash 172}
+      \range{pages}{4}
       \verb{doi}
       \verb 10.1103/PhysRevLett.71.169
       \endverb

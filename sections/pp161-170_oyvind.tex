@@ -12,7 +12,7 @@ Remember the Coulomb-potential, we drew it like this:
 		\fmfrightn{o}{2}
 		\fmf{fermion}{i1,v1,i2}
 		\fmf{fermion}{o1,v2,o2}
-		\fmf{photon,label=$\tilde{V}(q)$}{v1,v2}
+		\fmf{photon_arrow,label=$\tilde{V}(q)$}{v2,v1}
 		\fmfdotn{v}{2}
 		\fmflabel{$k,\sigma$}{i1}
 		\fmflabel{$k+q,\sigma$}{i2}
@@ -33,7 +33,7 @@ For the phonons it is different, the ions relax with velocities much smaller tha
 		\fmfrightn{o}{2}
 		\fmf{fermion}{i1,v1,i2}
 		\fmf{fermion}{o1,v2,o2}
-		\fmf{dashes,label=$D_0(q)$}{v2,v1}
+		\fmf{dashes_arrow,label=$D_0(q)$}{v2,v1}
 		\fmfdotn{v}{2}
 		\fmflabel{$k,\sigma$}{i1}
 		\fmflabel{$k+q,\sigma$}{i2}
@@ -56,15 +56,16 @@ The diagram consists of
 	\begin{fmfgraph*}(65,65)
 		\fmfleftn{i}{2}
 		\fmfrightn{o}{1}
-		\fmf{fermion}{i1,v1,o1}
-		\fmf{dashes}{i2,v1}
+		\fmf{fermion}{i1,v1,i2}
+		\fmf{dashes_arrow}{o1,v1}
 		\fmfdotn{v}{1}
 	\end{fmfgraph*}
+	\hspace{1cm}
 	\begin{fmfgraph*}(65,65)
 		\fmfleftn{i}{1}
 		\fmfrightn{o}{2}
-		\fmf{dashes}{v1,o1}
-		\fmf{fermion}{i1,v1,o2}
+		\fmf{dashes_arrow}{v1,i1}
+		\fmf{fermion}{o1,v1,o2}
 		\fmfdotn{v}{1}
 	\end{fmfgraph*}
 \end{gathered}
@@ -88,15 +89,16 @@ But something like this does not exist with our $V$, as the vertex
 	\begin{fmfgraph*}(65,65)
 		\fmfleftn{i}{2}
 		\fmfrightn{o}{1}
-		\fmf{dashes}{i1,v1,o1}
-		\fmf{fermion}{i2,v1}
+		\fmf{dashes_arrow}{i1,v1,i2}
+		\fmf{fermion}{o1,v1}
 		\fmfdotn{v}{1}
 	\end{fmfgraph*}
+	\hspace{1cm}
 	\begin{fmfgraph*}(65,65)
 		\fmfleftn{i}{1}
 		\fmfrightn{o}{2}
-		\fmf{fermion}{v1,o1}
-		\fmf{dashes}{i1,v1,o2}
+		\fmf{fermion}{v1,i1}
+		\fmf{dashes_arrow}{o1,v1,o2}
 		\fmfdotn{v}{1}
 	\end{fmfgraph*}
 \end{gathered}
@@ -126,7 +128,7 @@ We look a little closer at $\tilde{V}_{\text{eff}}$ in \eqref{eq:Veff_electron_p
 If we add the Coulomb-interaction, we get a schematical increase $\sim 1/q^2$, which is independent of $\omega$. This is shown in Figure \ref{fig:Veff_electron_phonon_coulomb}. As one can see, there is a small region close to $\pm\omega_q$ where the electrons can only interact attractively. 
 \begin{figure}[h!]
 \centering
-  \includegraphics[width=.6\linewidth]{img/veffCoulomb.pdf}
+  \includegraphics[width=.6\linewidth]{img/veffcoulomb.pdf}
   \caption{}
 \label{fig:Veff_electron_phonon_coulomb}
 \end{figure}
@@ -138,7 +140,7 @@ Still we \textbf{always} have a small frequency region where the interaction bet
 \end{Indentskip}
 \begin{Indentskip}
 	\vspace*{-0.5\baselineskip}
-	\textbf{NB!} The electrons can not wait too long either, then the lattice has relaxed and there is no positive charge anymore.
+	\textbf{NB!} The electrons cannot wait too long either, then the lattice has relaxed and there is no positive charge anymore.
 \end{Indentskip}
 
 \section{Screening of Coulomb-interaction}
@@ -151,218 +153,193 @@ Entirely analogously, we find a Dyson's equation for the photon-propagator, whic
 $D_0(\vec{q}) = \frac{4\pi e^2}{q^2} = V_0$: "Naked" Coulomb-interacton ): Coulomb-interaction between two isolated electrons.\\
 $D$: Renormalized photon-propagator ): renormalized Coulomb-potential.\\
 \textbf{Diagrammatically}:
-\begin{feynman}{56DysonEq}
-\begin{align}
+\[\begin{aligned}
 D &=
-\begin{gathered}
-	\begin{fmfgraph*}(40,25)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{dbl_wiggly}{i,o}
-	\end{fmfgraph*}
-\end{gathered} \\
+\parbox{40mm}{\begin{feynman}{56DysonEq1}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{dbl_wiggly}{i1,o1}
+\end{fmfgraph*}\end{feynman}} \\
 D_0 &=
-\begin{gathered}
-	\begin{fmfgraph*}(40,25)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly}{i,o}
-	\end{fmfgraph*}
-\end{gathered} \\
-\nonumber D &= \begin{gathered}
-	\begin{fmfgraph*}(40,25)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly}{i,o}
-	\end{fmfgraph*}
+\parbox{40mm}{\begin{feynman}{56DysonEq2}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly}{i1,o1}
+\end{fmfgraph*}\end{feynman}} \\
+\nonumber D &= \parbox{40mm}{\begin{feynman}{56DysonEq3}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly}{i1,o1}
+	\end{fmfgraph*}\end{feynman}}
 	+
-	\begin{fmfgraph*}(40,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v2,o}
+    \parbox{40mm}{\begin{feynman}{56DysonEq4}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
-	\end{fmfgraph*}
-\end{gathered} \\
+	\end{fmfgraph*}\end{feynman}} \\
 \nonumber &+
-\begin{gathered}
-	\begin{fmfgraph*}(60,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v2,o}
+\parbox{40mm}{\begin{feynman}{56DysonEq5}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v2,o1}
 		\fmf{fermion,left,tension=0.4}{i1,v1,i1}
 		\fmf{fermion,left,tension=0.4}{o1,v2,o1}
 		\fmf{wiggly}{v1,v2}
-	\end{fmfgraph*}
-\end{gathered} \\
+\end{fmfgraph*}\end{feynman}} \\
 &+
-\begin{gathered}
-	\begin{fmfgraph*}(40,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v3,o}
+\parbox{40mm}{\begin{feynman}{56DysonEq6}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v3,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v3,v4,v1}
 		\fmf{wiggly,tension=5}{v2,v4}
-	\end{fmfgraph*}
+\end{fmfgraph*}\end{feynman}}
 	+
-	\begin{fmfgraph*}(40,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v4,o}
+\parbox{40mm}{\begin{feynman}{56DysonEq7}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v4,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v3,v4,v1}
 		\fmf{photon,left=0.5,tension=0.2}{v2,v3}
-	\end{fmfgraph*}
-\end{gathered} + \ldots
-\end{align}
-\end{feynman}
+\end{fmfgraph*}\end{feynman}} + \ldots\end{aligned}\]
 We now make the following approximation: instead of doing \textit{pure} perturbation theory, we sum all the diagrams of one particular type to the order of infinity:
-\begin{feynman}{57DysonApprox}
-\begin{align}
+\[\begin{aligned}
 D &\approx
-\begin{gathered}
-	\begin{fmfgraph*}(40,25)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly}{i,o}
-	\end{fmfgraph*}
-\end{gathered} \\
-\nonumber D &= \begin{gathered}
-	\begin{fmfgraph*}(40,25)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly}{i,o}
-	\end{fmfgraph*}
+\parbox{40mm}{\begin{feynman}{57DysonApprox1}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly}{i1,o1}
+\end{fmfgraph*}\end{feynman}} \\
+\nonumber D &= \parbox{40mm}{\begin{feynman}{57DysonApprox2}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly}{i1,o1}
+\end{fmfgraph*}\end{feynman}}
 	+
-	\begin{fmfgraph*}(40,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v2,o}
+	\parbox{40mm}{\begin{feynman}{57DysonApprox3}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
-	\end{fmfgraph*}
+	\end{fmfgraph*}\end{feynman}}
 	+
-	\begin{fmfgraph*}(60,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v2,o}
+	\parbox{40mm}{\begin{feynman}{57DysonApprox4}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v2,o1}
 		\fmf{fermion,left,tension=0.4}{i1,v1,i1}
 		\fmf{fermion,left,tension=0.4}{o1,v2,o1}
 		\fmf{wiggly}{v1,v2}
-	\end{fmfgraph*}
-\end{gathered} \\
+	\end{fmfgraph*}\end{feynman}} \\
 \nonumber &+
-\begin{gathered}
-	\begin{fmfgraph*}(60,40)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{wiggly,tension=5}{v2,o}
+\parbox{40mm}{\begin{feynman}{57DysonApprox5}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{wiggly,tension=5}{v2,o1}
 		\fmf{fermion,left,tension=0.4}{i1,v1,i1}
 		\fmf{fermion,left,tension=0.4}{v2,v3,v2}
 		\fmf{fermion,left,tension=0.4}{o1,v4,o1}
 		\fmf{wiggly}{v1,v2}
 		\fmf{wiggly}{v2,v3}
-	\end{fmfgraph*}
-\end{gathered} + \ldots \\
+\end{fmfgraph*}\end{feynman}} + \ldots \\
 &=
-\begin{fmfgraph*}(40,20)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly}{i,o}
-\end{fmfgraph*}
-\left[
+\parbox{40mm}{\begin{feynman}{57DysonApprox6}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly}{i1,o1}
+\end{fmfgraph*}\end{feynman}}
+\biggl[
 1 +
-\begin{fmfgraph*}(40,20)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{phantom,tension=5}{v2,o}
+\parbox{40mm}{\begin{feynman}{57DysonApprox7}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{phantom,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
-\end{fmfgraph*}
-+
+\end{fmfgraph*}\end{feynman}} \\
+&+
 \left(
-\begin{fmfgraph*}(40,20)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{phantom,tension=5}{v2,o}
+\parbox{40mm}{\begin{feynman}{57DysonApprox8}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{phantom,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
-\end{fmfgraph*}
+\end{fmfgraph*}\end{feynman}}
 \right)^2
 +
 \left(
-\begin{fmfgraph*}(40,20)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{phantom,tension=5}{v2,o}
+\parbox{40mm}{\begin{feynman}{57DysonApprox9}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{phantom,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
-\end{fmfgraph*}
+\end{fmfgraph*}\end{feynman}}
 \right)^3
 +\ldots
-\right].
-\end{align}
-\end{feynman}
+\biggr].\end{aligned}\]
 The content between the brackets is recognized as a geometric series, the sum of which is known as
 \begin{align}
 \sum_{n=0}^{\infty} x^n = \frac{1}{1-x}.
 \end{align}
 This gives us
-\begin{feynman}{58DysonGeometricSeries}
-\begin{align}
+\[\begin{aligned}
 \nonumber D(q,\omega) &= 
-\begin{gathered}
-\frac{\begin{fmfgraph*}(40,25)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly}{i,o}
-\end{fmfgraph*}}{1-\begin{fmfgraph*}(40,20)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{wiggly,tension=5}{i,v1}
-		\fmf{phantom,tension=5}{v2,o}
+\frac{\parbox{40mm}{\begin{feynman}{58DysonGeometricSeries1}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly}{i1,o1}
+\end{fmfgraph*}\end{feynman}}}{1-\parbox{40mm}{\begin{feynman}{58DysonGeometricSeries2}\begin{fmfgraph*}(90,10)
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{wiggly,tension=5}{i1,v1}
+		\fmf{phantom,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
-\end{fmfgraph*}}
-\end{gathered}
+\end{fmfgraph*}\end{feynman}}}
 = \frac{V_0(q)}{1-V_0(q)\Pi^2(q,\omega)} \\
 &= \frac{4\pi e^2}{q^2}\frac{1}{\varepsilon(q,\omega)}.
-\end{align}
-\end{feynman}
+\end{aligned}\]
 Here $\varepsilon(q,\omega) = 1-V_0(q)\Pi^{(2)}(q,\omega)$ is the dielectric constant. This we have to calculate, which means we have to calculate the feynman diagram
 \begin{feynman}{59Loop}
 \begin{fmfgraph*}(40,20)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{phantom,tension=5}{i,v1}
-		\fmf{phantom,tension=5}{v2,o}
+		\fmfleftn{i}{1}
+		\fmfrightn{o}{1}
+		\fmf{phantom,tension=5}{i1,v1}
+		\fmf{phantom,tension=5}{v2,o1}
 		\fmf{plain,left,tension=0.4}{v1,v2,v1}
 		\fmfdot{v1,v2}
 \end{fmfgraph*}
 \end{feynman}.
 \subsection{Calculation of \texorpdfstring{$\Pi^{(2)}(q,\omega)$}{pi(q,omega)}}
-\begin{feynman}{60pi2}
-	\begin{fmfgraph*}(150,65)
-		\fmfleftn{i}
-		\fmfrightn{o}
-		\fmf{dashes}{i,v1}
-		\fmf{dashes}{v2,o}
-		\fmf{fermion,label=$k+q, \omega+\omega '$}{v1,v2}
-		\fmf{fermion,label=$k, \omega '$}{v2,v1}
-		\fmfdotn{v}{2}
-		\fmflabel{$q,\omega$}{i}
-		\fmflabel{$q,\omega$}{o}
-	\end{fmfgraph*}
-\end{feynman}
+%\begin{feynman}{60pi2}
+%	\begin{fmfgraph*}(150,65)
+%		\fmfleftn{i}{1}
+%		\fmfrightn{o}{1}
+%		\fmf{dashes}{i1,v1}
+%    \fmf{phantom}{v1,v2}
+%		\fmf{dashes}{v2,o1}
+%		\fmf{fermion,label=$k+q,\omega+\omega^\prime$}{v1,v2}
+%    \fmf{fermion,label=$k,\omega^\prime$}{v2,v1}
+%		\fmfdotn{v}{2}
+%		\fmflabel{$q,\omega$}{i}
+%		\fmflabel{$q,\omega$}{o}
+%	\end{fmfgraph*}
+%\end{feynman}
 Use the Feynman rules. $F = 1$: number of vertexes $=2$ $\implies$ $m=1$. The prefactor is
 \begin{align}
 i(-1)^1(2\cdot\frac{1}{2}+1)^1\sum_{k,q} \int_{-\infty}^{\infty}\frac{\textrm{d} \omega'}{2\pi} G_0(k+q,\omega+\omega')\cdot G(k,\omega').

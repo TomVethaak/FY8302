@@ -7,9 +7,10 @@ LaTeX_unitlength:=1.0pt;
 subgraph (0, 0, w, h);
 vinit;
 pickup pencircle scaled thin;
-vleftn (__i, \immediate \write \@outfmf {vrightn (__), ;);}\ignorespaces 
-vconnect ("phantom,tension=5", __i, __v1);
-vconnect ("phantom,tension=5", __v2, __o);
+vleftn (__i, 1);
+vrightn (__o, 1);
+vconnect ("phantom,tension=5", __i1, __v1);
+vconnect ("phantom,tension=5", __v2, __o1);
 vconnect ("plain,left,tension=0.4", __v1, __v2, __v1);
 vdot (__v1, __v2);
 vfreeze;
