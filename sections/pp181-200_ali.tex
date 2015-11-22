@@ -306,3 +306,33 @@ It describes electrons with a special kind of interactions, which are such that 
 Other electrons will essentially just not notice each other.
 Note that in the second term, $\bm k,\bm k'$ are within a thin shell around the Fermi surface.
 
+
+\emph{Third simplification}:
+The problem is still too complicated to solve exactly.
+As in problem set~1, we introduce a mean field approximation:
+\[
+  c_{-\bm k,\downarrow} c_{\bm k,\uparrow} = b_{\bm k} + \delta b_{\bm k} \,,
+\]
+where we defined the statistical average 
+\[
+  b_{\bm k} \equiv \langle c_{-\bm k,\downarrow} c_{\bm k,\uparrow} \rangle
+\]
+and fluctuations around this average
+\[
+  \delta b_{\bm k} \equiv c_{-\bm k,\downarrow} c_{\bm k,\uparrow} - b_{\bm k} \,.
+\]
+Substitute this into the second term, and neglect terms of order $\mathcal{O}(\delta b_{\bm k}^2)$:
+\[
+  H = \sum_{\bm k,\sigma} \epsilon_{\bm k} c^\dagger_{\bm k,\sigma} c^{\phantom{\dagger}}_{\bm k,\sigma}
+    + \sum_{\bm k,\bm k'} \big[ b^\dagger_{\bm k} c^{\phantom{\dagger}}_{-\bm k',\downarrow} c^{\phantom{\dagger}}_{\bm k',\uparrow}
+                              + b^{\phantom{\dagger}}_{\bm k'} c^\dagger_{\bm k,\uparrow} c^\dagger_{-\bm k,\downarrow} 
+                              - b^\dagger_{\bm k} b^{\phantom{\dagger}}_{\bm k'} \big] \,.
+\]
+$b_{\bm k}$ is not an operator anymore, since we calculate its statistical average.
+This model can be written in a simpler way by introducing:
+\[
+  \begin{aligned}
+    \Delta^\dagger_{\bm k'}             &\equiv -\sum_{\bm k}  V_{\bm k,\bm k'} b_{\bm k}^\dagger ,
+    \Delta^{\phantom{\dagger}}_{\bm k'} &\equiv -\sum_{\bm k'} V_{\bm k,\bm k'} b_{\bm k'} ,
+  \end{aligned}
+\]
