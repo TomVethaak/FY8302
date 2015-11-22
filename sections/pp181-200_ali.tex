@@ -48,13 +48,11 @@ Examples of such qualitative changes may be:
   \item Uniform electron gas $\leftrightarrow$ electron lattice (Wigner crystal) at low electron densities.
 \end{enumerate}
 Let $H = H_0 + V$, where $H_0$ for instance may describe a simple metal in in case~(iv) or a paramagnet in case~(v), and $V$ represents a perturbation that we expect to qualitatively change the ground state of $H_0$.
-
-Absolutely \emph{all} transitions from one phase to another (i.e. phase transition)---such as e.g. the transition from a lattice to a fluid in the first example---are characterized by:
+Absolutely \emph{all} phase transitions---such as for instance the transition from a solid to a fluid in the first example---are characterized by:
 
 \begin{Indent}
   It is \emph{impossible} to reach one phase from a different phase by using a finite-order perturbation expansion in $V$.
 \end{Indent}
-
 If we wish to have any hope of describing transitions of type (i--vi) above, we need to do something different than pure perturbation theory.
 We have already seen one example of this in problem set~1 (problem~2), where we replaced a many-particle problem by a selfconsistent one-particle problem that was exactly solvable.
 In that case, we introduced a variational parameter~$\Delta$, which we determined by minimizing the energy with respect to~$\Delta$.
@@ -63,7 +61,7 @@ In problem set~1 (problem~2) the instability we considered was of type~(v), i.e.
 We saw that $\Delta\neq0$ signalized an \emph{ordering of spins}.
 The model we considered was the Hubbard model,
 \[
-  H = \sum_{\langle i,j \rangle \sigma} t c^\dagger_{i\sigma} c_{j\sigma} + u\sum_i n_{i\uparrow} n_{i\downarrow} \,.
+  H = t \sum_{\langle i,j \rangle} \sum_\sigma c^\dagger_{i\sigma} c^{\phantom{\dagger}}_{j\sigma} + u\sum_i n_{i\uparrow} n_{i\downarrow} \,.
 \]
 We calculated non-perturbatively in $u$, and found that:
 \[
@@ -80,12 +78,11 @@ This signalizes that the answer cannot be reached by any finite-order perturbati
 \subsection{The Cooper Problem}
 We have previously seen that it is possible for electrons to experience attractive interactions via phonons.
 Before we attempt to solve this many-particle problem, we will first consider the consequences of electron--electron attraction in a much simpler model; the math will illustrate that the final result will not be attainable by a finite-order perturbation expansion in this case either.
-
 The model we will use is as follows: Fermi sphere $\ket{\textrm{FS}}$ + two extra electrons at \emph{opposite sides} of $\ket{\textrm{FS}}$ with \emph{opposite spins}.
 \begin{enumerate}[(i)]
   \item Electrons in $\ket{\textrm{FS}}$ do \emph{not} interact with each other;
   \item The extra electrons do not interact with $\ket{\textrm{FS}}$ except via the Pauli principle: $k>k_F$;
-  \item The extra electrons are in the one-particle states $\ket{\bm k,\sigma}$ and $\ket{-\bm k,-\sigma}$;
+  \item The extra electrons are in the one-particle states $\ket{+\bm k,+\sigma}$ and $\ket{-\bm k,-\sigma}$;
   \item The two electrons interact attractively in a thin ``shell'' around the Fermi surface.
 \end{enumerate}
 \begin{figure}[H]
@@ -100,9 +97,9 @@ We will approximate the effective potential $\tilde{V}_\textrm{eff}$ by a step f
   \centering
   \includegraphics[width=\textwidth]{img/pp181-200_veffapprox.pdf}
 \end{figure}
+\noindent
 If at least one of the two electrons are outside of the thin shell around the Fermi level, they do not ``see'' each other.
-
-We will solve this two-particle pproblem \emph{exactly}.
+We will solve this two-particle problem \emph{exactly}.
 This will also provide a basis for discussing how well perturbation theory possibly could work.
 \[
   H = H_0 + \tilde{V}_\textrm{eff}
@@ -113,16 +110,14 @@ If the electrons did not interact, then we would have the problem:
 \[
   H_0 \ket{1,2}_0 = \epsilon_{\bm k} \ket{1,2}\,,
 \]
-which has the solution $\ket{1,2}_0 = \ket{\bm k,-\bm k}$.
-$\epsilon_{\bm k}$: the \emph{kinetic} energy of the two extra electrons.
-
+which has the solution $\ket{1,2}_0 = \ket{\bm k,-\bm k}$.\\
+$\epsilon_{\bm k}$: the \emph{kinetic} energy of the two extra electrons.\\
 We now have to solve the problem:
 \[
   (H_0 + \tilde{V}_\textrm{eff}) \ket{1,2} = E\ket{1,2} \,.
 \]
 From this Schrödinger equation we wish to find $\ket{1,2}$ and $E$.
 $E$ is the energy of the \emph{interacting} two-electron system.
-
 We start by expanding $\ket{1,2}$ in $\ket{1,2}_0 = \ket{\bm k,-\bm k}$:
 \[
   \ket{1,2} = \sum_{\bm k'} a_{\bm k'} \ket{\bm k',-\bm k'}
@@ -133,10 +128,10 @@ Substitute this into the Schrödinger equation:
 \[
   \begin{aligned}
        \sum_{\bm k'} a_{\bm k'} \big[ H_0\ket{\bm k', -\bm k'} + \tilde{V}_\textrm{eff}\ket{\bm k', -\bm k'} \big]
-    &= \sum_{\bm k'} Ea_{\bm k'} \ket{\bm k', -\bm k'} \big]  \\
+    &= \sum_{\bm k'} Ea_{\bm k'} \ket{\bm k', -\bm k'}  \\
     &\Downarrow \\
        \sum_{\bm k'} a_{\bm k'} \big[ E-\epsilon_{\bm k'} \big] \ket{\bm k', -\bm k'}  
-    &= \sum_{\bm k'} a_{\bm k'} \tilde{V}_\textrm{eff}\ket{\bm k', -\bm k'} \big]
+    &= \sum_{\bm k'} a_{\bm k'} \tilde{V}_\textrm{eff}\ket{\bm k', -\bm k'} 
   \end{aligned}
 \]
 If we multiply by $\bra{\bm k,-\bm k}$ and use $\braket{\bm k,-\bm k|\bm k',-\bm k'} = \delta_{\bm k,\bm k'}$, we get an equation for determining $a_{\bm k}$ and $E$:
@@ -177,7 +172,6 @@ This means that $a(\epsilon)(\epsilon-E) = \text{const}$, so:
   a(\epsilon) = \frac{\text{const}}{\epsilon-E} \,.
 \]
 Thus, the expansion coefficients have been determined.
-
 Now, what remains is to find the energy~$E$.
 Substitute the ansatz $a(\epsilon) = \text{const}/(\epsilon-E)$ into the previous equation, 
 \[
@@ -209,8 +203,8 @@ We do not have any Taylor expansion in $\lambda$.
 The form of the answer again indicates that binding between two electrons that are attracted to each other is a non-perturbative effect.
 
 \begin{Indent}
-  $\Delta>0 \Rightarrow$ bound state of two electrons $\ket{+\bm k,+\sigma}$ and $\ket{-\bm k,-\sigma}$. \\
-  The bound state is called a \emph{Cooper pair}.
+  When $\Delta>0$, there is a bound state of two electrons $\ket{+\bm k,+\sigma}$ and $\ket{-\bm k,-\sigma}$. \\
+  This bound state is called a \emph{Cooper pair}.
 \end{Indent}
 
 A few comments:
@@ -223,7 +217,7 @@ A few comments:
         $\epsilon_F \rightarrow 0 \Rightarrow 2N\epsilon_F \rightarrow 0 \Rightarrow \lambda \rightarrow 0 \Rightarrow \Delta \rightarrow 0$\,.
         It is therefore necessary to have a Fermi sea in the problem to obtain the bound state.
         Two electrons in vacuum that interacted attractively would not form a Cooper pair.
-  \item \emph{Quantum effect}: substitute back the Planck constant: $\Delta = 2\hbar \omega_D e^{1\lambda}$. 
+  \item \emph{Quantum effect}: substitute back the Planck constant: $\Delta = 2\hbar \omega_D e^{1/\lambda}$. 
         In the classical limit $\hbar \rightarrow 0$, we also get $\Delta \rightarrow 0$.
         A classical electron gas with attractive interactions do not yield Cooper pairs.
         Can never explain Cooper pairs from Newtons equations.
@@ -281,7 +275,7 @@ With this goal in mind, we will simplify the Hamiltonian.
 What $\bm k,\bm k',\bm q$ give the main contributions to the Hamiltonian such that $\tilde{V}_\text{eff} < 0$?
 $\epsilon_{\bm k}, \epsilon_{\bm k+\bm q}, \epsilon_{\bm k'}, \epsilon_{\bm k'-\bm q}$ must \emph{all} lie in a thin shell around the Fermi level.
 $\bm k, \bm k'$ must stay within a thin shell.
-This forces $\bm k'-\bm q$ and $\bm k+q$ to do the same!
+This forces $\bm k'-\bm q$ and $\bm k+\bm q$ to do the same!
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{img/pp181-200_cooperlimits.pdf}
