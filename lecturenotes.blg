@@ -1,15 +1,5 @@
-[0] Config.pm:325> INFO - This is Biber 2.1
-[0] Config.pm:328> INFO - Logfile is 'lecturenotes.blg'
-[33] biber:276> INFO - === Wed Nov 18, 2015, 17:38:56
-[33] Biber.pm:334> INFO - Reading 'lecturenotes.bcf'
-[110] Biber.pm:646> INFO - Found 9 citekeys in bib section 0
-[122] Biber.pm:2978> INFO - Processing section 0
-[135] Biber.pm:3116> INFO - Looking for bibtex format file 'bib2015.bib' for section 0
-[138] bibtex.pm:1010> INFO - Decoding LaTeX character macros into UTF-8
-[142] bibtex.pm:884> INFO - Found BibTeX data source 'bib2015.bib'
-[240] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[240] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[241] Biber.pm:2855> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-GB'
-[241] Biber.pm:2859> INFO - No sort tailoring available for locale 'en-GB'
-[250] bbl.pm:505> INFO - Writing 'lecturenotes.bbl' with encoding 'UTF-8'
-[251] bbl.pm:596> INFO - Output to lecturenotes.bbl
+This is BibTeX, Version 0.99dThe top-level auxiliary file: lecturenotes.aux
+I found no \citation commands---while reading file lecturenotes.aux
+I found no \bibdata command---while reading file lecturenotes.aux
+I found no \bibstyle command---while reading file lecturenotes.aux
+(There were 3 error messages)
