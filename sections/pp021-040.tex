@@ -30,8 +30,8 @@ Assume that the classical form of a general two-particle operator is known.
 \[V_2=\dfrac{1}{2}\Sum_{i,j}V_2(\B{r}_i-\B{r}_j).\]
 Ansatz for the second-quantized form:
 \[\begin{array}{r@{\;}c@{\;}l}
-	V_2	&=& \dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_2}\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4}\\\\
-	&=&\Int d\B{r}_1\,d\B{r}_2\,d\B{r}_3\,d\B{r}_4\,\varphi_{\lambda_1}^*(\B{r}_1)\varphi_{\lambda_2}^*(\B{r}_2)V_2(\B{r}_3,\B{r}_4)\varphi_{\lambda_3}(\B{r}_3)\varphi_{\lambda_4}(\B{r}_4)\\\\
+	V_2	&=& \dfrac{1}{2}\Sum_{\lambda_1,\cdots,\lambda_2}\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4}\Crea_{\lambda_1}\Crea_{\lambda_2}\Anni_{\lambda_3}\Anni_{\lambda_4}\\\\
+	\braket{\lambda_1,\lambda_2|V_2|\lambda_3,\lambda_4} &=&\Int d\B{r}_1\,d\B{r}_2\,d\B{r}_3\,d\B{r}_4\,\varphi_{\lambda_1}^*(\B{r}_1)\varphi_{\lambda_2}^*(\B{r}_2)V_2(\B{r}_3,\B{r}_4)\varphi_{\lambda_3}(\B{r}_3)\varphi_{\lambda_4}(\B{r}_4)\\\\
 	&&\times\delta_{\B{r}_1,\B{r}_4}\delta_{\B{r}_2,\B{r}_3}\braket{\B{r}_1\B{r}_2|V_2(\B{r}_3,\B{r}_4)|\B{r}_3,\B{r}_4}=V_2(\B{r}_3,\B{r}_4)\delta_{\B{r}_1,\B{r}_4}\delta_{\B{r}_2,\B{r}_3}\\\\
 	&=&\Int d\B{r}_1\,d\B{r}_2\varphi_{\lambda_1}^*\tikzmark{starta}(\B{r}_1)\varphi_{\lambda_2}^*\tikzmark{startb}(\B{r}_2)V(\B{r}_3,\B{r}_1)\varphi_{\lambda_3}\tikzmark{endb}(\B{r}_2)\varphi_{\lambda_4}\tikzmark{enda}(\B{r}_1).
 \end{array}\]
