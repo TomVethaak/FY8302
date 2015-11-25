@@ -11,7 +11,7 @@ vleftn (__i, 2);
 vrightn (__o, 2);
 vconnect ("fermion", __i1, __v1, __i2);
 vconnect ("fermion", __o1, __v2, __o2);
-vconnect ("dashes,label=$D_0(q)$", __v2, __v1);
+vconnect ("dashes_arrow,label=$D_0(q)$", __v2, __v1);
 vdotn (__v, 2);
 vlabel ("$k,\sigma $", __i1);
 vlabel ("$k+q,\sigma $", __i2);
