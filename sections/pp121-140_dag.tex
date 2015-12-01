@@ -1,0 +1,202 @@
+        At \underline{$t=-\infty$}, the system is not yet perturbed and we assume that the state
+	\[ \ket{\psi(-\infty)} = \ket{\phi}_0\]
+is known exactly.
+	\begin{align} & \ket{\psi(0)}=S(0,-\infty)\ket{\phi}_0, \notag \\ & \bra{\psi(0)}={}_0{\bra{\phi}(S(0,-\infty)}^\dagger = {}_0{\bra{\phi}}S(-\infty,0) \notag. \end{align}
+We therefore obtain
+	\begin{align} \braket{\psi(0)|\hat{\mathcal{O}}(t)|\psi(0)} &= {}_0{\braket{\phi|S(-\infty,0)e^{\mathrm{i}\Ha t}\hat{\mathcal{O}}(0)e^{-\mathrm{i}\Ha t}|\phi}}_0 \notag \\
+											&= {}_0{\braket{\phi|\hat{\widetilde{\mathcal{O}}}|\phi}}_0. \notag \end{align}
+We now have a more complicated operator, but the expectation value is taken in the groundstate of the noninteracting system. 
+
+As for the S-matrix,   later calculations will be easier if the operators in ${}_0{\braket{\phi|\hat{\widetilde{\mathcal{O}}}|\phi}}_0$ are time-ordered, that is, time increases from right to left in the operator product. We see that having $S(-\infty,0)$  far to the left creates som problems. To work around this problem, we try to bring in $S(\infty,0)$ to the far left. This will guarantee time-ordering in the operator product, and as we will soon see, simplify the perturbation series for $\braket{\psi|\hat{\mathcal{O}}|\psi}$. As a bonus, we will in addition get a factor that cancels most of the contributions.  As $t \to \infty$, $\Ha = \mathcal{H}_0$ and                      
+	\begin{align}  \ket{\psi(\infty)} &= S(\infty,0)\ket{\psi(0)}  \notag \\ &=S(\infty,0)S(0,-\infty)\ket{\phi}_0 \notag \\  & = S(-\infty,\infty)\ket{\phi}_0 \notag \\ & = e^{\mathrm{i}L} \ket{\phi}_0 \notag\end{align}
+ is also an eigenstate for $\mathcal{H}_0$ .  Thus
+	\[ e^{\mathrm{i}L}=  {}_0{\braket{\phi|\psi(\infty)}} =  {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0,\]
+    and
+    	\[  {}_0{\bra{\phi}} = e^{-\mathrm{i}L} {}_0{\bra{\phi}}S(\infty,-\infty) = \frac{{}_0{\bra{\phi}}S(\infty,-\infty) }{ {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0}.\]
+   We therefore obtain the \emph{Gell-Mann-Low relation}
+\begin{center}
+	\boxed{ {}_0{\bra{\phi}} S(-\infty,0)= \frac{{}_0{\bra{\phi}}S(\infty,0) }{ {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0}}
+\end{center}
+  Generally,
+  \[ \braket{\psi(0)|\hat{\mathcal{O}}_H|\psi(0)} = \frac{ {}_0{\braket{\phi|\hat{\mathcal{O}}_I(t)S(\infty,-\infty)|\phi}}_0}{ {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0},\]
+   and for a time-ordered product of $n$ operators 
+    \[ \braket{\psi(0)|T[\hat{\mathcal{O}}_1 \cdot\dots\cdot \hat{\mathcal{O}}_n]|\psi(0)} = \frac{ {}_0{\braket{\phi|T[\hat{\mathcal{O}}_1 \cdot\dots\cdot \hat{\mathcal{O}}_n S(\infty,-\infty)]|\phi}}_0}{ {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0}. \]
+    We have replaced the unpleasant term ${}_0{\bra{\phi}} S(-\infty,0)$ with something that makes the operator product time-ordered. In addition, the factor ${}_0{\braket{\phi|S(\infty)|\phi}}_0$ turns out to cancel most of the terms in the perturbation series simplifying further. Highly relevant quantities to calculate in perturbation theory are \emph{Green functions}.\\
+\underline{Single-particle Green function:}
+	\begin{align} G(\lambda,t-t') &= -\mathrm{i}\braket{\psi(0)|T[\hat{c}_\lambda(t)\hat{c}_\lambda^\dagger(t')]|\psi(0)} \notag \\ &= -\mathrm{i}\frac{ {}_0{\braket{\phi|T[\hat{c}_\lambda(t)\hat{c}_\lambda^\dagger(t')S(\infty,-\infty)]|\phi}}_0}{ {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0} \end{align}
+    \subsection*{Green functions}
+\underline{Single-particle Green function:}\\ Gives the probability amplitude for finding a fermion (boson) in the state $\lambda_2$ at $t_2$ when it was in the state $\lambda_1$ at $t_1$
+	\[ G(\lambda_1,t_1;\lambda_2,t_2) \equiv = -\mathrm{i}\braket{\psi(0)|T[\hat{c}_{\lambda_2}(t_2)\hat{c}_{\lambda_1}^\dagger]|\psi(0)},\]
+where $\hat{c}_\lambda(t),\dots$ are taken in the Heisenberg picture. Pictorially,
+    \[ \qquad
+\parbox{20mm}{\begin{feynman}{01G0}
+    \begin{fmfgraph*}(110,5)
+    \fmfleftn{i}{1}
+    \fmfrightn{o}{1}
+    \fmf{fermion}{i1,o1}
+    \fmflabel{$t_1,\lambda_1$}{i1}
+    \fmflabel{$t_2,\lambda_2$}{o1}
+    \end{fmfgraph*}
+\end{feynman}}\]
+The prefactor $-\mathrm{i}$ are conventional. We first look at the fermionic case with the corresponding definition of time-ordering. To generate a perturbation series for $G$, we work instead in the interaction picture. We have
+	\begin{align} \hat{c}_\lambda(t) &= e^{\mathrm{i}{\Ha}t}\hat{c}_\lambda e^{-\mathrm{i}{\Ha}t} \notag \\
+    								 &= e^{\mathrm{i}{\Ha}t} \left(e^{-\mathrm{i}{\Ha}_0t}\hat{c}_\lambda(t) e^{\mathrm{i}{\Ha}_0t} \right)e^{-\mathrm{i}{\Ha}t} \notag \\ 		 &=\mathcal{U}^\dagger(t) \hat{c}_\lambda(t) \mathcal{U}(t) \notag \\ 
+                                     & = [S(t,0)]^\dagger \hat{c}_\lambda(t) S(t,0) = S(0,t)\hat{c}_\lambda(t) S(t,0) \notag,  \end{align}
+and
+	\[ \hat{c}_\lambda(t)^\dagger = S(0,t) \hat{c}_\lambda(t)^\dagger S(t,0) \]
+We set $\lambda_1 = \lambda_2$ and assume further that $\Ha$ no explicit time-depenence such that we have time-translation invariance.
+	\begin{align} G(\lambda,t-t') = &-\mathrm{i}\Theta(t-t')\braket{\psi(0)|\hat{c}_\lambda(t)\hat{c}_\lambda(t')^\dagger|\psi(0)} \notag \\ &+ \mathrm{i}\Theta(t'-t)\braket{\psi(0)|\hat{c}_\lambda(t')^\dagger\hat{c}_\lambda(t)|\psi(0)}.\notag\end{align}
+Looking at the first term: Use
+	\[ \ket{\psi(0)} = S(0,-\infty)\ket{\phi}_0,~\bra{\psi(0)} = {}_{0}{\bra{\phi}}S(-\infty,0)= \frac{{}_{0}{\bra{\phi}}S(\infty,0)}{{}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0} \]
+We then get
+	\[ -\frac{\mathrm{i}\Theta(t-t')}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} {{}_0}{\braket{\phi|S(\infty,0)S(0,t)c_\lambda(t)S(t,0)S(0,t')c_\lambda^\dagger(t')S(t',0)S(0,-\infty)|\phi}}_0 . \]
+Notice the time sequence: Completely time-ordered since $t' < t$!
+	\[ =-\frac{\mathrm{i}\Theta(t-t')}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} {{}_0}{\braket{\phi|S(\infty,t)c_\lambda(t)S(t,t')c_\lambda^\dagger(t')S(t',-\infty)|\phi}}_0 . \]
+We can perceive the expectation value as a time-ordered product
+	\[\widetilde{T}[c_\lambda(t)c_\lambda^\dagger(t')\underbrace{S(\infty,t)S(t,t')S(t',-\infty)}_{S(\infty,-\infty)}]. \]
+The first term therefore becomes
+	\[  -\frac{\mathrm{i}\Theta(t-t')}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0}{{}_0}{\braket{\phi|\widetilde{T}[c_\lambda(t)c_\lambda^\dagger(t')S(\infty,-\infty)]|\phi}}_0. \]
+Similarly, the second term becomes
+	\[  \frac{\mathrm{i}\Theta(t'-t)}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0}{{}_0}{\braket{\phi|\widetilde{T}[c_\lambda(t')c_\lambda^\dagger(t)S(\infty,-\infty)]|\phi}}_0. \]
+Since both terms are time-ordered, we can combine them. The final result is
+	\begin{align} G(\lambda,t-t') &= -\mathrm{i}\braket{\psi(0)|\widetilde{T}[c_\lambda(t)c_\lambda^\dagger(t')]|\psi(0)} \notag \\ & = -\mathrm{i}\frac{{}_0\braket{\phi|\widetilde{T}[c_\lambda(t)c_\lambda^\dagger(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} \notag.\end{align}
+Note: In the second expression, the expectation value is taken in the unperturbed, known groundstate. The Perturbation series for $S$ immeadiately gives a perturbation series for $G$. These expressions are exact, but to perform the sum over all terms are in general impossible. If the perturbation is weak, we expect that it is sufficient to consider a few terms. Alternatively, there might exist dominant types of contributions that are simple enough to be summed to infinite order.
+
+To lowest order, $V=0$ and $S=1$. This gives the \emph{free fermion propagator}
+	\[ G(\lambda,t-t') = -\mathrm{i} {{}_0}{\braket{\phi|\widetilde{T}[c_\lambda(t)c_\lambda^\dagger(t')]|\phi}}_0.\]
+Note: We expect that the use of perturbation theory is okay as long as $V$ do not cause qualitative (but only quantitative) changes of the unperturbed system. Pure perturbation theory to finite order will for instance not be able to describe transitions from metal to insulator, from paramagnet to ferromagnet, or from metal/insulator to superconductor.
+
+More generally, we can consider a Heisenberg operator $\hat{A}(t)$. If we let $A(t)$ denote the corresponding operator in the interaction picture, we have
+		\[ \braket{\psi(0)|\widetilde{T}(\hat{A}(t))|\psi(0)} = \frac{{}_0\braket{\phi|\widetilde{T}[A(t)S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0}. \]
+All information about the perturbation lies in $S$. A perturbation series for $S$ gives a perturbation series for the expectation value of an arbitrary operator. One should also note
+ that the expressions for $G$ and $\braket{A}$ does not specify any basis. The results can therefore be used directly equally well for the plane-wave basis as for the atom-orbital basis. As an example, if
+ 	\[ \hat{A}_q(t) = e^{\mathrm{i}\Ha t}A_q e^{-\mathrm{i}\Ha t}\]
+is a boson-operator, and $\Ha$ the Hamiltonian of an interacting boson system
+	\begin{align} & \Ha = \Ha_0 + V, \notag \\ & \Ha_0 = \sum_q \Omega_q A_q^\dagger A_q, \notag \end{align}
+then the single-particle boson propagator is given by
+	\begin{align} D(\vec{q},t-t') &= -\mathrm{i}\braket{\psi(0)|\widetilde{T}[\hat{A}_q(t))\hat{A}_q^\dagger(t')]|\psi(0)} \notag \\ & = -\mathrm{i}\frac{{}_0\braket{\phi|\widetilde{T}[A_q(t)A_q^\dagger(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0},\notag \end{align}
+where $A_q(t) = e^{\mathrm{i}\Ha_0} A_q  e^{-\mathrm{i}\Ha_0 t} $ and $\ket{\psi(0)}$,$\ket{\phi}_0$ are the exact ground states of the interacting system and the unperturbed system respectively. We can do exaxctly the same for operators that are products of boson and fermion operators
+
+\subsection*{Free electron Green function}
+We have previously seen that the S-matrix can be written formally as
+\[ S(t,t') = \widetilde{T}\left\{\exp{-\mathrm{i}\int_{t'}^{t}\mathrm{d}t'' V(t'')}\right\}\]
+Setting $\hat{V}(t)=0$ gives $S(t,t')=1$. Choosing $\lambda = (\vec{k},\sigma)$ as our set of quantum numbers, the free electron Green function becomes
+	\[G_0(\vec{k},\sigma,t) = -\mathrm{i} {{{}_0}{\braket{\phi|\widetilde{T}[c_{\vec{k}\sigma}(t)c_{\vec{k}\sigma}^\dagger(0)]|\phi}_0}}.\]
+Here, $\ket{\phi}_0 = \ket{\text{FS}}$ is the \emph{Fermi sea}. From the 2nd quantized form of the free Hamiltonian 
+	\[ \Ha_0 = \sum_{\vec{k}\sigma} \varepsilon_{\vec{k}} c_{\vec{k}\sigma}^\dagger c_{\vec{k}\sigma},~~\Ha_0\ket{\phi}_0 = E_0\ket{\phi}_0,\]
+we obtain
+	\[ E_0 = {}_0\braket{\phi|\Ha_0|\phi}_0 = \sum_{\vec{k}\sigma}\varepsilon_{\vec{k}} \cdot\underbrace{{{}_0} \braket{\phi|c_{\vec{k}\sigma}^\dagger c_{\vec{k}\sigma}|\phi}_0}_{\text{Fermi distribution at} T=0.} = 2\sum_{\vec{k}}\varepsilon_{\vec{k}},~~\varepsilon_k < \varepsilon_F.\]
+
+\underline{$t>0$:}
+	\begin{align} G_0(\vec{k},\sigma,t) &= -\mathrm{i}{{}_0} \braket{\phi|e^{\mathrm{i}\Ha_0 t}c_{\vec{k}\sigma} e^{-\mathrm{i}\Ha_0 t} c_{\vec{k}\sigma}^\dagger|\phi}_0 \notag \\ &=   -\mathrm{i}e^{\mathrm{i}(E_0-E_0-\varepsilon_k)t}{{}_0} \braket{\phi|c_{\vec{k}\sigma}  c_{\vec{k}\sigma}^\dagger|\phi}_0 \notag \\ & = -\mathrm{i}\Theta(t)e^{-\mathrm{i}\varepsilon_k t}\Theta(\varepsilon_k-\varepsilon_F). \notag \end{align}
+We have here used that
+	\[ \braket{\phi|c_{\vec{k}\sigma}  c_{\vec{k}\sigma}^\dagger|\phi}_0 = {}_0\braket{\phi|1-c_{\vec{k}^\dagger\sigma}  c_{\vec{k}\sigma}|\phi}_0 = 1-\Theta(\varepsilon_F-\varepsilon_k)=\Theta(\varepsilon_k-\varepsilon_F).\]
+\underline{$t<0$:}
+	\begin{align} G_0(\vec{k},\sigma,t) &= -\mathrm{i}{{}_0} \braket{\phi|c_{\vec{k}\sigma}^\dagger e^{\mathrm{i}\Ha_0 t}  c_{\vec{k}\sigma} e^{-\mathrm{i}\Ha_0 t}|\phi}_0 \notag \\  & = \mathrm{i}\Theta(-t)e^{-\mathrm{i}\varepsilon_k t}\Theta(\varepsilon_F-\varepsilon_k). \notag \end{align}
+Combined, we get
+	\[ G_0(k,\sigma,t) = -\mathrm{i}\Theta(t)\Theta(\varepsilon_k-\varepsilon_F)e^{-\mathrm{i}\varepsilon_k t} + \mathrm{i}\Theta(-t)\Theta(\varepsilon_F-\varepsilon_k)e^{-\mathrm{i}\varepsilon_k t}.\]
+It is somewhat simple to see the meaning of the Fourier transformed Green function:
+	\begin{align} G_0(\vec{k},\omega) &= \int_{-\infty}^\infty \mathrm{d}t~   e^{\mathrm{i}\omega t}G_0(\vec{k},t) \notag \\ & = -\mathrm{i}\Theta(\varepsilon_k-\varepsilon_F)\int_0^\infty e^{-\mathrm{i}(\varepsilon_k-\omega)t}e^{-\delta t}+\mathrm{i}\Theta(\varepsilon_F-\varepsilon_k)\int_{-\infty}^0 e^{-\mathrm{i}(\varepsilon_k-\omega)t}e^{\delta t} \notag \\ & =  -\mathrm{i}\Theta(\varepsilon_k-\varepsilon_F)\int_0^\infty e^{-\mathrm{i}(\varepsilon_k-\omega+\mathrm{i}\delta)t}+\mathrm{i}\Theta(\varepsilon_F-\varepsilon_k)\int_{-\infty}^0 e^{-\mathrm{i}(\varepsilon_k-\omega-\mathrm{i}\delta)t} \notag \\ & = \frac{\Theta(\varepsilon_k-\varepsilon_F)}{\omega-\varepsilon_k+\mathrm{i}\delta}+\frac{\Theta(\varepsilon_F-\varepsilon_k)}{\omega-\varepsilon_k-\mathrm{i}\delta}. \notag\end{align}
+We have introduced convergence factors $e^{\pm\delta t}$, $\delta = 0^+$in the expressions above.\\
+\underline{Particle propagator:}
+\[\text{Free electron propagator:}~~\frac{1}{\omega-\varepsilon_k+\mathrm{i}\delta}\]
+$t>0$ ): Retarded propagtor. Particles propagates forward in time\\
+\underline{Hole propagator:}
+\[\text{Free hole propagator:}~~\frac{1}{\omega-\varepsilon_k-\mathrm{i}\delta}\]
+$t>0$ ): Advanced propagtor. Holes propagates backward in time\\
+There are two types of excitations of $\ket{FS}$
+\begin{align} & k>k_F:~~ c_{k\sigma}^\dagger\ket{\phi}_0 :~~\text{electrons}\notag \\
+   			  & k<k_F:~~ c_{k\sigma}\ket{\phi}_0  :~~\text{holes}\end{align}
+We see that these propagators have simple poles as singularities $\omega=\varepsilon_k\mp\mathrm{i}\delta$ (electrons/holes). Physically, a simple pole in a (single-particle) propagator means that the system has well-defined single-particle excitations.
+
+It is not obvious that this simple analytic structure will sustain when interactions are turned on. If the singularities remain poles, the system will have well-defined single-particle (electron-like) excitations. If the pole-singularties are replaced by something else, for instance a branch cut $G(\vec{k},\omega)\sim (\omega-\varepsilon_k+\mathrm{i}\delta)^{-\alpha}$, where $\alpha$ is non-integer, the system will have lost all similarities with the free electron gas and have no longer single-particle excitations. Examples where this actually happens are quasi-1-dimensional organic conductors 2-dimensional {\color{red} hard to read??} fermion systems.
+
+\subsection*{Free phonon Green function}
+Recall
+	\[ \hat{A}_q(t) = \hat{a}_q(t)+\hat{a}_{-q}^\dagger(t) \]
+\begin{align} D(\vec{q},t-t') &= -\mathrm{i}\braket{\psi(0)|\widetilde{T}[\hat{A}_q(t))\hat{A}_q^\dagger(t')]|\psi(0)} \notag \\ & = -\mathrm{i}\frac{{}_0\braket{\phi|\widetilde{T}[A_q(t)A_q^\dagger(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0},\notag \end{align}
+For $V=0$, $S=1$ gives 
+\begin{align} D_0(\vec{q},t)  = -\mathrm{i} {}_0\braket{\phi|\widetilde{T}[A_q(t)A_q^\dagger(t')]|\phi}_0.\notag \end{align}
+Here, $\ket{\phi}_0$ is the exact ground state of the unperturbed phonon system. At $T=0$, no phonons are excited: $\braket{a_q^\dagger a_q}=0$, so $\ket{\phi}_0 = \ket{0}_\text{ph}$ (vacuum). We have $\Ha_0 \ket{\phi}_0 = 0\cdot\ket{\phi}_0$, $A_q^\dagger\ket{\phi}_0 = a_q^\dagger \ket{0} = \ket{1_q}$, where
+	\[ \Ha_0 = \sum_q \omega_q a_q^\dagger a_q \]
+\underline{$t>0$:}
+	\begin{align} D_0(q,t) &= -\mathrm{i}\Theta(t) {}_0\braket{\phi|e^{\mathrm{i}\Ha_0t}A_q e^{-\mathrm{i}\Ha_0t}A_q^\dagger|\phi}_0 \notag \\ 
+    					   &=-\mathrm{i}\Theta(t)e^{\mathrm{i}(0-0-\omega_q)t} \underbrace{{}_0\braket{\phi|A_q A_q^\dagger|\phi}_0}_{=1} \notag \\ 
+                           &=-\mathrm{i}\Theta(t)e^{\mathrm{i}\omega_q t}.\notag\end{align}
+\underline{$t<0$:} (no sign change from time-ordering)
+\begin{align} D_0(q,t) &= -\mathrm{i}\Theta(t) {}_0\braket{\phi|A_q^\dagger e^{\mathrm{i}\Ha_0t} A_q e^{-\mathrm{i}\Ha_0t}|\phi}_0 \notag  
+\end{align}
+We have $A_q\ket{\phi}_0 = a_{-q}^\dagger\ket{0}=\ket{1_{-q}}$, so
+\[D_0(q,t) = -\mathrm{i}\Theta(-t)e^{\mathrm{i}\omega_{-q}t}{}_0\braket{\phi|A_q^\dagger A_q|\phi}_0 \]
+Note: Sign change in {\color{red} Hard to read} to $e^{-\mathrm{i}\omega_q t}$ compared to $t>0$. Recall that we did not get this for fermions. The difference is due to $\ket{\phi}_0 = \ket{0_q}$ and that $A_q$ contains a creation operator $a_{-q}^\dagger$.
+	\begin{align} {}_{\text{ph}}\braket{0|A_q^\dagger A_q|0}_{\text{ph}}  & = {}_{\text{ph}}\braket{0|A_q^\dagger A_q|0}_{\text{ph}} \notag \\
+    	 & = {}_{\text{ph}}\braket{0|(a_q^\dagger+a_{-q})a_{-q}^\dagger|0}_{\text{ph}} = 1. \notag\end{align}
+Thus
+	\[ D_0(q,t) = -\mathrm{i}\Theta(t)e^{-\mathrm{i}\omega_q t}-\mathrm{i}\Theta(-t)e^{\mathrm{i}\omega_q t}.\]
+Once again, we perfor a Fourier transform, and get
+	\begin{align} D_0(q,\omega) &= \int_{-\infty}^\infty D_0(q,t)e^{\mathrm{i}\omega  t} \notag \\ & = \frac{1}{\underbrace{\omega-\omega_q+\mathrm{i}\delta}_{\text{Retarded}}}-\frac{1}{\underbrace{\omega+\omega_q-\mathrm{i}\delta}_{Advanced}} \notag \\ & = \frac{2\omega_q}{\omega^2-\omega_q^2+\mathrm{i}\eta}  ~~~\text{(Free phonon propagator)}\notag\end{align}
+In the following we are going to look at corerections to the electron propagators due to electron-phonon coupling. We will use perturbation theory, and in this perturbation theory $G_0$ and $D_0$. In the same way, the electrons will affect the phonon propagator. The electron-phonon system is coupled in a complicated way. We will also look at the renormalization of the phonon propagator.
+
+\subsection*{Perturbative corrections to the Green functions (single-particle)}
+	\begin{align} G(\lambda,t-t') &= \frac{-\mathrm{i}{}_0\braket{\phi|T[c_\lambda(t)c_\lambda(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} \notag \\ & = \frac{-\mathrm{i}}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0}\sum_{n=0}^\infty \frac{(-\mathrm{i})^n}{n!}\int_{-\infty}^\infty \mathrm{d}t_1 \int_{-\infty}^\infty \dots\mathrm{d}t_n \times \notag \\
+    				& ~~~~~~~\times {}_0\braket{\phi|T[c_\lambda(t)c_\lambda^\dagger(t')\dots V(t_1)\dots V(t_n)]|\phi}_0. \notag\end{align}
+In these expressions all time-dependence is in the interaction picture.
+
+\subsubsection*{Examples of $V(t)$:}
+\begin{enumerate}
+\item Electron-phonon coupling:
+	\[V = \sum_{k,q,\sigma,\lambda} M_{q\lambda} (a_{-q\lambda}^\dagger+a_{q\lambda})c_{k+q\sigma}^\dagger c_{k\sigma} \]
+Using $V(t) = e^{\mathrm{i}\Ha_0 t}Ve^{-\mathrm{i}\Ha_0 t}$, we obtain
+	\begin{align} V(t) &=\sum_{kq\sigma\lambda}	e^{\mathrm{i}\Ha_0 t}(a_{-q\lambda}^\dagger+a_{q\lambda})e^{-\mathrm{i}\Ha_0 t}e^{\mathrm{i}\Ha_0 t}c_{k+q\sigma}^\dagger e^{-\mathrm{i}\Ha_0 t}e^{\mathrm{i}\Ha_0 t}c_{k\sigma}e^{-\mathrm{i}\Ha_0 t} \notag \\ 	& = \sum_{kq\sigma\lambda} M_{q\lambda}A_{q\lambda}(t)c_{k+q\sigma}^\dagger(t)c_{k\sigma}(t). \notag \end{align}
+\item Another important perturbation is the Coulomb interaction:
+	\[V(t)=\sum_{kk'q\sigma\sigma'} \widetilde{V}(q)c_{k+q\sigma}^\dagger(t)c_{k'-q\sigma'}^\dagger(t)c_{k'\sigma'}(t)c_{k\sigma}(t),\]
+    where, once again, all time-dependence is in the interaction picture.
+\end{enumerate}
+
+\subsubsection*{1st-order correction to the electron-propagator with electron-phonon interaction: ($\lambda=(\vec{k}\sigma)$) }
+
+	\begin{align} G(\vec{k},t-t') &=  \frac{G_0(\vec{k},t-t')}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} 
+    			+\frac{(-\mathrm{i})(-\mathrm{i})}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0}\notag \int_{-\infty}^{\infty}\mathrm{d}t_1~\sum_{k'q\sigma'\lambda}M_{q\lambda}\times \notag \\ &~~~~~~~\times{}_0\braket{\phi|T[A_{q\lambda}(t)c_{k\sigma}(t)c_{k\sigma}^\dagger(t')c_{k'+q\sigma'}(t_1)c_{k'\sigma'}^\dagger(t_1)]|\phi}_0. \notag \end{align}
+This expectation value factors in bosonic and fermionic parts 
+\[\ket{\phi}_0=\ket{\phi}_{\text{fermion}}\otimes\ket{0}_{\text{ph}},\]
+where the phonon expectation is vanishing,
+\[ {}_{\text{ph}}\braket{0|A_{q\lambda}(t_1)|0}_{\text{ph}} = 0.\]
+Since $T=0$, the bosonic part of $\braket{\phi}_0$ is the phonon-vacuum (the state with no phonons). The 1st-order term (1st-order in $M_{q\lambda}$) does not contribute.
+
+\subsubsection*{2nd-order correction}
+\begin{align}  &  \frac{(-\mathrm{i})(-\mathrm{i})^2}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} \frac{1}{2!}\int_{-\infty}^{\infty}\mathrm{d}t_1\int_{-\infty}^{\infty}\mathrm{d}t_2~{}_0\braket{\phi|T[c_{k\sigma}(t)c_{k\sigma}^\dagger(t')V(t_1)V(t_2)]|\phi}_0, \notag \end{align}
+where
+	\[ V(t) = \sum_{kq\sigma} M_q A_q(t) c_{k+q\sigma}^\dagger(t)c_{k\sigma}(t).\]
+Here, we have simplified a bit and assume that only one phonon mode couples to the electrons. The mode-index $\lambda$ is therefor omitted. As before,
+	\[ \ket{\phi}_0 = \ket{\text{FS}}\otimes\ket{0}_{\text{ph}}.\]
+The double integral becomes:
+	\begin{align} &\int_{-\infty}^\infty\mathrm{d}_1\int_{-\infty}^\infty\mathrm{d}t_2 \sum_{k_1q_1\sigma_1}\sum_{k_2q_2\sigma_2}M_{q_1}M_{q_2}\times \notag\\ &~{}_0\braket{\phi|T[c_{k\sigma}(t)c_{k\sigma}^\dagger(t)A_{q_1}(t_1)c_{k_1+q_1\sigma_1}^\dagger(t_1)c_{k_1\sigma_1}(t_1)A_{q_1}(t_2)c_{k_2+q_2\sigma_2}^\dagger(t_2)c_{k_2\sigma_2}(t_2)]|\phi}_0. \notag\end{align}
+This is again factorized in time-ordered products of bosonic and fermionic expectation values.
+	\[ {}_0\braket{\phi|T[~~]|\phi}_0 = \braket{~}_{\text{phonon}}\otimes \braket{~}_{\text{fermion}}. \]
+The boson expectation value is clearly the easiest,
+	\begin{align} \braket{~} &= {}_{\text{ph}}\braket{0|T[A_{q_1}(t_1)A_{q_2}(t_2)]|0}_{\text{ph}} \notag \\ & = {}_{\text{ph}}\braket{0|T[A_{q_1}(t_1)A_{-q_2}^\dagger(t_2)]|0}_{\text{ph}} \\ &=\mathrm{i}\delta_{q_1,-q_2}D_0(q,t_1-t_2). \notag \end{align}
+The Fermion part is more complicated: It contains 6 fermion operators, 3 creation and 3 destruction operators. Luckily, there exist a simple rule, that we will state here without proof. It lets us calculate such expectation values expressed by free single-fermion propagators. Correspondingly, the expectation value of a string of boson operators can be expressed by free boson propagators. The rule is called \emph{Wick's theorem}.
+\subsubsection*{Wick's Theorem}
+\emph{The expectation value of a time-ordered product of operators equals the sum of the product of expectation values of all possible time-ordered pair of one creation and one destruction operator. }
+
+\vspace{0.5cm}
+Note: One sign change for every interchange of fermion operators.
+
+\subsubsection*{Example of use of Wick's theorem}
+Before we calculate the 2nd-order contribution in the fermion sector with 6 fermion operators, we first look at a simpler application of Wick's theorem. We look at the following expectation-value
+	\[ {}_0\braket{\phi|T[c_{k_1\sigma_1}(t_1)c_{k_2\sigma_2}^\dagger(t_2)c_{k_3\sigma_3}(t_3)c_{k_4\sigma_4}^\dagger(t_4)]|\phi}_0\]
+How many distinct products of pairs of one destruction and one creation operator are there?
+\begin{enumerate}
+\item  TEGN ULIKE CONTRACTIONS
+\item 
+\end{enumerate}
+
+\begin{enumerate}
+\item  
+	\begin{align}&{}_0\braket{\phi|T[c_{k_1\sigma_1}(t_1)c_{k_2\sigma_2}^\dagger(t_2)]|\phi}_0\cdot {}_0\braket{\phi|T[c_{k_3\sigma_3}(t_3)c_{k_4\sigma_4}^\dagger(t_4)]|\phi}_0 \notag \\
+    			& =\mathrm{i}G_0(k_1,t_1-t_2)\delta_{k_1k_2}\delta_{\sigma_1\sigma_2}\cdot \mathrm{i}G_0(k_3,t_3-t_4)\delta_{k_3k_4}\delta_{\sigma_3\sigma_4}\notag\end{align}
+\item 
+	\begin{align}(-1)^2&{}_0\braket{\phi|T[c_{k_1\sigma_1}(t_1)c_{k_4\sigma_4}^\dagger(t_4)]|\phi}_0\cdot {}_0\braket{\phi|T[c_{k_2\sigma_2}^\dagger(t_2)c_{k_3\sigma_3}(t_3)]|\phi}_0 \notag \\
+    			& = (-1)^3{}_0\braket{\phi|T[c_{k_1\sigma_1}(t_1)c_{k_4\sigma_4}^\dagger(t_4)]|\phi}_0\cdot {}_0\braket{\phi|T[c_{k_3\sigma_3}(t_3)c_{k_2\sigma_2}^\dagger(t_2)]|\phi}_0 \notag \\
+    			& =-\mathrm{i}G_0(k_1,t_1-t_4)\delta_{k_1k_4}\delta_{\sigma_1\sigma_4}\cdot \mathrm{i}G_0(k_3,t_3-t_2)\delta_{k_3k_2}\delta_{\sigma_3\sigma_2}\notag\end{align}
+\end{enumerate}
