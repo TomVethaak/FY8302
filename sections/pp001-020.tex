@@ -11,7 +11,7 @@ In principle the problem we are facing is therefore defined by the Schrödinger 
 \begin{Indentskip}
 	\vspace*{-0.5\baselineskip}
 	\subsubsection*{\Underline{Exercise:} find the eigenstates and the excitation spectrum.}	
-	\noindent Hamilton operators:
+	\noindent Hamiltonians:
 	\[\Ha=\Ha_\text{e-e}+\Ha_\text{e-ion}+\Ha_\text{ion-ion}.\]
 	(Plus possible external perturbations, such as an external electromagnetic field.)
 	\[\Ha_\text{e-e}=\Sum_i\dfrac{p_i^2}{2m}+\Sum_{i,j}V_\text{Coul}^\text{e-e}(\B{r}_i-\B{r}_j),\]
@@ -143,7 +143,7 @@ We assume that the basis functions $\{\varphi_\lambda\}$ form a complete set and
 
 What commutation relations should be satisfied? In the case of fermions this is the anticommutator relation
 \[\commup{\crea(\B{r},t),\anni(\B{r}',t)}=\delta(\B{r}-\B{r}')=\Sum_{\lambda_1,\lambda_2}\varphi_{\lambda_1}^*(\B{r})\varphi_{\lambda_2}(\B{r}')\commup{\Crea_{\lambda_1},\Crea_{\lambda_2}}.\]
-In case that
+Since
 \[\commup{\Crea_{\lambda_1},\Anni_{\lambda_2}}=\delta_{\lambda_1,\lambda_2},\]
 we get, from completeness:
 \[\begin{array}{r@{\;}c@{\;}l}
@@ -223,7 +223,7 @@ the latter because a two-particle operator is working on a single-particle state
 
 \clearpage
 \section{Electrons with interaction}
-The Hamilton operators consist of a sum of single-particle and two-particle operators:
+The Hamiltonians consist of a sum of single-particle and two-particle operators:
 \[\begin{array}{r@{\;}c@{\;}l}
 	\Ha	&=& \underbrace{\Sum_i\left(\dfrac{p_i^2}{2m}+U(\B{r}_i)\right)}_{\text{Single-particle operator.}}+\underbrace{\Sum_{i<j}V_\text{Coul}(\B{r}_i-\B{r}_j)}_{\substack{\text{Two-particle operator.}\\\text{It is this part that}\\\text{makes the problem}\\\text{difficult to solve.}}}.\\\\
 	&=& \Sum_i\Ha_1(i)+\dfrac{1}{2}\Sum_{i,j}\Ha_2(\B{r}_i,\B{r}_j).
@@ -233,12 +233,12 @@ We first find the second-quantized form of the two parts in $\Ha_i$.
 
 
 \subsection{Second quantization of single-particle operators}
-If we know $\Ha$ expressed in a classical way, how can we express it using annihilation and creation operator? We will start by finding the second-quantized form of $\Ha_1$. Define $\varphi_\lambda$ and $\vareps_\lambda$ such that
+If we know $\Ha$ expressed in a classical way, how can we express it using annihilation and creation operators? We will start by finding the second-quantized form of $\Ha_1$. Define $\varphi_\lambda$ and $\vareps_\lambda$ such that
 \[\Ha_1(\B{r})\varphi_\lambda(\B{r})=\vareps_\lambda\varphi_\lambda(\B{r}).\]
 We thus assume that we are able to find the eigenfunctions and eigenvalues of the non-interacting system
 \begin{equation}\label{eq:h1}\Ha_1=-\dfrac{\hbar^2}{2m}\,\nabla^2+U(\B{r}),\qquad\nabla=\dfrac{\partial}{\partial{\B{r}}}.\end{equation}
 \begin{framed}\noindent What we intend to show is that we can find a second-quantized form of $\Ha_1$ that has the \Underline{same} matrix elements as equation~\eqref{eq:h1}.\end{framed}
-We proceed as follows:
+\noindent We proceed as follows:
 \begin{equation}\label{eq:h1_l1l2}\braket{\lambda_1|\Ha_1|\lambda_2}=\Int d\B{r}d\B{r}'\underbrace{\braket{\lambda_1|\B{r}}}_{\varphi_{\lambda_1}^*(\B{r})}\braket{\B{r}|\Ha_1|\B{r}'}\underbrace{\braket{\B{r}'|\lambda_2}}_{\varphi_{\lambda_2}(\B{r}')}.\end{equation}
 We now need the matrix element
 \[\braket{\B{r}|\Ha_1|\B{r}'}=\braket{\B{r}|\Sum_i\Ha_1(\B{r}_i)|\B{r}'},\]
@@ -298,7 +298,7 @@ Can we find a form of $\Ha_1$ expressed in terms of $\Anni_\lambda$ and $\Crea_\
 	\braket{0|\Anni_{\lambda_1}\left(\Sum_\lambda\vareps_\lambda\Crea_\lambda\Anni_\lambda\right)\Crea_{\lambda_2}|0}	&=& \Sum_\lambda\vareps_\lambda\braket{0|\Anni_{\lambda_1}\Crea_\lambda\underbrace{\Anni_\lambda\Crea_{\lambda_2}}_{\mathclap{\delta_{\lambda_2,\lambda}-\Crea_{\lambda_2}\Anni_\lambda}}|0}=\Sum_\lambda\vareps_\lambda\delta_{\lambda_2\lambda}\braket{0|\underbrace{\Anni_{\lambda_1}\Crea_\lambda}_{\mathclap{\delta_{\lambda_1,\lambda}-\Crea_\lambda\Anni_{\lambda_1}}}|0}\\\\
 	&=& \Sum_\lambda\vareps\delta_{\lambda_2,\lambda}\delta_{\lambda_1,\lambda}=\vareps_{\lambda_1}\delta_{\lambda_2,\lambda_1}.
 \end{array}\]
-This is ok because it is the same matrix element as in equation~\eqref{eq:h1_l1l22}. We conclude that the second-quantized form of $\Ha$ for non-interacting fermion system is given by
+This is ok because it is the same matrix element as in equation~\eqref{eq:h1_l1l22}. We conclude that the second-quantized form of $\Ha$ for non-interacting fermion systems is given by
 \begin{equation}\label{eq:h_diag}\boxed{\Ha_1=\Sum_\lambda\vareps_\lambda\Crea_\lambda\Anni_\lambda.}\end{equation}
 Since the set of quantum numbers $\lambda$ isn't specified at all, this is a very general form.
 \[\boxed{\Crea_\lambda\Anni_\lambda\;:\;\text{number operator.}}\]

@@ -1,0 +1,6 @@
+% 05Coulomb.t1 -- generated from 05Coulomb.mp
+\fmfL(75.00049,26.49992,t){$\tilde {V}(\B {q})$}%
+\fmfL(9.7252,-2.85773,rt){$\B {k}_1-\B {q},\sigma _1$}%
+\fmfL(9.7252,67.85773,rb){$\B {k}_1,\sigma _1$}%
+\fmfL(140.2748,-2.85773,lt){$\B {k}_2+\B {q},\sigma _2$}%
+\fmfL(140.2748,67.85773,lb){$\B {k}_2,\sigma _2$}%
