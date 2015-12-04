@@ -31,7 +31,7 @@ cross/.default={5pt}}
 \DeclareMathOperator{\cosech}{cosech}
 \DeclareMathOperator{\Fourier}{\ensuremath{\mathscr{F}}}
 \DeclareMathOperator{\sign}{\ensuremath{\text{sign}}}
-\DeclareMathOperator{\Tr}{Tr\!}
+\DeclareMathOperator{\Tr}{Tr}
 
 % ------ Environments ------ %
 \definecolor{lightgray}{gray}{0.92}
@@ -130,14 +130,17 @@ cross/.default={5pt}}
 \newcommand*{\con}[1]{{\!\!#1}}
 \newcommand*{\convol}{\ensuremath{\ast}}
 \newcommand*{\Current}{\ensuremath{I}}
+\newcommand*{\CurrentDensity}{\ensuremath{j}}
 \newcommand*{\dd}{d}
+\newcommand*{\DebyeTemperature}{\ensuremath{\Theta}}
+\newcommand*{\ParticleDensity}{\rho}
 \newcommand*{\DiffusionConstant}{\ensuremath{D}}
 \newcommand*{\Dim}[1]{\ensuremath{\left[#1\right]}}
+\newcommand*{\DistF}{\ensuremath{f}}
 \newcommand*{\distf}{\ensuremath{\df{\mathpzc{h\,}}\!}}
 \newcommand*{\disto}{\ensuremath{\mathpzc{h}}}
 \newcommand*{\distt}{\ensuremath{\dt{\mathpzc{h\,}}\!}}
 \newcommand*{\DistributionEnergy}{\ensuremath{\df{E}_{\smash{\mathpzc{h\,}}}}}
-\newcommand*{\DebyeTemperature}{\ensuremath{\Theta}}
 \newcommand*{\DOS}{D}
 \newcommand*{\dotcomma}{\ensuremath{\,\overset{\cdot}{,}\,}}
 \newcommand*{\down}{\downarrow}
@@ -224,7 +227,7 @@ cross/.default={5pt}}
 \newcommand*{\tc}[1]{\tilde{#1}}
 \newcommand*{\Temperature}{\ensuremath{T}}
 \newcommand*{\Time}{\ensuremath{t}}
-\newcommand*{\Underline}[1]{\underline{\smash{#1}}}
+\newcommand*{\Underline}[2][black]{\textcolor{#1}{\underline{\normalcolor\smash{#2}}}}
 \newcommand*{\unitv}{\hat{e}}
 \newcommand*{\up}{\uparrow}
 \let\vaccent=\v % rename builtin command \v{} to \vaccent{} % Nicolai insert
@@ -238,10 +241,12 @@ cross/.default={5pt}}
 \newcommand*{\Volume}{\ensuremath{V}}
 \newcommand*{\Work}{\ensuremath{W}}
 
-% ------ Coloured box ------ %
+% ------ Coloured box and math underline ------ %
 \makeatletter
 \renewcommand{\boxed}[2][black]{\textcolor{#1}{%
-  \fbox{\normalcolor\m@th$\displaystyle#2$}}}
+	\fbox{\normalcolor\m@th$\displaystyle#2$}}}
+\newcommand*{\mline}[2][black]{\textcolor{#1}{%
+	\mbox{\underline{\normalcolor\m@th$\displaystyle#2$}}}}
 \makeatother
 
 % ------ Feynman diagrams ------ %
