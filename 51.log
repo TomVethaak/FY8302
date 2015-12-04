@@ -1,0 +1,62 @@
+This is MetaPost, version 1.803 (MiKTeX 2.9)  4 DEC 2015 03:09
+**51
+(mpost.mp (C:/Program Files (x86)/MiKTeX 2.9/metapost/base/plain.mp
+Preloading the plain mem file, version 1.004) ) (C:/Users/Tom/Documents/GitHub/FY8302/51.mp
+(C:/Program Files (x86)/MiKTeX 2.9/metapost/feynmf/feynmp.mp)
+! feynmf: line style `photon_arrow' not known, replaced by `vanilla'.
+<to be read again> 
+                   ;
+handle_line_style->..., "&"replaced by `vanilla'";
+                                                  (SUFFIX2):="vanilla";fi.en...
+<for(__v1)> ...m]arc[vlist[nfrom]arc.last]sty,sty)
+                                                  ;vlist[nto]arc[vlist[nto]a...
+vconnect->...rom]arc.last]lsr;fi.nfrom:=nto;endfor
+                                                  .endgroup
+l.14 ..._arrow,label=$\tilde {V}(q)$", __v2, __v1)
+                                                  ;
+? 
+! Emergency stop.
+<to be read again> 
+                   ;
+handle_line_style->..., "&"replaced by `vanilla'";
+                                                  (SUFFIX2):="vanilla";fi.en...
+<for(__v1)> ...m]arc[vlist[nfrom]arc.last]sty,sty)
+                                                  ;vlist[nto]arc[vlist[nto]a...
+vconnect->...rom]arc.last]lsr;fi.nfrom:=nto;endfor
+                                                  .endgroup
+l.14 ..._arrow,label=$\tilde {V}(q)$", __v2, __v1)
+                                                  ;
+feynmf: your linestyle is not recognizable, check spelling and reprocess!eynmf: your linestyle is no
+t recognizable, check spelling and reprocess!ynmf: your linestyle is not recognizable, check spellin
+g and reprocess!nmf: your linestyle is not recognizable, check spelling and reprocess!mf: your lines
+tyle is not recognizable, check spelling and reprocess!f: your linestyle is not recognizable, check 
+spelling and reprocess!: your linestyle is not recognizable, check spelling and reprocess! your line
+style is not recognizable, check spelling and reprocess!your linestyle is not recognizable, check sp
+elling and reprocess!our linestyle is not recognizable, check spelling and reprocess!ur linestyle is
+ not recognizable, check spelling and reprocess!r linestyle is not recognizable, check spelling and 
+reprocess! linestyle is not recognizable, check spelling and reprocess!linestyle is not recognizable
+, check spelling and reprocess!inestyle is not recognizable, check spelling and reprocess!nestyle is
+ not recognizable, check spelling and reprocess!estyle is not recognizable, check spelling and repro
+cess!style is not recognizable, check spelling and reprocess!tyle is not recognizable, check spellin
+g and reprocess!yle is not recognizable, check spelling and reprocess!le is not recognizable, check 
+spelling and reprocess!e is not recognizable, check spelling and reprocess! is not recognizable, che
+ck spelling and reprocess!is not recognizable, check spelling and reprocess!s not recognizable, chec
+k spelling and reprocess! not recognizable, check spelling and reprocess!not recognizable, check spe
+lling and reprocess!ot recognizable, check spelling and reprocess!t recognizable, check spelling and
+ reprocess! recognizable, check spelling and reprocess!recognizable, check spelling and reprocess!ec
+ognizable, check spelling and reprocess!cognizable, check spelling and reprocess!ognizable, check sp
+elling and reprocess!gnizable, check spelling and reprocess!nizable, check spelling and reprocess!iz
+able, check spelling and reprocess!zable, check spelling and reprocess!able, check spelling and repr
+ocess!ble, check spelling and reprocess!le, check spelling and reprocess!e, check spelling and repro
+cess!, check spelling and reprocess! check spelling and reprocess!check spelling and reprocess!heck 
+spelling and reprocess!eck spelling and reprocess!ck spelling and reprocess!k spelling and reprocess
+! spelling and reprocess!spelling and reprocess!pelling and reprocess!elling and reprocess!lling and
+ reprocess!ling and reprocess!ing and reprocess!ng and reprocess!g and reprocess! and reprocess!and 
+reprocess!nd reprocess!d reprocess! reprocess!reprocess!eprocess!process!rocess!ocess!cess!ess!ss!s!
+!
+ 
+Here is how much of MetaPost's memory you used:
+ 316 strings using 4699 characters
+ 1062184 bytes of node memory
+ 923 symbolic tokens
+ 12i,77n,22p,100b,3f stack positions out of 16i,96n,25p,200b,4f

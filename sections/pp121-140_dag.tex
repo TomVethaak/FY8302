@@ -24,7 +24,10 @@ As for the S-matrix,   later calculations will be easier if the operators in ${}
     We have replaced the unpleasant term ${}_0{\bra{\phi}} S(-\infty,0)$ with something that makes the operator product time-ordered. In addition, the factor ${}_0{\braket{\phi|S(\infty)|\phi}}_0$ turns out to cancel most of the terms in the perturbation series simplifying further. Highly relevant quantities to calculate in perturbation theory are \emph{Green functions}.\\
 \underline{Single-particle Green function:}
 	\begin{align} G(\lambda,t-t') &= -\mathrm{i}\braket{\psi(0)|T[\hat{c}_\lambda(t)\hat{c}_\lambda^\dagger(t')]|\psi(0)} \notag \\ &= -\mathrm{i}\frac{ {}_0{\braket{\phi|T[\hat{c}_\lambda(t)\hat{c}_\lambda^\dagger(t')S(\infty,-\infty)]|\phi}}_0}{ {}_0{\braket{\phi|S(\infty,-\infty)|\phi}}_0} \end{align}
-    \subsection*{Green functions}
+	
+	
+	
+\section{Green functions}
 \underline{Single-particle Green function:}\\ Gives the probability amplitude for finding a fermion (boson) in the state $\lambda_2$ at $t_2$ when it was in the state $\lambda_1$ at $t_1$
 	\[ G(\lambda_1,t_1;\lambda_2,t_2) \equiv = -\mathrm{i}\braket{\psi(0)|T[\hat{c}_{\lambda_2}(t_2)\hat{c}_{\lambda_1}^\dagger]|\psi(0)},\]
 where $\hat{c}_\lambda(t),\dots$ are taken in the Heisenberg picture. Pictorially,
@@ -77,7 +80,10 @@ then the single-particle boson propagator is given by
 	\begin{align} D(\vec{q},t-t') &= -\mathrm{i}\braket{\psi(0)|\widetilde{T}[\hat{A}_q(t))\hat{A}_q^\dagger(t')]|\psi(0)} \notag \\ & = -\mathrm{i}\frac{{}_0\braket{\phi|\widetilde{T}[A_q(t)A_q^\dagger(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0},\notag \end{align}
 where $A_q(t) = e^{\mathrm{i}\Ha_0} A_q  e^{-\mathrm{i}\Ha_0 t} $ and $\ket{\psi(0)}$,$\ket{\phi}_0$ are the exact ground states of the interacting system and the unperturbed system respectively. We can do exaxctly the same for operators that are products of boson and fermion operators
 
-\subsection*{Free electron Green function}
+
+
+
+\subsection{Free-electron Green function}
 We have previously seen that the S-matrix can be written formally as
 \[ S(t,t') = \widetilde{T}\left\{\exp{-\mathrm{i}\int_{t'}^{t}\mathrm{d}t'' V(t'')}\right\}\]
 Setting $\hat{V}(t)=0$ gives $S(t,t')=1$. Choosing $\lambda = (\vec{k},\sigma)$ as our set of quantum numbers, the free electron Green function becomes
@@ -111,7 +117,7 @@ We see that these propagators have simple poles as singularities $\omega=\vareps
 
 It is not obvious that this simple analytic structure will sustain when interactions are turned on. If the singularities remain poles, the system will have well-defined single-particle (electron-like) excitations. If the pole-singularties are replaced by something else, for instance a branch cut $G(\vec{k},\omega)\sim (\omega-\varepsilon_k+\mathrm{i}\delta)^{-\alpha}$, where $\alpha$ is non-integer, the system will have lost all similarities with the free electron gas and have no longer single-particle excitations. Examples where this actually happens are quasi-1-dimensional organic conductors 2-dimensional {\color{red} hard to read??} fermion systems.
 
-\subsection*{Free phonon Green function}
+\subsection{Free phonon Green function}
 Recall
 	\[ \hat{A}_q(t) = \hat{a}_q(t)+\hat{a}_{-q}^\dagger(t) \]
 \begin{align} D(\vec{q},t-t') &= -\mathrm{i}\braket{\psi(0)|\widetilde{T}[\hat{A}_q(t))\hat{A}_q^\dagger(t')]|\psi(0)} \notag \\ & = -\mathrm{i}\frac{{}_0\braket{\phi|\widetilde{T}[A_q(t)A_q^\dagger(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0},\notag \end{align}
@@ -137,7 +143,7 @@ Once again, we perfor a Fourier transform, and get
 	\begin{align} D_0(q,\omega) &= \int_{-\infty}^\infty D_0(q,t)e^{\mathrm{i}\omega  t} \notag \\ & = \frac{1}{\underbrace{\omega-\omega_q+\mathrm{i}\delta}_{\text{Retarded}}}-\frac{1}{\underbrace{\omega+\omega_q-\mathrm{i}\delta}_{Advanced}} \notag \\ & = \frac{2\omega_q}{\omega^2-\omega_q^2+\mathrm{i}\eta}  ~~~\text{(Free phonon propagator)}\notag\end{align}
 In the following we are going to look at corerections to the electron propagators due to electron-phonon coupling. We will use perturbation theory, and in this perturbation theory $G_0$ and $D_0$. In the same way, the electrons will affect the phonon propagator. The electron-phonon system is coupled in a complicated way. We will also look at the renormalization of the phonon propagator.
 
-\subsection*{Perturbative corrections to the Green functions (single-particle)}
+\subsection{Perturbative corrections to the Green functions (single-particle)}
 	\begin{align} G(\lambda,t-t') &= \frac{-\mathrm{i}{}_0\braket{\phi|T[c_\lambda(t)c_\lambda(t')S(\infty,-\infty)]|\phi}_0}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0} \notag \\ & = \frac{-\mathrm{i}}{{}_0\braket{\phi|S(\infty,-\infty)|\phi}_0}\sum_{n=0}^\infty \frac{(-\mathrm{i})^n}{n!}\int_{-\infty}^\infty \mathrm{d}t_1 \int_{-\infty}^\infty \dots\mathrm{d}t_n \times \notag \\
     				& ~~~~~~~\times {}_0\braket{\phi|T[c_\lambda(t)c_\lambda^\dagger(t')\dots V(t_1)\dots V(t_n)]|\phi}_0. \notag\end{align}
 In these expressions all time-dependence is in the interaction picture.
@@ -176,7 +182,11 @@ This is again factorized in time-ordered products of bosonic and fermionic expec
 The boson expectation value is clearly the easiest,
 	\begin{align} \braket{~} &= {}_{\text{ph}}\braket{0|T[A_{q_1}(t_1)A_{q_2}(t_2)]|0}_{\text{ph}} \notag \\ & = {}_{\text{ph}}\braket{0|T[A_{q_1}(t_1)A_{-q_2}^\dagger(t_2)]|0}_{\text{ph}} \\ &=\mathrm{i}\delta_{q_1,-q_2}D_0(q,t_1-t_2). \notag \end{align}
 The Fermion part is more complicated: It contains 6 fermion operators, 3 creation and 3 destruction operators. Luckily, there exist a simple rule, that we will state here without proof. It lets us calculate such expectation values expressed by free single-fermion propagators. Correspondingly, the expectation value of a string of boson operators can be expressed by free boson propagators. The rule is called \emph{Wick's theorem}.
-\subsubsection*{Wick's Theorem}
+
+
+
+
+\subsection{Wick's Theorem}
 \emph{The expectation value of a time-ordered product of operators equals the sum of the product of expectation values of all possible time-ordered pair of one creation and one destruction operator. }
 
 \vspace{0.5cm}
