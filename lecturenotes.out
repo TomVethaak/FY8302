@@ -25,12 +25,19 @@
 \BOOKMARK [1][-]{section.5}{Many-particle perturbation theory}{}% 25
 \BOOKMARK [2][-]{subsection.5.1}{Zero temperature}{section.5}% 26
 \BOOKMARK [2][-]{subsection.5.2}{Time-evolution of states}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.3}{The Dyson Equation}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.4}{Effective Interaction Between Electrons due to Phonons}{section.5}% 29
-\BOOKMARK [1][-]{section.6}{Screening of Coulomb-interaction}{}% 30
-\BOOKMARK [2][-]{subsection.6.1}{Calculation of pi\(q,omega\)}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.2}{Quasi Particles in Interacting Electron Systems}{section.6}% 32
-\BOOKMARK [1][-]{section.7}{Superconductivity}{}% 33
-\BOOKMARK [2][-]{subsection.7.1}{Introduction}{section.7}% 34
-\BOOKMARK [2][-]{subsection.7.2}{The Cooper Problem}{section.7}% 35
-\BOOKMARK [2][-]{subsection.7.3}{The Bardeen\205Cooper\205Schrieffer Theory of Superconductivity}{section.7}% 36
+\BOOKMARK [2][-]{subsection.5.3}{The S-matrix}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.4}{Time ordering of operators}{section.5}% 29
+\BOOKMARK [1][-]{section.6}{Green functions}{}% 30
+\BOOKMARK [2][-]{subsection.6.1}{Free-electron Green function}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.2}{Free phonon Green function}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.3}{Perturbative corrections to the Green functions \(single-particle\)}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.4}{Wick's Theorem}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.5}{The Dyson Equation}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.6}{Effective Interaction Between Electrons due to Phonons}{section.6}% 36
+\BOOKMARK [1][-]{section.7}{Screening of Coulomb-interaction}{}% 37
+\BOOKMARK [2][-]{subsection.7.1}{Calculation of pi\(q,omega\)}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.2}{Quasi Particles in Interacting Electron Systems}{section.7}% 39
+\BOOKMARK [1][-]{section.8}{Superconductivity}{}% 40
+\BOOKMARK [2][-]{subsection.8.1}{Introduction}{section.8}% 41
+\BOOKMARK [2][-]{subsection.8.2}{The Cooper Problem}{section.8}% 42
+\BOOKMARK [2][-]{subsection.8.3}{The Bardeen\205Cooper\205Schrieffer Theory of Superconductivity}{section.8}% 43

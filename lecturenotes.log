@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  4 DEC 2015 02:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  4 DEC 2015 03:13
 entering extended mode
 **lecturenotes.tex
 (C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.tex
@@ -2138,11 +2138,11 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.toc)
-\tf@toc=\write7
- [0
+(C:\Users\Tom\Documents\GitHub\FY8302\lecturenotes.toc [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+\tf@toc=\write7
+ [0]
 (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp001-020.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
 
@@ -2151,10 +2151,14 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \end{array}\]
+                   [1
 
-] [2] [3]
-[4] [5]
+] [2] [3] [4] [5]
 Package mdframed Info: Not enough space on this page on input line 183.
  [6]
 Package mdframed Info: Not enough space on this page on input line 183.
@@ -2227,7 +2231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--292
 [37] [38] [39] [40] [41] [42]
 Package mdframed Info: Not enough space on this page on input line 239.
 
-<img/omega_ferromagnetic_compress.pdf, id=483, 289.08pt x 216.13647pt>
+<img/omega_ferromagnetic_compress.pdf, id=521, 289.08pt x 216.13647pt>
 File: img/omega_ferromagnetic_compress.pdf Graphic file (type pdf)
 
 <use img/omega_ferromagnetic_compress.pdf>
@@ -2405,7 +2409,7 @@ Missing character: There is no ; in font nullfont!
  [47]
 [48] [49] [50] [51])
 (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp091-100.tex [52] [53]
-<img/omega_antiferromagnetic_compress.pdf, id=575, 289.08pt x 178.43362pt>
+<img/omega_antiferromagnetic_compress.pdf, id=614, 289.08pt x 178.43362pt>
 File: img/omega_antiferromagnetic_compress.pdf Graphic file (type pdf)
 
 <use img/omega_antiferromagnetic_compress.pdf>
@@ -2423,20 +2427,29 @@ Package mdframed Warning: You got a bad break
 (mdframed)                by changing the text, the space
 (mdframed)                or something else on input line 121.
 
-[63] [64] [65]
-Package mdframed Info: Not enough space on this page on input line 225.
+[63] [64]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+[65]
+Package mdframed Info: Not enough space on this page on input line 228.
  [66]
-Package mdframed Info: Not enough space on this page on input line 225.
+Package mdframed Info: Not enough space on this page on input line 228.
  [67] [68])
 (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp121-140_dag.tex [69]
 File: 01G0.1 Graphic file (type mps)
 
 [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\01G0.1)
 (C:\Users\Tom\Documents\GitHub\FY8302\01G0.t1)
-runsystem(mpost 01G0)...disabled (restricted).
+runsystem(mpost 01G0)...executed.
 
 
-Overfull \hbox (53.0945pt too wide) in paragraph at lines 40--40
+Overfull \hbox (53.0945pt too wide) in paragraph at lines 43--43
  [] 
  []
 
@@ -2475,7 +2488,7 @@ Overfull \hbox (66.84837pt too wide) detected at line 99
 File: 01G0.1 Graphic file (type mps)
  [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\01G0.1)
 (C:\Users\Tom\Documents\GitHub\FY8302\01G0.t1)
-runsystem(mpost 01G0)...disabled (restricted).
+runsystem(mpost 01G0)...executed.
 
 
 Overfull \hbox (53.0945pt too wide) in paragraph at lines 166--166
@@ -2712,13 +2725,12 @@ Overfull \hbox (35.75197pt too wide) in paragraph at lines 830--830
  []
 
 ) (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp161-170_oyvind.tex [94]
-File: 51.1 Graphic file (type mps)
-
-[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\51.1)
-(C:\Users\Tom\Documents\GitHub\FY8302\51.t1)
+feynmp: File 51.1 not found:
+feynmp: Process 51.mp with MetaPost and then reprocess this file.
+feynmf: Label file 51.t1 not found:
+feynmf: Process 51.mp with MetaPost and then reprocess this file.
 File: 52.1 Graphic file (type mps)
- [MP to PDF]
-(C:\Users\Tom\Documents\GitHub\FY8302\52.1)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\52.1)
 (C:\Users\Tom\Documents\GitHub\FY8302\52.t1)
 File: 53.1 Graphic file (type mps)
  [MP to PDF]
@@ -2754,13 +2766,13 @@ File: 55.2 Graphic file (type mps)
 [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\55.2)
 feynmf: Label file 55.t2 not found:
 feynmf: Process 55.mp with MetaPost and then reprocess this file.
-<img/veff1.pdf, id=821, 587.19376pt x 442.65375pt>
+<img/veff1.pdf, id=854, 587.19376pt x 442.65375pt>
 File: img/veff1.pdf Graphic file (type pdf)
  <use img/veff1.pdf>
 Package pdftex.def Info: img/veff1.pdf used on input line 124.
 (pdftex.def)             Requested size: 250.95476pt x 189.1824pt.
 
-<img/veffcoulomb.pdf, id=823, 587.19376pt x 442.65375pt>
+<img/veffcoulomb.pdf, id=856, 587.19376pt x 442.65375pt>
 File: img/veffcoulomb.pdf Graphic file (type pdf)
 
 <use img/veffcoulomb.pdf>
@@ -2771,87 +2783,88 @@ Package pdftex.def Info: img/veffcoulomb.pdf used on input line 131.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [97 <C:/Users/Tom/Documents/GitHub/FY8302/img/veff1.pdf>]
-feynmp: File 56DysonEq1.1 not found:
-feynmp: Process 56DysonEq1.mp with MetaPost and then reprocess this file.
+File: 56DysonEq1.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq1.1)
 feynmf: Label file 56DysonEq1.t1 not found:
 feynmf: Process 56DysonEq1.mp with MetaPost and then reprocess this file.
-feynmp: File 56DysonEq2.1 not found:
-feynmp: Process 56DysonEq2.mp with MetaPost and then reprocess this file.
+File: 56DysonEq2.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq2.1)
 feynmf: Label file 56DysonEq2.t1 not found:
 feynmf: Process 56DysonEq2.mp with MetaPost and then reprocess this file.
-feynmp: File 56DysonEq3.1 not found:
-feynmp: Process 56DysonEq3.mp with MetaPost and then reprocess this file.
+File: 56DysonEq3.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq3.1)
 feynmf: Label file 56DysonEq3.t1 not found:
 feynmf: Process 56DysonEq3.mp with MetaPost and then reprocess this file.
-feynmp: File 56DysonEq4.1 not found:
-feynmp: Process 56DysonEq4.mp with MetaPost and then reprocess this file.
+File: 56DysonEq4.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq4.1)
 feynmf: Label file 56DysonEq4.t1 not found:
 feynmf: Process 56DysonEq4.mp with MetaPost and then reprocess this file.
-feynmp: File 56DysonEq5.1 not found:
-feynmp: Process 56DysonEq5.mp with MetaPost and then reprocess this file.
+File: 56DysonEq5.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq5.1)
 feynmf: Label file 56DysonEq5.t1 not found:
 feynmf: Process 56DysonEq5.mp with MetaPost and then reprocess this file.
-feynmp: File 56DysonEq6.1 not found:
-feynmp: Process 56DysonEq6.mp with MetaPost and then reprocess this file.
+File: 56DysonEq6.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq6.1)
 feynmf: Label file 56DysonEq6.t1 not found:
 feynmf: Process 56DysonEq6.mp with MetaPost and then reprocess this file.
-feynmp: File 56DysonEq7.1 not found:
-feynmp: Process 56DysonEq7.mp with MetaPost and then reprocess this file.
+File: 56DysonEq7.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\56DysonEq7.1)
 feynmf: Label file 56DysonEq7.t1 not found:
 feynmf: Process 56DysonEq7.mp with MetaPost and then reprocess this file.
 [98 <C:/Users/Tom/Documents/GitHub/FY8302/img/veffcoulomb.pdf>]
-feynmp: File 57DysonApprox1.1 not found:
-feynmp: Process 57DysonApprox1.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox1.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox1.1)
 feynmf: Label file 57DysonApprox1.t1 not found:
 feynmf: Process 57DysonApprox1.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox2.1 not found:
-feynmp: Process 57DysonApprox2.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox2.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox2.1)
 feynmf: Label file 57DysonApprox2.t1 not found:
 feynmf: Process 57DysonApprox2.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox3.1 not found:
-feynmp: Process 57DysonApprox3.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox3.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox3.1)
 feynmf: Label file 57DysonApprox3.t1 not found:
 feynmf: Process 57DysonApprox3.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox4.1 not found:
-feynmp: Process 57DysonApprox4.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox4.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox4.1)
 feynmf: Label file 57DysonApprox4.t1 not found:
 feynmf: Process 57DysonApprox4.mp with MetaPost and then reprocess this file.
 feynmp: File 57DysonApprox5.1 not found:
 feynmp: Process 57DysonApprox5.mp with MetaPost and then reprocess this file.
 feynmf: Label file 57DysonApprox5.t1 not found:
 feynmf: Process 57DysonApprox5.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox6.1 not found:
-feynmp: Process 57DysonApprox6.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox6.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox6.1)
 feynmf: Label file 57DysonApprox6.t1 not found:
 feynmf: Process 57DysonApprox6.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox7.1 not found:
-feynmp: Process 57DysonApprox7.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox7.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox7.1)
 feynmf: Label file 57DysonApprox7.t1 not found:
 feynmf: Process 57DysonApprox7.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox8.1 not found:
-feynmp: Process 57DysonApprox8.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox8.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox8.1)
 feynmf: Label file 57DysonApprox8.t1 not found:
 feynmf: Process 57DysonApprox8.mp with MetaPost and then reprocess this file.
-feynmp: File 57DysonApprox9.1 not found:
-feynmp: Process 57DysonApprox9.mp with MetaPost and then reprocess this file.
+File: 57DysonApprox9.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\57DysonApprox9.1)
 feynmf: Label file 57DysonApprox9.t1 not found:
 feynmf: Process 57DysonApprox9.mp with MetaPost and then reprocess this file.
 [99]
-feynmp: File 58DysonGeometricSeries1.1 not found:
-feynmp: Process 58DysonGeometricSeries1.mp with MetaPost and then reprocess thi
-s file.
+File: 58DysonGeometricSeries1.1 Graphic file (type mps)
+ [MP to PDF]
+(C:\Users\Tom\Documents\GitHub\FY8302\58DysonGeometricSeries1.1)
 feynmf: Label file 58DysonGeometricSeries1.t1 not found:
 feynmf: Process 58DysonGeometricSeries1.mp with MetaPost and then reprocess thi
 s file.
-feynmp: File 58DysonGeometricSeries2.1 not found:
-feynmp: Process 58DysonGeometricSeries2.mp with MetaPost and then reprocess thi
-s file.
+File: 58DysonGeometricSeries2.1 Graphic file (type mps)
+[MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\58DysonGeometricSeries2.1)
 feynmf: Label file 58DysonGeometricSeries2.t1 not found:
 feynmf: Process 58DysonGeometricSeries2.mp with MetaPost and then reprocess thi
 s file.
 [100]
-feynmp: File 59Loop.1 not found:
-feynmp: Process 59Loop.mp with MetaPost and then reprocess this file.
+File: 59Loop.1 Graphic file (type mps)
+ [MP to PDF] (C:\Users\Tom\Documents\GitHub\FY8302\59Loop.1)
 feynmf: Label file 59Loop.t1 not found:
 feynmf: Process 59Loop.mp with MetaPost and then reprocess this file.
 ) (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp171-180_severin.tex
@@ -2863,7 +2876,7 @@ ration and residue cal-cu-la-tion. $[][] []\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/
 
 [101] [102] [103] [104])
 (C:\Users\Tom\Documents\GitHub\FY8302\sections/pp181-200_ali.tex
-<img/pp181-200_selfenergy.pdf, id=975, 327.13223pt x 182.30345pt>
+<img/pp181-200_selfenergy.pdf, id=1006, 327.13223pt x 182.30345pt>
 File: img/pp181-200_selfenergy.pdf Graphic file (type pdf)
 
 <use img/pp181-200_selfenergy.pdf>
@@ -2873,14 +2886,14 @@ Package pdftex.def Info: img/pp181-200_selfenergy.pdf used on input line 14.
 ] [107
 
 ]
-<img/pp181-200_fermisurface.pdf, id=1018, 281.42473pt x 255.62733pt>
+<img/pp181-200_fermisurface.pdf, id=1050, 281.42473pt x 255.62733pt>
 File: img/pp181-200_fermisurface.pdf Graphic file (type pdf)
 
 <use img/pp181-200_fermisurface.pdf>
 Package pdftex.def Info: img/pp181-200_fermisurface.pdf used on input line 88.
 (pdftex.def)             Requested size: 209.12683pt x 189.95697pt.
  [108 <C:/Users/Tom/Documents/GitHub/FY8302/img/pp181-200_fermisurface.pdf>]
-<img/pp181-200_veffapprox.pdf, id=1044, 611.90643pt x 306.50702pt>
+<img/pp181-200_veffapprox.pdf, id=1075, 611.90643pt x 306.50702pt>
 File: img/pp181-200_veffapprox.pdf Graphic file (type pdf)
 
 <use img/pp181-200_veffapprox.pdf>
@@ -2889,7 +2902,7 @@ Package pdftex.def Info: img/pp181-200_veffapprox.pdf used on input line 96.
  [109
 
  <C:/Users/Tom/Documents/GitHub/FY8302/img/pp181-200_veffapprox.pdf>]
-<img/pp181-200_coopermodel.pdf, id=1065, 250.31381pt x 268.3249pt>
+<img/pp181-200_coopermodel.pdf, id=1096, 250.31381pt x 268.3249pt>
 File: img/pp181-200_coopermodel.pdf Graphic file (type pdf)
 
 <use img/pp181-200_coopermodel.pdf>
@@ -2901,7 +2914,7 @@ Package mdframed Info: Not enough space on this page on input line 204.
  [112
 
 ]
-<img/pp181-200_cooperlimits.pdf, id=1091, 281.42476pt x 283.23721pt>
+<img/pp181-200_cooperlimits.pdf, id=1122, 281.42476pt x 283.23721pt>
 File: img/pp181-200_cooperlimits.pdf Graphic file (type pdf)
 
 <use img/pp181-200_cooperlimits.pdf>
@@ -2926,17 +2939,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `lecturenotes.out' has not changed.
-(rerunfilecheck)             Checksum: 075EAEDDF3210CAB3ACE4028D53BB41A;2818.
+(rerunfilecheck)             Checksum: FFA96F361E60D3E15761B98C1719440C;3349.
 Package logreq Info: Writing requests to 'lecturenotes.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 38628 strings out of 493921
- 748378 string characters out of 3144881
- 1208566 words of memory out of 3000000
- 40352 multiletter control sequences out of 15000+200000
+ 38712 strings out of 493921
+ 750737 string characters out of 3144881
+ 1208569 words of memory out of 3000000
+ 40404 multiletter control sequences out of 15000+200000
  32184 words of font info for 185 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 63i,26n,62p,881b,1469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,26n,62p,881b,2221s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
@@ -2970,9 +2983,9 @@ msfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on lecturenotes.pdf (117 pages, 1619798 bytes).
+Output written on lecturenotes.pdf (118 pages, 1630764 bytes).
 PDF statistics:
- 1322 PDF objects out of 1440 (max. 8388607)
+ 1353 PDF objects out of 1440 (max. 8388607)
  350 named destinations out of 1000 (max. 500000)
- 35162 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 35218 words of extra memory for PDF output out of 35830 (max. 10000000)
 

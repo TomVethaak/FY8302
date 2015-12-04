@@ -129,10 +129,10 @@ $V$: Perturbation, such that we can not solve the problem exact.
 	Heisenberg: \[\Braket{psi(0)|\hat{\mathcal{O}}(t)|\psi(0)}=\Braket{\psi(0)|e^{i\Ha t}\hat{\mathcal{O}}(0)e^{-i\Ha t}|\psi(0)}\]	
 	We get the same matrix elements in both pictures! 
 \end{Indentskip}
-There is a third picture, which is used in perturbation theory:
-\subsubsection*{Interaction picture}
+There is a third picture, which is used in perturbation theory.
+
 \begin{Indentskip}
-	
+	\subsubsection*{Interaction picture}
 	Some time dependence in \textit{both} the states and the operators.
 	\[|\psi(t)\rangle=e^{i\Ha_{0}t}e^{-i\Ha t}|\psi(0)\rangle,\]
 	\[\hat{\mathcal{O}}(t)=e^{i\Ha_{0}t}\hat{\mathcal{O}}(0)e^{-i\Ha_{0}t}.\]
@@ -171,7 +171,10 @@ such that
 			\end{center}
 \vspace{5pt}
 This is a (linear) integral equation for $U(t)$. We want to solve this by iteration, but first we introduce a more general evolution operator.
-\subsubsection*{The $S$-matrix}
+
+
+
+\subsection{The $S$-matrix}
 The scattering matrix, $S$, is the central quantity in many-particle perturbation theory. With a perturbation theory for $S$ then we will almost automatically have a method to write a perturbation series for \textbf{\Underline{any physical quantity}}. The $S$-matrix is defined as:
 \[|\psi(t)\rangle=S(t,t')|\psi(t')\rangle,\] such that
 $S(t,0)=U(t),$ by recalling that $|\psi(t)\rangle = U(t)|\psi(0)\rangle$. The state can be written as
@@ -224,7 +227,11 @@ Now we can see what it means that $V$ should be small, i.e. \[\left|\int_{t'}^{t
 	\end{align}
 \end{Indentskip}
 To find an exact expression for $S$ we introduce the \Underline{time ordering operator}: $\tilde{T}$.
-\subsection*{Time ordering of operators}
+
+
+
+
+\subsection{Time ordering of operators}
 \Underline{Bosons:}
 Two boson operators have time-ordered product 
 \[\tilde{T}[A(t_{1})B(t_{2})]= \begin{cases}A(t_{1})B(t_{t}); & t_{1}>t_{2}.\\
