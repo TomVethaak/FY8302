@@ -27,24 +27,29 @@
 \contentsline {subsection}{\numberline {4.6}Quantization of lattice vibrations: phonons}{56}{subsection.4.6}
 \contentsline {subsection}{\numberline {4.7}Non-harmonics}{58}{subsection.4.7}
 \contentsline {subsection}{\numberline {4.8}Electron-phonon coupling}{60}{subsection.4.8}
-\contentsline {section}{\numberline {5}Many-particle perturbation theory}{63}{section.5}
-\contentsline {subsection}{\numberline {5.1}Zero temperature}{63}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Time-evolution of states}{63}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}The $S$-matrix}{65}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Time ordering of operators}{67}{subsection.5.4}
+\contentsline {section}{\numberline {5}Many-particle perturbation theory}{62}{section.5}
+\contentsline {subsection}{\numberline {5.1}Zero temperature}{62}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Time evolution of states}{63}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Evolution operator for a state $|\psi (t)\delimiter "526930B $ in the interaction picture}{64}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}The $S$-matrix}{65}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Time ordering of operators}{66}{subsection.5.5}
 \contentsline {section}{\numberline {6}Green functions}{70}{section.6}
-\contentsline {subsection}{\numberline {6.1}Free-electron Green function}{73}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Free phonon Green function}{74}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Perturbative corrections to the Green functions (single-particle)}{76}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Wick's Theorem}{77}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}The Dyson Equation}{87}{subsection.6.5}
-\contentsline {paragraph}{$\Sigma $ to Second order in $M_q$}{91}{section*.49}
-\contentsline {paragraph}{$\Pi $ to Second order in $M_q$}{92}{section*.50}
-\contentsline {subsection}{\numberline {6.6}Effective Interaction Between Electrons due to Phonons}{94}{subsection.6.6}
-\contentsline {section}{\numberline {7}Screening of Coulomb-interaction}{98}{section.7}
-\contentsline {subsection}{\numberline {7.1}Calculation of $\Pi ^{(2)}(q,\omega )$}{101}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Quasi Particles in Interacting Electron Systems}{104}{subsection.7.2}
-\contentsline {section}{\numberline {8}Superconductivity}{107}{section.8}
-\contentsline {subsection}{\numberline {8.1}Introduction}{107}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}The Cooper Problem}{108}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}The Bardeen--Cooper--Schrieffer Theory of Superconductivity}{113}{subsection.8.3}
+\contentsline {subsection}{\numberline {6.1}Single-particle Green function}{70}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Free-electron Green function}{72}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Free phonon Green function}{74}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Perturbative corrections to the Green functions (single-particle)}{75}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}1st-order correction to the electron-propagator with electron-phonon interaction: ($\lambda =(\mathaccentV {vec}17E{k}\sigma )$) }{76}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}2nd-order correction}{76}{subsubsection.6.4.2}
+\contentsline {subsection}{\numberline {6.5}Wick's Theorem}{77}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Example of use of Wick's theorem}{77}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}The Dyson Equation}{86}{subsection.6.7}
+\contentsline {paragraph}{$\Sigma $ to Second order in $M_q$}{90}{section*.46}
+\contentsline {paragraph}{$\Pi $ to Second order in $M_q$}{91}{section*.47}
+\contentsline {subsection}{\numberline {6.8}Effective Interaction Between Electrons due to Phonons}{93}{subsection.6.8}
+\contentsline {section}{\numberline {7}Screening of Coulomb-interaction}{97}{section.7}
+\contentsline {subsection}{\numberline {7.1}Calculation of $\Pi ^{(2)}(q,\omega )$}{100}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Quasi Particles in Interacting Electron Systems}{103}{subsection.7.2}
+\contentsline {section}{\numberline {8}Superconductivity}{106}{section.8}
+\contentsline {subsection}{\numberline {8.1}Introduction}{106}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}The Cooper Problem}{107}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}The Bardeen--Cooper--Schrieffer Theory of Superconductivity}{112}{subsection.8.3}
