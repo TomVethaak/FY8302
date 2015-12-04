@@ -96,7 +96,7 @@ Such choices represent explicit realizations of the general expression for $\Ha$
 
 
 
-\subsection{The interacting electron gas}
+\subsection{\label{sec:interacting_electron_gas}The interacting electron gas}
 We will now look at a few concrete realizations of $\Ha$ in second quantization. The system we will look at is the interacting electron gas.
 
 The plane wave basis is used to describe nearly free (free $=$ non-interacting) fermions in periodic lattices. Considering the electrons to almost not interact at all means that the kinetic energy of the electrons dominates the interaction energy between them. We will come back later to why the Coulomb energy often can be ignored i \Underline{good metals} (but not in ``bad'' metals, insulators and semiconductors). Metals that are good conductors, and therefore suited for a plane wave basis, are for example Al, Sn, Fe, Cu, Ag etc.
@@ -111,9 +111,7 @@ The basis is given by
 	\B{r}	&:&	\text{Spatial coordinate},\\\\
 	s		&:& \text{Spin coordinate}.
 \end{array}\]
-The spin part of the wave function is represented by a two-component spinor (in the case of $S=1/2$ fermions, for a general spin $s$ the spinor will in the non-relativistic case be a $(2S+1)$-component spinor, but we'll restrict ourselves to $S=1/2$ fermions).
-
-$S=1/2$: quantize the spin along the $z$-axis, and use the $z$-component of the spin as the spin quantum number $\sigma$, $\sigma=\up$ or $\sigma=\down$ ($S_z=+1/2,-1/2$):
+The spin part of the wave function is represented by a two-component spinor (in the case of $S=1/2$ fermions, for a general spin $s$ the spinor will in the non-relativistic case be a $(2S+1)$-component spinor, but we'll restrict ourselves to $S=1/2$ fermions). $S=1/2$: quantize the spin along the $z$-axis, and use the $z$-component of the spin as the spin quantum number $\sigma$, $\sigma=\up$ or $\sigma=\down$ ($S_z=+1/2,-1/2$):
 \[\chi_\up=\Pm{1\\0}\begin{matrix}\leftarrow s=1\\\leftarrow s=2\end{matrix}\;,\qquad\chi_\down=\Pm{0\\1}\begin{matrix}\leftarrow s=1\\\leftarrow s=2\end{matrix}\;.\]
 The spin coordinate $s$ indicates the components in the spinors $\chi_\sigma(s)$:
 \[\chi_\up(1)=1,\qquad\chi_\up(2)=0,\qquad\chi_\down(1)=0,\qquad\chi_\down(2)=1.\]
@@ -131,9 +129,7 @@ The field operators are now given by
 	\commup{\Anni_{\B{k},\sigma}(t),\Crea_{\B{k}',\sigma'}(t)}	&=& \delta_{\B{k},\B{k}'}\delta_{\sigma,\sigma'},\\\\
 	\commup{\Anni_{\B{k},\sigma}(t),\Anni_{\B{k}',\sigma'}(t)}	&=& \commup{\Crea_{\B{k},\sigma}(t),\Crea_{\B{k}',\sigma'}(t)}=0,\\\\
 \end{array}\]
-where $\Crea_{\B{k},\sigma}(t)$ needs a fermion with quantum number $\B{k}$ and spin $\sigma$ at time $t$.
-
-Orthonormality of the spatial part:
+where $\Crea_{\B{k},\sigma}(t)$ needs a fermion with quantum number $\B{k}$ and spin $\sigma$ at time $t$. Orthonormality of the spatial part:
 \[\dfrac{1}{V}\Int d\B{r}\,e^{i(\B{k}-\B{k}')\cdot\B{r}}=\delta_{\B{k},\B{k}'}.\]
 Orthonormality of the spin part:
 \[\Sum_s\chi_{\sigma_1}^*(s)\chi_{\sigma_2}(s)=\delta_{\sigma_1,\sigma_2}.\]

@@ -1,14 +1,10 @@
 We see that we have simplified the expectation value of \underline{one two-particle} operator (4 fermion operators) to a sum of products of \underline{two one-particle} propagators.
-\[\begin{aligned}
-\bra{\Phi_0}&T\big[c_{k_1,\sigma_1}(t_1)c_{k_2,\sigma_2}^\dagger(t_2)
-c_{k_3,\sigma_3}(t_3)c_{k_4,\sigma_4}^\dagger(t_4)\big]\ket{\Phi_0} \\
-=~&\phantom{+}i^2 G_0(k_1, t_1-t_2) G_0(k_3, t_3-t_4) \delta_{k_1,k_2}\delta_{k_3,k_4}\delta_{\sigma_1,\sigma_2}\delta_{\sigma_3,\sigma_4}\\
-&-i^2 G_0(k_1, t_1-t_4) G_0(k_3, t_3-t_2) \delta_{k_1,k_4}\delta_{k_2,k_3}\delta_{\sigma_1,\sigma_4}\delta_{\sigma_2,\sigma_3}
-\end{aligned}\]
-
-As we will see, the expectation value of \underline{one} three-particle operator is reduced to a sum of products of \underline{three} one-particle propagators.
-
-\underline{Equivalently:} The expectation value of $N$-particle operator is reduced to a sum of products of $N/2$ one-particle propegators. The number of terms in the sum grows dramatically with $N$: $\sim (N/2)!$ (rough estimate).
+\[\begin{array}{r@{\;}c@{\;}l}
+	\bra{\Phi_0}	& \multicolumn{2}{l}{T\big[c_{k_1,\sigma_1}(t_1)c_{k_2,\sigma_2}^\dagger(t_2)c_{k_3,\sigma_3}(t_3)c_{k_4,\sigma_4}^\dagger(t_4)\big]\ket{\Phi_0}}\\\\
+					& =	& \phantom{+}i^2 G_0(k_1, t_1-t_2) G_0(k_3, t_3-t_4)\delta_{k_1,k_2}\delta_{k_3,k_4}\delta_{\sigma_1,\sigma_2}\delta_{\sigma_3,\sigma_4}\\\\
+					&&-i^2 G_0(k_1, t_1-t_4) G_0(k_3, t_3-t_2) \delta_{k_1,k_4}\delta_{k_2,k_3}\delta_{\sigma_1,\sigma_4}\delta_{\sigma_2,\sigma_3}
+\end{array}\]
+As we will see, the expectation value of \underline{one} three-particle operator is reduced to a sum of products of \underline{three} one-particle propagators. \underline{Equivalently:} The expectation value of $N$-particle operator is reduced to a sum of products of $N/2$ one-particle propegators. The number of terms in the sum grows dramatically with $N$: $\sim (N/2)!$ (rough estimate).
 
 We now go back to the second order expectation value. For the second order term we must look at the following contractions:
 \[\begin{aligned}

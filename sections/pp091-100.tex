@@ -30,7 +30,7 @@ For a $d$-dimensional ``cubic'' lattice we can write
 \end{array}\]
 Substituting this back, we get
 \[\omega_{\v{q}}=4|J|S\sqrt{d}|\v{q}|\]
-when $|\v{q}|\ll1$, which in the case of $d=2$ is in agreement with equation~\eqref{eq:omega_ferromagnetic}. The temperature-dependent correction to the magnetization can now be calculated:
+when $|\v{q}|\ll1$, which in the case of $d=2$ is in agreement with equation~\eqref{eq:omega_antiferromagnetic}. The temperature-dependent correction to the magnetization can now be calculated:
 \begin{equation}\label{eq:delta_ma_integral}\begin{array}{r@{\;}c@{\;}l}
 	\Delta\Ma(T)	& =			& -\Sum_{\v{q}}\left(u_{\v{q}}^2+v_{\v{q}}^2\right)\dfrac{1}{e^{\beta\omega_{\v{q}}}-1}\\\\
 					& \approx	& -\Sum_{\v{q}}\dfrac{\sqrt{d}}{|\v{q}|}\dfrac{1}{e^{\beta|J|\eta|\v{q}|}-1}\qquad\text{(Low T.)}\\\\
@@ -56,23 +56,21 @@ The corrections to $\Ma$ due to \Underline{temperature effects} are weaker in an
 \Underline{But!} Note that ferromagnets don't have quantum fluctuations, while antiferromagnets do.
 
 There are fluctuations even at zero temperature:
-\[\Sum_{\v{q}}v_{\v{q}}^2=\dfrac{1}{2}\Sum_{\v{q}}\left(\dfrac{1}{\sqrt{1-\tilde{\gamma}_{\v{q}}^2}}-1\right)=\dfrac{\sqrt{d}}{2}\Sum_{\v{q}}\dfrac{1}{|\v{q}|}-\left(\dfrac{N_{\text{A}}}{2}\right),\]
+\[\Sum_{\v{q}}v_{\v{q}}^2=-\left(\dfrac{N_{\text{A}}}{2}\right)+\dfrac{1}{2}\Sum_{\v{q}}\left(\dfrac{1}{\sqrt{1-\tilde{\gamma}_{\v{q}}^2}}-1\right)=\dfrac{\sqrt{d}}{2}\Sum_{\v{q}}\dfrac{1}{|\v{q}|},\]
 which for $T=0$ gives
 \[\Ma_{\text{A}}=N_{\text{A}}\left(S+\dfrac{1}{2}\right)-\Sum_{\v{q}}\dfrac{\sqrt{d}}{2}\dfrac{1}{|\v{q}|}.\]
 For large $|\v{q}|$ \textcolor{red!80!black}{(Brillouin zone)} no problem with \textcolor{red!80!black}{integers}. For small $|\v{q}|$ the integral in equation~\eqref{eq:delta_ma_integral} becomes
 \[\Omega_d\Int dq\,q^{d-2},\]
 which for $d=2$ is ok for small $|\v{q}|$, but for $d=1$ we get
 \[\Int_{1/L}^1dq\,\dfrac{1}{q}\propto\ln L,\]
-a divergent function with weak divergence when $L\rightarrow\infty$. For $T=0$ the quantum fluctuations are large when $d=1$.
-
-As can be seen from figure~\ref{fig:neel_state_sublattice} the corners of the Brillouin zone are not involved. \textcolor{red!80!black}{This is why} only small $|\v{q}|$ contribute.
+a divergent function with weak divergence when $L\rightarrow\infty$. For $T=0$ the quantum fluctuations are large when $d=1$. As can be seen from figure~\ref{fig:neel_state_sublattices_brillouin} the corners of the Brillouin zone are not involved. \textcolor{red!80!black}{This is why} only small $|\v{q}|$ contribute.
 
 
 
 
 \subsection{Quantization of lattice vibrations: phonons}
 First look at a 1D lattice model (only look at the ion vibrations). The Hamiltonian for such a lattice system has the classical form
-\[\Ha=\Sum_{i}\Sum{\v{P}_i^2}{2M}+\Sum_{n=1}^N\Sum_{m=1}^{\#\text{ neighbours}}V(R_n-R_{n+m}).\]
+\[\Ha=\Sum_{i}\dfrac{\v{P}_i^2}{2M}+\Sum_{n=1}^N\Sum_{m=1}^{\#\text{ neighbours}}V(R_n-R_{n+m}).\]
 Here $V(x)$ is a microscopic pair potential that works between the ions. This is not limited to nearest-neighbour interaction. We can write
 \[R_n=R_n^0+x_n,\]
 with $R_n$ for the equilibrium position of lattice point $n$ and $x_n$ for the small deviation from it. For small fluctuations around the equilibrium position, the lattice will exhibit \Underline{harmonic} oscillations.
@@ -97,25 +95,20 @@ with which we get
 We wish to write this in the form of harmonic oscillations, to which end we introduce new variables that ``decouple'' the potential term. This will be done, as we did in assignment 2, exercise 1, with Fourier-transformed variables:
 \[x_n=\dfrac{1}{\sqrt{N}}\Sum_k\tilde{x}_k\,e^{ikn},\qquad\tilde{x}_k=\dfrac{1}{\sqrt{N}}\Sum_nx_n\,e^{-ikn}.\]
 With this we get:
-\[\Sum_nx_nx_{n+m}=\Sum_k\tilde{x}_k\tilde{x}_{-k}\,e^{-ikn},\]
+\[\Sum_nx_nx_{n+m}=\Sum_k\tilde{x}_k\tilde{x}_{-k}\,e^{-ikm},\]
 which means that the potential term becomes
 \[\Sum_{n,m}V(R_n-R_{n+m})=\Sum_k\underbrace{\left(\Sum_{m\in\text{neighbours}}\Phi(R_m^0)\left[1-\cos(km)\right]\right)}_{\equiv{\dfrac{1}{2}\omega_k^2M}}\tilde{x}_k\tilde{x}_{-k}.\]
 We can also Fourier transform the momentum:
-\[\begin{array}{r@{\;}c@{\;}l}
-	p_n						& =	& \dfrac{1}{\sqrt{N}}\Sum_k\tilde{p}_k\,e^{-ikn},\\\\
-	\tilde{p}_k				& =	& \dfrac{1}{\sqrt{N}}\Sum_np_n\,e^{ikn},\\\\
-	\Sum_n\dfrac{p_n^2}{2M}	& =	& \Sum_k\dfrac{\tilde{p}_k\tilde{p}_{-k}}{2M}.
-\end{array}\]
+\[\left.\begin{array}{r@{\;}c@{\;}l}
+	p_n						& =	& \dfrac{1}{\sqrt{N}}\Sum_k\tilde{p}_k\,e^{-ikn}\\\\
+	\tilde{p}_k				& =	& \dfrac{1}{\sqrt{N}}\Sum_np_n\,e^{ikn}
+\end{array}\right\}\quad\Rightarrow\quad\Sum_n\dfrac{p_n^2}{2M}=\Sum_k\dfrac{\tilde{p}_k\tilde{p}_{-k}}{2M}.\]
 The Hamiltonian for a one-dimensional lattice, in the harmonic approximation, then becomes:
 \[\boxed{\Ha=\Sum_k\left(\dfrac{\tilde{p}_k\tilde{p}_{-k}}{2M}+\dfrac{M\omega_k^2}{2}\,\tilde{x}_k\tilde{x}_{-k}\right).}\]
 This is the standard form of a harmonic oscillator, the sum of 1D harmonic, \Underline{independent} oscillators. We will second quantize this by introducing creation and annihilation operators exactly as for a single 1D harmonic oscillator, for each $k$ value.
-\[\begin{array}{r@{\;}c@{\;}l}
-	\tilde{x}_k							& =	& \sqrt{\dfrac{\hbar}{2m\omega_k}}\left(\Creab_{-k}+\Annib_k\right)\\\\
-	\tilde{p}_k							& =	& i\sqrt{\dfrac{m\omega_k\hbar}{2}}\left(\Creab_k-\Annib_{-k}\right),\\\\
-	\commum{\Annib_k,\Creab_{k'}}		& =	& \delta_{k,k'},\\\\
-	\commum{\tilde{x}_k,\tilde{p}_{k'}}	& =	& i\hbar\delta_{k,k'},\\\\
-	\commum{x_n,p_{n'}}					& =	& i\hbar\delta_{n,n'}.
-\end{array}\]
+\begin{equation}\label{eq:fourier_position_momentum}\tilde{x}_k=\sqrt{\dfrac{\hbar}{2m\omega_k}}\left(\Creab_{-k}+\Annib_k\right),\qquad\tilde{p}_k=i\sqrt{\dfrac{m\omega_k\hbar}{2}}\left(\Creab_k-\Annib_{-k}\right).\end{equation}
+These have the usual commutation relations
+\[\commum{\Annib_k,\Creab_{k'}}=\delta_{k,k'},\qquad \commum{\tilde{x}_k,\tilde{p}_{k'}}=i\hbar\delta_{k,k'},\qquad 	\commum{x_n,p_{n'}}=i\hbar\delta_{n,n'}.\]
 Substituting back into the Hamiltonian,
 \[\boxed{\Ha=\Sum_k\hbar\omega_k\left(\Creab_k\Annib_k+\dfrac{1}{2}\right),}\]
 as one would have guessed. The last term is a ``zero point'' energy, which we will drop hereafter. The (harmonic) lattice vibrations will we quantized to a \Underline{free boson gas}. The quantized excitations of the sound field are called \Underline{phonons}, and have creation/annihilation operators $\Creab_k$, $\Annib_k$. This is entirely analogous to the quantized excitations of spin waves, which we called magnons.
