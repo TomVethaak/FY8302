@@ -1,0 +1,65 @@
+\textcolor{red}{Draft : not finished, not correct!}
+
+If we introduce a chemical potential $\mu$ by 
+
+\begin{equation}
+H \rightarrow H - \mu N = H - \sum_{k,\sigma} c_{k,\sigma}^{\dagger} c_{k,\sigma}
+\end{equation}
+
+we get 
+
+\begin{equation}
+H = \sum_{k,\sigma} (\epsilon_k - \mu)c_{k,\sigma}^{\dagger} c_{k,\sigma} 
+- \sum_{k}(\Delta k^{\dagger} c_{-k \downarrow} c_{k \uparrow} +
+\Delta k c_{k \uparrow}^{\dagger} c_{-k \downarrow}^{\dagger})
++ \sum_{k}\Delta k b k^{\dagger}
+\end{equation}
+
+BCS-model in the middlefield-approximation. One claims that this model explains $\rho(TcT_c) = 0$ in addition to the \textit{Meissner-effect}. 
+$\Delta k$ and $bk$ must be self-consistent found by minimizing the free energy. In comparison to what was done in exercise 1, we have reduced a many-particle problem to a self-consistent single-particle problem which can be solved exact, without using pertubation. 
+Note that $\Delta k \Delta k^{\dagger} = 0 \rightarrow \sum_{k,\sigma} (\epsilon_k - \mu)c_{k,\sigma}^{\dagger} c_{k,\sigma} $
+(free electron \textcolor{red}{ what does it say in the notes?} Inx Meissner-effect)
+
+\subsection*{Solving the middlefield-problem}
+We will now diagonalize the problem by first expressing the middlefield-Hamiltonian operators as
+\begin{equation}
+H = \sum_{k} [ (\epsilon_k - \mu)c_{k \uparrow}^{\dagger} c_{k \uparrow} 
++ (\epsilon_k - \mu) (1-c_{-k \downarrow} c_{-k \downarrow}^{\dagger}) ]
+- \sum_{k} \Delta k c_{k \uparrow}^{\dagger} c_{-k \downarrow}^{\dagger} +
+\Delta k^{\dagger} c_{-k \downarrow} c_{k \uparrow}
++ \sum_{k}\Delta k b k^{\dagger}
+\label{eq:middlefieldH}
+\end{equation}
+
+From now, the notation will be simplified, $\epsilon_{k} - \mu \rightarrow \epsilon_k$, so that the hamiltonian can now be written as 
+
+\begin{equation}
+H = \sum_{k} (\epsilon_k + \Delta k b k^{\dagger})
++ \sum_{k} \varphi_k^{\dagger} \textbf{A} \varphi_k
+\end{equation}
+
+where 
+\begin{equation}
+\textbf{A}  = 
+\begin{bmatrix}
+\epsilon_k  & - \Delta k \\
+- \Delta k^{\dagger} & -\epsilon_k
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\varphi_k =  
+\begin{bmatrix}
+c_{k \uparrow} \\
+c_{-k \downarrow}^{\dagger}
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\varphi_k^{\dagger} = 
+\begin{bmatrix}
+c_{k \uparrow}^{\dagger} & c_{-k \downarrow}
+\end{bmatrix}
+\end{equation}
+
+Multiply these, and check that this reproduces the hamiltonian in Eq. \ref{eq:middlefieldH}. 
