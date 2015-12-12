@@ -193,7 +193,7 @@ In the $\Creabb_j\Annibb_j$ term we use that
 We call the numbers of lattice points in A and B $N_\text{A}$ and $N_\text{B}$, with $N_\text{tot}=N_\text{A}+N_\text{B}$. As we did for ferromagnets, we introduce
 \[\Annib_q=\dfrac{1}{\sqrt{N_\text{A}}}\Sum_{i\in\text{A}}\Annib_i\,e^{i\v{q}\cdot\v{r}_i},\qquad\Annibb_q=\dfrac{1}{\sqrt{N_\text{B}}}\Sum_{j\in\text{B}}\Annibb_j\,e^{-i\v{q}\cdot\v{r}_j}\]
 and
-\[\Annib_i=\dfrac{1}{\sqrt{N_\text{A}}}\Sum_{\v{q}}\Annib_{\v{q}}\,e^{-i\v{q}\cdot\v{r}_i},\qquad\Annibb_j=\dfrac{1}{\sqrt{N_\text{B}}}\Sum_{\v{q}}\Annibb_{\v{q}}\,e^{-i\v{q}\cdot\v{r}_j}.\]
+\[\Annib_i=\dfrac{1}{\sqrt{N_\text{A}}}\Sum_{\v{q}}\Annib_{\v{q}}\,e^{-i\v{q}\cdot\v{r}_i},\qquad\Annibb_j=\dfrac{1}{\sqrt{N_\text{B}}}\Sum_{\v{q}}\Annibb_{\v{q}}\,e^{i\v{q}\cdot\v{r}_j}.\]
 \Underline{Note!} $\v{q}$ now iterates over the Brillouin zones of A and B (see page~\pageref{fig:neel_state_sublattices_brillouin}). As before, we now get
 \[\Sum_i\Creab_i\Annib_i=\Sum_{\v{q}}\Creab_{\v{q}}\Annib_{\v{q}},\qquad\Sum_j\Creabb_j\Annibb_j=\Sum_{\v{q}}\Creabb_{\v{q}}\Annibb_{\v{q}},\]
 as well as
@@ -206,7 +206,7 @@ Introducing $z$ as the number of nearest neighbours each lattice point has,
 The two first terms have the form of a free boson gas, while the last two have a new type of form. As in assignment 2, exercise 1, we will solve this problem by introducing new boson operators:
 \begin{equation}\label{eq:sublattice_operators}\begin{array}{r@{\;}c@{\;}l@{,\qquad}r@{\;}c@{\;}l}
 	\Aanni_{\v{q}}	& =	& u_{\v{q}}\Annib_{\v{q}}+v_{\v{q}}\Creabb_{\v{q}}	& \Annib_{\v{q}}	& =	& u_{\v{q}}\Aanni_{\v{q}}-v_{\v{q}}\Bcrea_{\v{q}},\\\\
-	\Banni_{\v{q}}	& =	& v_{\v{q}}\Annib_{\v{q}}+u_{\v{q}}\Creabb_{\v{q}}	& \Annibb_{\v{q}}	& =	& u_{\v{q}}\Banni_{\v{q}}-v_{\v{q}}\Acrea_{\v{q}}.
+	\Banni_{\v{q}}	& =	& v_{\v{q}}\Creab_{\v{q}}+u_{\v{q}}\Annibb_{\v{q}}	& \Annibb_{\v{q}}	& =	& u_{\v{q}}\Banni_{\v{q}}-v_{\v{q}}\Acrea_{\v{q}}.
 \end{array}\end{equation}
 We demand the $\Aanni_{\v{q}}$ and $\Banni_{\v{q}}$ operators to satisfy the boson commutation rules:
 \[\commum{\Aanni_{\v{q}},\Acrea_{\v{q}'}}=\delta_{\v{q},\v{q}'}\qquad\text{etc.,}\]
